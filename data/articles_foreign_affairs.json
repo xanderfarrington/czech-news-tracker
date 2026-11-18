@@ -1,0 +1,261 @@
+{
+  "updated_at_utc": "2026-11-18T15:20:40Z",
+  "topic": "foreign_affairs",
+  "count": 11,
+  "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",
+      "published_utc": "2026-11-18T14:24:55Z",
+      "title_raw": "Ruským sportovcům nebude umožněn vstup do Česka, uvedl Metnar",
+      "lead_raw": "Ministr vnitra Lubomír Metnar prohlásil, že i nadále platí vládní nařízení, které v podstatě zakazuje vydávat ruským reprezentantkám víza k účasti na mistrovství světa juniorek.",
+      "fingerprint": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "id": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "title_en": "Russian athletes will not be allowed to enter the Czech Republic, Metnar said",
+      "lead_en": "Home Secretary Lubomír Metnar said that there is still a government regulation, which basically prohibits Russian representatives from issuing visas to participate in the World Junior Championships.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
+      "published_utc": "2026-11-18T13:55:45Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek českým školám",
+      "lead_raw": "Ukrajinští kriminalisté v září zadrželi osobu podezřelou ze zasílání bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku. Podle Bezpečnostní informační služby měl být zadržený Ukrajinec placen z Ruska.",
+      "fingerprint": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "id": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "title_en": "Ukraine has apprehended a suspect from bomb threats to Czech schools",
+      "lead_en": "In September, Ukrainian criminalists arrested a person suspected of sending bomb threats to schools in the Czech Republic, Slovakia and Latvia. According to the Security Information Service, the detained Ukrainian was to be paid from Russia.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 1,
+        "foreign_affairs": 6
+      },
+      "topics": [
+        "foreign_affairs",
+        "security"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-skolam-informoval-eurojust-379720",
+      "published_utc": "2026-11-18T13:53:47Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek školám, informoval Eurojust",
+      "lead_raw": "Člověka podezřelého z bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku zadrželi v září ukrajinští kriminalisté. V tiskové zprávě o tom informoval Úřad evropské justiční spolupráce Eurojust.",
+      "fingerprint": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "id": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "title_en": "Ukraine apprehended suspected of bombing threats to schools, informed Eurojust",
+      "lead_en": "A person suspected of bombing threats to schools in the Czech Republic, Slovakia and Latvia was detained by Ukrainian criminalists in September. In the press release, Eurojust informed the Office of European Judicial Cooperation.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/nemecky-svaz-novinaru-zada-aby-se-merz-pri-setkani-s-babisem-vyjadril-k-situaci-kolem-ct-a-cro-379719",
+      "published_utc": "2026-11-18T13:27:56Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz při setkání s Babišem vyjádřil k situaci kolem ČT a ČRo",
+      "lead_raw": "Německý svaz novinářů (DJV) vyzval ve středu kancléře Friedricha Merze, aby se vyjádřil k protestům proti změně financování České televize (ČT) a Českého rozhlasu (ČRo). Učinit by tak měl podle výzvy ve čtvrtek, kdy se v Berlíně při jednání takzvané koalice ochotných, tedy zemí podporujících Ukrajinu, setká s českým premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "id": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "title_en": "The German Union of Journalists requests Merz to comment on the situation of the Czech Republic and the Czech Republic when meeting Babi",
+      "lead_en": "The German Union of Journalists (DJV) called on Chancellor Friedrich Merz to comment on the protests against the change in funding of Czech Television (ČT) and Czech Radio (ČR). He should do so in accordance with the call on Thursday, when he meets Czech Prime Minister Andrei Babiš (YES) in Berlin during the negotiations of the so-called coalition of willing, i.e. countries supporting Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-nemecky-svaz-novinaru-zada-aby-se-merz-vyjadril-k-financovani-ct-a-cro-320888",
+      "published_utc": "2026-11-18T12:56:46Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz vyjádřil k financování ČT a ČRo",
+      "lead_raw": "Největší novinářská organizace v Evropě, Německý svaz novinářů, vyzvala kancléře Friedricha Merze, aby při čtvrtečním setkání s Andrejem Babišem vyjádřil podporu protestům proti změně financování ČT a ČRo.",
+      "fingerprint": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "id": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "title_en": "The German Union of Journalists requests Merz to comment on the financing of ČT and ČRo",
+      "lead_en": "The largest press organization in Europe, the German Union of Journalists, called on Chancellor Friedrich Merz to express his support for protests against the change of funding between the Czech Republic and the Czech Republic during Thursday's meeting with Andrei Babiš.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/brifink-po-jednani-metnara-s-vedenim-hokejoveho-svazu-379717",
+      "published_utc": "2026-11-18T12:43:19Z",
+      "title_raw": "Ruští sportovci do Česka vpuštěni nebudou, řekl Metnar",
+      "lead_raw": "Ruským sportovcům nebude umožněn vstup na české území, řekl ministr vnitra Lubomír Metnar (ANO) po jednání s vedením hokejového svazu kvůli účasti ruských hokejistů a hokejistek na světových šampionátech.",
+      "fingerprint": "94338a284dcddcef9c329d81a0ceb730f48f1ce0ff803baf951d24c3dfbadb58",
+      "id": "94338a284dcddcef9c329d81a0ceb730f48f1ce0ff803baf951d24c3dfbadb58",
+      "title_en": "Russian athletes will not be admitted to the Czech Republic, said Metnar",
+      "lead_en": "Russian athletes will not be allowed to enter Czech territory, said Interior Minister Lubomír Metnar (YES) after negotiations with the head of the hockey union for participation of Russian hockey players and hockey players in world championships.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
+      "published_utc": "2026-11-18T07:28:18Z",
+      "title_raw": "Česko by mohlo vypsat zakázku na protivzdušnou obranu příští rok, uvedl Zůna",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat taktické balistické střely, řekl českým novinářům ve středu při návštěvě Izraele ministr obrany Jaromír Zůna (za SPD). Česká delegace získala nabídky, které by mohly umožnit rychlejší pořízení systémů protivzdušné obrany, než se původně předpokládalo, zmínil ministr zahraničí Petr Macinka (Motoristé).",
+      "fingerprint": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "id": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "title_en": "The Czech Republic could issue an anti-air defense contract next year, said Zbyn",
+      "lead_en": "The Czech Republic could issue a public contract next year for the acquisition of new air defence systems, which should be able to intervene in tactical ballistic missiles, told Czech journalists on Wednesday at the visit to Israel by Minister of Defence Jaromír Zbyna (SPD). The Czech delegation has received offers that could allow faster acquisition of air defense systems than originally anticipated, mentioned by Minister Petr Macinka (Motorists).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 8,
+        "foreign_affairs": 2
+      },
+      "topics": [
+        "security",
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/ceska-republika-ministerstvo-obrany-systemy-protivzdusne-obrany-jaromir-zuna_2611180759_elev",
+      "published_utc": "2026-11-18T06:59:00Z",
+      "title_raw": "Česko se poohlíží po systémech protivzdušné obrany. Ve hře jsou izraelské, ale také evropské systémy",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat také balistické střely. Českým novinářům to 18.",
+      "fingerprint": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "id": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "title_en": "The Czech Republic is looking for air defense systems. Israeli but also European systems are in play",
+      "lead_en": "The Czech Republic could issue a public contract next year to purchase new air defence systems, which should also be capable of interfering with ballistic missiles. 18 to Czech journalists.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 8,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/miklosko-17-listopad-fico-slovensko_2611171910_elev",
+      "published_utc": "2026-11-17T18:10:00Z",
+      "title_raw": "Mikloško: Celé Slovensko je dnes v pohybu. Fico nás sjednotil tím, že chtěl 17. listopad zrušit",
+      "lead_raw": "Česko i Slovensko si připomínají 17. listopad.",
+      "fingerprint": "88f4e6026e47ee5f7b9a948dadc48ec3639d8d658fe68217df2dd656b95e0008",
+      "id": "88f4e6026e47ee5f7b9a948dadc48ec3639d8d658fe68217df2dd656b95e0008",
+      "title_en": "Mikloško: The whole of Slovakia is moving today. Fico united us by wanting to cancel November 17",
+      "lead_en": "Both the Czech Republic and Slovakia recall November 17.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
+      "published_utc": "2026-11-17T15:19:49Z",
+      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
+      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
+      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "title_en": "The munitions initiative provides Ukraine with over 60 percent of the ammunition, said Landovský",
+      "lead_en": "The ammunition initiative provides more than 60% of artillery ammunition for Ukraine, after the meeting of the Defence Ministers of the countries of the European Union (EU) in Brussels mentioned Jakub Landovský from the Czech Ministry of Defence. On Tuesday afternoon, he said that new contributions from some countries will be announced in NATO.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 6,
+        "foreign_affairs": 7
+      },
+      "topics": [
+        "foreign_affairs",
+        "security",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "argos"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/general-snajdarek-od-ledna-povede-sekci-rozvoje-sil-ministerstva-obrany-rekl-zuna-379692",
+      "published_utc": "2026-11-17T14:32:07Z",
+      "title_raw": "Generál Šnajdárek od ledna povede sekci rozvoje sil ministerstva obrany, řekl Zůna",
+      "lead_raw": "Brigádní generál Petr Šnajdárek nastoupí od ledna nadcházejícího roku do čela sekce rozvoje sil ministerstva obrany. Skončí ve funkci ředitele sekce komunikačních a informačních systémů, kde ho nahradí Jan Jelínek, sdělil ministr obrany Jaromír Zůna (za SPD) při své návštěvě Izraele, kde je společně s premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "id": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "title_en": "General Šnajdar has been leading the Department of Defence Force Development since January, said Zbyna",
+      "lead_en": "Brigadier General Petr Šnajdar will be taking the lead from January of the coming year in the Department of Defence Force Development. He will end up as Director of the Communication and Information Systems Section, where Jan Jelinek will replace him, and the Defence Minister Jaromír Zbyn (behind the SPD) told him in his visit to Israel, where he is with Prime Minister Andrei Babiš (YES).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 4,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "security",
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "translation_provider": "argos"
+    }
+  ]
+}
