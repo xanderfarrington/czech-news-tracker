@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
 
 """
-Czech News Tracker
-==================
+CZECH NEWS TRACKER — VERSION 3
+==============================
 
-Collects, classifies, translates, and archives Czech news.
+Czech political, security, and foreign affairs monitoring.
 
-Sources:
-    iROZHLAS Domestic
-    iROZHLAS World
-    CT24
-    Seznam Zpravy
-    Aktualne.cz
+Features:
+- RSS collection from major Czech news outlets
+- Context-aware, rule-based relevance filtering
+- Three topic categories
+- NLLB-200 Czech-to-English translation
+- CPU-only batch translation
+- Deduplication
+- Rolling 48-hour news feeds
+- Permanent archive
+- Translation caching across runs
+- Automatic retranslation of older model outputs
 
-Topics:
-    politics
-    security
-    foreign_affairs
-
-Translation:
-    Argos Translate (Czech -> English)
-    Local inference; no external translation API.
+No translation API keys required.
 
 Outputs:
     data/articles_latest.json
@@ -43,18 +41,22 @@ import unicodedata
 
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from urllib.parse import (
+    urlsplit,
+    urlunsplit,
+    parse_qsl,
+    urlencode,
+)
 
 import requests
 import feedparser
+import torch
 
 from bs4 import BeautifulSoup
 
-import torch
-
 from transformers import (
-    MarianMTModel,
-    MarianTokenizer,
+    AutoTokenizer,
+    AutoModelForSeq2SeqLM,
 )
 
 
@@ -69,17 +71,35 @@ logging.basicConfig(
 
 LOG = logging.getLogger("czech-news")
 
+
 DATA_DIR = Path("data")
 
-KEEP_HOURS = int(os.getenv("KEEP_HOURS", "48"))
+KEEP_HOURS = int(
+    os.getenv("KEEP_HOURS", "48")
+)
 
-# Set to 0 for unlimited translation.
-TRANSLATE_LIMIT = int(os.getenv("TRANSLATE_LIMIT", "60"))
+TRANSLATE_LIMIT = int(
+    os.getenv("TRANSLATE_LIMIT", "60")
+)
+
+BATCH_SIZE = int(
+    os.getenv("BATCH_SIZE", "4")
+)
+
+MODEL_NAME = "facebook/nllb-200-distilled-600M"
+
+TRANSLATION_VERSION = "nllb200-v1"
+
+SOURCE_LANGUAGE = "ces_Latn"
+TARGET_LANGUAGE = "eng_Latn"
 
 TIMEOUT = 20
 
 HEADERS = {
-    "User-Agent": "CzechNewsTracker/2.0 (research news monitor)",
+    "User-Agent": (
+        "Mozilla/5.0 "
+        "(compatible; CzechNewsTracker/3.0)"
+    ),
     "Accept": "application/rss+xml, application/xml, text/xml, */*",
     "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
 }
@@ -92,7 +112,7 @@ TOPICS = (
 
 
 # ============================================================
-# SOURCES
+# NEWS SOURCES
 # ============================================================
 
 SOURCES = {
@@ -121,181 +141,31 @@ SOURCES = {
 
 
 # ============================================================
-# CLASSIFICATION KEYWORDS
+# CLASSIFICATION RULES
 # ============================================================
 
-# Keywords are stored without Czech diacritics.
-# Text is normalized before classification.
-#
-# Prefix matching accommodates Czech grammatical inflections.
+"""
+Unlike the previous version, merely mentioning Germany,
+Russia, or Ukraine does not qualify an article as foreign
+affairs.
 
-TOPIC_KEYWORDS = {
+The classifier looks for:
+1. Czech relevance
+2. Substantive political/security/foreign-policy indicators
+3. Strong exclusion signals for unrelated content
 
-    "politics": [
+Czech words are normalized before matching.
 
-        # Government
-        "vlad",
-        "premier",
-        "predseda vlady",
-        "ministr",
-        "kabinet",
-
-        # Parliament
-        "parlament",
-        "snemovn",
-        "poslan",
-        "senat",
-        "senator",
-
-        # Elections and politics
-        "volb",
-        "voleb",
-        "koalic",
-        "opozic",
-        "politic",
-        "politick",
-        "zakon",
-        "legislativ",
-        "ustavn",
-        "referend",
-
-        # Parties
-        "hnuti ano",
-        "ano 2011",
-        "ods",
-        "stan",
-        "spolu",
-        "pirat",
-        "spd",
-        "motorist",
-        "top 09",
-        "kdu-csl",
-
-        # Institutions
-        "prezident",
-        "prazsky hrad",
-        "ustavni soud",
-
-    ],
-
-    "security": [
-
-        # Defense
-        "obran",
-        "armad",
-        "vojak",
-        "vojensk",
-        "vojsk",
-        "ozbrojen",
-
-        # NATO
-        "nato",
-        "severoatlantick",
-
-        # Military technology
-        "zbran",
-        "zbrojn",
-        "munic",
-        "raket",
-        "protivzdusn",
-        "dron",
-        "bezpilotn",
-        "stihack",
-        "letoun",
-        "f-35",
-        "tank",
-        "delostrelectv",
-
-        # Intelligence and security
-        "bezpecnost",
-        "kyber",
-        "hybridni hrozb",
-        "teror",
-        "sabotaz",
-        "spionaz",
-        "rozvedk",
-        "kontrarozvedk",
-        "tajne sluzb",
-        "bis",
-        "vzis",
-        "nukib",
-
-        # Conflict
-        "valk",
-        "invaz",
-        "mobilizac",
-        "vojenska operac",
-
-    ],
-
-    "foreign_affairs": [
-
-        # Diplomacy
-        "diplomac",
-        "diplomat",
-        "zahranic",
-        "mezinarodn",
-        "velvyslan",
-        "ambasad",
-        "bilateral",
-        "summit",
-
-        # EU
-        "evropska unie",
-        "evropske unie",
-        "evropska komise",
-        "evropsky parlament",
-        "evropska rada",
-        "brusel",
-        "unijn",
-
-        # International organizations
-        "nato",
-        "osn",
-        "visegrad",
-        "v4",
-
-        # Foreign countries
-        "ukrajin",
-        "rusk",
-        "rusko",
-        "slovensk",
-        "polsk",
-        "nemeck",
-        "cina",
-        "cinsk",
-        "spojene staty",
-        "washington",
-        "izrael",
-        "iran",
-
-        # Foreign policy
-        "sankc",
-        "strategicke partnerstv",
-        "vojenska pomoc",
-
-    ],
-
-}
+This remains a rule-based classifier, not a semantic model.
+"""
 
 
-# ============================================================
-# CZECH RELEVANCE
-# ============================================================
+# Direct references to Czechia or Czech institutions.
 
-# These are higher-confidence Czech-specific references.
-# Generic terms such as "government" or "president"
-# are deliberately excluded.
+CZECH_SIGNALS = [
 
-CZECH_KEYWORDS = [
-
+    "cesk",
     "cesko",
-    "ceska republika",
-    "ceske republiky",
-    "cesky",
-    "ceska",
-    "ceske",
-    "ceskem",
     "cesku",
 
     "praha",
@@ -304,15 +174,20 @@ CZECH_KEYWORDS = [
 
     "snemovn",
     "prazsky hrad",
+
     "armada cr",
 
     "babis",
-    "pavel",
+    "petr pavel",
+    "metnar",
+    "macinka",
+    "zuna",
+
     "hnuti ano",
     "ods",
     "kdu-csl",
     "top 09",
-    "motorist",
+    "motoriste",
 
     "ceska televize",
     "cesky rozhlas",
@@ -321,8 +196,302 @@ CZECH_KEYWORDS = [
 ]
 
 
+# Generic Czech political institutions and processes.
+
+POLITICAL_SIGNALS = [
+
+    "vlad",
+    "premier",
+    "predseda vlady",
+
+    "ministr",
+    "ministerstv",
+    "kabinet",
+
+    "parlament",
+    "snemovn",
+    "poslan",
+
+    "senat",
+    "senator",
+
+    "volb",
+    "voleb",
+
+    "koalic",
+    "opozic",
+
+    "politick",
+    "zakon",
+    "legislativ",
+
+    "ustavn",
+    "referend",
+
+    "prezident",
+
+    "rozpoct",
+    "verejna politika",
+
+    "ustavni soud",
+]
+
+
+# Specific national security, defense, and military terms.
+
+SECURITY_SIGNALS = [
+
+    "ministerstvo obrany",
+
+    "armad",
+    "vojak",
+    "vojensk",
+    "ozbrojene sily",
+
+    "obran",
+    "protivzdusn",
+
+    "zbrojen",
+    "zbrojni prumysl",
+
+    "munic",
+    "balistick",
+    "strel",
+    "raket",
+
+    "stihack",
+    "f-35",
+
+    "bezpilotn",
+    "dron",
+
+    "kybernetick",
+    "kyberutok",
+
+    "bezpecnost",
+    "bezpecnostni",
+
+    "teror",
+    "bombov",
+
+    "spionaz",
+    "sabotaz",
+
+    "kontrarozved",
+    "zpravodajsk",
+
+    "tajne sluzb",
+
+    "bis",
+    "nukib",
+
+    "hybridni hrozb",
+
+    "vojensky konflikt",
+    "valecny konflikt",
+
+    "mobilizac",
+
+    "vojenska pomoc",
+]
+
+
+# Stronger indicators of foreign policy and diplomacy.
+
+FOREIGN_POLICY_SIGNALS = [
+
+    "diplomac",
+    "diplomat",
+
+    "zahranicni politika",
+
+    "ministerstvo zahranici",
+
+    "mezinarodni vztah",
+
+    "velvyslan",
+    "ambasad",
+
+    "bilateral",
+    "dohoda mezi staty",
+
+    "mezistatni",
+
+    "summit",
+
+    "evropska unie",
+    "evropske unie",
+
+    "evropska komise",
+    "evropsky parlament",
+    "evropska rada",
+
+    "brusel",
+
+    "nato",
+    "severoatlantick",
+
+    "osn",
+
+    "sankc",
+    "embarg",
+
+    "zahranicni pomoc",
+
+    "strategicke partnerstv",
+
+    "koalice ochotnych",
+
+    "mezinarodni spoluprace",
+
+    "mezinarodni jednani",
+]
+
+
+# Geopolitical indicators.
+#
+# These provide supporting evidence, but cannot qualify
+# an article for foreign affairs on their own.
+
+GEOPOLITICAL_SIGNALS = [
+
+    "ukrajin",
+    "rusko",
+    "rusk",
+
+    "cina",
+    "cinsk",
+
+    "spojene staty",
+    "washington",
+
+    "nemeck",
+    "slovensk",
+    "polsk",
+
+    "izrael",
+    "iran",
+
+    "valka",
+    "invaze",
+
+    "geopolit",
+]
+
+
+# Additional indicators for cross-border political decisions.
+
+CROSS_BORDER_POLICY_SIGNALS = [
+
+    "viz",
+    "zakaz vstupu",
+    "vstup do ceska",
+
+    "hranice",
+    "migrac",
+
+    "sankc",
+    "embarg",
+
+    "mezinarodni dohoda",
+
+    "setkani s",
+    "jednani s",
+
+    "kancler",
+    "prezident",
+    "premier",
+
+    "zahranicni ministr",
+
+    "vojenska pomoc",
+]
+
+
+# Exclude clearly unrelated content.
+#
+# A strong, specific policy or security signal can override
+# an exclusion when the article has substantive relevance.
+
+EXCLUSION_SIGNALS = [
+
+    # Sports
+    "tenis",
+    "fotbal",
+    "hokej",
+    "sportovn",
+    "sportovec",
+    "sportovkyne",
+
+    "wta",
+    "atp",
+    "liga mistru",
+
+    "turnaj",
+    "golf",
+    "deblist",
+
+    # Entertainment and culture
+    "divadeln",
+    "festival",
+    "koncert",
+
+    "hudebn",
+    "filmov",
+
+    "herec",
+    "herecka",
+
+    "celebr",
+    "reality show",
+
+    # Lifestyle
+    "recept",
+    "vareni",
+
+    "moda",
+    "kosmetik",
+
+    "horoskop",
+    "celebrity",
+]
+
+
+# Very specific terms that can override a content exclusion.
+
+HIGH_CONFIDENCE_SIGNALS = [
+
+    "ministerstvo obrany",
+    "ministerstvo zahranici",
+
+    "protivzdusna obrana",
+
+    "balistick",
+    "vojenska pomoc",
+
+    "bezpecnostni informacni sluzba",
+
+    "bombove vyhruzk",
+    "teroristick",
+
+    "kyberneticky utok",
+    "spionaz",
+    "sabotaz",
+
+    "sankce",
+    "zakaz vstupu",
+
+    "vladni narizeni",
+    "verejna zakazka",
+    "zakon",
+    "legislativ",
+
+    "diplomaticka jednani",
+]
+
+
 # ============================================================
-# HELPERS
+# GENERAL HELPERS
 # ============================================================
 
 def utcnow():
@@ -330,13 +499,17 @@ def utcnow():
 
 
 def timestamp(dt):
+
     return dt.astimezone(timezone.utc).strftime(
         "%Y-%m-%dT%H:%M:%SZ"
     )
 
 
 def normalize_space(text):
-    return " ".join(str(text or "").split()).strip()
+
+    return " ".join(
+        str(text or "").split()
+    ).strip()
 
 
 def normalize_text(text):
@@ -347,27 +520,31 @@ def normalize_text(text):
     )
 
     return "".join(
-        char for char in text
-        if not unicodedata.combining(char)
+        character
+        for character in text
+        if not unicodedata.combining(character)
     )
 
 
 def matches(text, keyword):
 
-    """
-    Match keyword stems at word beginnings.
-
-    Example:
-        'ministr' matches 'ministra' and 'ministrem'.
-    """
-
     keyword = normalize_text(keyword)
 
+    pattern = (
+        r"(?<!\w)"
+        + re.escape(keyword)
+    )
+
     return bool(
-        re.search(
-            r"(?<!\w)" + re.escape(keyword),
-            text
-        )
+        re.search(pattern, text)
+    )
+
+
+def count_matches(text, keywords):
+
+    return sum(
+        matches(text, keyword)
+        for keyword in keywords
     )
 
 
@@ -380,9 +557,11 @@ def hash_key(text):
 
 def normalize_url(url):
 
-    parts = urlsplit(normalize_space(url))
+    parts = urlsplit(
+        normalize_space(url)
+    )
 
-    filtered_query = [
+    query = [
 
         (key, value)
 
@@ -404,7 +583,7 @@ def normalize_url(url):
         parts.scheme.lower(),
         parts.netloc.lower(),
         parts.path.rstrip("/") or "/",
-        urlencode(filtered_query),
+        urlencode(query),
         "",
     ))
 
@@ -441,6 +620,7 @@ def short_lead(text):
 # ============================================================
 
 SESSION = requests.Session()
+
 SESSION.headers.update(HEADERS)
 
 
@@ -465,7 +645,7 @@ def fetch_feed(url):
                 return parsed.entries
 
             LOG.warning(
-                "Feed returned no entries: %s",
+                "Empty RSS feed: %s",
                 url
             )
 
@@ -485,13 +665,13 @@ def fetch_feed(url):
 
 def parse_date(entry):
 
-    for key in (
+    for field in (
         "published_parsed",
         "updated_parsed",
         "created_parsed",
     ):
 
-        value = entry.get(key)
+        value = entry.get(field)
 
         if value:
 
@@ -502,8 +682,13 @@ def parse_date(entry):
                     timezone.utc
                 )
 
-            except Exception:
-                continue
+            except (
+                ValueError,
+                TypeError,
+                OverflowError
+            ):
+
+                pass
 
     return None
 
@@ -511,7 +696,6 @@ def parse_date(entry):
 def collect_articles():
 
     articles = []
-
     successful_sources = 0
 
     for source, feeds in SOURCES.items():
@@ -520,10 +704,12 @@ def collect_articles():
 
         for feed in feeds:
 
-            entries = fetch_feed(feed)
+            # Collect all configured feeds rather than
+            # treating additional feeds as fallbacks.
 
-            if entries:
-                break
+            entries.extend(
+                fetch_feed(feed)
+            )
 
         if entries:
             successful_sources += 1
@@ -545,7 +731,6 @@ def collect_articles():
             if not title or not url or not published:
                 continue
 
-            # Skip future-dated entries.
             if published > utcnow() + timedelta(minutes=10):
                 continue
 
@@ -592,98 +777,249 @@ def collect_articles():
 
 
 # ============================================================
-# CLASSIFICATION
+# IMPROVED CLASSIFICATION
 # ============================================================
 
 def classify(article):
 
     title = normalize_text(
-        article["title_raw"]
+        article.get("title_raw", "")
     )
 
     lead = normalize_text(
-        article["lead_raw"]
+        article.get("lead_raw", "")
     )
 
     text = title + " " + lead
 
-    scores = {}
+    source = article.get("source", "")
 
-    for topic, keywords in TOPIC_KEYWORDS.items():
+    # --------------------------------------------------------
+    # 1. CZECH RELEVANCE
+    # --------------------------------------------------------
 
-        scores[topic] = (
+    czech_score = (
 
-            3 * sum(
-                matches(title, word)
-                for word in keywords
-            )
-
-            + sum(
-                matches(lead, word)
-                for word in keywords
-            )
-
+        3 * count_matches(
+            title,
+            CZECH_SIGNALS
         )
+
+        + count_matches(
+            lead,
+            CZECH_SIGNALS
+        )
+
+    )
+
+    # Domestic feed provides additional Czech context,
+    # but does not automatically qualify an article.
+
+    domestic_source = (
+        source == "iROZHLAS (Domestic)"
+    )
+
+    domestic_institution = (
+        count_matches(
+            text,
+            POLITICAL_SIGNALS
+        ) > 0
+    )
+
+    czech_related = (
+        czech_score > 0
+        or (
+            domestic_source
+            and domestic_institution
+        )
+    )
+
+    # --------------------------------------------------------
+    # 2. TOPIC SIGNALS
+    # --------------------------------------------------------
+
+    political_score = (
+
+        3 * count_matches(
+            title,
+            POLITICAL_SIGNALS
+        )
+
+        + count_matches(
+            lead,
+            POLITICAL_SIGNALS
+        )
+
+    )
+
+    security_score = (
+
+        3 * count_matches(
+            title,
+            SECURITY_SIGNALS
+        )
+
+        + count_matches(
+            lead,
+            SECURITY_SIGNALS
+        )
+
+    )
+
+    foreign_policy_score = (
+
+        3 * count_matches(
+            title,
+            FOREIGN_POLICY_SIGNALS
+        )
+
+        + count_matches(
+            lead,
+            FOREIGN_POLICY_SIGNALS
+        )
+
+    )
+
+    geopolitical_score = (
+
+        2 * count_matches(
+            title,
+            GEOPOLITICAL_SIGNALS
+        )
+
+        + count_matches(
+            lead,
+            GEOPOLITICAL_SIGNALS
+        )
+
+    )
+
+    cross_border_score = count_matches(
+        text,
+        CROSS_BORDER_POLICY_SIGNALS
+    )
+
+    # --------------------------------------------------------
+    # 3. EXCLUSION FILTER
+    # --------------------------------------------------------
+
+    exclusion_score = count_matches(
+        text,
+        EXCLUSION_SIGNALS
+    )
+
+    high_confidence = count_matches(
+        text,
+        HIGH_CONFIDENCE_SIGNALS
+    ) > 0
+
+    # Dedicated sports pages are ordinarily excluded.
+    # Policy reporting about athletes or visas can survive
+    # when accompanied by a high-confidence policy signal.
+
+    sport_url = "/sport" in article.get(
+        "url",
+        ""
+    ).lower()
+
+    if (
+        sport_url
+        and not high_confidence
+    ):
+        return False
+
+    # Exclude unrelated culture, entertainment, and sports.
+
+    if (
+        exclusion_score > 0
+        and not high_confidence
+    ):
+        return False
+
+    # --------------------------------------------------------
+    # 4. CLASSIFY
+    # --------------------------------------------------------
+
+    scores = {
+
+        "politics": political_score,
+
+        "security": security_score,
+
+        "foreign_affairs": foreign_policy_score,
+
+    }
+
+    topics = []
+
+    if czech_related:
+
+        # Politics:
+        # Must concern actual political institutions,
+        # government decisions, elections, or policy.
+
+        if political_score >= 3:
+
+            topics.append(
+                "politics"
+            )
+
+        # Security:
+        # Require a strong title indicator or multiple
+        # supporting signals.
+
+        if security_score >= 3:
+
+            topics.append(
+                "security"
+            )
+
+        # Foreign affairs:
+        # A country reference alone is insufficient.
+
+        if (
+            foreign_policy_score >= 3
+            or (
+                geopolitical_score >= 3
+                and cross_border_score >= 1
+            )
+        ):
+
+            topics.append(
+                "foreign_affairs"
+            )
+
+    # --------------------------------------------------------
+    # 5. STORE RESULTS
+    # --------------------------------------------------------
+
+    topics.sort(
+        key=lambda topic: (
+            -scores[topic],
+            topic
+        )
+    )
 
     article["topic_scores"] = scores
 
-    article["topics"] = [
-
-        topic
-
-        for topic in TOPICS
-
-        if scores[topic] > 0
-
-    ]
-
-    article["topics"].sort(
-        key=lambda topic: -scores[topic]
-    )
+    article["topics"] = topics
 
     article["primary_topic"] = (
-        article["topics"][0]
-        if article["topics"]
+        topics[0]
+        if topics
         else None
     )
 
-    # Czech relevance test.
-    czech_related = any(
-        matches(text, word)
-        for word in CZECH_KEYWORDS
-    )
+    article["czech_related"] = czech_related
 
-    # Domestic Czech political institutions often appear
-    # without the explicit word "Czech".
-    domestic_terms = [
-        "vlada",
-        "premier",
-        "snemovn",
-        "poslan",
-        "senat",
-        "ministr",
-        "volb",
-        "koalic",
-    ]
+    article["classification_version"] = "v3"
 
-    if article["source"] == "iROZHLAS (Domestic)":
-
-        czech_related = czech_related or any(
-            matches(text, word)
-            for word in domestic_terms
-        )
-
-    return bool(
-        article["topics"]
-        and czech_related
-    )
+    return bool(topics)
 
 
 # ============================================================
-# MARIANMT TRANSLATION
+# NLLB TRANSLATION
 # ============================================================
-
-MODEL_NAME = "Helsinki-NLP/opus-mt-cs-en"
 
 TOKENIZER = None
 MODEL = None
@@ -694,12 +1030,12 @@ TRANSLATION_CACHE = {}
 def load_translator():
 
     """
-    Initialize Helsinki-NLP Czech-to-English translation.
+    Load NLLB-200 distilled 600M.
 
-    Downloads the model from Hugging Face if necessary.
-    Subsequent runs can reuse the cached model.
+    The model is downloaded on first use and subsequently
+    loaded from the Hugging Face cache.
 
-    Translation is performed locally on CPU.
+    CPU-only inference.
     """
 
     global TOKENIZER, MODEL
@@ -707,88 +1043,105 @@ def load_translator():
     if MODEL is not None:
         return
 
-    LOG.info("Initializing MarianMT translator...")
+    LOG.info(
+        "Initializing NLLB-200 translator..."
+    )
 
-    # Limit excessive CPU thread usage.
     torch.set_num_threads(2)
 
-    TOKENIZER = MarianTokenizer.from_pretrained(
+    TOKENIZER = AutoTokenizer.from_pretrained(
+        MODEL_NAME,
+        src_lang=SOURCE_LANGUAGE
+    )
+
+    MODEL = AutoModelForSeq2SeqLM.from_pretrained(
         MODEL_NAME
     )
 
-    MODEL = MarianMTModel.from_pretrained(
-        MODEL_NAME
-    )
-
-    MODEL.eval()
     MODEL.to("cpu")
+    MODEL.eval()
 
     LOG.info(
-        "MarianMT Czech-English translation model ready."
+        "NLLB-200 Czech-English translator ready."
     )
 
 
-def translate(text):
+def translate_batch(texts):
 
     """
-    Translate Czech text into English.
+    Translate a batch of Czech strings to English.
 
-    Returns the translated text as a string.
+    Returns translated strings in the same order.
+
+    Uses NLLB language tokens to force English output.
     """
-
-    text = normalize_space(text)
-
-    if not text:
-        return ""
-
-    if text in TRANSLATION_CACHE:
-        return TRANSLATION_CACHE[text]
 
     if MODEL is None or TOKENIZER is None:
 
         raise RuntimeError(
-            "MarianMT model has not been initialized."
+            "Translation model not initialized."
         )
 
+    texts = [
+        normalize_space(text)
+        for text in texts
+    ]
+
+    if not texts:
+        return []
+
     inputs = TOKENIZER(
-        [text],
+        texts,
         return_tensors="pt",
         padding=True,
         truncation=True,
-        max_length=512,
+        max_length=512
+    )
+
+    target_id = TOKENIZER.convert_tokens_to_ids(
+        TARGET_LANGUAGE
     )
 
     with torch.inference_mode():
 
         outputs = MODEL.generate(
+
             **inputs,
+
+            forced_bos_token_id=target_id,
+
             max_new_tokens=256,
-            num_beams=4,
+
+            num_beams=3,
+
             early_stopping=True,
+
         )
 
-    translated = TOKENIZER.decode(
-        outputs[0],
+    translated = TOKENIZER.batch_decode(
+        outputs,
         skip_special_tokens=True
     )
 
-    translated = normalize_space(translated)
-
-    if not translated:
-
-        raise RuntimeError(
-            "MarianMT returned an empty translation."
-        )
-
-    TRANSLATION_CACHE[text] = translated
-
-    return translated
+    return [
+        normalize_space(text)
+        for text in translated
+    ]
 
 
 def needs_translation(article):
 
+    """
+    Retranslate records from older translation engines.
+
+    This automatically replaces previous Argos and MarianMT
+    translations without requiring the archive to be deleted.
+    """
+
     return (
-        not article.get("title_en")
+        article.get("translation_version")
+        != TRANSLATION_VERSION
+        or not article.get("title_en")
         or (
             article.get("lead_raw")
             and not article.get("lead_en")
@@ -796,44 +1149,185 @@ def needs_translation(article):
     )
 
 
-def translate_article(article):
+def translate_articles(articles):
 
     """
-    Translate missing English fields.
+    Translate article headlines and summaries in batches.
 
-    Existing translations are preserved.
+    Only translates missing or outdated records.
+
+    Each article uses one combined model input batch entry
+    for its headline and one for its summary.
     """
 
-    if not article.get("title_en"):
+    pending = [
+        article
+        for article in articles
+        if needs_translation(article)
+    ]
 
-        article["title_en"] = translate(
-            article["title_raw"]
+    LOG.info(
+        "Articles requiring translation: %s",
+        len(pending)
+    )
+
+    if not pending:
+        return 0
+
+    # Prioritize recent articles.
+
+    cutoff = utcnow() - timedelta(
+        hours=KEEP_HOURS
+    )
+
+    def priority(article):
+
+        published = datetime.strptime(
+            article["published_utc"],
+            "%Y-%m-%dT%H:%M:%SZ"
+        ).replace(
+            tzinfo=timezone.utc
         )
 
-    if (
-        article.get("lead_raw")
-        and not article.get("lead_en")
+        return (
+            0 if published >= cutoff else 1,
+            published
+        )
+
+    pending.sort(
+        key=priority
+    )
+
+    if TRANSLATE_LIMIT > 0:
+
+        pending = pending[:TRANSLATE_LIMIT]
+
+    load_translator()
+
+    translated_count = 0
+
+    for start in range(
+        0,
+        len(pending),
+        BATCH_SIZE
     ):
 
-        article["lead_en"] = translate(
-            article["lead_raw"]
-        )
+        batch = pending[
+            start:start + BATCH_SIZE
+        ]
 
-    complete = (
-        bool(article.get("title_en"))
-        and (
-            not article.get("lead_raw")
-            or bool(article.get("lead_en"))
-        )
-    )
+        # Each article has two fields.
 
-    article["translation_status"] = (
-        "translated" if complete else "partial"
-    )
+        texts = []
+        mapping = []
 
-    article["translation_provider"] = "marianmt"
+        for article in batch:
 
-    return article
+            for field in (
+                "title_raw",
+                "lead_raw"
+            ):
+
+                text = article.get(field, "")
+
+                if text:
+
+                    texts.append(text)
+
+                    mapping.append(
+                        (article, field)
+                    )
+
+        if not texts:
+            continue
+
+        try:
+
+            translated = translate_batch(
+                texts
+            )
+
+            if len(translated) != len(mapping):
+                raise RuntimeError(
+                    "Translation output count mismatch."
+                )
+
+            # Collect outputs before modifying articles.
+
+            staged = {}
+
+            for (
+                (article, field),
+                english
+            ) in zip(mapping, translated):
+
+                if not english:
+                    raise RuntimeError(
+                        "Empty translation returned."
+                    )
+
+                staged.setdefault(
+                    id(article),
+                    {}
+                )[field] = english
+
+            for article in batch:
+
+                result = staged.get(
+                    id(article),
+                    {}
+                )
+
+                title_en = result.get(
+                    "title_raw"
+                )
+
+                lead_en = result.get(
+                    "lead_raw"
+                )
+
+                if not title_en:
+                    continue
+
+                if (
+                    article.get("lead_raw")
+                    and not lead_en
+                ):
+                    continue
+
+                article["title_en"] = title_en
+
+                article["lead_en"] = lead_en
+
+                article["translation_provider"] = "nllb200"
+
+                article["translation_version"] = (
+                    TRANSLATION_VERSION
+                )
+
+                article["translation_status"] = (
+                    "translated"
+                )
+
+                translated_count += 1
+
+            LOG.info(
+                "Translated %s / %s articles",
+                translated_count,
+                len(pending)
+            )
+
+        except Exception as exc:
+
+            LOG.warning(
+                "Batch translation failed: %s",
+                exc
+            )
+
+            # Preserve previous translations for retry.
+            # Do not falsely mark old translations as NLLB.
+
+    return translated_count
 
 
 # ============================================================
@@ -848,15 +1342,24 @@ def prepare(article):
         article.get("url", "")
     )
 
-    article["fingerprint"] = hash_key(url)
+    article["fingerprint"] = hash_key(
+        url
+    )
 
     article.setdefault(
         "id",
         hash_key(url)
     )
 
-    article.setdefault("title_en", None)
-    article.setdefault("lead_en", None)
+    article.setdefault(
+        "title_en",
+        None
+    )
+
+    article.setdefault(
+        "lead_en",
+        None
+    )
 
     article.setdefault(
         "translation_status",
@@ -869,10 +1372,9 @@ def prepare(article):
 def merge_articles(articles):
 
     """
-    Deduplicate using normalized URL.
+    Deduplicate by normalized URL.
 
-    Preserve translations from previous runs.
-    Prefer records with more complete summaries.
+    Preserve translations and prefer longer original leads.
     """
 
     merged = {}
@@ -886,28 +1388,72 @@ def merge_articles(articles):
         if key not in merged:
 
             merged[key] = article
+
             continue
 
         old = merged[key]
 
-        if len(article.get("lead_raw", "")) > len(
+        if len(
+            article.get("lead_raw", "")
+        ) > len(
             old.get("lead_raw", "")
         ):
 
-            old["lead_raw"] = article["lead_raw"]
+            old["lead_raw"] = article[
+                "lead_raw"
+            ]
 
-        for field in (
-            "title_en",
-            "lead_en",
-            "translation_provider",
+        # Preserve the newest available translation version.
+
+        old_version = old.get(
+            "translation_version"
+        )
+
+        new_version = article.get(
+            "translation_version"
+        )
+
+        if (
+            new_version == TRANSLATION_VERSION
+            and old_version != TRANSLATION_VERSION
         ):
 
-            if not old.get(field):
-                old[field] = article.get(field)
+            for field in (
+                "title_en",
+                "lead_en",
+                "translation_status",
+                "translation_provider",
+                "translation_version",
+            ):
+
+                old[field] = article.get(
+                    field
+                )
+
+        else:
+
+            for field in (
+                "title_en",
+                "lead_en",
+            ):
+
+                if not old.get(field):
+                    old[field] = article.get(field)
+
+            if not old.get("translation_version"):
+                old["translation_version"] = new_version
+
+            if not old.get("translation_provider"):
+                old["translation_provider"] = article.get(
+                    "translation_provider"
+                )
 
     return sorted(
         merged.values(),
-        key=lambda a: a["published_utc"],
+        key=lambda article: article.get(
+            "published_utc",
+            ""
+        ),
         reverse=True
     )
 
@@ -928,24 +1474,25 @@ def read_json(path):
     if not content:
         return []
 
-    try:
-
-        data = json.loads(content)
-
-    except json.JSONDecodeError as exc:
-
-        raise RuntimeError(
-            f"Invalid JSON in {path}: {exc}"
-        ) from exc
+    data = json.loads(
+        content
+    )
 
     if isinstance(data, list):
         return data
 
     if isinstance(data, dict):
-        return data.get("articles", [])
+
+        articles = data.get(
+            "articles",
+            []
+        )
+
+        if isinstance(articles, list):
+            return articles
 
     raise ValueError(
-        f"Unexpected JSON structure: {path}"
+        f"Invalid JSON structure: {path}"
     )
 
 
@@ -958,7 +1505,9 @@ def write_json(path, articles, **metadata):
 
     payload = {
 
-        "updated_at_utc": timestamp(utcnow()),
+        "updated_at_utc": timestamp(
+            utcnow()
+        ),
 
         **metadata,
 
@@ -968,15 +1517,20 @@ def write_json(path, articles, **metadata):
 
     }
 
-    temporary = path.with_suffix(".tmp")
+    temporary = path.with_suffix(
+        ".tmp"
+    )
 
     temporary.write_text(
+
         json.dumps(
             payload,
             ensure_ascii=False,
             indent=2
         ),
+
         encoding="utf-8"
+
     )
 
     temporary.replace(path)
@@ -990,26 +1544,27 @@ def main():
 
     start = time.monotonic()
 
-    LOG.info("Czech News Tracker starting.")
+    LOG.info(
+        "Czech News Tracker v3 starting."
+    )
+
+    LOG.info(
+        "Translation: NLLB-200 distilled 600M"
+    )
 
     LOG.info(
         "Rolling window: %s hours",
         KEEP_HOURS
     )
 
-    LOG.info(
-        "Translation limit: %s",
-        TRANSLATE_LIMIT or "unlimited"
-    )
-
     # --------------------------------------------------------
-    # 1. COLLECT
+    # 1. COLLECT RSS ARTICLES
     # --------------------------------------------------------
 
     collected = collect_articles()
 
     # --------------------------------------------------------
-    # 2. LOAD HISTORICAL DATA
+    # 2. LOAD HISTORICAL ARCHIVE
     # --------------------------------------------------------
 
     existing = read_json(
@@ -1017,24 +1572,36 @@ def main():
     )
 
     LOG.info(
-        "Previously archived: %s",
+        "Existing archive: %s articles",
         len(existing)
     )
 
     # --------------------------------------------------------
-    # 3. MERGE AND CLASSIFY
+    # 3. MERGE AND DEDUPLICATE
     # --------------------------------------------------------
 
     merged = merge_articles(
         existing + collected
     )
 
+    LOG.info(
+        "Unique articles: %s",
+        len(merged)
+    )
+
+    # --------------------------------------------------------
+    # 4. CLASSIFY AND FILTER
+    # --------------------------------------------------------
+
     relevant = []
 
     for article in merged:
 
         if classify(article):
-            relevant.append(article)
+
+            relevant.append(
+                article
+            )
 
     LOG.info(
         "Relevant articles: %s",
@@ -1042,86 +1609,20 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 4. TRANSLATE
+    # 5. TRANSLATE
     # --------------------------------------------------------
 
-    pending = [
-        article
-        for article in relevant
-        if needs_translation(article)
-    ]
-
-    LOG.info(
-        "Articles awaiting translation: %s",
-        len(pending)
+    translated_count = translate_articles(
+        relevant
     )
 
-    translated_count = 0
-
-    if pending:
-
-        # Fail explicitly if the translation model cannot
-        # be initialized, rather than silently writing
-        # untranslated articles.
-
-        load_translator()
-
-        # Prioritize recent articles.
-        # Oldest pending articles are processed first
-        # within the rolling window.
-
-        cutoff = utcnow() - timedelta(
-            hours=KEEP_HOURS
-        )
-
-        def priority(article):
-
-            published = datetime.strptime(
-                article["published_utc"],
-                "%Y-%m-%dT%H:%M:%SZ"
-            ).replace(tzinfo=timezone.utc)
-
-            return (
-                0 if published >= cutoff else 1,
-                published
-            )
-
-        pending.sort(key=priority)
-
-        for article in pending:
-
-            if (
-                TRANSLATE_LIMIT > 0
-                and translated_count >= TRANSLATE_LIMIT
-            ):
-                break
-
-            try:
-
-                translate_article(article)
-
-                translated_count += 1
-
-                if translated_count % 10 == 0:
-
-                    LOG.info(
-                        "Translated %s articles",
-                        translated_count
-                    )
-
-            except Exception as exc:
-
-                LOG.warning(
-                    "Translation failed for %s: %s",
-                    article["url"],
-                    exc
-                )
-
     # --------------------------------------------------------
-    # 5. SAVE ARCHIVE
+    # 6. SAVE ARCHIVE
     # --------------------------------------------------------
 
-    archive = merge_articles(relevant)
+    archive = merge_articles(
+        relevant
+    )
 
     write_json(
         DATA_DIR / "articles_archive.json",
@@ -1129,7 +1630,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 6. BUILD ROLLING WINDOW
+    # 7. BUILD ROLLING 48-HOUR FEED
     # --------------------------------------------------------
 
     cutoff = utcnow() - timedelta(
@@ -1158,7 +1659,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 7. SAVE TOPIC FEEDS
+    # 8. BUILD TOPIC FEEDS
     # --------------------------------------------------------
 
     for topic in TOPICS:
@@ -1169,14 +1670,21 @@ def main():
 
             for article in latest
 
-            if topic in article.get("topics", [])
+            if topic in article.get(
+                "topics",
+                []
+            )
 
         ]
 
         write_json(
+
             DATA_DIR / f"articles_{topic}.json",
+
             subset,
+
             topic=topic
+
         )
 
         LOG.info(
@@ -1186,15 +1694,18 @@ def main():
         )
 
     # --------------------------------------------------------
-    # 8. SUMMARY
+    # 9. SUMMARY
     # --------------------------------------------------------
 
     fully_translated = sum(
-        article.get("translation_status") == "translated"
+        article.get("translation_version")
+        == TRANSLATION_VERSION
         for article in archive
     )
 
-    LOG.info("Collection complete.")
+    LOG.info(
+        "Collection complete."
+    )
 
     LOG.info(
         "Latest articles: %s",
@@ -1207,12 +1718,12 @@ def main():
     )
 
     LOG.info(
-        "New translations: %s",
+        "New NLLB translations: %s",
         translated_count
     )
 
     LOG.info(
-        "Total fully translated: %s",
+        "Total NLLB-translated articles: %s",
         fully_translated
     )
 
