@@ -4,22 +4,20 @@
 Czech News Tracker
 ==================
 
-Collector + Translator + Topic Classifier
+RSS Collector + Argos Translator + Topic Classifier
 
 Features:
-- Collect Czech news from multiple RSS feeds
-- Focus on politics, security, defense, and foreign affairs
+- Collect news from Czech RSS feeds
+- Filter for Czech politics, security, and foreign affairs
 - Translate Czech headlines and summaries into English
-- DeepL primary translation with Google Translate fallback
-- Rate-limit protection for Google Translate
-- Stop Google requests after receiving a rate-limit error
-- Preserve failed translations for future runs
-- Deduplicate articles across feeds
-- Maintain rolling 48-hour news feed
+- Use Argos Translate locally (no API keys or rate limits)
+- Preserve previously completed translations
+- Deduplicate articles
+- Maintain rolling 48-hour feed
 - Maintain permanent historical archive
-- Generate topic-specific JSON files
+- Generate topic-specific JSON feeds
 
-Output:
+Outputs:
     data/articles_latest.json
     data/articles_archive.json
     data/articles_politics.json
@@ -52,7 +50,9 @@ import requests
 import feedparser
 
 from bs4 import BeautifulSoup
-from deep_translator import GoogleTranslator
+
+import argostranslate.package
+import argostranslate.translate
 
 
 # ============================================================
@@ -66,7 +66,6 @@ logging.basicConfig(
 
 LOG = logging.getLogger("czech-news")
 
-
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -77,65 +76,29 @@ HEADERS = {
     "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
 }
 
-
 TIMEOUT = 20
 MAX_RETRIES = 3
 RETRY_SLEEP = 2
 
-KEEP_HOURS = int(
-    os.getenv("KEEP_HOURS", "48")
-)
+KEEP_HOURS = int(os.getenv("KEEP_HOURS", "48"))
 
-TRANSLATE_LIMIT = int(
-    os.getenv("TRANSLATE_LIMIT", "10")
-)
-
-DEEPL_API_KEY = os.getenv(
-    "DEEPL_API_KEY",
-    ""
-)
-
-DEEPL_API_URL = os.getenv(
-    "DEEPL_API_URL",
-    "https://api-free.deepl.com/v2/translate"
-)
-
-TRANSLATION_PROVIDER = os.getenv(
-    "TRANSLATION_PROVIDER",
-    "auto"
-).lower()
+# Maximum number of articles translated per run.
+# Set to 0 for unlimited translation.
+TRANSLATE_LIMIT = int(os.getenv("TRANSLATE_LIMIT", "30"))
 
 OUT_JSON = Path(
-    os.getenv(
-        "OUT_JSON",
-        "data/articles_latest.json"
-    )
+    os.getenv("OUT_JSON", "data/articles_latest.json")
 )
 
 ARCHIVE_JSON = Path(
-    os.getenv(
-        "ARCHIVE_JSON",
-        "data/articles_archive.json"
-    )
+    os.getenv("ARCHIVE_JSON", "data/articles_archive.json")
 )
 
-
-# ============================================================
-# TRANSLATION RATE-LIMIT SETTINGS
-# ============================================================
-
-# Minimum seconds between Google translation requests.
-GOOGLE_REQUEST_INTERVAL = 2.0
-
-# If Google returns a rate-limit error, stop requesting
-# translations for the remainder of the workflow run.
-GOOGLE_RATE_LIMITED = False
-
-# Timestamp of the most recent Google translation attempt.
-LAST_TRANSLATION_TIME = 0.0
-
-# Prevent repeated translation of identical text.
-TRANSLATION_CACHE = {}
+TOPICS = [
+    "politics",
+    "security",
+    "foreign_affairs",
+]
 
 
 # ============================================================
@@ -178,14 +141,12 @@ SOURCES: Dict[str, Dict] = {
 
 
 # ============================================================
-# TOPIC CLASSIFICATION
+# TOPIC KEYWORDS
 # ============================================================
 
 TOPIC_KEYWORDS = {
 
     "politics": [
-
-        # Government
         "vlada",
         "vladni",
         "premier",
@@ -193,8 +154,6 @@ TOPIC_KEYWORDS = {
         "ministr",
         "ministerstvo",
         "kabinet",
-
-        # Parliament
         "parlament",
         "poslanecka snemovna",
         "snemovna",
@@ -202,8 +161,6 @@ TOPIC_KEYWORDS = {
         "poslanci",
         "senat",
         "senator",
-
-        # Political processes
         "volby",
         "volebni",
         "koalice",
@@ -215,8 +172,6 @@ TOPIC_KEYWORDS = {
         "legislativa",
         "ustavni",
         "referendum",
-
-        # Political parties
         "ano 2011",
         "hnuti ano",
         "ods",
@@ -227,18 +182,12 @@ TOPIC_KEYWORDS = {
         "motoriste",
         "top 09",
         "kdu-csl",
-
-        # Institutions
         "prezident",
         "prazsky hrad",
         "ustavni soud",
-        "snemovni",
-
     ],
 
     "security": [
-
-        # Defense
         "obrana",
         "obranny",
         "ministerstvo obrany",
@@ -247,13 +196,9 @@ TOPIC_KEYWORDS = {
         "vojensky",
         "vojsko",
         "ozbrojene sily",
-
-        # NATO
         "nato",
         "aliance",
         "severoatlanticka",
-
-        # Defense technology
         "zbrane",
         "zbrojni",
         "munice",
@@ -267,8 +212,6 @@ TOPIC_KEYWORDS = {
         "f-35",
         "tank",
         "delostrelectvo",
-
-        # Security
         "bezpecnost",
         "narodni bezpecnost",
         "kyberneticka",
@@ -283,26 +226,19 @@ TOPIC_KEYWORDS = {
         "rozvedka",
         "kontrarozvedka",
         "tajne sluzby",
-
-        # Czech security institutions
         "bis",
         "vzis",
         "nukib",
         "generalni stab",
-
-        # Military conflict
         "valka",
         "invaze",
         "vojenska operace",
         "utok",
         "fronta",
         "mobilizace",
-
     ],
 
     "foreign_affairs": [
-
-        # Diplomacy
         "diplomacie",
         "diplomaticky",
         "zahranicni politika",
@@ -315,8 +251,6 @@ TOPIC_KEYWORDS = {
         "summit",
         "bilateralni",
         "mezinarodni",
-
-        # European Union
         "evropska unie",
         "evropske unie",
         "evropska komise",
@@ -324,15 +258,11 @@ TOPIC_KEYWORDS = {
         "evropska rada",
         "brusel",
         "unijni",
-
-        # International organizations
         "nato",
         "osn",
         "organizace spojenych narodu",
         "visegradska",
         "v4",
-
-        # Countries and regions
         "ukrajina",
         "ukrajinsky",
         "rusko",
@@ -350,26 +280,21 @@ TOPIC_KEYWORDS = {
         "washington",
         "izrael",
         "iran",
-
-        # International policy
         "sankce",
         "zahranicni pomoc",
         "vojenska pomoc",
         "mezinarodni obchod",
         "strategicke partnerstvi",
-
     ],
 
 }
 
 
 # ============================================================
-# CZECH RELEVANCE FILTER
+# CZECH RELEVANCE KEYWORDS
 # ============================================================
 
 CZECH_KEYWORDS = [
-
-    # Country
     "cesko",
     "ceska republika",
     "ceske republiky",
@@ -377,13 +302,9 @@ CZECH_KEYWORDS = [
     "ceska",
     "ceske",
     "ceskem",
-
-    # Cities
     "praha",
     "praze",
     "prazsky",
-
-    # Government
     "ceska vlada",
     "vlada",
     "premier",
@@ -394,45 +315,29 @@ CZECH_KEYWORDS = [
     "ministerstvo",
     "ministr",
     "parlament",
-
-    # Security institutions
     "prazsky hrad",
     "bis",
     "nukib",
     "armada cr",
-
-    # Political organizations
     "ods",
     "stan",
     "hnuti ano",
     "pirati",
     "spd",
     "motoriste",
-
-]
-
-
-TOPICS = [
-    "politics",
-    "security",
-    "foreign_affairs",
 ]
 
 
 # ============================================================
-# GENERAL UTILITIES
+# UTILITIES
 # ============================================================
 
 def utcnow():
-
     return datetime.now(timezone.utc)
 
 
 def normalize_space(text):
-
-    return " ".join(
-        (text or "").split()
-    ).strip()
+    return " ".join((text or "").split()).strip()
 
 
 def normalize_text(text):
@@ -451,14 +356,11 @@ def normalize_text(text):
 
 def keyword_match(text, keyword):
 
-    pattern = (
-        r"(?<!\w)"
-        + re.escape(keyword)
-    )
+    keyword = normalize_text(keyword)
 
-    return bool(
-        re.search(pattern, text)
-    )
+    pattern = r"(?<!\w)" + re.escape(keyword)
+
+    return bool(re.search(pattern, text))
 
 
 def normalize_url(url):
@@ -497,11 +399,7 @@ def normalize_title(text):
 
     text = normalize_text(text)
 
-    text = re.sub(
-        r"[^\w\s]",
-        "",
-        text
-    )
+    text = re.sub(r"[^\w\s]", "", text)
 
     return normalize_space(text)
 
@@ -555,12 +453,7 @@ def two_sentence_lead(text):
     ]
 
     if len(sentences) >= 2:
-
-        return (
-            sentences[0]
-            + " "
-            + sentences[1]
-        )
+        return sentences[0] + " " + sentences[1]
 
     return text[:400].rstrip()
 
@@ -572,13 +465,9 @@ def two_sentence_lead(text):
 def fetch_text(url):
 
     session = requests.Session()
-
     session.headers.update(HEADERS)
 
-    for attempt in range(
-        1,
-        MAX_RETRIES + 1
-    ):
+    for attempt in range(1, MAX_RETRIES + 1):
 
         try:
 
@@ -591,7 +480,6 @@ def fetch_text(url):
             response.raise_for_status()
 
             if response.content:
-
                 return response.content
 
         except requests.RequestException as exc:
@@ -605,10 +493,7 @@ def fetch_text(url):
             )
 
         if attempt < MAX_RETRIES:
-
-            time.sleep(
-                RETRY_SLEEP * attempt
-            )
+            time.sleep(RETRY_SLEEP * attempt)
 
     return None
 
@@ -627,9 +512,7 @@ def parse_date(entry):
 
             try:
 
-                timestamp = calendar.timegm(
-                    value
-                )
+                timestamp = calendar.timegm(value)
 
                 return datetime.fromtimestamp(
                     timestamp,
@@ -641,7 +524,6 @@ def parse_date(entry):
                 TypeError,
                 OverflowError
             ):
-
                 pass
 
     return None
@@ -658,9 +540,7 @@ def collect_from_rss(source_name, feeds):
         if not content:
             continue
 
-        parsed = feedparser.parse(
-            content
-        )
+        parsed = feedparser.parse(content)
 
         if parsed.bozo and not parsed.entries:
 
@@ -689,14 +569,9 @@ def collect_from_rss(source_name, feeds):
                 or ""
             )
 
-            publication_date = parse_date(
-                entry
-            )
+            publication_date = parse_date(entry)
 
-            if not title or not url:
-                continue
-
-            if not publication_date:
+            if not title or not url or not publication_date:
                 continue
 
             feed_rows.append({
@@ -713,23 +588,20 @@ def collect_from_rss(source_name, feeds):
 
                 "title_raw": title,
 
-                "lead_raw": two_sentence_lead(
-                    summary
-                ),
+                "lead_raw": two_sentence_lead(summary),
 
             })
 
         if feed_rows:
 
             rows.extend(feed_rows)
-
             break
 
     return rows
 
 
 # ============================================================
-# TOPIC CLASSIFICATION
+# CLASSIFICATION
 # ============================================================
 
 def classify_topics(article):
@@ -758,9 +630,7 @@ def classify_topics(article):
             if keyword_match(lead, keyword)
         )
 
-        scores[topic] = (
-            title_score + lead_score
-        )
+        scores[topic] = title_score + lead_score
 
     labels = [
         topic
@@ -776,13 +646,10 @@ def classify_topics(article):
     )
 
     article["topic_scores"] = scores
-
     article["topics"] = labels
 
     article["primary_topic"] = (
-        labels[0]
-        if labels
-        else None
+        labels[0] if labels else None
     )
 
     return article
@@ -808,10 +675,7 @@ def article_is_czech_related(article):
     if direct_match:
         return True
 
-    source = article.get(
-        "source",
-        ""
-    ).lower()
+    source = article.get("source", "").lower()
 
     if "domestic" in source:
 
@@ -843,148 +707,133 @@ def article_is_relevant(article):
     if not article.get("topics"):
         return False
 
-    return article_is_czech_related(
-        article
-    )
+    return article_is_czech_related(article)
 
 
 # ============================================================
-# TRANSLATION: DEEPL
+# ARGOS TRANSLATE
 # ============================================================
 
-def translate_deepl(text):
-
-    if not DEEPL_API_KEY:
-
-        raise RuntimeError(
-            "DeepL API key unavailable"
-        )
-
-    response = requests.post(
-
-        DEEPL_API_URL,
-
-        headers={
-            "Authorization": (
-                f"DeepL-Auth-Key {DEEPL_API_KEY}"
-            )
-        },
-
-        json={
-            "text": [text],
-            "source_lang": "CS",
-            "target_lang": "EN",
-        },
-
-        timeout=30
-
-    )
-
-    response.raise_for_status()
-
-    return response.json()[
-        "translations"
-    ][0]["text"]
+ARGOS_TRANSLATOR = None
+TRANSLATION_CACHE = {}
 
 
-# ============================================================
-# TRANSLATION: GOOGLE WITH RATE-LIMIT PROTECTION
-# ============================================================
+def setup_argos():
 
-class GoogleRateLimitError(Exception):
-    """Google Translate has rate-limited this run."""
+    """
+    Load the Czech-to-English Argos model.
 
+    If the model is not installed:
+      1. Fetch the Argos package index.
+      2. Find the Czech -> English model.
+      3. Download and install it.
 
-def translate_google(text):
+    Once installed, translation runs locally.
 
-    global GOOGLE_RATE_LIMITED
-    global LAST_TRANSLATION_TIME
+    Raises an error if the model cannot be installed.
+    """
 
-    # Circuit breaker: once rate-limited, stop Google
-    # translation requests until the next workflow run.
+    global ARGOS_TRANSLATOR
 
-    if GOOGLE_RATE_LIMITED:
+    if ARGOS_TRANSLATOR is not None:
+        return
 
-        raise GoogleRateLimitError(
-            "Google Translate disabled for this run."
-        )
+    LOG.info("Initializing Argos Translate...")
 
-    # Enforce a minimum interval between requests.
-
-    elapsed = (
-        time.monotonic()
-        - LAST_TRANSLATION_TIME
-    )
-
-    if elapsed < GOOGLE_REQUEST_INTERVAL:
-
-        time.sleep(
-            GOOGLE_REQUEST_INTERVAL - elapsed
-        )
-
-    translator = GoogleTranslator(
-        source="cs",
-        target="en"
-    )
+    # Check for an already installed translation model.
 
     try:
 
-        # Update before attempting the request.
-        # This also spaces retries after failures.
-
-        LAST_TRANSLATION_TIME = (
-            time.monotonic()
+        ARGOS_TRANSLATOR = (
+            argostranslate.translate
+            .get_translation_from_codes("cs", "en")
         )
 
-        translated = translator.translate(
-            text
-        )
+        if ARGOS_TRANSLATOR is not None:
 
-        return translated
-
-    except Exception as exc:
-
-        message = str(exc).lower()
-
-        if (
-            "too many requests" in message
-            or "429" in message
-            or "rate limit" in message
-        ):
-
-            GOOGLE_RATE_LIMITED = True
-
-            LOG.warning(
-                "Google Translate rate limit reached. "
-                "Disabling Google requests for this run."
+            LOG.info(
+                "Existing Czech-English model loaded."
             )
 
-            raise GoogleRateLimitError(
-                "Google Translate rate limit reached."
-            ) from exc
+            return
 
-        raise
+    except (ValueError, RuntimeError):
+        pass
 
+    LOG.info(
+        "Czech-English model not installed. Downloading..."
+    )
 
-# ============================================================
-# TRANSLATION: PROVIDER MANAGEMENT
-# ============================================================
+    # Download package index.
+
+    argostranslate.package.update_package_index()
+
+    available_packages = (
+        argostranslate.package.get_available_packages()
+    )
+
+    # Find Czech -> English.
+
+    matching_packages = [
+        package
+        for package in available_packages
+        if package.from_code == "cs"
+        and package.to_code == "en"
+    ]
+
+    if not matching_packages:
+
+        raise RuntimeError(
+            "No Czech-English Argos translation "
+            "model found in the package index."
+        )
+
+    package = matching_packages[0]
+
+    LOG.info(
+        "Downloading Argos model: Czech -> English"
+    )
+
+    download_path = package.download()
+
+    LOG.info(
+        "Installing Argos model..."
+    )
+
+    argostranslate.package.install_from_path(
+        download_path
+    )
+
+    # Load installed translator.
+
+    ARGOS_TRANSLATOR = (
+        argostranslate.translate
+        .get_translation_from_codes("cs", "en")
+    )
+
+    if ARGOS_TRANSLATOR is None:
+
+        raise RuntimeError(
+            "Argos translation model installation failed."
+        )
+
+    LOG.info(
+        "Argos Czech-English translation model ready."
+    )
+
 
 def translate_text(text):
 
     """
+    Translate Czech text into English locally.
+
     Returns:
         (translated_text, provider)
 
     Possible providers:
-        deepl
-        google
+        argos
         failed
-        rate_limited
-        disabled
         empty
-
-    Failed translations are never stored as English text.
     """
 
     text = normalize_space(text)
@@ -993,135 +842,61 @@ def translate_text(text):
         return "", "empty"
 
     if text in TRANSLATION_CACHE:
-
         return TRANSLATION_CACHE[text]
 
-    if TRANSLATION_PROVIDER == "none":
+    if ARGOS_TRANSLATOR is None:
 
-        return None, "disabled"
+        LOG.warning(
+            "Argos translator unavailable."
+        )
 
-    # --------------------------------------------------------
-    # 1. TRY DEEPL
-    # --------------------------------------------------------
+        return None, "failed"
 
-    if (
-        TRANSLATION_PROVIDER in ("auto", "deepl")
-        and DEEPL_API_KEY
-    ):
+    try:
 
-        try:
+        translated = ARGOS_TRANSLATOR.translate(
+            text
+        )
 
-            translated = translate_deepl(
-                text
+        if translated and translated.strip():
+
+            result = (
+                normalize_space(translated),
+                "argos"
             )
 
-            if translated and translated.strip():
+            TRANSLATION_CACHE[text] = result
 
-                result = (
-                    translated,
-                    "deepl"
-                )
+            return result
 
-                TRANSLATION_CACHE[text] = result
+    except Exception as exc:
 
-                return result
-
-        except Exception as exc:
-
-            LOG.warning(
-                "DeepL translation failed: %s",
-                exc
-            )
-
-    # --------------------------------------------------------
-    # 2. TRY GOOGLE
-    # --------------------------------------------------------
-
-    if TRANSLATION_PROVIDER in (
-        "auto",
-        "google"
-    ):
-
-        if GOOGLE_RATE_LIMITED:
-
-            return None, "rate_limited"
-
-        for attempt in range(2):
-
-            try:
-
-                translated = translate_google(
-                    text
-                )
-
-                if translated and translated.strip():
-
-                    result = (
-                        translated,
-                        "google"
-                    )
-
-                    TRANSLATION_CACHE[text] = result
-
-                    return result
-
-            except GoogleRateLimitError:
-
-                # Do not retry after a rate-limit error.
-                return None, "rate_limited"
-
-            except Exception as exc:
-
-                LOG.warning(
-                    "Google Translate attempt %s failed: %s",
-                    attempt + 1,
-                    exc
-                )
-
-                if attempt == 0:
-                    time.sleep(2)
+        LOG.warning(
+            "Argos translation failed: %s",
+            exc
+        )
 
     return None, "failed"
 
-
-# ============================================================
-# TRANSLATION: ARTICLE ENRICHMENT
-# ============================================================
 
 def enrich_translate(article):
 
     """
     Translate missing English fields.
 
-    Previously translated fields are preserved.
-
-    Failed translations remain empty and can be retried
-    during subsequent workflow runs.
+    Existing successful translations are retained.
+    Failed translations remain pending.
     """
 
-    title_raw = article.get(
-        "title_raw",
-        ""
-    )
+    title_raw = article.get("title_raw", "")
+    lead_raw = article.get("lead_raw", "")
 
-    lead_raw = article.get(
-        "lead_raw",
-        ""
-    )
+    title_en = article.get("title_en")
+    lead_en = article.get("lead_en")
 
-    title_en = article.get(
-        "title_en"
-    )
+    translated_any = False
 
-    lead_en = article.get(
-        "lead_en"
-    )
-
-    providers = []
-
-    # --------------------------------------------------------
-    # TRANSLATE TITLE
-    # --------------------------------------------------------
+    # Translate headline.
 
     if not title_en:
 
@@ -1130,13 +905,11 @@ def enrich_translate(article):
         )
 
         if translated:
+
             title_en = translated
+            translated_any = True
 
-        providers.append(provider)
-
-    # --------------------------------------------------------
-    # TRANSLATE SUMMARY
-    # --------------------------------------------------------
+    # Translate summary.
 
     if lead_raw and not lead_en:
 
@@ -1145,49 +918,30 @@ def enrich_translate(article):
         )
 
         if translated:
+
             lead_en = translated
-
-        providers.append(provider)
-
-    # --------------------------------------------------------
-    # UPDATE ARTICLE
-    # --------------------------------------------------------
+            translated_any = True
 
     article["title_en"] = title_en
-
     article["lead_en"] = lead_en
 
     if title_en and (
         lead_en or not lead_raw
     ):
 
-        article["translation_status"] = (
-            "translated"
-        )
+        article["translation_status"] = "translated"
 
     elif title_en or lead_en:
 
-        article["translation_status"] = (
-            "partial"
-        )
+        article["translation_status"] = "partial"
 
     else:
 
-        article["translation_status"] = (
-            "pending"
-        )
+        article["translation_status"] = "pending"
 
-    successful_providers = [
-        provider
-        for provider in providers
-        if provider in ("deepl", "google")
-    ]
+    if translated_any:
 
-    if successful_providers:
-
-        article["translation_provider"] = (
-            successful_providers[-1]
-        )
+        article["translation_provider"] = "argos"
 
     return article
 
@@ -1214,36 +968,18 @@ def article_fingerprint(article):
     )
 
     if url:
-
-        return hash_key(
-            url
-        )
+        return hash_key(url)
 
     return hash_key(
-
         normalize_title(
             article.get("title_raw", "")
         ),
-
-        article.get(
-            "published_utc",
-            ""
-        )[:10],
-
-        article.get(
-            "source",
-            ""
-        ),
-
+        article.get("published_utc", "")[:10],
+        article.get("source", ""),
     )
 
 
 def choose_better_article(a, b):
-
-    """
-    Merge duplicate records without losing successful
-    translations from previous runs.
-    """
 
     fields = [
         "title_raw",
@@ -1262,16 +998,13 @@ def choose_better_article(a, b):
     )
 
     if score_b > score_a:
-
         preferred = dict(b)
         other = a
-
     else:
-
         preferred = dict(a)
         other = b
 
-    # Preserve previously completed translations.
+    # Preserve translations from previous runs.
 
     for field in (
         "title_en",
@@ -1280,10 +1013,7 @@ def choose_better_article(a, b):
     ):
 
         if not preferred.get(field):
-
-            preferred[field] = other.get(
-                field
-            )
+            preferred[field] = other.get(field)
 
     if (
         preferred.get("title_en")
@@ -1293,9 +1023,7 @@ def choose_better_article(a, b):
         )
     ):
 
-        preferred["translation_status"] = (
-            "translated"
-        )
+        preferred["translation_status"] = "translated"
 
     return preferred
 
@@ -1306,13 +1034,9 @@ def dedupe_articles(rows):
 
     for article in rows:
 
-        fingerprint = article_fingerprint(
-            article
-        )
+        fingerprint = article_fingerprint(article)
 
-        previous = best.get(
-            fingerprint
-        )
+        previous = best.get(fingerprint)
 
         if previous is None:
 
@@ -1320,21 +1044,16 @@ def dedupe_articles(rows):
 
         else:
 
-            best[fingerprint] = (
-                choose_better_article(
-                    previous,
-                    article
-                )
+            best[fingerprint] = choose_better_article(
+                previous,
+                article
             )
 
-    result = list(
-        best.values()
-    )
+    result = list(best.values())
 
     result.sort(
         key=lambda article: article.get(
-            "published_utc",
-            ""
+            "published_utc", ""
         ),
         reverse=True
     )
@@ -1349,12 +1068,6 @@ def dedupe_articles(rows):
 def load_existing_json(path):
 
     if not path.exists():
-
-        LOG.info(
-            "No existing file at %s. Starting fresh.",
-            path
-        )
-
         return []
 
     try:
@@ -1363,48 +1076,22 @@ def load_existing_json(path):
             encoding="utf-8"
         ).strip()
 
-        # Handle empty initial JSON files.
-
         if not content:
-
-            LOG.warning(
-                "Empty JSON file: %s. Starting fresh.",
-                path
-            )
-
             return []
 
-        data = json.loads(
-            content
-        )
+        data = json.loads(content)
 
         if isinstance(data, dict):
 
             articles = data.get(
-                "articles",
-                []
+                "articles", []
             )
 
             if isinstance(articles, list):
                 return articles
 
         if isinstance(data, list):
-
             return data
-
-        LOG.warning(
-            "Unexpected JSON structure in %s",
-            path
-        )
-
-    except json.JSONDecodeError as exc:
-
-        LOG.warning(
-            "Invalid JSON in %s: %s. "
-            "Starting with an empty dataset.",
-            path,
-            exc
-        )
 
     except Exception as exc:
 
@@ -1424,25 +1111,18 @@ def atomic_write_json(path, payload):
         exist_ok=True
     )
 
-    temporary = path.with_suffix(
-        ".tmp"
-    )
+    temporary = path.with_suffix(".tmp")
 
     temporary.write_text(
-
         json.dumps(
             payload,
             ensure_ascii=False,
             indent=2
         ),
-
         encoding="utf-8"
-
     )
 
-    temporary.replace(
-        path
-    )
+    temporary.replace(path)
 
 
 def prune_latest_window(rows):
@@ -1458,87 +1138,50 @@ def prune_latest_window(rows):
         try:
 
             published = datetime.strptime(
-
                 article["published_utc"],
-
                 "%Y-%m-%dT%H:%M:%SZ"
-
             ).replace(
                 tzinfo=timezone.utc
             )
 
             if published >= cutoff:
-
-                kept.append(
-                    article
-                )
+                kept.append(article)
 
         except (
             ValueError,
             KeyError,
             TypeError
         ):
-
             continue
 
-    return dedupe_articles(
-        kept
-    )
+    return dedupe_articles(kept)
 
 
 def prepare_article(article):
 
-    """
-    Normalize metadata and classify article.
-    """
-
     article = dict(article)
 
     article["fingerprint"] = (
-        article_fingerprint(
-            article
-        )
+        article_fingerprint(article)
     )
 
     if not article.get("id"):
 
         article["id"] = hash_key(
-
-            article.get(
-                "source",
-                ""
-            ),
-
-            article.get(
-                "url",
-                ""
-            ),
-
-            article.get(
-                "published_utc",
-                ""
-            ),
-
+            article.get("source", ""),
+            article.get("url", ""),
+            article.get("published_utc", ""),
         )
 
-    article.setdefault(
-        "title_en",
-        None
-    )
-
-    article.setdefault(
-        "lead_en",
-        None
-    )
+    article.setdefault("title_en", None)
+    article.setdefault("lead_en", None)
 
     article.setdefault(
         "translation_status",
         "pending"
     )
 
-    return classify_topics(
-        article
-    )
+    return classify_topics(article)
 
 
 # ============================================================
@@ -1559,22 +1202,17 @@ def main():
     )
 
     LOG.info(
-        "Keep hours: %s",
-        KEEP_HOURS
+        "Translation engine: Argos Translate"
     )
 
     LOG.info(
-        "Translation provider: %s",
-        TRANSLATION_PROVIDER
-    )
-
-    LOG.info(
-        "Translation limit: %s articles",
-        TRANSLATE_LIMIT
+        "Translation limit: %s",
+        "unlimited"
+        if TRANSLATE_LIMIT == 0
+        else TRANSLATE_LIMIT
     )
 
     collected = []
-
     successful_sources = 0
 
     # --------------------------------------------------------
@@ -1600,12 +1238,9 @@ def main():
         )
 
         if rows:
-
             successful_sources += 1
 
-        collected.extend(
-            rows
-        )
+        collected.extend(rows)
 
     LOG.info(
         "Total collected: %s",
@@ -1642,11 +1277,9 @@ def main():
     # --------------------------------------------------------
 
     merged = dedupe_articles(
-
         existing_archive
         + existing_latest
         + collected
-
     )
 
     LOG.info(
@@ -1662,17 +1295,10 @@ def main():
 
     for article in merged:
 
-        article = prepare_article(
-            article
-        )
+        article = prepare_article(article)
 
-        if article_is_relevant(
-            article
-        ):
-
-            relevant.append(
-                article
-            )
+        if article_is_relevant(article):
+            relevant.append(article)
 
     LOG.info(
         "Relevant Czech articles: %s",
@@ -1680,88 +1306,97 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 5. TRANSLATE
+    # 5. INITIALIZE ARGOS TRANSLATE
+    # --------------------------------------------------------
+
+    untranslated = [
+        article
+        for article in relevant
+        if needs_translation(article)
+    ]
+
+    if untranslated:
+
+        LOG.info(
+            "Articles requiring translation: %s",
+            len(untranslated)
+        )
+
+        try:
+
+            setup_argos()
+
+        except Exception as exc:
+
+            LOG.error(
+                "Argos initialization failed: %s",
+                exc
+            )
+
+            LOG.warning(
+                "Articles will be saved without "
+                "translation and retried next run."
+            )
+
+    # --------------------------------------------------------
+    # 6. TRANSLATE ARTICLES
     # --------------------------------------------------------
 
     translated_count = 0
 
-    # Prioritize recent articles.
+    # Prioritize articles in the current rolling window.
+    # Within each group, translate older pending articles
+    # first to prevent a permanent backlog.
 
-    relevant.sort(
+    cutoff = now - timedelta(hours=KEEP_HOURS)
 
-        key=lambda article: article.get(
-            "published_utc",
-            ""
-        ),
+    def translation_priority(article):
 
-        reverse=True
+        published = datetime.strptime(
+            article["published_utc"],
+            "%Y-%m-%dT%H:%M:%SZ"
+        ).replace(tzinfo=timezone.utc)
 
-    )
+        is_recent = published >= cutoff
 
-    for article in relevant:
-
-        if translated_count >= TRANSLATE_LIMIT:
-            break
-
-        if not needs_translation(
-            article
-        ):
-            continue
-
-        # Stop translation attempts once Google is
-        # rate-limited, unless DeepL is available.
-
-        if (
-            GOOGLE_RATE_LIMITED
-            and TRANSLATION_PROVIDER in ("auto", "google")
-            and not (
-                TRANSLATION_PROVIDER == "auto"
-                and DEEPL_API_KEY
-            )
-        ):
-
-            LOG.warning(
-                "Stopping translations: "
-                "Google rate limit reached."
-            )
-
-            break
-
-        enrich_translate(
-            article
+        return (
+            0 if is_recent else 1,
+            published,
         )
 
-        translated_count += 1
+    untranslated.sort(
+        key=translation_priority
+    )
+
+    if ARGOS_TRANSLATOR is not None:
+
+        for article in untranslated:
+
+            if (
+                TRANSLATE_LIMIT > 0
+                and translated_count >= TRANSLATE_LIMIT
+            ):
+                break
+
+            enrich_translate(article)
+
+            translated_count += 1
 
     LOG.info(
         "Translation attempts: %s",
         translated_count
     )
 
-    if GOOGLE_RATE_LIMITED:
-
-        LOG.warning(
-            "Google Translate was rate-limited. "
-            "Untranslated articles will be retried "
-            "during subsequent runs."
-        )
-
     # --------------------------------------------------------
-    # 6. BUILD PERMANENT ARCHIVE
+    # 7. BUILD PERMANENT ARCHIVE
     # --------------------------------------------------------
 
-    archive = dedupe_articles(
-        relevant
-    )
+    archive = dedupe_articles(relevant)
 
     archive_payload = {
-
         "updated_at_utc": timestamp,
-
         "count": len(archive),
-
         "articles": archive,
-
     }
 
     atomic_write_json(
@@ -1770,23 +1405,16 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 7. BUILD ROLLING 48-HOUR FEED
+    # 8. BUILD ROLLING 48-HOUR FEED
     # --------------------------------------------------------
 
-    latest = prune_latest_window(
-        archive
-    )
+    latest = prune_latest_window(archive)
 
     latest_payload = {
-
         "updated_at_utc": timestamp,
-
         "keep_hours": KEEP_HOURS,
-
         "count": len(latest),
-
         "articles": latest,
-
     }
 
     atomic_write_json(
@@ -1795,34 +1423,22 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 8. GENERATE TOPIC FEEDS
+    # 9. BUILD TOPIC FEEDS
     # --------------------------------------------------------
 
     for topic in TOPICS:
 
         subset = [
-
             article
-
             for article in latest
-
-            if topic in article.get(
-                "topics",
-                []
-            )
-
+            if topic in article.get("topics", [])
         ]
 
         topic_payload = {
-
             "updated_at_utc": timestamp,
-
             "topic": topic,
-
             "count": len(subset),
-
             "articles": subset,
-
         }
 
         output_path = Path(
@@ -1841,8 +1457,20 @@ def main():
         )
 
     # --------------------------------------------------------
-    # 9. FINAL SUMMARY
+    # 10. SUMMARY
     # --------------------------------------------------------
+
+    translated_total = sum(
+        1
+        for article in archive
+        if article.get("translation_status") == "translated"
+    )
+
+    pending_total = sum(
+        1
+        for article in archive
+        if needs_translation(article)
+    )
 
     LOG.info(
         "Collection completed successfully."
@@ -1859,13 +1487,13 @@ def main():
     )
 
     LOG.info(
-        "Translation attempts: %s",
-        translated_count
+        "Fully translated articles: %s",
+        translated_total
     )
 
     LOG.info(
-        "Google rate-limited: %s",
-        GOOGLE_RATE_LIMITED
+        "Articles awaiting translation: %s",
+        pending_total
     )
 
     LOG.info(
@@ -1873,16 +1501,9 @@ def main():
         OUT_JSON
     )
 
-    LOG.info(
-        "Archive: %s",
-        ARCHIVE_JSON
-    )
-
     return 0
 
 
 if __name__ == "__main__":
 
-    raise SystemExit(
-        main()
-    )
+    raise SystemExit(main())
