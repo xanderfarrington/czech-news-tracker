@@ -50,8 +50,12 @@ import feedparser
 
 from bs4 import BeautifulSoup
 
-import argostranslate.package
-import argostranslate.translate
+import torch
+
+from transformers import (
+    MarianMTModel,
+    MarianTokenizer,
+)
 
 
 # ============================================================
@@ -676,10 +680,13 @@ def classify(article):
 
 
 # ============================================================
-# ARGOS TRANSLATION
+# MARIANMT TRANSLATION
 # ============================================================
 
-TRANSLATOR = None
+MODEL_NAME = "Helsinki-NLP/opus-mt-cs-en"
+
+TOKENIZER = None
+MODEL = None
 
 TRANSLATION_CACHE = {}
 
@@ -687,109 +694,47 @@ TRANSLATION_CACHE = {}
 def load_translator():
 
     """
-    Initialize local Czech -> English translation.
+    Initialize Helsinki-NLP Czech-to-English translation.
 
-    Download the language model only if not installed.
+    Downloads the model from Hugging Face if necessary.
+    Subsequent runs can reuse the cached model.
+
+    Translation is performed locally on CPU.
     """
 
-    global TRANSLATOR
+    global TOKENIZER, MODEL
 
-    if TRANSLATOR is not None:
+    if MODEL is not None:
         return
 
-    LOG.info("Initializing Argos Translate...")
+    LOG.info("Initializing MarianMT translator...")
 
-    installed = (
-        argostranslate.translate.get_installed_languages()
+    # Limit excessive CPU thread usage.
+    torch.set_num_threads(2)
+
+    TOKENIZER = MarianTokenizer.from_pretrained(
+        MODEL_NAME
     )
 
-    source = next(
-        (lang for lang in installed if lang.code == "cs"),
-        None
+    MODEL = MarianMTModel.from_pretrained(
+        MODEL_NAME
     )
 
-    target = next(
-        (lang for lang in installed if lang.code == "en"),
-        None
+    MODEL.eval()
+    MODEL.to("cpu")
+
+    LOG.info(
+        "MarianMT Czech-English translation model ready."
     )
-
-    if source and target:
-
-        try:
-            TRANSLATOR = source.get_translation(target)
-        except (ValueError, AttributeError):
-            TRANSLATOR = None
-
-    if TRANSLATOR is not None:
-
-        LOG.info("Cached translation model loaded.")
-        return
-
-    LOG.info("Downloading Czech-English model...")
-
-    argostranslate.package.update_package_index()
-
-    packages = (
-        argostranslate.package.get_available_packages()
-    )
-
-    package = next(
-        (
-            pkg for pkg in packages
-
-            if pkg.from_code == "cs"
-            and pkg.to_code == "en"
-        ),
-        None
-    )
-
-    if package is None:
-
-        raise RuntimeError(
-            "Czech-English Argos model unavailable."
-        )
-
-    model_path = package.download()
-
-    LOG.info("Installing translation model...")
-
-    argostranslate.package.install_from_path(
-        model_path
-    )
-
-    # Refresh the installed language registry.
-    installed = (
-        argostranslate.translate.get_installed_languages()
-    )
-
-    source = next(
-        (lang for lang in installed if lang.code == "cs"),
-        None
-    )
-
-    target = next(
-        (lang for lang in installed if lang.code == "en"),
-        None
-    )
-
-    if source is None or target is None:
-
-        raise RuntimeError(
-            "Argos model installation failed."
-        )
-
-    TRANSLATOR = source.get_translation(target)
-
-    if TRANSLATOR is None:
-
-        raise RuntimeError(
-            "Unable to initialize Czech-English translator."
-        )
-
-    LOG.info("Argos translator ready.")
 
 
 def translate(text):
+
+    """
+    Translate Czech text into English.
+
+    Returns the translated text as a string.
+    """
 
     text = normalize_space(text)
 
@@ -799,25 +744,45 @@ def translate(text):
     if text in TRANSLATION_CACHE:
         return TRANSLATION_CACHE[text]
 
-    if TRANSLATOR is None:
+    if MODEL is None or TOKENIZER is None:
 
         raise RuntimeError(
-            "Translation model is not initialized."
+            "MarianMT model has not been initialized."
         )
 
-    result = normalize_space(
-        TRANSLATOR.translate(text)
+    inputs = TOKENIZER(
+        [text],
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=512,
     )
 
-    if not result:
+    with torch.inference_mode():
 
-        raise RuntimeError(
-            "Argos returned an empty translation."
+        outputs = MODEL.generate(
+            **inputs,
+            max_new_tokens=256,
+            num_beams=4,
+            early_stopping=True,
         )
 
-    TRANSLATION_CACHE[text] = result
+    translated = TOKENIZER.decode(
+        outputs[0],
+        skip_special_tokens=True
+    )
 
-    return result
+    translated = normalize_space(translated)
+
+    if not translated:
+
+        raise RuntimeError(
+            "MarianMT returned an empty translation."
+        )
+
+    TRANSLATION_CACHE[text] = translated
+
+    return translated
 
 
 def needs_translation(article):
@@ -832,6 +797,12 @@ def needs_translation(article):
 
 
 def translate_article(article):
+
+    """
+    Translate missing English fields.
+
+    Existing translations are preserved.
+    """
 
     if not article.get("title_en"):
 
@@ -857,12 +828,10 @@ def translate_article(article):
     )
 
     article["translation_status"] = (
-        "translated"
-        if complete
-        else "partial"
+        "translated" if complete else "partial"
     )
 
-    article["translation_provider"] = "argos"
+    article["translation_provider"] = "marianmt"
 
     return article
 
