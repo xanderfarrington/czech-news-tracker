@@ -1,8 +1,30 @@
 {
-  "updated_at_utc": "2026-11-18T15:20:40Z",
+  "updated_at_utc": "2026-11-18T16:24:24Z",
   "topic": "politics",
-  "count": 23,
+  "count": 24,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-soud-dal-majiteli-zlata-ze-slachtovy-razie-sanci-na-dalsi-cast-odskodneni-320680",
+      "published_utc": "2026-11-18T15:30:00Z",
+      "title_raw": "Soud dal majiteli zlata ze Šlachtovy razie šanci na další část odškodnění",
+      "lead_raw": "Při zásahu souvisejícím s akcí na Úřadu vlády v roce 2013 zajistili policisté u Luboše Paška 26 kilogramů zlata a 25 milionů v hotovosti. Obvinili ho, ale pak byl zproštěn obžaloby.",
+      "fingerprint": "e3d910922192c37ba7f03bb6fce448a348b3731157b0ec5f41dc38d6bbb9b75e",
+      "id": "e3d910922192c37ba7f03bb6fce448a348b3731157b0ec5f41dc38d6bbb9b75e",
+      "title_en": "The court gave the owner of the gold from the Šlacht raid a chance for another part of the compensation",
+      "lead_en": "Police officers secured 26 kilograms of gold and 25 million in cash at Luboš Pašek's office in 2013, and they charged him, but then he was exonerated.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "translation_provider": "marianmt"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/odpovednost-za-atmosferu-ve-snemovne-ma-koalice-tvrdi-sebelova-mala-zlepsit-muze_2611181547_cen",

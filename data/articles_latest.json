@@ -1,8 +1,74 @@
 {
-  "updated_at_utc": "2026-11-18T15:20:40Z",
+  "updated_at_utc": "2026-11-18T16:24:24Z",
   "keep_hours": 48,
-  "count": 28,
+  "count": 31,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/podcasty/strelnice-54f191a2-29d3-40d2-825e-dfd4b56c233f/dali-to-srdcem-ne-zbranemi-expert-o-hrdinech-z-krakova-a-slabinach-ceska/r~aaa29bd9769e2b951f6e9505b3e56c56",
+      "published_utc": "2026-11-18T16:00:00Z",
+      "title_raw": "Dali to srdcem, ne zbraněmi. Expert o hrdinech z Krakova a slabinách Česka",
+      "lead_raw": "„Byli to srdcaři, kteří cvičili ve svém volnu. Trénovali taktiku.",
+      "fingerprint": "8ca13d0600c7d637662e25ef7d2845ef26aa746f130b1d0c9cfc3a7dc8fb65f9",
+      "id": "8ca13d0600c7d637662e25ef7d2845ef26aa746f130b1d0c9cfc3a7dc8fb65f9",
+      "title_en": "They gave it to the heart, not weapons. Expert on heroes from Krakow and weaknesses of the Czech Republic",
+      "lead_en": "It was the hearts who practiced on their day off. They trained tactics.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "translation_provider": "marianmt"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-soud-dal-majiteli-zlata-ze-slachtovy-razie-sanci-na-dalsi-cast-odskodneni-320680",
+      "published_utc": "2026-11-18T15:30:00Z",
+      "title_raw": "Soud dal majiteli zlata ze Šlachtovy razie šanci na další část odškodnění",
+      "lead_raw": "Při zásahu souvisejícím s akcí na Úřadu vlády v roce 2013 zajistili policisté u Luboše Paška 26 kilogramů zlata a 25 milionů v hotovosti. Obvinili ho, ale pak byl zproštěn obžaloby.",
+      "fingerprint": "e3d910922192c37ba7f03bb6fce448a348b3731157b0ec5f41dc38d6bbb9b75e",
+      "id": "e3d910922192c37ba7f03bb6fce448a348b3731157b0ec5f41dc38d6bbb9b75e",
+      "title_en": "The court gave the owner of the gold from the Šlacht raid a chance for another part of the compensation",
+      "lead_en": "Police officers secured 26 kilograms of gold and 25 million in cash at Luboš Pašek's office in 2013, and they charged him, but then he was exonerated.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "translation_provider": "marianmt"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/kultura-prazsky-divadelni-festival-nemeckeho-jazyka-2026-program-320913",
+      "published_utc": "2026-11-18T15:21:00Z",
+      "title_raw": "Co nabízí Pražský divadelní festival německého jazyka 2026",
+      "lead_raw": "Hru Katarína aneb Krása zabíjení fašistů, o níž kvůli skandálu začátkem roku psala světová média, nebo úspěšnou inscenaci českého režiséra Dušana D. Pařízka nabídne letošní ročník Pražského divadelního festivalu německého jazyka.",
+      "fingerprint": "81d9e870456c1014f7315581361ae3a1430b4166077089ac6b5d493ce7c0dbdb",
+      "id": "81d9e870456c1014f7315581361ae3a1430b4166077089ac6b5d493ce7c0dbdb",
+      "title_en": "What the Prague Theatre Festival of German Language offers 2026",
+      "lead_en": "The game Katarína or Beauty of the killing of fascists, written about by the world media due to the scandal at the beginning of the year, or successful production of Czech director Dušan D. Pařízek will offer this year's Prague Theatre Festival of German Language.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "marianmt"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/odpovednost-za-atmosferu-ve-snemovne-ma-koalice-tvrdi-sebelova-mala-zlepsit-muze_2611181547_cen",

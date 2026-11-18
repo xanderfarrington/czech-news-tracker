@@ -1,8 +1,30 @@
 {
-  "updated_at_utc": "2026-11-18T15:20:40Z",
+  "updated_at_utc": "2026-11-18T16:24:24Z",
   "topic": "foreign_affairs",
-  "count": 11,
+  "count": 12,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/kultura-prazsky-divadelni-festival-nemeckeho-jazyka-2026-program-320913",
+      "published_utc": "2026-11-18T15:21:00Z",
+      "title_raw": "Co nabízí Pražský divadelní festival německého jazyka 2026",
+      "lead_raw": "Hru Katarína aneb Krása zabíjení fašistů, o níž kvůli skandálu začátkem roku psala světová média, nebo úspěšnou inscenaci českého režiséra Dušana D. Pařízka nabídne letošní ročník Pražského divadelního festivalu německého jazyka.",
+      "fingerprint": "81d9e870456c1014f7315581361ae3a1430b4166077089ac6b5d493ce7c0dbdb",
+      "id": "81d9e870456c1014f7315581361ae3a1430b4166077089ac6b5d493ce7c0dbdb",
+      "title_en": "What the Prague Theatre Festival of German Language offers 2026",
+      "lead_en": "The game Katarína or Beauty of the killing of fascists, written about by the world media due to the scandal at the beginning of the year, or successful production of Czech director Dušan D. Pařízek will offer this year's Prague Theatre Festival of German Language.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "translation_provider": "marianmt"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",

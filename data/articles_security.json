@@ -1,8 +1,30 @@
 {
-  "updated_at_utc": "2026-11-18T15:20:40Z",
+  "updated_at_utc": "2026-11-18T16:24:24Z",
   "topic": "security",
-  "count": 6,
+  "count": 7,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/podcasty/strelnice-54f191a2-29d3-40d2-825e-dfd4b56c233f/dali-to-srdcem-ne-zbranemi-expert-o-hrdinech-z-krakova-a-slabinach-ceska/r~aaa29bd9769e2b951f6e9505b3e56c56",
+      "published_utc": "2026-11-18T16:00:00Z",
+      "title_raw": "Dali to srdcem, ne zbraněmi. Expert o hrdinech z Krakova a slabinách Česka",
+      "lead_raw": "„Byli to srdcaři, kteří cvičili ve svém volnu. Trénovali taktiku.",
+      "fingerprint": "8ca13d0600c7d637662e25ef7d2845ef26aa746f130b1d0c9cfc3a7dc8fb65f9",
+      "id": "8ca13d0600c7d637662e25ef7d2845ef26aa746f130b1d0c9cfc3a7dc8fb65f9",
+      "title_en": "They gave it to the heart, not weapons. Expert on heroes from Krakow and weaknesses of the Czech Republic",
+      "lead_en": "It was the hearts who practiced on their day off. They trained tactics.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "translation_provider": "marianmt"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
