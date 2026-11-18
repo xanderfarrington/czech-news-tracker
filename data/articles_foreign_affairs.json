@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-18T15:00:22Z",
+  "updated_at_utc": "2026-11-18T15:08:51Z",
   "topic": "foreign_affairs",
   "count": 22,
   "articles": [
@@ -23,7 +23,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "Seznam Zpravy",
@@ -45,7 +46,8 @@
         "foreign_affairs",
         "security"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -67,7 +69,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -89,7 +92,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "Aktualne.cz",
@@ -111,7 +115,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "Aktualne.cz",
@@ -133,7 +138,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "Seznam Zpravy",
@@ -156,7 +162,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "security"
+      "primary_topic": "security",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -178,7 +185,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -200,7 +208,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -222,7 +231,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -243,7 +253,8 @@
       "topics": [
         "foreign_affairs"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -265,7 +276,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -287,7 +299,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -309,7 +322,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -331,7 +345,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -352,7 +367,8 @@
       "topics": [
         "foreign_affairs"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -375,7 +391,8 @@
         "politics",
         "security"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -397,7 +414,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -420,7 +438,8 @@
         "foreign_affairs",
         "politics"
       ],
-      "primary_topic": "security"
+      "primary_topic": "security",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -442,7 +461,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "iROZHLAS (World)",
@@ -464,7 +484,8 @@
         "politics",
         "foreign_affairs"
       ],
-      "primary_topic": "politics"
+      "primary_topic": "politics",
+      "translation_provider": null
     },
     {
       "source": "CT24",
@@ -487,7 +508,8 @@
         "security",
         "politics"
       ],
-      "primary_topic": "foreign_affairs"
+      "primary_topic": "foreign_affairs",
+      "translation_provider": null
     }
   ]
 }
