@@ -7,16 +7,17 @@ Czech News Tracker
 Collector + Translator + Topic Classifier
 
 Features:
-- Collect Czech-language news from multiple RSS feeds
-- Focus on Czech politics, security, defense, and foreign affairs
+- Collect Czech news from multiple RSS feeds
+- Focus on politics, security, defense, and foreign affairs
 - Translate Czech headlines and summaries into English
 - DeepL primary translation with Google Translate fallback
-- Deduplicate articles across feeds and previous runs
+- Rate-limit protection for Google Translate
+- Stop Google requests after receiving a rate-limit error
+- Preserve failed translations for future runs
+- Deduplicate articles across feeds
 - Maintain rolling 48-hour news feed
 - Maintain permanent historical archive
 - Generate topic-specific JSON files
-- Retry failed translations
-- Preserve compatibility with Russian Media Tracker JSON structure
 
 Output:
     data/articles_latest.json
@@ -39,8 +40,13 @@ import calendar
 
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
-from typing import Dict, List, Optional
-from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from typing import Dict
+from urllib.parse import (
+    urlsplit,
+    urlunsplit,
+    parse_qsl,
+    urlencode,
+)
 
 import requests
 import feedparser
@@ -76,11 +82,18 @@ TIMEOUT = 20
 MAX_RETRIES = 3
 RETRY_SLEEP = 2
 
-KEEP_HOURS = int(os.getenv("KEEP_HOURS", "48"))
+KEEP_HOURS = int(
+    os.getenv("KEEP_HOURS", "48")
+)
 
-TRANSLATE_LIMIT = int(os.getenv("TRANSLATE_LIMIT", "40"))
+TRANSLATE_LIMIT = int(
+    os.getenv("TRANSLATE_LIMIT", "10")
+)
 
-DEEPL_API_KEY = os.getenv("DEEPL_API_KEY", "")
+DEEPL_API_KEY = os.getenv(
+    "DEEPL_API_KEY",
+    ""
+)
 
 DEEPL_API_URL = os.getenv(
     "DEEPL_API_URL",
@@ -105,6 +118,24 @@ ARCHIVE_JSON = Path(
         "data/articles_archive.json"
     )
 )
+
+
+# ============================================================
+# TRANSLATION RATE-LIMIT SETTINGS
+# ============================================================
+
+# Minimum seconds between Google translation requests.
+GOOGLE_REQUEST_INTERVAL = 2.0
+
+# If Google returns a rate-limit error, stop requesting
+# translations for the remainder of the workflow run.
+GOOGLE_RATE_LIMITED = False
+
+# Timestamp of the most recent Google translation attempt.
+LAST_TRANSLATION_TIME = 0.0
+
+# Prevent repeated translation of identical text.
+TRANSLATION_CACHE = {}
 
 
 # ============================================================
@@ -185,7 +216,7 @@ TOPIC_KEYWORDS = {
         "ustavni",
         "referendum",
 
-        # Czech political parties
+        # Political parties
         "ano 2011",
         "hnuti ano",
         "ods",
@@ -204,7 +235,6 @@ TOPIC_KEYWORDS = {
         "snemovni",
 
     ],
-
 
     "security": [
 
@@ -270,7 +300,6 @@ TOPIC_KEYWORDS = {
 
     ],
 
-
     "foreign_affairs": [
 
         # Diplomacy
@@ -294,7 +323,6 @@ TOPIC_KEYWORDS = {
         "evropsky parlament",
         "evropska rada",
         "brusel",
-        "eu",
         "unijni",
 
         # International organizations
@@ -339,19 +367,6 @@ TOPIC_KEYWORDS = {
 # CZECH RELEVANCE FILTER
 # ============================================================
 
-"""
-We want articles about Czechia, not every international
-story published by a Czech newspaper.
-
-Stories about Czech domestic politics qualify.
-
-International stories should have a meaningful Czech
-connection or concern Czech security and foreign policy.
-
-The filter uses Czech-language keywords and is deliberately
-more selective than simply accepting every article.
-"""
-
 CZECH_KEYWORDS = [
 
     # Country
@@ -368,7 +383,7 @@ CZECH_KEYWORDS = [
     "praze",
     "prazsky",
 
-    # Government and politics
+    # Government
     "ceska vlada",
     "vlada",
     "premier",
@@ -380,13 +395,13 @@ CZECH_KEYWORDS = [
     "ministr",
     "parlament",
 
-    # Czech institutions
+    # Security institutions
     "prazsky hrad",
     "bis",
     "nukib",
     "armada cr",
 
-    # Czech political organizations
+    # Political organizations
     "ods",
     "stan",
     "hnuti ano",
@@ -405,7 +420,7 @@ TOPICS = [
 
 
 # ============================================================
-# UTILITIES
+# GENERAL UTILITIES
 # ============================================================
 
 def utcnow():
@@ -436,17 +451,10 @@ def normalize_text(text):
 
 def keyword_match(text, keyword):
 
-    """
-    Match a Czech keyword or stem.
-
-    Word boundaries are enforced at the beginning.
-    The end remains open to match Czech inflections.
-
-    Example:
-        "ministr" matches "ministra" and "ministrem".
-    """
-
-    pattern = r"(?<!\w)" + re.escape(keyword)
+    pattern = (
+        r"(?<!\w)"
+        + re.escape(keyword)
+    )
 
     return bool(
         re.search(pattern, text)
@@ -462,8 +470,6 @@ def normalize_url(url):
 
     parts = urlsplit(url)
 
-    # Remove common tracking parameters while preserving
-    # other query parameters that may identify an article.
     filtered_query = [
         (key, value)
         for key, value in parse_qsl(parts.query)
@@ -599,6 +605,7 @@ def fetch_text(url):
             )
 
         if attempt < MAX_RETRIES:
+
             time.sleep(
                 RETRY_SLEEP * attempt
             )
@@ -636,10 +643,6 @@ def parse_date(entry):
             ):
 
                 pass
-
-    # Entries without a publication date are skipped.
-    # Assigning the current time would incorrectly treat
-    # older stories as new articles.
 
     return None
 
@@ -720,8 +723,6 @@ def collect_from_rss(source_name, feeds):
 
             rows.extend(feed_rows)
 
-            # As in the Russian collector, additional feeds
-            # are fallbacks for the same source.
             break
 
     return rows
@@ -774,17 +775,15 @@ def classify_topics(article):
         )
     )
 
-    primary = (
-        labels[0]
-        if labels
-        else None
-    )
-
     article["topic_scores"] = scores
 
     article["topics"] = labels
 
-    article["primary_topic"] = primary
+    article["primary_topic"] = (
+        labels[0]
+        if labels
+        else None
+    )
 
     return article
 
@@ -801,7 +800,6 @@ def article_is_czech_related(article):
 
     text = title + " " + lead
 
-    # Direct Czech relevance
     direct_match = any(
         keyword_match(text, keyword)
         for keyword in CZECH_KEYWORDS
@@ -809,9 +807,6 @@ def article_is_czech_related(article):
 
     if direct_match:
         return True
-
-    # Also accept articles from domestic feeds involving
-    # Czech political or security institutions.
 
     source = article.get(
         "source",
@@ -845,12 +840,6 @@ def article_is_czech_related(article):
 
 def article_is_relevant(article):
 
-    """
-    Keep articles that:
-    1. Concern Czechia or Czech institutions.
-    2. Match at least one desired topic.
-    """
-
     if not article.get("topics"):
         return False
 
@@ -860,11 +849,8 @@ def article_is_relevant(article):
 
 
 # ============================================================
-# TRANSLATION
+# TRANSLATION: DEEPL
 # ============================================================
-
-TRANSLATION_CACHE = {}
-
 
 def translate_deepl(text):
 
@@ -901,29 +887,104 @@ def translate_deepl(text):
     ][0]["text"]
 
 
+# ============================================================
+# TRANSLATION: GOOGLE WITH RATE-LIMIT PROTECTION
+# ============================================================
+
+class GoogleRateLimitError(Exception):
+    """Google Translate has rate-limited this run."""
+
+
 def translate_google(text):
+
+    global GOOGLE_RATE_LIMITED
+    global LAST_TRANSLATION_TIME
+
+    # Circuit breaker: once rate-limited, stop Google
+    # translation requests until the next workflow run.
+
+    if GOOGLE_RATE_LIMITED:
+
+        raise GoogleRateLimitError(
+            "Google Translate disabled for this run."
+        )
+
+    # Enforce a minimum interval between requests.
+
+    elapsed = (
+        time.monotonic()
+        - LAST_TRANSLATION_TIME
+    )
+
+    if elapsed < GOOGLE_REQUEST_INTERVAL:
+
+        time.sleep(
+            GOOGLE_REQUEST_INTERVAL - elapsed
+        )
 
     translator = GoogleTranslator(
         source="cs",
         target="en"
     )
 
-    return translator.translate(
-        text
-    )
+    try:
 
+        # Update before attempting the request.
+        # This also spaces retries after failures.
+
+        LAST_TRANSLATION_TIME = (
+            time.monotonic()
+        )
+
+        translated = translator.translate(
+            text
+        )
+
+        return translated
+
+    except Exception as exc:
+
+        message = str(exc).lower()
+
+        if (
+            "too many requests" in message
+            or "429" in message
+            or "rate limit" in message
+        ):
+
+            GOOGLE_RATE_LIMITED = True
+
+            LOG.warning(
+                "Google Translate rate limit reached. "
+                "Disabling Google requests for this run."
+            )
+
+            raise GoogleRateLimitError(
+                "Google Translate rate limit reached."
+            ) from exc
+
+        raise
+
+
+# ============================================================
+# TRANSLATION: PROVIDER MANAGEMENT
+# ============================================================
 
 def translate_text(text):
 
     """
     Returns:
-        (translation, provider)
+        (translated_text, provider)
 
-    If translation fails:
-        (None, "failed")
+    Possible providers:
+        deepl
+        google
+        failed
+        rate_limited
+        disabled
+        empty
 
-    This prevents the original Czech text from being
-    mistakenly stored as an English translation.
+    Failed translations are never stored as English text.
     """
 
     text = normalize_space(text)
@@ -939,7 +1000,9 @@ def translate_text(text):
 
         return None, "disabled"
 
-    # DeepL first
+    # --------------------------------------------------------
+    # 1. TRY DEEPL
+    # --------------------------------------------------------
 
     if (
         TRANSLATION_PROVIDER in ("auto", "deepl")
@@ -966,16 +1029,22 @@ def translate_text(text):
         except Exception as exc:
 
             LOG.warning(
-                "DeepL failed: %s",
+                "DeepL translation failed: %s",
                 exc
             )
 
-    # Google Translate fallback
+    # --------------------------------------------------------
+    # 2. TRY GOOGLE
+    # --------------------------------------------------------
 
     if TRANSLATION_PROVIDER in (
         "auto",
         "google"
     ):
+
+        if GOOGLE_RATE_LIMITED:
+
+            return None, "rate_limited"
 
         for attempt in range(2):
 
@@ -996,10 +1065,16 @@ def translate_text(text):
 
                     return result
 
+            except GoogleRateLimitError:
+
+                # Do not retry after a rate-limit error.
+                return None, "rate_limited"
+
             except Exception as exc:
 
                 LOG.warning(
-                    "Google Translate failed: %s",
+                    "Google Translate attempt %s failed: %s",
+                    attempt + 1,
                     exc
                 )
 
@@ -1009,11 +1084,19 @@ def translate_text(text):
     return None, "failed"
 
 
+# ============================================================
+# TRANSLATION: ARTICLE ENRICHMENT
+# ============================================================
+
 def enrich_translate(article):
 
     """
-    Translate only missing English fields.
-    Preserve successful translations from previous runs.
+    Translate missing English fields.
+
+    Previously translated fields are preserved.
+
+    Failed translations remain empty and can be retried
+    during subsequent workflow runs.
     """
 
     title_raw = article.get(
@@ -1036,6 +1119,10 @@ def enrich_translate(article):
 
     providers = []
 
+    # --------------------------------------------------------
+    # TRANSLATE TITLE
+    # --------------------------------------------------------
+
     if not title_en:
 
         translated, provider = translate_text(
@@ -1047,6 +1134,10 @@ def enrich_translate(article):
 
         providers.append(provider)
 
+    # --------------------------------------------------------
+    # TRANSLATE SUMMARY
+    # --------------------------------------------------------
+
     if lead_raw and not lead_en:
 
         translated, provider = translate_text(
@@ -1057,6 +1148,10 @@ def enrich_translate(article):
             lead_en = translated
 
         providers.append(provider)
+
+    # --------------------------------------------------------
+    # UPDATE ARTICLE
+    # --------------------------------------------------------
 
     article["title_en"] = title_en
 
@@ -1082,19 +1177,17 @@ def enrich_translate(article):
             "pending"
         )
 
-    if providers:
+    successful_providers = [
+        provider
+        for provider in providers
+        if provider in ("deepl", "google")
+    ]
 
-        successful = [
-            provider
-            for provider in providers
-            if provider in ("deepl", "google")
-        ]
+    if successful_providers:
 
-        if successful:
-
-            article["translation_provider"] = (
-                successful[-1]
-            )
+        article["translation_provider"] = (
+            successful_providers[-1]
+        )
 
     return article
 
@@ -1148,8 +1241,8 @@ def article_fingerprint(article):
 def choose_better_article(a, b):
 
     """
-    Merge duplicate records without losing
-    previously completed translations.
+    Merge duplicate records without losing successful
+    translations from previous runs.
     """
 
     fields = [
@@ -1178,7 +1271,7 @@ def choose_better_article(a, b):
         preferred = dict(a)
         other = b
 
-    # Preserve successful translations.
+    # Preserve previously completed translations.
 
     for field in (
         "title_en",
@@ -1256,26 +1349,62 @@ def dedupe_articles(rows):
 def load_existing_json(path):
 
     if not path.exists():
+
+        LOG.info(
+            "No existing file at %s. Starting fresh.",
+            path
+        )
+
         return []
 
     try:
 
-        data = json.loads(
-            path.read_text(
-                encoding="utf-8"
+        content = path.read_text(
+            encoding="utf-8"
+        ).strip()
+
+        # Handle empty initial JSON files.
+
+        if not content:
+
+            LOG.warning(
+                "Empty JSON file: %s. Starting fresh.",
+                path
             )
+
+            return []
+
+        data = json.loads(
+            content
         )
 
         if isinstance(data, dict):
 
-            return data.get(
+            articles = data.get(
                 "articles",
                 []
             )
 
+            if isinstance(articles, list):
+                return articles
+
         if isinstance(data, list):
 
             return data
+
+        LOG.warning(
+            "Unexpected JSON structure in %s",
+            path
+        )
+
+    except json.JSONDecodeError as exc:
+
+        LOG.warning(
+            "Invalid JSON in %s: %s. "
+            "Starting with an empty dataset.",
+            path,
+            exc
+        )
 
     except Exception as exc:
 
@@ -1360,7 +1489,7 @@ def prune_latest_window(rows):
 def prepare_article(article):
 
     """
-    Normalize article metadata and classify.
+    Normalize metadata and classify article.
     """
 
     article = dict(article)
@@ -1429,6 +1558,21 @@ def main():
         timestamp
     )
 
+    LOG.info(
+        "Keep hours: %s",
+        KEEP_HOURS
+    )
+
+    LOG.info(
+        "Translation provider: %s",
+        TRANSLATION_PROVIDER
+    )
+
+    LOG.info(
+        "Translation limit: %s articles",
+        TRANSLATE_LIMIT
+    )
+
     collected = []
 
     successful_sources = 0
@@ -1467,9 +1611,6 @@ def main():
         "Total collected: %s",
         len(collected)
     )
-
-    # Avoid an empty successful run that could mask
-    # the failure of every RSS source.
 
     if successful_sources == 0:
 
@@ -1567,6 +1708,25 @@ def main():
         ):
             continue
 
+        # Stop translation attempts once Google is
+        # rate-limited, unless DeepL is available.
+
+        if (
+            GOOGLE_RATE_LIMITED
+            and TRANSLATION_PROVIDER in ("auto", "google")
+            and not (
+                TRANSLATION_PROVIDER == "auto"
+                and DEEPL_API_KEY
+            )
+        ):
+
+            LOG.warning(
+                "Stopping translations: "
+                "Google rate limit reached."
+            )
+
+            break
+
         enrich_translate(
             article
         )
@@ -1577,6 +1737,14 @@ def main():
         "Translation attempts: %s",
         translated_count
     )
+
+    if GOOGLE_RATE_LIMITED:
+
+        LOG.warning(
+            "Google Translate was rate-limited. "
+            "Untranslated articles will be retried "
+            "during subsequent runs."
+        )
 
     # --------------------------------------------------------
     # 6. BUILD PERMANENT ARCHIVE
@@ -1673,7 +1841,7 @@ def main():
         )
 
     # --------------------------------------------------------
-    # 9. SUMMARY
+    # 9. FINAL SUMMARY
     # --------------------------------------------------------
 
     LOG.info(
@@ -1688,6 +1856,16 @@ def main():
     LOG.info(
         "Archived articles: %s",
         len(archive)
+    )
+
+    LOG.info(
+        "Translation attempts: %s",
+        translated_count
+    )
+
+    LOG.info(
+        "Google rate-limited: %s",
+        GOOGLE_RATE_LIMITED
     )
 
     LOG.info(
