@@ -1,8 +1,133 @@
 {
-  "updated_at_utc": "2026-11-18T16:55:09Z",
+  "updated_at_utc": "2026-11-18T22:59:31Z",
   "topic": "politics",
-  "count": 10,
+  "count": 15,
   "articles": [
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/demokrate-nominovali-jeffriese-na-post-sefa-snemovny-reprezentantu-379738",
+      "published_utc": "2026-11-18T20:20:05Z",
+      "title_raw": "Demokraté nominovali Jeffriese na post šéfa Sněmovny reprezentantů",
+      "lead_raw": "Demokraté ve středu nominovali kongresmana Hakeema Jeffriese na post předsedy Sněmovny reprezentantů. Tím otevřeli cestu k tomu, aby se v lednu, až se sejde Kongres v novém složení, stal prvním černochem v čele dolní komory, informují tiskové agentury.",
+      "fingerprint": "e9daa1cd30041f234797d9be62770badc77566fe4f112738923857972e6766d4",
+      "id": "e9daa1cd30041f234797d9be62770badc77566fe4f112738923857972e6766d4",
+      "title_en": "The Democrats nominated Jeffries to head the House of Representatives.",
+      "lead_en": "Democrats nominated Congressman Hakeem Jeffries for Speaker of the House of Representatives on Wednesday, paving the way for him to become the first black president of the lower house when the newly formed Congress meets in January, news agencies report.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/museli-bychom-vestit-z-kristalove-koule-opakovat-volby-ve-zdaru-je-nejlepsi_2611182058_jar",
+      "published_utc": "2026-11-18T19:58:00Z",
+      "title_raw": "‚Museli bychom věštit z křišťálové koule.‘ Opakovat volby ve Žďáru je nejlepší řešení, vysvětluje Šimíček",
+      "lead_raw": "Senátní volby v obvodu Žďár nad Sázavou se budou opakovat, a to od prvního kola a se stejnými pěti kandidáty. Rozhodl tak Nejvyšší správní soud po stížnosti Radka Černého z ODS, kterému chyběl jeden hlas pro postup.",
+      "fingerprint": "3e90e483d74b91986856bdbb9a347553ab0fb04fffe2bd7dfc7a4978d9328cf8",
+      "id": "3e90e483d74b91986856bdbb9a347553ab0fb04fffe2bd7dfc7a4978d9328cf8",
+      "title_en": "We need to predict from a crystal ball. Repeat the election in Žďár is the best solution, explains the Monkey",
+      "lead_en": "The Senate elections in the district of Žďár nad Sázavou will be repeated, starting from the first round and with the same five candidates.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/nejvyssi-soud-se-priklonil-na-stranu-soudce-ktery-nahlizel-do-spisu-kolegu_2611181904_aha",
+      "published_utc": "2026-11-18T18:04:00Z",
+      "title_raw": "Nejvyšší soud se přiklonil na stranu soudce, který nahlížel do spisů kolegů. Ministr Tejc žádal potrestání",
+      "lead_raw": "Nejvyšší soud ve středu zamítl odvolání ministra spravedlnosti Jeronýma Tejce (za hnutí ANO) v kárném řízení s vyškovským soudcem Pavlem Vrchou. Ministerstvo žádalo jeho potrestání kvůli tomu, že nahlížel do spisů kolegů.",
+      "fingerprint": "51da2d889a4ca85a1404928289a97f8b8bf9b02305069549ebff49bb9233946e",
+      "id": "51da2d889a4ca85a1404928289a97f8b8bf9b02305069549ebff49bb9233946e",
+      "title_en": "The Supreme Court sided with a judge who looked at the files of his colleagues.",
+      "lead_en": "The Supreme Court on Wednesday rejected the appeal of the Minister of Justice Jeronim Tejce (for the ANO movement) in a criminal case with the High Court Judge Pavel Vrch.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-zivotniho-prostredi-se-musi-vyporadat-s-pripominkami-k-jezu-na-labi_2611181823_tez",
+      "published_utc": "2026-11-18T17:23:00Z",
+      "title_raw": "Ministerstvo životního prostředí se musí vypořádat s připomínkami k jezu na Labi, přišly jich nižší stovky",
+      "lead_raw": "Ministerstvo životního prostředí se musí vypořádat se stovkami připomínek k plánovanému procesu EIA na výstavbu jezu na Labi. Připomínky mohli lidé, samosprávy nebo úřady posílat do pondělí 16.",
+      "fingerprint": "d74dec0cd35243c3a80ebfe80526db117972b4f9bfe5e1089adaa693d8c847f2",
+      "id": "d74dec0cd35243c3a80ebfe80526db117972b4f9bfe5e1089adaa693d8c847f2",
+      "title_en": "The Ministry of the Environment has to deal with the comments on the lake on the Lab. Hundreds of people came.",
+      "lead_en": "The Ministry of the Environment has to deal with hundreds of comments on the planned EIA process for the construction of the dam on the Lab.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-snemovnu-reprezentantu-poprve-povede-cernoch-demokrate-nominovali-jeffriese-320925",
+      "published_utc": "2026-11-18T17:19:51Z",
+      "title_raw": "Sněmovnu reprezentantů poprvé povede černoch. Demokraté nominovali Jeffriese",
+      "lead_raw": "Americká Sněmovna reprezentantů bude mít na začátku příštího roku pravděpodobně v čele černocha, což se stane poprvé v historii.",
+      "fingerprint": "d063336a4bc8c4f2a88d1cd34d1a11ab337220564123dddd6b7ac4e9892520e4",
+      "id": "d063336a4bc8c4f2a88d1cd34d1a11ab337220564123dddd6b7ac4e9892520e4",
+      "title_en": "The House of Representatives will be led by a black man for the first time.",
+      "lead_en": "The U.S. House of Representatives is likely to be led by a black man early next year, for the first time in history.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/odpovednost-za-atmosferu-ve-snemovne-ma-koalice-tvrdi-sebelova-mala-zlepsit-muze_2611181547_cen",
