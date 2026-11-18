@@ -1,0 +1,458 @@
+{
+  "updated_at_utc": "2026-11-18T16:55:09Z",
+  "count": 18,
+  "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/odpovednost-za-atmosferu-ve-snemovne-ma-koalice-tvrdi-sebelova-mala-zlepsit-muze_2611181547_cen",
+      "published_utc": "2026-11-18T14:47:00Z",
+      "title_raw": "Odpovědnost za atmosféru ve Sněmovně má koalice, tvrdí Šebelová. Malá: Zlepšit to může i opozice",
+      "lead_raw": "Osobní urážky, vzájemné výpady a napjaté vztahy. Atmosféra v Poslanecké sněmovně je na hranici běžného politického střetu.",
+      "fingerprint": "eb475df8638dcf47e889e9362f08c77b452e767b4eeac13e504dbcc630351984",
+      "id": "eb475df8638dcf47e889e9362f08c77b452e767b4eeac13e504dbcc630351984",
+      "title_en": "Shebel says the coalition is responsible for the atmosphere in the House.",
+      "lead_en": "The atmosphere in the Chamber of Deputies is on the brink of normal political conflict.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 12,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/znovu-k-urnam-senatni-volby-na-zdarsku-se-budou-opakovat-soud-zjistil-pochybeni/r~aaa292fe450069ba57a9c7a41a5b6400",
+      "published_utc": "2026-11-18T14:43:00Z",
+      "title_raw": "Znovu k urnám. Senátní volby na Žďársku se budou opakovat, soud zjistil pochybení",
+      "lead_raw": "Hlasování v senátních volbách na Žďársku se zopakuje, a to od prvního kola a se stejnými kandidáty, rozhodl Nejvyšší správní soud (NSS) ve středu. Vyhověl návrhu Radka Černého (ODS), jemuž chyběl jeden hlas pro postup do druhého kola.",
+      "fingerprint": "3ccf01f80410d613babc18aeee19f16dd99b22736f36ec2fb7acb9d91aaea568",
+      "id": "3ccf01f80410d613babc18aeee19f16dd99b22736f36ec2fb7acb9d91aaea568",
+      "title_en": "The Senate elections in Yedyarska will be repeated, the court found a mistake",
+      "lead_en": "Voting in the Senate elections in Žďársko is repeated, starting from the first round and with the same candidates, the Supreme Administrative Court (NSS) decided on Wednesday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",
+      "published_utc": "2026-11-18T14:24:55Z",
+      "title_raw": "Ruským sportovcům nebude umožněn vstup do Česka, uvedl Metnar",
+      "lead_raw": "Ministr vnitra Lubomír Metnar prohlásil, že i nadále platí vládní nařízení, které v podstatě zakazuje vydávat ruským reprezentantkám víza k účasti na mistrovství světa juniorek.",
+      "fingerprint": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "id": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "title_en": "Russian athletes will not be allowed into the Czech Republic, Metnar said",
+      "lead_en": "Interior Minister Lubomir Metnar stated that the government's regulations, which essentially prohibit Russian representatives from issuing visas to participate in the Junior World Championships, remain in force.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-prevratne-rozhodnuti-soudu-senatni-volby-na-zdarsku-se-budou-opakovat-320827",
+      "published_utc": "2026-11-18T14:13:07Z",
+      "title_raw": "Převratné rozhodnutí soudu. Senátní volby na Žďársku se budou opakovat",
+      "lead_raw": "Senátní volby na Žďársku se zopakují, a to od prvního kola. Nejvyšší správní soud dal za pravdu neúspěšnému kandidátovi Radku Černému z ODS.",
+      "fingerprint": "db7e3dc9144044662bdb482bc3942282d15fa80f9e3fddafa9637fd149321a73",
+      "id": "db7e3dc9144044662bdb482bc3942282d15fa80f9e3fddafa9637fd149321a73",
+      "title_en": "A reversal of the court's decision.",
+      "lead_en": "The Senate elections in Zadarsk will be repeated, starting from the first round, when the Supreme Administrative Court upheld the unsuccessful candidate of the Black Council of the ODS.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/soud-zrusil-senatni-volby-na-zdarsku-vyhovel-cernemu-ktery-se-nedostal-do_2611181511_mst",
+      "published_utc": "2026-11-18T14:11:00Z",
+      "title_raw": "Soud zrušil senátní volby na Žďársku. Vyhověl Černému, který neprošel do druhého kola o jeden hlas",
+      "lead_raw": "Senátní volby na Žďársku se zopakují, a to znovu od prvního kola a se stejnými kandidáty, rozhodl Nejvyšší správní soud. Vyhověl návrhu Radka Černého (ODS), jemuž chyběl jeden hlas pro postup do druhého kola.",
+      "fingerprint": "6b1cb866b2a65dd94967f629b5fa719c9313d433ebea5419acf3fc1917dc9c67",
+      "id": "6b1cb866b2a65dd94967f629b5fa719c9313d433ebea5419acf3fc1917dc9c67",
+      "title_en": "The court canceled the Senate election in Yedyarsk, favoring the Negro, who did not pass the second round by one vote.",
+      "lead_en": "The Senate elections in Žďársko will be repeated, again from the first round and with the same candidates, the Supreme Administrative Court ruled.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
+      "published_utc": "2026-11-18T13:55:45Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek českým školám",
+      "lead_raw": "Ukrajinští kriminalisté v září zadrželi osobu podezřelou ze zasílání bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku. Podle Bezpečnostní informační služby měl být zadržený Ukrajinec placen z Ruska.",
+      "fingerprint": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "id": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "title_en": "Ukraine detained a suspect in bomb threats to Czech schools",
+      "lead_en": "In September, Ukrainian criminals detained a person suspected of sending bomb threats to schools in the Czech Republic, Slovakia and Latvia.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-skolam-informoval-eurojust-379720",
+      "published_utc": "2026-11-18T13:53:47Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek školám, informoval Eurojust",
+      "lead_raw": "Člověka podezřelého z bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku zadrželi v září ukrajinští kriminalisté. V tiskové zprávě o tom informoval Úřad evropské justiční spolupráce Eurojust.",
+      "fingerprint": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "id": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "title_en": "Ukraine detained a suspect in bomb threats to schools, Eurojust reported",
+      "lead_en": "A man suspected of bombing schools in the Czech Republic, Slovakia and Latvia was detained by Ukrainian criminals in September, Eurojust's European Judicial Cooperation Office said in a press release.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/nemecky-svaz-novinaru-zada-aby-se-merz-pri-setkani-s-babisem-vyjadril-k-situaci-kolem-ct-a-cro-379719",
+      "published_utc": "2026-11-18T13:27:56Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz při setkání s Babišem vyjádřil k situaci kolem ČT a ČRo",
+      "lead_raw": "Německý svaz novinářů (DJV) vyzval ve středu kancléře Friedricha Merze, aby se vyjádřil k protestům proti změně financování České televize (ČT) a Českého rozhlasu (ČRo). Učinit by tak měl podle výzvy ve čtvrtek, kdy se v Berlíně při jednání takzvané koalice ochotných, tedy zemí podporujících Ukrajinu, setká s českým premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "id": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "title_en": "The German Union of Journalists asks Merz to comment on the situation surrounding the Czech Republic and the Czech Republic",
+      "lead_en": "The German Union of Journalists (DJV) called on Chancellor Friedrich Merz on Wednesday to speak out against the change in funding for Czech Television (ČT) and Czech Radio (ČRO).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-nemecky-svaz-novinaru-zada-aby-se-merz-vyjadril-k-financovani-ct-a-cro-320888",
+      "published_utc": "2026-11-18T12:56:46Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz vyjádřil k financování ČT a ČRo",
+      "lead_raw": "Největší novinářská organizace v Evropě, Německý svaz novinářů, vyzvala kancléře Friedricha Merze, aby při čtvrtečním setkání s Andrejem Babišem vyjádřil podporu protestům proti změně financování ČT a ČRo.",
+      "fingerprint": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "id": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "title_en": "The German Union of Journalists asks Merz to comment on the financing of the Czech Republic and the Czech Republic",
+      "lead_en": "The largest news organization in Europe, the German Union of Journalists, called on Chancellor Friedrich Merz to express support for the protests against the change in funding of the Czech Republic and the Czech Republic at a meeting with Andrej Babiš on Thursday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/zdrazime-mhd-a-parkovani-vzkazuje-prazska-koalice-rekla-kolik-ma-stat-rocni-kupon/r~aaa29030b688cdb5c1cc43963ea51c54",
+      "published_utc": "2026-11-18T11:41:00Z",
+      "title_raw": "Zdražíme MHD a parkování, vzkazuje nová pražská vláda. Roční kupon už má cenovku",
+      "lead_raw": "Pražská koalice plánuje zdražení městské hromadné dopravy a parkování či zklidnění dopravy v centru. Po představení členů budoucí rady to ve středu řekl nominant na post náměstka pro dopravu Adam Scheinherr (Praha sobě).",
+      "fingerprint": "49c587e5ce82363448f1034232dcf425bcbafc56098e435c84d4fc36ded99364",
+      "id": "49c587e5ce82363448f1034232dcf425bcbafc56098e435c84d4fc36ded99364",
+      "title_en": "We're going to raise the MHD and parking, the new Prague government says.",
+      "lead_en": "The Prague Coalition plans to raise the price of public transport and park or relax transport in the city centre, said the nominee for deputy transport minister Adam Scheinherr (Prague itself) after the presentation of the members of the future council on Wednesday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/regiony/hlavni-mesto-praha/stan-spolu-a-praha-sobe-podepsaly-koalicni-smlouvu-v-praze-379711",
+      "published_utc": "2026-11-18T09:58:14Z",
+      "title_raw": "STAN, SPOLU a Praha sobě podepsaly koaliční smlouvu v Praze",
+      "lead_raw": "Koalice STAN, SPOLU (ODS, TOP 09) a Praha sobě ve středu podepsala koaliční smlouvu a představila novou radu. Novým primátorem Prahy bude lídr vítězného hnutí STAN Petr Hlaváček.",
+      "fingerprint": "f37eca662a517cf374b6c7aba330bf30480d7022a0999175ec13b58bce96765d",
+      "id": "f37eca662a517cf374b6c7aba330bf30480d7022a0999175ec13b58bce96765d",
+      "title_en": "STAN, SPOLU and Prague signed a coalition agreement in Prague",
+      "lead_en": "The Coalition of STAN, SPOLU (ODS, TOP 09) and Prague signed a coalition agreement on Wednesday and introduced a new council.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-oznami-rozhodnuti-o-stiznosti-na-senatni-volby-na-zdarsku-rozdil-tam-byl-jeden-hlas-379710",
+      "published_utc": "2026-11-18T09:38:23Z",
+      "title_raw": "Senátní volby na Žďársku jsou neplatné, rozhodl soud",
+      "lead_raw": "Nejvyšší správní soud označil výsledky senátních voleb na Žďársku za neplatné. Rozhodl na základě stížnosti, kterou podal Radek Černý (ODS), jenž tam o jediný hlas nepostoupil do druhého kola.",
+      "fingerprint": "13468fe60da2aa0a2e05570b7b947fbc68a367c4f6260c99581b5c5db04a5bd9",
+      "id": "13468fe60da2aa0a2e05570b7b947fbc68a367c4f6260c99581b5c5db04a5bd9",
+      "title_en": "Senate elections in Zadarsk are void, the court ruled",
+      "lead_en": "The Supreme Administrative Court declared the results of the Senate elections in Žďársko invalid, ruling on the basis of a complaint filed by Radek Černý (ODS), who did not advance to the second round by one vote.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/koalice-slozena-viteznym-hnutim-ano-povede-chomutov-primatorem-se-mel-stat-radek_2611180851_tez",
+      "published_utc": "2026-11-18T07:51:00Z",
+      "title_raw": "Koalice složená vítězným hnutím ANO povede Chomutov. Primátorem se stal Radek Vyšín",
+      "lead_raw": "Chomutov povede koalice složená vítězným hnutím ANO, která bude mít v zastupitelstvu těsnou většinu jednoho hlasu. V zastupitelstvu, které má 35 členů, bude mít 18 zastupitelů.",
+      "fingerprint": "47c384d9af22255cd6a751299ced7fede9c6cc2b5753e419f9c239d2fec4358e",
+      "id": "47c384d9af22255cd6a751299ced7fede9c6cc2b5753e419f9c239d2fec4358e",
+      "title_en": "The coalition formed by the victorious ANO movement will be led by Chomutov.",
+      "lead_en": "Chomutov will lead a coalition made up of the victorious ANO movement, which will have a narrow majority of one vote in the House of Representatives.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
+      "published_utc": "2026-11-18T07:28:18Z",
+      "title_raw": "Česko by mohlo vypsat zakázku na protivzdušnou obranu příští rok, uvedl Zůna",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat taktické balistické střely, řekl českým novinářům ve středu při návštěvě Izraele ministr obrany Jaromír Zůna (za SPD). Česká delegace získala nabídky, které by mohly umožnit rychlejší pořízení systémů protivzdušné obrany, než se původně předpokládalo, zmínil ministr zahraničí Petr Macinka (Motoristé).",
+      "fingerprint": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "id": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "title_en": "The Czech Republic could sign an air defense contract next year, Zuna said.",
+      "lead_en": "The Czech Republic could issue a public contract next year for the purchase of new air defense systems that should be able to interfere with tactical ballistic missiles, Czech Minister of Defense Jaromír Zóna (for the SPD) told reporters on Wednesday during a visit to Israel.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 10,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/ceska-republika-ministerstvo-obrany-systemy-protivzdusne-obrany-jaromir-zuna_2611180759_elev",
+      "published_utc": "2026-11-18T06:59:00Z",
+      "title_raw": "Česko se poohlíží po systémech protivzdušné obrany. Ve hře jsou izraelské, ale také evropské systémy",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat také balistické střely. Českým novinářům to 18.",
+      "fingerprint": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "id": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "title_en": "The Czech Republic is looking at air defense systems.",
+      "lead_en": "The Czech Republic could issue a public contract next year for new air defense systems capable of intercepting ballistic missiles.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 10,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/mame-prezidenta-ktery-popira-co-vidime-na-vlastni-oci-rikaji-demokrate-na_2611180700_cen",
+      "published_utc": "2026-11-18T06:00:00Z",
+      "title_raw": "Máme prezidenta, který popírá to, co vidíme na vlastní oči, říkají demokraté na klimatické konferenci",
+      "lead_raw": "USA s návratem republikána Donalda Trumpa do Bílého domu znovu odstoupily od Pařížské dohody. A teď už podruhé v řadě nevyslaly vládní delegaci na globální vyjednávání o ochraně klimatu.",
+      "fingerprint": "b3633ed9c56863a780958e858e0b921e6985f4bbdee6686b766ab5b3c7c769a7",
+      "id": "b3633ed9c56863a780958e858e0b921e6985f4bbdee6686b766ab5b3c7c769a7",
+      "title_en": "We have a president who denies what we see with his own eyes, say Democrats at the climate conference",
+      "lead_en": "The U.S. with the return of Republican Donald Trump to the White House has again withdrawn from the Paris Agreement, and for the second time in a row, has not sent a government delegation to global climate negotiations.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
+      "published_utc": "2026-11-17T15:19:49Z",
+      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
+      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
+      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "title_en": "The Munitions Initiative provides Ukraine with more than 60 percent of its ammunition, Landovsky said.",
+      "lead_en": "The ammunition initiative provides more than 60 percent of Ukraine's artillery ammunition, Jakub Landovsky of the Czech Ministry of Defence said after a meeting of European Union (EU) defence ministers in Brussels.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/general-snajdarek-od-ledna-povede-sekci-rozvoje-sil-ministerstva-obrany-rekl-zuna-379692",
+      "published_utc": "2026-11-17T14:32:07Z",
+      "title_raw": "Generál Šnajdárek od ledna povede sekci rozvoje sil ministerstva obrany, řekl Zůna",
+      "lead_raw": "Brigádní generál Petr Šnajdárek nastoupí od ledna nadcházejícího roku do čela sekce rozvoje sil ministerstva obrany. Skončí ve funkci ředitele sekce komunikačních a informačních systémů, kde ho nahradí Jan Jelínek, sdělil ministr obrany Jaromír Zůna (za SPD) při své návštěvě Izraele, kde je společně s premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "id": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "title_en": "General Schnajdarek will lead the Department of Defense Forces Development Section from January, Zuna said.",
+      "lead_en": "Brigadier General Petr Šnajdárek will take over as head of the Department of Defence Force Development from January next year. He will end up as Director of the Department of Communications and Information Systems, where he will be replaced by Jan Jelínek, Defense Minister Jaromír Zóna (for the SPD) said during his visit to Israel, where he is accompanied by Prime Minister Andrej Babiš (ANO).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    }
+  ]
+}

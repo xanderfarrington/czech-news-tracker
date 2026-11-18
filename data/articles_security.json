@@ -1,0 +1,159 @@
+{
+  "updated_at_utc": "2026-11-18T16:55:09Z",
+  "topic": "security",
+  "count": 6,
+  "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
+      "published_utc": "2026-11-18T13:55:45Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek českým školám",
+      "lead_raw": "Ukrajinští kriminalisté v září zadrželi osobu podezřelou ze zasílání bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku. Podle Bezpečnostní informační služby měl být zadržený Ukrajinec placen z Ruska.",
+      "fingerprint": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "id": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
+      "title_en": "Ukraine detained a suspect in bomb threats to Czech schools",
+      "lead_en": "In September, Ukrainian criminals detained a person suspected of sending bomb threats to schools in the Czech Republic, Slovakia and Latvia.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-skolam-informoval-eurojust-379720",
+      "published_utc": "2026-11-18T13:53:47Z",
+      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek školám, informoval Eurojust",
+      "lead_raw": "Člověka podezřelého z bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku zadrželi v září ukrajinští kriminalisté. V tiskové zprávě o tom informoval Úřad evropské justiční spolupráce Eurojust.",
+      "fingerprint": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "id": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
+      "title_en": "Ukraine detained a suspect in bomb threats to schools, Eurojust reported",
+      "lead_en": "A man suspected of bombing schools in the Czech Republic, Slovakia and Latvia was detained by Ukrainian criminals in September, Eurojust's European Judicial Cooperation Office said in a press release.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
+      "published_utc": "2026-11-18T07:28:18Z",
+      "title_raw": "Česko by mohlo vypsat zakázku na protivzdušnou obranu příští rok, uvedl Zůna",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat taktické balistické střely, řekl českým novinářům ve středu při návštěvě Izraele ministr obrany Jaromír Zůna (za SPD). Česká delegace získala nabídky, které by mohly umožnit rychlejší pořízení systémů protivzdušné obrany, než se původně předpokládalo, zmínil ministr zahraničí Petr Macinka (Motoristé).",
+      "fingerprint": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "id": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
+      "title_en": "The Czech Republic could sign an air defense contract next year, Zuna said.",
+      "lead_en": "The Czech Republic could issue a public contract next year for the purchase of new air defense systems that should be able to interfere with tactical ballistic missiles, Czech Minister of Defense Jaromír Zóna (for the SPD) told reporters on Wednesday during a visit to Israel.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 10,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/ceska-republika-ministerstvo-obrany-systemy-protivzdusne-obrany-jaromir-zuna_2611180759_elev",
+      "published_utc": "2026-11-18T06:59:00Z",
+      "title_raw": "Česko se poohlíží po systémech protivzdušné obrany. Ve hře jsou izraelské, ale také evropské systémy",
+      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat také balistické střely. Českým novinářům to 18.",
+      "fingerprint": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "id": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
+      "title_en": "The Czech Republic is looking at air defense systems.",
+      "lead_en": "The Czech Republic could issue a public contract next year for new air defense systems capable of intercepting ballistic missiles.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 10,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
+      "published_utc": "2026-11-17T15:19:49Z",
+      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
+      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
+      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "title_en": "The Munitions Initiative provides Ukraine with more than 60 percent of its ammunition, Landovsky said.",
+      "lead_en": "The ammunition initiative provides more than 60 percent of Ukraine's artillery ammunition, Jakub Landovsky of the Czech Ministry of Defence said after a meeting of European Union (EU) defence ministers in Brussels.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/general-snajdarek-od-ledna-povede-sekci-rozvoje-sil-ministerstva-obrany-rekl-zuna-379692",
+      "published_utc": "2026-11-17T14:32:07Z",
+      "title_raw": "Generál Šnajdárek od ledna povede sekci rozvoje sil ministerstva obrany, řekl Zůna",
+      "lead_raw": "Brigádní generál Petr Šnajdárek nastoupí od ledna nadcházejícího roku do čela sekce rozvoje sil ministerstva obrany. Skončí ve funkci ředitele sekce komunikačních a informačních systémů, kde ho nahradí Jan Jelínek, sdělil ministr obrany Jaromír Zůna (za SPD) při své návštěvě Izraele, kde je společně s premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "id": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
+      "title_en": "General Schnajdarek will lead the Department of Defense Forces Development Section from January, Zuna said.",
+      "lead_en": "Brigadier General Petr Šnajdárek will take over as head of the Department of Defence Force Development from January next year. He will end up as Director of the Department of Communications and Information Systems, where he will be replaced by Jan Jelínek, Defense Minister Jaromír Zóna (for the SPD) said during his visit to Israel, where he is accompanied by Prime Minister Andrej Babiš (ANO).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    }
+  ]
+}

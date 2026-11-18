@@ -1,0 +1,108 @@
+{
+  "updated_at_utc": "2026-11-18T16:55:09Z",
+  "topic": "foreign_affairs",
+  "count": 4,
+  "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",
+      "published_utc": "2026-11-18T14:24:55Z",
+      "title_raw": "Ruským sportovcům nebude umožněn vstup do Česka, uvedl Metnar",
+      "lead_raw": "Ministr vnitra Lubomír Metnar prohlásil, že i nadále platí vládní nařízení, které v podstatě zakazuje vydávat ruským reprezentantkám víza k účasti na mistrovství světa juniorek.",
+      "fingerprint": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "id": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
+      "title_en": "Russian athletes will not be allowed into the Czech Republic, Metnar said",
+      "lead_en": "Interior Minister Lubomir Metnar stated that the government's regulations, which essentially prohibit Russian representatives from issuing visas to participate in the Junior World Championships, remain in force.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/nemecky-svaz-novinaru-zada-aby-se-merz-pri-setkani-s-babisem-vyjadril-k-situaci-kolem-ct-a-cro-379719",
+      "published_utc": "2026-11-18T13:27:56Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz při setkání s Babišem vyjádřil k situaci kolem ČT a ČRo",
+      "lead_raw": "Německý svaz novinářů (DJV) vyzval ve středu kancléře Friedricha Merze, aby se vyjádřil k protestům proti změně financování České televize (ČT) a Českého rozhlasu (ČRo). Učinit by tak měl podle výzvy ve čtvrtek, kdy se v Berlíně při jednání takzvané koalice ochotných, tedy zemí podporujících Ukrajinu, setká s českým premiérem Andrejem Babišem (ANO).",
+      "fingerprint": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "id": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
+      "title_en": "The German Union of Journalists asks Merz to comment on the situation surrounding the Czech Republic and the Czech Republic",
+      "lead_en": "The German Union of Journalists (DJV) called on Chancellor Friedrich Merz on Wednesday to speak out against the change in funding for Czech Television (ČT) and Czech Radio (ČRO).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-nemecky-svaz-novinaru-zada-aby-se-merz-vyjadril-k-financovani-ct-a-cro-320888",
+      "published_utc": "2026-11-18T12:56:46Z",
+      "title_raw": "Německý svaz novinářů žádá, aby se Merz vyjádřil k financování ČT a ČRo",
+      "lead_raw": "Největší novinářská organizace v Evropě, Německý svaz novinářů, vyzvala kancléře Friedricha Merze, aby při čtvrtečním setkání s Andrejem Babišem vyjádřil podporu protestům proti změně financování ČT a ČRo.",
+      "fingerprint": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "id": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
+      "title_en": "The German Union of Journalists asks Merz to comment on the financing of the Czech Republic and the Czech Republic",
+      "lead_en": "The largest news organization in Europe, the German Union of Journalists, called on Chancellor Friedrich Merz to express support for the protests against the change in funding of the Czech Republic and the Czech Republic at a meeting with Andrej Babiš on Thursday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
+      "published_utc": "2026-11-17T15:19:49Z",
+      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
+      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
+      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
+      "title_en": "The Munitions Initiative provides Ukraine with more than 60 percent of its ammunition, Landovsky said.",
+      "lead_en": "The ammunition initiative provides more than 60 percent of Ukraine's artillery ammunition, Jakub Landovsky of the Czech Ministry of Defence said after a meeting of European Union (EU) defence ministers in Brussels.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    }
+  ]
+}
