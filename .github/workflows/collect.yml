@@ -19,7 +19,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
 
@@ -29,8 +29,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
           cache: pip
+
+      - name: Cache Argos translation models
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/argos-translate
+          key: argos-cs-en-v1
 
       - name: Install dependencies
         run: |
@@ -39,11 +45,9 @@ jobs:
 
       - name: Run Czech News Collector
         env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
-          DEEPL_API_URL: https://api-free.deepl.com/v2/translate
-          TRANSLATION_PROVIDER: auto
           KEEP_HOURS: "48"
-          TRANSLATE_LIMIT: "40"
+          TRANSLATE_LIMIT: "30"
+          ARGOS_PACKAGES_DIR: ~/.local/share/argos-translate/packages
 
         run: |
           python collector.py
