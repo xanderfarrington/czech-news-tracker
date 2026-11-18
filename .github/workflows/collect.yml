@@ -19,13 +19,16 @@ jobs:
 
     runs-on: ubuntu-24.04
 
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     env:
       KEEP_HOURS: "48"
       TRANSLATE_LIMIT: "60"
+      BATCH_SIZE: "4"
 
       HF_HOME: ${{ github.workspace }}/.hf-cache
+
+      TOKENIZERS_PARALLELISM: "false"
 
     steps:
 
@@ -37,7 +40,7 @@ jobs:
         uses: actions/checkout@v6
 
       # ----------------------------------------
-      # PYTHON
+      # SET UP PYTHON
       # ----------------------------------------
 
       - name: Set up Python
@@ -46,14 +49,14 @@ jobs:
           python-version: "3.11"
 
       # ----------------------------------------
-      # CACHE TRANSLATION MODEL
+      # CACHE NLLB MODEL
       # ----------------------------------------
 
-      - name: Cache MarianMT model
+      - name: Cache NLLB model
         uses: actions/cache@v4
         with:
           path: .hf-cache
-          key: marianmt-cs-en-v1
+          key: nllb200-600m-cs-en-v1
 
       # ----------------------------------------
       # INSTALL CPU-ONLY PYTORCH
@@ -66,10 +69,10 @@ jobs:
             --index-url https://download.pytorch.org/whl/cpu
 
       # ----------------------------------------
-      # INSTALL DEPENDENCIES
+      # INSTALL REQUIREMENTS
       # ----------------------------------------
 
-      - name: Install requirements
+      - name: Install Python dependencies
         run: |
           python -m pip install -r requirements.txt
 
@@ -82,10 +85,10 @@ jobs:
           python collector.py
 
       # ----------------------------------------
-      # COMMIT OUTPUTS
+      # COMMIT JSON OUTPUT
       # ----------------------------------------
 
-      - name: Commit JSON data
+      - name: Commit updated JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
