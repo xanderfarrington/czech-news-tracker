@@ -4,18 +4,23 @@
 Czech News Tracker
 ==================
 
-RSS Collector + Argos Translator + Topic Classifier
+Collects, classifies, translates, and archives Czech news.
 
-Features:
-- Collect news from Czech RSS feeds
-- Filter for Czech politics, security, and foreign affairs
-- Translate Czech headlines and summaries into English
-- Use Argos Translate locally (no API keys or rate limits)
-- Preserve previously completed translations
-- Deduplicate articles
-- Maintain rolling 48-hour feed
-- Maintain permanent historical archive
-- Generate topic-specific JSON feeds
+Sources:
+    iROZHLAS Domestic
+    iROZHLAS World
+    CT24
+    Seznam Zpravy
+    Aktualne.cz
+
+Topics:
+    politics
+    security
+    foreign_affairs
+
+Translation:
+    Argos Translate (Czech -> English)
+    Local inference; no external translation API.
 
 Outputs:
     data/articles_latest.json
@@ -33,18 +38,12 @@ import json
 import time
 import hashlib
 import logging
-import unicodedata
 import calendar
+import unicodedata
 
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
-from typing import Dict
-from urllib.parse import (
-    urlsplit,
-    urlunsplit,
-    parse_qsl,
-    urlencode,
-)
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 import requests
 import feedparser
@@ -66,235 +65,226 @@ logging.basicConfig(
 
 LOG = logging.getLogger("czech-news")
 
+DATA_DIR = Path("data")
+
+KEEP_HOURS = int(os.getenv("KEEP_HOURS", "48"))
+
+# Set to 0 for unlimited translation.
+TRANSLATE_LIMIT = int(os.getenv("TRANSLATE_LIMIT", "60"))
+
+TIMEOUT = 20
+
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/122.0.0.0 Safari/537.36"
-    ),
+    "User-Agent": "CzechNewsTracker/2.0 (research news monitor)",
     "Accept": "application/rss+xml, application/xml, text/xml, */*",
     "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.7",
 }
 
-TIMEOUT = 20
-MAX_RETRIES = 3
-RETRY_SLEEP = 2
-
-KEEP_HOURS = int(os.getenv("KEEP_HOURS", "48"))
-
-# Maximum number of articles translated per run.
-# Set to 0 for unlimited translation.
-TRANSLATE_LIMIT = int(os.getenv("TRANSLATE_LIMIT", "30"))
-
-OUT_JSON = Path(
-    os.getenv("OUT_JSON", "data/articles_latest.json")
-)
-
-ARCHIVE_JSON = Path(
-    os.getenv("ARCHIVE_JSON", "data/articles_archive.json")
-)
-
-TOPICS = [
+TOPICS = (
     "politics",
     "security",
     "foreign_affairs",
-]
+)
 
 
 # ============================================================
-# NEWS SOURCES
+# SOURCES
 # ============================================================
 
-SOURCES: Dict[str, Dict] = {
+SOURCES = {
 
-    "iROZHLAS (Domestic)": {
-        "feeds": [
-            "https://www.irozhlas.cz/rss/irozhlas/section/zpravy-domov",
-        ],
-    },
+    "iROZHLAS (Domestic)": [
+        "https://www.irozhlas.cz/rss/irozhlas/section/zpravy-domov",
+    ],
 
-    "iROZHLAS (World)": {
-        "feeds": [
-            "https://www.irozhlas.cz/rss/irozhlas/section/zpravy-svet",
-        ],
-    },
+    "iROZHLAS (World)": [
+        "https://www.irozhlas.cz/rss/irozhlas/section/zpravy-svet",
+    ],
 
-    "CT24": {
-        "feeds": [
-            "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy",
-        ],
-    },
+    "CT24": [
+        "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy",
+    ],
 
-    "Seznam Zpravy": {
-        "feeds": [
-            "https://www.seznamzpravy.cz/rss",
-        ],
-    },
+    "Seznam Zpravy": [
+        "https://www.seznamzpravy.cz/rss",
+    ],
 
-    "Aktualne.cz": {
-        "feeds": [
-            "https://zpravy.aktualne.cz/rss/",
-        ],
-    },
+    "Aktualne.cz": [
+        "https://zpravy.aktualne.cz/rss/",
+    ],
 
 }
 
 
 # ============================================================
-# TOPIC KEYWORDS
+# CLASSIFICATION KEYWORDS
 # ============================================================
+
+# Keywords are stored without Czech diacritics.
+# Text is normalized before classification.
+#
+# Prefix matching accommodates Czech grammatical inflections.
 
 TOPIC_KEYWORDS = {
 
     "politics": [
-        "vlada",
-        "vladni",
+
+        # Government
+        "vlad",
         "premier",
         "predseda vlady",
         "ministr",
-        "ministerstvo",
         "kabinet",
+
+        # Parliament
         "parlament",
-        "poslanecka snemovna",
-        "snemovna",
-        "poslanec",
-        "poslanci",
+        "snemovn",
+        "poslan",
         "senat",
         "senator",
-        "volby",
-        "volebni",
-        "koalice",
-        "opozice",
-        "politika",
-        "politicky",
-        "politicka",
+
+        # Elections and politics
+        "volb",
+        "voleb",
+        "koalic",
+        "opozic",
+        "politic",
+        "politick",
         "zakon",
-        "legislativa",
-        "ustavni",
-        "referendum",
-        "ano 2011",
+        "legislativ",
+        "ustavn",
+        "referend",
+
+        # Parties
         "hnuti ano",
+        "ano 2011",
         "ods",
         "stan",
         "spolu",
-        "pirati",
+        "pirat",
         "spd",
-        "motoriste",
+        "motorist",
         "top 09",
         "kdu-csl",
+
+        # Institutions
         "prezident",
         "prazsky hrad",
         "ustavni soud",
+
     ],
 
     "security": [
-        "obrana",
-        "obranny",
-        "ministerstvo obrany",
-        "armada",
-        "vojaci",
-        "vojensky",
-        "vojsko",
-        "ozbrojene sily",
+
+        # Defense
+        "obran",
+        "armad",
+        "vojak",
+        "vojensk",
+        "vojsk",
+        "ozbrojen",
+
+        # NATO
         "nato",
-        "aliance",
-        "severoatlanticka",
-        "zbrane",
-        "zbrojni",
-        "munice",
-        "raketa",
-        "rakety",
-        "protivzdusna",
+        "severoatlantick",
+
+        # Military technology
+        "zbran",
+        "zbrojn",
+        "munic",
+        "raket",
+        "protivzdusn",
         "dron",
-        "bezpilotni",
-        "stihacka",
+        "bezpilotn",
+        "stihack",
         "letoun",
         "f-35",
         "tank",
-        "delostrelectvo",
+        "delostrelectv",
+
+        # Intelligence and security
         "bezpecnost",
-        "narodni bezpecnost",
-        "kyberneticka",
-        "kyberneticky",
-        "kyberutok",
-        "hybridni hrozby",
-        "hybridni valka",
-        "terorismus",
-        "teroristicky",
+        "kyber",
+        "hybridni hrozb",
+        "teror",
         "sabotaz",
         "spionaz",
-        "rozvedka",
-        "kontrarozvedka",
-        "tajne sluzby",
+        "rozvedk",
+        "kontrarozvedk",
+        "tajne sluzb",
         "bis",
         "vzis",
         "nukib",
-        "generalni stab",
-        "valka",
-        "invaze",
-        "vojenska operace",
-        "utok",
-        "fronta",
-        "mobilizace",
+
+        # Conflict
+        "valk",
+        "invaz",
+        "mobilizac",
+        "vojenska operac",
+
     ],
 
     "foreign_affairs": [
-        "diplomacie",
-        "diplomaticky",
-        "zahranicni politika",
-        "ministerstvo zahranici",
-        "mezinarodni vztahy",
-        "velvyslanec",
-        "velvyslanectvi",
-        "ambasada",
-        "jednani",
+
+        # Diplomacy
+        "diplomac",
+        "diplomat",
+        "zahranic",
+        "mezinarodn",
+        "velvyslan",
+        "ambasad",
+        "bilateral",
         "summit",
-        "bilateralni",
-        "mezinarodni",
+
+        # EU
         "evropska unie",
         "evropske unie",
         "evropska komise",
         "evropsky parlament",
         "evropska rada",
         "brusel",
-        "unijni",
+        "unijn",
+
+        # International organizations
         "nato",
         "osn",
-        "organizace spojenych narodu",
-        "visegradska",
+        "visegrad",
         "v4",
-        "ukrajina",
-        "ukrajinsky",
+
+        # Foreign countries
+        "ukrajin",
+        "rusk",
         "rusko",
-        "rusky",
-        "slovensko",
-        "slovensky",
-        "polsko",
-        "polsky",
-        "nemecko",
-        "nemecky",
+        "slovensk",
+        "polsk",
+        "nemeck",
         "cina",
-        "cinsky",
+        "cinsk",
         "spojene staty",
-        "usa",
         "washington",
         "izrael",
         "iran",
-        "sankce",
-        "zahranicni pomoc",
+
+        # Foreign policy
+        "sankc",
+        "strategicke partnerstv",
         "vojenska pomoc",
-        "mezinarodni obchod",
-        "strategicke partnerstvi",
+
     ],
 
 }
 
 
 # ============================================================
-# CZECH RELEVANCE KEYWORDS
+# CZECH RELEVANCE
 # ============================================================
 
+# These are higher-confidence Czech-specific references.
+# Generic terms such as "government" or "president"
+# are deliberately excluded.
+
 CZECH_KEYWORDS = [
+
     "cesko",
     "ceska republika",
     "ceske republiky",
@@ -302,79 +292,98 @@ CZECH_KEYWORDS = [
     "ceska",
     "ceske",
     "ceskem",
+    "cesku",
+
     "praha",
     "praze",
-    "prazsky",
-    "ceska vlada",
-    "vlada",
-    "premier",
-    "snemovna",
-    "poslanci",
-    "senat",
-    "prezident",
-    "ministerstvo",
-    "ministr",
-    "parlament",
+    "prazsk",
+
+    "snemovn",
     "prazsky hrad",
-    "bis",
-    "nukib",
     "armada cr",
-    "ods",
-    "stan",
+
+    "babis",
+    "pavel",
     "hnuti ano",
-    "pirati",
-    "spd",
-    "motoriste",
+    "ods",
+    "kdu-csl",
+    "top 09",
+    "motorist",
+
+    "ceska televize",
+    "cesky rozhlas",
+
+    "nukib",
 ]
 
 
 # ============================================================
-# UTILITIES
+# HELPERS
 # ============================================================
 
 def utcnow():
     return datetime.now(timezone.utc)
 
 
+def timestamp(dt):
+    return dt.astimezone(timezone.utc).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+
+
 def normalize_space(text):
-    return " ".join((text or "").split()).strip()
+    return " ".join(str(text or "").split()).strip()
 
 
 def normalize_text(text):
 
     text = unicodedata.normalize(
         "NFKD",
-        (text or "").lower()
+        str(text or "").lower()
     )
 
     return "".join(
-        character
-        for character in text
-        if not unicodedata.combining(character)
+        char for char in text
+        if not unicodedata.combining(char)
     )
 
 
-def keyword_match(text, keyword):
+def matches(text, keyword):
+
+    """
+    Match keyword stems at word beginnings.
+
+    Example:
+        'ministr' matches 'ministra' and 'ministrem'.
+    """
 
     keyword = normalize_text(keyword)
 
-    pattern = r"(?<!\w)" + re.escape(keyword)
+    return bool(
+        re.search(
+            r"(?<!\w)" + re.escape(keyword),
+            text
+        )
+    )
 
-    return bool(re.search(pattern, text))
+
+def hash_key(text):
+
+    return hashlib.sha256(
+        text.encode("utf-8")
+    ).hexdigest()
 
 
 def normalize_url(url):
 
-    url = normalize_space(url)
-
-    if not url:
-        return ""
-
-    parts = urlsplit(url)
+    parts = urlsplit(normalize_space(url))
 
     filtered_query = [
+
         (key, value)
+
         for key, value in parse_qsl(parts.query)
+
         if not (
             key.lower().startswith("utm_")
             or key.lower() in (
@@ -384,6 +393,7 @@ def normalize_url(url):
                 "mc_eid",
             )
         )
+
     ]
 
     return urlunsplit((
@@ -395,46 +405,17 @@ def normalize_url(url):
     ))
 
 
-def normalize_title(text):
-
-    text = normalize_text(text)
-
-    text = re.sub(r"[^\w\s]", "", text)
-
-    return normalize_space(text)
-
-
-def hash_key(*parts):
-
-    h = hashlib.sha256()
-
-    for part in parts:
-
-        h.update(
-            str(part or "").encode(
-                "utf-8",
-                errors="ignore"
-            )
-        )
-
-        h.update(b"|")
-
-    return h.hexdigest()
-
-
-def clean_html(html):
-
-    soup = BeautifulSoup(
-        html or "",
-        "html.parser"
-    )
+def clean_html(text):
 
     return normalize_space(
-        soup.get_text(" ", strip=True)
+        BeautifulSoup(
+            text or "",
+            "html.parser"
+        ).get_text(" ", strip=True)
     )
 
 
-def two_sentence_lead(text):
+def short_lead(text):
 
     text = clean_html(text)
 
@@ -446,56 +427,56 @@ def two_sentence_lead(text):
         text
     )
 
-    sentences = [
-        sentence.strip()
-        for sentence in sentences
-        if sentence.strip()
-    ]
-
-    if len(sentences) >= 2:
-        return sentences[0] + " " + sentences[1]
-
-    return text[:400].rstrip()
+    return " ".join(
+        sentences[:2]
+    )[:600]
 
 
 # ============================================================
-# RSS FETCHING
+# RSS COLLECTION
 # ============================================================
 
-def fetch_text(url):
+SESSION = requests.Session()
+SESSION.headers.update(HEADERS)
 
-    session = requests.Session()
-    session.headers.update(HEADERS)
 
-    for attempt in range(1, MAX_RETRIES + 1):
+def fetch_feed(url):
+
+    for attempt in range(3):
 
         try:
 
-            response = session.get(
+            response = SESSION.get(
                 url,
-                timeout=TIMEOUT,
-                allow_redirects=True
+                timeout=TIMEOUT
             )
 
             response.raise_for_status()
 
-            if response.content:
-                return response.content
+            parsed = feedparser.parse(
+                response.content
+            )
 
-        except requests.RequestException as exc:
+            if parsed.entries:
+                return parsed.entries
 
             LOG.warning(
-                "Fetch failed %s (%s/%s): %s",
+                "Feed returned no entries: %s",
+                url
+            )
+
+        except Exception as exc:
+
+            LOG.warning(
+                "RSS error: %s (%s)",
                 url,
-                attempt,
-                MAX_RETRIES,
                 exc
             )
 
-        if attempt < MAX_RETRIES:
-            time.sleep(RETRY_SLEEP * attempt)
+        if attempt < 2:
+            time.sleep(2 * (attempt + 1))
 
-    return None
+    return []
 
 
 def parse_date(entry):
@@ -512,48 +493,40 @@ def parse_date(entry):
 
             try:
 
-                timestamp = calendar.timegm(value)
-
                 return datetime.fromtimestamp(
-                    timestamp,
+                    calendar.timegm(value),
                     timezone.utc
                 )
 
-            except (
-                ValueError,
-                TypeError,
-                OverflowError
-            ):
-                pass
+            except Exception:
+                continue
 
     return None
 
 
-def collect_from_rss(source_name, feeds):
+def collect_articles():
 
-    rows = []
+    articles = []
 
-    for feed_url in feeds:
+    successful_sources = 0
 
-        content = fetch_text(feed_url)
+    for source, feeds in SOURCES.items():
 
-        if not content:
-            continue
+        entries = []
 
-        parsed = feedparser.parse(content)
+        for feed in feeds:
 
-        if parsed.bozo and not parsed.entries:
+            entries = fetch_feed(feed)
 
-            LOG.warning(
-                "Invalid RSS feed: %s",
-                feed_url
-            )
+            if entries:
+                break
 
-            continue
+        if entries:
+            successful_sources += 1
 
-        feed_rows = []
+        source_count = 0
 
-        for entry in parsed.entries:
+        for entry in entries:
 
             title = clean_html(
                 entry.get("title", "")
@@ -563,387 +536,288 @@ def collect_from_rss(source_name, feeds):
                 entry.get("link", "")
             )
 
-            summary = (
+            published = parse_date(entry)
+
+            if not title or not url or not published:
+                continue
+
+            # Skip future-dated entries.
+            if published > utcnow() + timedelta(minutes=10):
+                continue
+
+            lead = short_lead(
                 entry.get("summary")
                 or entry.get("description")
                 or ""
             )
 
-            publication_date = parse_date(entry)
+            articles.append({
 
-            if not title or not url or not publication_date:
-                continue
-
-            feed_rows.append({
-
-                "source": source_name,
+                "source": source,
 
                 "url": url,
 
-                "published_utc": (
-                    publication_date
-                    .astimezone(timezone.utc)
-                    .strftime("%Y-%m-%dT%H:%M:%SZ")
-                ),
+                "published_utc": timestamp(published),
 
                 "title_raw": title,
 
-                "lead_raw": two_sentence_lead(summary),
+                "lead_raw": lead,
 
             })
 
-        if feed_rows:
+            source_count += 1
 
-            rows.extend(feed_rows)
-            break
+        LOG.info(
+            "%s: %s articles",
+            source,
+            source_count
+        )
 
-    return rows
+    LOG.info(
+        "Total collected: %s",
+        len(articles)
+    )
+
+    if successful_sources == 0:
+
+        raise RuntimeError(
+            "All RSS sources failed."
+        )
+
+    return articles
 
 
 # ============================================================
 # CLASSIFICATION
 # ============================================================
 
-def classify_topics(article):
+def classify(article):
 
     title = normalize_text(
-        article.get("title_raw", "")
+        article["title_raw"]
     )
 
     lead = normalize_text(
-        article.get("lead_raw", "")
+        article["lead_raw"]
     )
+
+    text = title + " " + lead
 
     scores = {}
 
     for topic, keywords in TOPIC_KEYWORDS.items():
 
-        title_score = sum(
-            3
-            for keyword in keywords
-            if keyword_match(title, keyword)
+        scores[topic] = (
+
+            3 * sum(
+                matches(title, word)
+                for word in keywords
+            )
+
+            + sum(
+                matches(lead, word)
+                for word in keywords
+            )
+
         )
-
-        lead_score = sum(
-            1
-            for keyword in keywords
-            if keyword_match(lead, keyword)
-        )
-
-        scores[topic] = title_score + lead_score
-
-    labels = [
-        topic
-        for topic, score in scores.items()
-        if score > 0
-    ]
-
-    labels.sort(
-        key=lambda topic: (
-            -scores[topic],
-            topic
-        )
-    )
 
     article["topic_scores"] = scores
-    article["topics"] = labels
+
+    article["topics"] = [
+
+        topic
+
+        for topic in TOPICS
+
+        if scores[topic] > 0
+
+    ]
+
+    article["topics"].sort(
+        key=lambda topic: -scores[topic]
+    )
 
     article["primary_topic"] = (
-        labels[0] if labels else None
+        article["topics"][0]
+        if article["topics"]
+        else None
     )
 
-    return article
-
-
-def article_is_czech_related(article):
-
-    title = normalize_text(
-        article.get("title_raw", "")
+    # Czech relevance test.
+    czech_related = any(
+        matches(text, word)
+        for word in CZECH_KEYWORDS
     )
 
-    lead = normalize_text(
-        article.get("lead_raw", "")
-    )
+    # Domestic Czech political institutions often appear
+    # without the explicit word "Czech".
+    domestic_terms = [
+        "vlada",
+        "premier",
+        "snemovn",
+        "poslan",
+        "senat",
+        "ministr",
+        "volb",
+        "koalic",
+    ]
 
-    text = title + " " + lead
+    if article["source"] == "iROZHLAS (Domestic)":
 
-    direct_match = any(
-        keyword_match(text, keyword)
-        for keyword in CZECH_KEYWORDS
-    )
-
-    if direct_match:
-        return True
-
-    source = article.get("source", "").lower()
-
-    if "domestic" in source:
-
-        institutional_terms = [
-            "vlada",
-            "ministr",
-            "poslan",
-            "snemovn",
-            "senat",
-            "prezident",
-            "volby",
-            "koalic",
-            "opozic",
-            "armada",
-            "bezpecnost",
-            "parlament",
-        ]
-
-        return any(
-            keyword_match(text, term)
-            for term in institutional_terms
+        czech_related = czech_related or any(
+            matches(text, word)
+            for word in domestic_terms
         )
 
-    return False
-
-
-def article_is_relevant(article):
-
-    if not article.get("topics"):
-        return False
-
-    return article_is_czech_related(article)
+    return bool(
+        article["topics"]
+        and czech_related
+    )
 
 
 # ============================================================
-# ARGOS TRANSLATE
+# ARGOS TRANSLATION
 # ============================================================
 
-ARGOS_TRANSLATOR = None
+TRANSLATOR = None
+
 TRANSLATION_CACHE = {}
 
 
-def setup_argos():
+def load_translator():
 
     """
-    Load the Czech-to-English Argos model.
+    Initialize local Czech -> English translation.
 
-    If the model is not installed:
-      1. Fetch the Argos package index.
-      2. Find the Czech -> English model.
-      3. Download and install it.
-
-    Once installed, translation runs locally.
-
-    Raises an error if the model cannot be installed.
+    Download the language model only if not installed.
     """
 
-    global ARGOS_TRANSLATOR
+    global TRANSLATOR
 
-    if ARGOS_TRANSLATOR is not None:
+    if TRANSLATOR is not None:
         return
 
     LOG.info("Initializing Argos Translate...")
 
-    # Check for an already installed translation model.
-
-    try:
-
-        ARGOS_TRANSLATOR = (
-            argostranslate.translate
-            .get_translation_from_codes("cs", "en")
-        )
-
-        if ARGOS_TRANSLATOR is not None:
-
-            LOG.info(
-                "Existing Czech-English model loaded."
-            )
-
-            return
-
-    except (ValueError, RuntimeError):
-        pass
-
-    LOG.info(
-        "Czech-English model not installed. Downloading..."
+    installed = (
+        argostranslate.translate.get_installed_languages()
     )
 
-    # Download package index.
+    source = next(
+        (lang for lang in installed if lang.code == "cs"),
+        None
+    )
+
+    target = next(
+        (lang for lang in installed if lang.code == "en"),
+        None
+    )
+
+    if source and target:
+
+        try:
+            TRANSLATOR = source.get_translation(target)
+        except (ValueError, AttributeError):
+            TRANSLATOR = None
+
+    if TRANSLATOR is not None:
+
+        LOG.info("Cached translation model loaded.")
+        return
+
+    LOG.info("Downloading Czech-English model...")
 
     argostranslate.package.update_package_index()
 
-    available_packages = (
+    packages = (
         argostranslate.package.get_available_packages()
     )
 
-    # Find Czech -> English.
+    package = next(
+        (
+            pkg for pkg in packages
 
-    matching_packages = [
-        package
-        for package in available_packages
-        if package.from_code == "cs"
-        and package.to_code == "en"
-    ]
+            if pkg.from_code == "cs"
+            and pkg.to_code == "en"
+        ),
+        None
+    )
 
-    if not matching_packages:
+    if package is None:
 
         raise RuntimeError(
-            "No Czech-English Argos translation "
-            "model found in the package index."
+            "Czech-English Argos model unavailable."
         )
 
-    package = matching_packages[0]
+    model_path = package.download()
 
-    LOG.info(
-        "Downloading Argos model: Czech -> English"
-    )
-
-    download_path = package.download()
-
-    LOG.info(
-        "Installing Argos model..."
-    )
+    LOG.info("Installing translation model...")
 
     argostranslate.package.install_from_path(
-        download_path
+        model_path
     )
 
-    # Load installed translator.
-
-    ARGOS_TRANSLATOR = (
-        argostranslate.translate
-        .get_translation_from_codes("cs", "en")
+    # Refresh the installed language registry.
+    installed = (
+        argostranslate.translate.get_installed_languages()
     )
 
-    if ARGOS_TRANSLATOR is None:
+    source = next(
+        (lang for lang in installed if lang.code == "cs"),
+        None
+    )
+
+    target = next(
+        (lang for lang in installed if lang.code == "en"),
+        None
+    )
+
+    if source is None or target is None:
 
         raise RuntimeError(
-            "Argos translation model installation failed."
+            "Argos model installation failed."
         )
 
-    LOG.info(
-        "Argos Czech-English translation model ready."
-    )
+    TRANSLATOR = source.get_translation(target)
+
+    if TRANSLATOR is None:
+
+        raise RuntimeError(
+            "Unable to initialize Czech-English translator."
+        )
+
+    LOG.info("Argos translator ready.")
 
 
-def translate_text(text):
-
-    """
-    Translate Czech text into English locally.
-
-    Returns:
-        (translated_text, provider)
-
-    Possible providers:
-        argos
-        failed
-        empty
-    """
+def translate(text):
 
     text = normalize_space(text)
 
     if not text:
-        return "", "empty"
+        return ""
 
     if text in TRANSLATION_CACHE:
         return TRANSLATION_CACHE[text]
 
-    if ARGOS_TRANSLATOR is None:
+    if TRANSLATOR is None:
 
-        LOG.warning(
-            "Argos translator unavailable."
+        raise RuntimeError(
+            "Translation model is not initialized."
         )
 
-        return None, "failed"
+    result = normalize_space(
+        TRANSLATOR.translate(text)
+    )
 
-    try:
+    if not result:
 
-        translated = ARGOS_TRANSLATOR.translate(
-            text
+        raise RuntimeError(
+            "Argos returned an empty translation."
         )
 
-        if translated and translated.strip():
+    TRANSLATION_CACHE[text] = result
 
-            result = (
-                normalize_space(translated),
-                "argos"
-            )
-
-            TRANSLATION_CACHE[text] = result
-
-            return result
-
-    except Exception as exc:
-
-        LOG.warning(
-            "Argos translation failed: %s",
-            exc
-        )
-
-    return None, "failed"
-
-
-def enrich_translate(article):
-
-    """
-    Translate missing English fields.
-
-    Existing successful translations are retained.
-    Failed translations remain pending.
-    """
-
-    title_raw = article.get("title_raw", "")
-    lead_raw = article.get("lead_raw", "")
-
-    title_en = article.get("title_en")
-    lead_en = article.get("lead_en")
-
-    translated_any = False
-
-    # Translate headline.
-
-    if not title_en:
-
-        translated, provider = translate_text(
-            title_raw
-        )
-
-        if translated:
-
-            title_en = translated
-            translated_any = True
-
-    # Translate summary.
-
-    if lead_raw and not lead_en:
-
-        translated, provider = translate_text(
-            lead_raw
-        )
-
-        if translated:
-
-            lead_en = translated
-            translated_any = True
-
-    article["title_en"] = title_en
-    article["lead_en"] = lead_en
-
-    if title_en and (
-        lead_en or not lead_raw
-    ):
-
-        article["translation_status"] = "translated"
-
-    elif title_en or lead_en:
-
-        article["translation_status"] = "partial"
-
-    else:
-
-        article["translation_status"] = "pending"
-
-    if translated_any:
-
-        article["translation_provider"] = "argos"
-
-    return article
+    return result
 
 
 def needs_translation(article):
@@ -957,159 +831,173 @@ def needs_translation(article):
     )
 
 
+def translate_article(article):
+
+    if not article.get("title_en"):
+
+        article["title_en"] = translate(
+            article["title_raw"]
+        )
+
+    if (
+        article.get("lead_raw")
+        and not article.get("lead_en")
+    ):
+
+        article["lead_en"] = translate(
+            article["lead_raw"]
+        )
+
+    complete = (
+        bool(article.get("title_en"))
+        and (
+            not article.get("lead_raw")
+            or bool(article.get("lead_en"))
+        )
+    )
+
+    article["translation_status"] = (
+        "translated"
+        if complete
+        else "partial"
+    )
+
+    article["translation_provider"] = "argos"
+
+    return article
+
+
 # ============================================================
 # DEDUPLICATION
 # ============================================================
 
-def article_fingerprint(article):
+def prepare(article):
+
+    article = dict(article)
 
     url = normalize_url(
         article.get("url", "")
     )
 
-    if url:
-        return hash_key(url)
+    article["fingerprint"] = hash_key(url)
 
-    return hash_key(
-        normalize_title(
-            article.get("title_raw", "")
-        ),
-        article.get("published_utc", "")[:10],
-        article.get("source", ""),
+    article.setdefault(
+        "id",
+        hash_key(url)
     )
 
+    article.setdefault("title_en", None)
+    article.setdefault("lead_en", None)
 
-def choose_better_article(a, b):
-
-    fields = [
-        "title_raw",
-        "lead_raw",
-        "url",
-    ]
-
-    score_a = sum(
-        len(a.get(field) or "")
-        for field in fields
+    article.setdefault(
+        "translation_status",
+        "pending"
     )
 
-    score_b = sum(
-        len(b.get(field) or "")
-        for field in fields
-    )
-
-    if score_b > score_a:
-        preferred = dict(b)
-        other = a
-    else:
-        preferred = dict(a)
-        other = b
-
-    # Preserve translations from previous runs.
-
-    for field in (
-        "title_en",
-        "lead_en",
-        "translation_provider",
-    ):
-
-        if not preferred.get(field):
-            preferred[field] = other.get(field)
-
-    if (
-        preferred.get("title_en")
-        and (
-            preferred.get("lead_en")
-            or not preferred.get("lead_raw")
-        )
-    ):
-
-        preferred["translation_status"] = "translated"
-
-    return preferred
+    return article
 
 
-def dedupe_articles(rows):
+def merge_articles(articles):
 
-    best = {}
+    """
+    Deduplicate using normalized URL.
 
-    for article in rows:
+    Preserve translations from previous runs.
+    Prefer records with more complete summaries.
+    """
 
-        fingerprint = article_fingerprint(article)
+    merged = {}
 
-        previous = best.get(fingerprint)
+    for raw in articles:
 
-        if previous is None:
+        article = prepare(raw)
 
-            best[fingerprint] = article
+        key = article["fingerprint"]
 
-        else:
+        if key not in merged:
 
-            best[fingerprint] = choose_better_article(
-                previous,
-                article
-            )
+            merged[key] = article
+            continue
 
-    result = list(best.values())
+        old = merged[key]
 
-    result.sort(
-        key=lambda article: article.get(
-            "published_utc", ""
-        ),
+        if len(article.get("lead_raw", "")) > len(
+            old.get("lead_raw", "")
+        ):
+
+            old["lead_raw"] = article["lead_raw"]
+
+        for field in (
+            "title_en",
+            "lead_en",
+            "translation_provider",
+        ):
+
+            if not old.get(field):
+                old[field] = article.get(field)
+
+    return sorted(
+        merged.values(),
+        key=lambda a: a["published_utc"],
         reverse=True
     )
 
-    return result
-
 
 # ============================================================
-# STORAGE
+# JSON STORAGE
 # ============================================================
 
-def load_existing_json(path):
+def read_json(path):
 
     if not path.exists():
         return []
 
+    content = path.read_text(
+        encoding="utf-8"
+    ).strip()
+
+    if not content:
+        return []
+
     try:
-
-        content = path.read_text(
-            encoding="utf-8"
-        ).strip()
-
-        if not content:
-            return []
 
         data = json.loads(content)
 
-        if isinstance(data, dict):
+    except json.JSONDecodeError as exc:
 
-            articles = data.get(
-                "articles", []
-            )
+        raise RuntimeError(
+            f"Invalid JSON in {path}: {exc}"
+        ) from exc
 
-            if isinstance(articles, list):
-                return articles
+    if isinstance(data, list):
+        return data
 
-        if isinstance(data, list):
-            return data
+    if isinstance(data, dict):
+        return data.get("articles", [])
 
-    except Exception as exc:
-
-        LOG.warning(
-            "Unable to load %s: %s",
-            path,
-            exc
-        )
-
-    return []
+    raise ValueError(
+        f"Unexpected JSON structure: {path}"
+    )
 
 
-def atomic_write_json(path, payload):
+def write_json(path, articles, **metadata):
 
     path.parent.mkdir(
         parents=True,
         exist_ok=True
     )
+
+    payload = {
+
+        "updated_at_utc": timestamp(utcnow()),
+
+        **metadata,
+
+        "count": len(articles),
+
+        "articles": articles,
+
+    }
 
     temporary = path.with_suffix(".tmp")
 
@@ -1125,252 +1013,113 @@ def atomic_write_json(path, payload):
     temporary.replace(path)
 
 
-def prune_latest_window(rows):
-
-    cutoff = utcnow() - timedelta(
-        hours=KEEP_HOURS
-    )
-
-    kept = []
-
-    for article in rows:
-
-        try:
-
-            published = datetime.strptime(
-                article["published_utc"],
-                "%Y-%m-%dT%H:%M:%SZ"
-            ).replace(
-                tzinfo=timezone.utc
-            )
-
-            if published >= cutoff:
-                kept.append(article)
-
-        except (
-            ValueError,
-            KeyError,
-            TypeError
-        ):
-            continue
-
-    return dedupe_articles(kept)
-
-
-def prepare_article(article):
-
-    article = dict(article)
-
-    article["fingerprint"] = (
-        article_fingerprint(article)
-    )
-
-    if not article.get("id"):
-
-        article["id"] = hash_key(
-            article.get("source", ""),
-            article.get("url", ""),
-            article.get("published_utc", ""),
-        )
-
-    article.setdefault("title_en", None)
-    article.setdefault("lead_en", None)
-
-    article.setdefault(
-        "translation_status",
-        "pending"
-    )
-
-    return classify_topics(article)
-
-
 # ============================================================
-# MAIN COLLECTOR
+# MAIN
 # ============================================================
 
 def main():
 
-    now = utcnow()
+    start = time.monotonic()
 
-    timestamp = now.strftime(
-        "%Y-%m-%dT%H:%M:%SZ"
-    )
+    LOG.info("Czech News Tracker starting.")
 
     LOG.info(
-        "Czech News Tracker starting: %s",
-        timestamp
-    )
-
-    LOG.info(
-        "Translation engine: Argos Translate"
+        "Rolling window: %s hours",
+        KEEP_HOURS
     )
 
     LOG.info(
         "Translation limit: %s",
-        "unlimited"
-        if TRANSLATE_LIMIT == 0
-        else TRANSLATE_LIMIT
+        TRANSLATE_LIMIT or "unlimited"
     )
 
-    collected = []
-    successful_sources = 0
-
     # --------------------------------------------------------
-    # 1. COLLECT RSS FEEDS
+    # 1. COLLECT
     # --------------------------------------------------------
 
-    for source, config in SOURCES.items():
-
-        LOG.info(
-            "Collecting: %s",
-            source
-        )
-
-        rows = collect_from_rss(
-            source,
-            config["feeds"]
-        )
-
-        LOG.info(
-            "%s: %s articles",
-            source,
-            len(rows)
-        )
-
-        if rows:
-            successful_sources += 1
-
-        collected.extend(rows)
-
-    LOG.info(
-        "Total collected: %s",
-        len(collected)
-    )
-
-    if successful_sources == 0:
-
-        LOG.error(
-            "All RSS sources failed."
-        )
-
-        return 1
+    collected = collect_articles()
 
     # --------------------------------------------------------
-    # 2. LOAD EXISTING DATA
+    # 2. LOAD HISTORICAL DATA
     # --------------------------------------------------------
 
-    existing_latest = load_existing_json(
-        OUT_JSON
-    )
-
-    existing_archive = load_existing_json(
-        ARCHIVE_JSON
+    existing = read_json(
+        DATA_DIR / "articles_archive.json"
     )
 
     LOG.info(
-        "Existing archive: %s articles",
-        len(existing_archive)
+        "Previously archived: %s",
+        len(existing)
     )
 
     # --------------------------------------------------------
-    # 3. MERGE AND DEDUPLICATE
+    # 3. MERGE AND CLASSIFY
     # --------------------------------------------------------
 
-    merged = dedupe_articles(
-        existing_archive
-        + existing_latest
-        + collected
+    merged = merge_articles(
+        existing + collected
     )
-
-    LOG.info(
-        "After deduplication: %s",
-        len(merged)
-    )
-
-    # --------------------------------------------------------
-    # 4. CLASSIFY AND FILTER
-    # --------------------------------------------------------
 
     relevant = []
 
     for article in merged:
 
-        article = prepare_article(article)
-
-        if article_is_relevant(article):
+        if classify(article):
             relevant.append(article)
 
     LOG.info(
-        "Relevant Czech articles: %s",
+        "Relevant articles: %s",
         len(relevant)
     )
 
     # --------------------------------------------------------
-    # 5. INITIALIZE ARGOS TRANSLATE
+    # 4. TRANSLATE
     # --------------------------------------------------------
 
-    untranslated = [
+    pending = [
         article
         for article in relevant
         if needs_translation(article)
     ]
 
-    if untranslated:
-
-        LOG.info(
-            "Articles requiring translation: %s",
-            len(untranslated)
-        )
-
-        try:
-
-            setup_argos()
-
-        except Exception as exc:
-
-            LOG.error(
-                "Argos initialization failed: %s",
-                exc
-            )
-
-            LOG.warning(
-                "Articles will be saved without "
-                "translation and retried next run."
-            )
-
-    # --------------------------------------------------------
-    # 6. TRANSLATE ARTICLES
-    # --------------------------------------------------------
+    LOG.info(
+        "Articles awaiting translation: %s",
+        len(pending)
+    )
 
     translated_count = 0
 
-    # Prioritize articles in the current rolling window.
-    # Within each group, translate older pending articles
-    # first to prevent a permanent backlog.
+    if pending:
 
-    cutoff = now - timedelta(hours=KEEP_HOURS)
+        # Fail explicitly if the translation model cannot
+        # be initialized, rather than silently writing
+        # untranslated articles.
 
-    def translation_priority(article):
+        load_translator()
 
-        published = datetime.strptime(
-            article["published_utc"],
-            "%Y-%m-%dT%H:%M:%SZ"
-        ).replace(tzinfo=timezone.utc)
+        # Prioritize recent articles.
+        # Oldest pending articles are processed first
+        # within the rolling window.
 
-        is_recent = published >= cutoff
-
-        return (
-            0 if is_recent else 1,
-            published,
+        cutoff = utcnow() - timedelta(
+            hours=KEEP_HOURS
         )
 
-    untranslated.sort(
-        key=translation_priority
-    )
+        def priority(article):
 
-    if ARGOS_TRANSLATOR is not None:
+            published = datetime.strptime(
+                article["published_utc"],
+                "%Y-%m-%dT%H:%M:%SZ"
+            ).replace(tzinfo=timezone.utc)
 
-        for article in untranslated:
+            return (
+                0 if published >= cutoff else 1,
+                published
+            )
+
+        pending.sort(key=priority)
+
+        for article in pending:
 
             if (
                 TRANSLATE_LIMIT > 0
@@ -1378,76 +1127,87 @@ def main():
             ):
                 break
 
-            enrich_translate(article)
+            try:
 
-            translated_count += 1
+                translate_article(article)
 
-    LOG.info(
-        "Translation attempts: %s",
-        translated_count
+                translated_count += 1
+
+                if translated_count % 10 == 0:
+
+                    LOG.info(
+                        "Translated %s articles",
+                        translated_count
+                    )
+
+            except Exception as exc:
+
+                LOG.warning(
+                    "Translation failed for %s: %s",
+                    article["url"],
+                    exc
+                )
+
+    # --------------------------------------------------------
+    # 5. SAVE ARCHIVE
+    # --------------------------------------------------------
+
+    archive = merge_articles(relevant)
+
+    write_json(
+        DATA_DIR / "articles_archive.json",
+        archive
     )
 
     # --------------------------------------------------------
-    # 7. BUILD PERMANENT ARCHIVE
+    # 6. BUILD ROLLING WINDOW
     # --------------------------------------------------------
 
-    archive = dedupe_articles(relevant)
+    cutoff = utcnow() - timedelta(
+        hours=KEEP_HOURS
+    )
 
-    archive_payload = {
-        "updated_at_utc": timestamp,
-        "count": len(archive),
-        "articles": archive,
-    }
+    latest = [
 
-    atomic_write_json(
-        ARCHIVE_JSON,
-        archive_payload
+        article
+
+        for article in archive
+
+        if datetime.strptime(
+            article["published_utc"],
+            "%Y-%m-%dT%H:%M:%SZ"
+        ).replace(
+            tzinfo=timezone.utc
+        ) >= cutoff
+
+    ]
+
+    write_json(
+        DATA_DIR / "articles_latest.json",
+        latest,
+        keep_hours=KEEP_HOURS
     )
 
     # --------------------------------------------------------
-    # 8. BUILD ROLLING 48-HOUR FEED
-    # --------------------------------------------------------
-
-    latest = prune_latest_window(archive)
-
-    latest_payload = {
-        "updated_at_utc": timestamp,
-        "keep_hours": KEEP_HOURS,
-        "count": len(latest),
-        "articles": latest,
-    }
-
-    atomic_write_json(
-        OUT_JSON,
-        latest_payload
-    )
-
-    # --------------------------------------------------------
-    # 9. BUILD TOPIC FEEDS
+    # 7. SAVE TOPIC FEEDS
     # --------------------------------------------------------
 
     for topic in TOPICS:
 
         subset = [
+
             article
+
             for article in latest
+
             if topic in article.get("topics", [])
+
         ]
 
-        topic_payload = {
-            "updated_at_utc": timestamp,
-            "topic": topic,
-            "count": len(subset),
-            "articles": subset,
-        }
-
-        output_path = Path(
-            f"data/articles_{topic}.json"
-        )
-
-        atomic_write_json(
-            output_path,
-            topic_payload
+        write_json(
+            DATA_DIR / f"articles_{topic}.json",
+            subset,
+            topic=topic
         )
 
         LOG.info(
@@ -1457,24 +1217,15 @@ def main():
         )
 
     # --------------------------------------------------------
-    # 10. SUMMARY
+    # 8. SUMMARY
     # --------------------------------------------------------
 
-    translated_total = sum(
-        1
+    fully_translated = sum(
+        article.get("translation_status") == "translated"
         for article in archive
-        if article.get("translation_status") == "translated"
     )
 
-    pending_total = sum(
-        1
-        for article in archive
-        if needs_translation(article)
-    )
-
-    LOG.info(
-        "Collection completed successfully."
-    )
+    LOG.info("Collection complete.")
 
     LOG.info(
         "Latest articles: %s",
@@ -1487,23 +1238,20 @@ def main():
     )
 
     LOG.info(
-        "Fully translated articles: %s",
-        translated_total
+        "New translations: %s",
+        translated_count
     )
 
     LOG.info(
-        "Articles awaiting translation: %s",
-        pending_total
+        "Total fully translated: %s",
+        fully_translated
     )
 
     LOG.info(
-        "Output: %s",
-        OUT_JSON
+        "Elapsed: %.1f seconds",
+        time.monotonic() - start
     )
-
-    return 0
 
 
 if __name__ == "__main__":
-
-    raise SystemExit(main())
+    main()
