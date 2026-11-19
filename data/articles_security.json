@@ -1,8 +1,34 @@
 {
-  "updated_at_utc": "2026-11-19T07:33:44Z",
+  "updated_at_utc": "2026-11-19T17:28:00Z",
   "topic": "security",
-  "count": 6,
+  "count": 5,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-obrany-vypada-jako-ze-ho-ridi-pata-kolona-ruska-babis-je-nejslabsi_2611191739_eml",
+      "published_utc": "2026-11-19T16:39:00Z",
+      "title_raw": "Ministerstvo obrany vypadá, jako že ho řídí pátá kolona Ruska. Babiš je nejslabší premiér, říká Minář",
+      "lead_raw": "Statisíce protestujících zaplnily v neděli pražskou Letnou. Premiér Andrej Babiš (ANO) už ale dal jasně najevo, že požadavkům organizátorů největší polistopadové demonstrace nevyhoví.",
+      "fingerprint": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
+      "id": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
+      "title_en": "The Ministry of Defense looks like it's run by Russia's Fifth Column.",
+      "lead_en": "Hundreds of protesters flooded the Prague Summer on Sunday, but Prime Minister Andrej Babiš (ANO) has already made it clear that he will not meet the demands of the organizers of the largest demonstration in the Midwest.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
@@ -98,58 +124,6 @@
         "security"
       ],
       "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
-      "published_utc": "2026-11-17T15:19:49Z",
-      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
-      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
-      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
-      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
-      "title_en": "The Munitions Initiative provides Ukraine with more than 60 percent of its ammunition, Landovsky said.",
-      "lead_en": "The ammunition initiative provides more than 60 percent of Ukraine's artillery ammunition, Jakub Landovsky of the Czech Ministry of Defence said after a meeting of European Union (EU) defence ministers in Brussels.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 5,
-        "foreign_affairs": 3
-      },
-      "topics": [
-        "security",
-        "foreign_affairs"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/general-snajdarek-od-ledna-povede-sekci-rozvoje-sil-ministerstva-obrany-rekl-zuna-379692",
-      "published_utc": "2026-11-17T14:32:07Z",
-      "title_raw": "Generál Šnajdárek od ledna povede sekci rozvoje sil ministerstva obrany, řekl Zůna",
-      "lead_raw": "Brigádní generál Petr Šnajdárek nastoupí od ledna nadcházejícího roku do čela sekce rozvoje sil ministerstva obrany. Skončí ve funkci ředitele sekce komunikačních a informačních systémů, kde ho nahradí Jan Jelínek, sdělil ministr obrany Jaromír Zůna (za SPD) při své návštěvě Izraele, kde je společně s premiérem Andrejem Babišem (ANO).",
-      "fingerprint": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
-      "id": "a25261301fc203e5b98074e87d123de163c2a72cd558c308fad635c157cde7c9",
-      "title_en": "General Schnajdarek will lead the Department of Defense Forces Development Section from January, Zuna said.",
-      "lead_en": "Brigadier General Petr Šnajdárek will take over as head of the Department of Defence Force Development from January next year. He will end up as Director of the Department of Communications and Information Systems, where he will be replaced by Jan Jelínek, Defense Minister Jaromír Zóna (for the SPD) said during his visit to Israel, where he is accompanied by Prime Minister Andrej Babiš (ANO).",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 4,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics",
-        "security"
-      ],
-      "primary_topic": "politics",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

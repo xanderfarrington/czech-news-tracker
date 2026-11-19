@@ -1,7 +1,234 @@
 {
-  "updated_at_utc": "2026-11-19T07:33:44Z",
-  "count": 27,
+  "updated_at_utc": "2026-11-19T17:28:00Z",
+  "count": 36,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-obrany-vypada-jako-ze-ho-ridi-pata-kolona-ruska-babis-je-nejslabsi_2611191739_eml",
+      "published_utc": "2026-11-19T16:39:00Z",
+      "title_raw": "Ministerstvo obrany vypadá, jako že ho řídí pátá kolona Ruska. Babiš je nejslabší premiér, říká Minář",
+      "lead_raw": "Statisíce protestujících zaplnily v neděli pražskou Letnou. Premiér Andrej Babiš (ANO) už ale dal jasně najevo, že požadavkům organizátorů největší polistopadové demonstrace nevyhoví.",
+      "fingerprint": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
+      "id": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
+      "title_en": "The Ministry of Defense looks like it's run by Russia's Fifth Column.",
+      "lead_en": "Hundreds of protesters flooded the Prague Summer on Sunday, but Prime Minister Andrej Babiš (ANO) has already made it clear that he will not meet the demands of the organizers of the largest demonstration in the Midwest.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/babis-se-vyjadril-k-prezidentove-kritice-okamury-nejdriv-ale-sveho-spojence-sam-sepsul/r~aaa298bb08a9321139a77ce86652c5ff",
+      "published_utc": "2026-11-19T14:20:00Z",
+      "title_raw": "Babiš se vyjádřil k prezidentově kritice Okamury. Nejdřív ale svého spojence sám sepsul",
+      "lead_raw": "Dva požadavky z nedělní demonstrace Milionu chvilek pro demokracii na Letné se týkaly vládního hnutí SPD: aby jeho šéf Tomio Okamura nebyl nadále předsedou sněmovny a aby SPD neřídila ministerstvo obrany. A příkře hodnotí práci Okamury a resortu i prezident Petr Pavel.",
+      "fingerprint": "424043dc47a0fbb2e89ec3a65bf529bc51cf69b039cc38380fe218ebacc8e2ea",
+      "id": "424043dc47a0fbb2e89ec3a65bf529bc51cf69b039cc38380fe218ebacc8e2ea",
+      "title_en": "Grandma has spoken out against the president's criticism of Okamura, but first he wrote to his ally",
+      "lead_en": "Two demands from Sunday's Million Moments for Democracy demonstration at the Summer were for the SPD government movement: that its leader Tomio Okamura should not continue as Speaker of the House and that the SPD should not run the Ministry of Defence.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/brno-stred-ma-po-osmi-letech-nove-vedeni-do-cela-siroke-koalice-zastupitele_2611191335_jos",
+      "published_utc": "2026-11-19T13:10:00Z",
+      "title_raw": "Brno-střed má po osmi letech nové vedení. Do čela široké koalice zastupitelé zvolili lidovce Chvátala",
+      "lead_raw": "V čele Brna-středu bude následující čtyři roky Filip Chvátal z KDU-ČSL. Do funkce starosty ho ve středu večer zvolili zastupitelé na ustavující schůzi.",
+      "fingerprint": "6ed012bec95e81da8baa62b27be3ae814fddbf60e1ecd2b3c70bb9b2f51ddaeb",
+      "id": "6ed012bec95e81da8baa62b27be3ae814fddbf60e1ecd2b3c70bb9b2f51ddaeb",
+      "title_en": "Brno-Centre has a new leadership after eight years.",
+      "lead_en": "For the next four years, Filip Chvatal of the KDU-ČSL will head Brno-Street.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-koalice-ochotnych-ma-jina-temata-nez-financovani-ct-a-cro-uvedl-berlin-321051",
+      "published_utc": "2026-11-19T12:49:33Z",
+      "title_raw": "Koalice ochotných má jiná témata než financování ČT a ČRo, uvedl Berlín",
+      "lead_raw": "Koalice ochotných sdružující země podporující Ukrajinu nebude mít v programu čtvrtečního jednání financování českých veřejnoprávních médií.",
+      "fingerprint": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
+      "id": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
+      "title_en": "The Coalition of Volunteers has other topics than funding the Czech Republic and the Czech Republic, Berlin said.",
+      "lead_en": "The Coalition of Volunteer Associating Countries in Support of Ukraine will not have the funding of Czech public-law media on Thursday's agenda.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/clovek-ma-na-klima-zasadni-vliv-ropa-je-stabilni-zdroj-rika-ministr-cerveny-na_2611190900_nob",
+      "published_utc": "2026-11-19T11:24:00Z",
+      "title_raw": "‚Člověk má na klima zásadní vliv. Ropa je stabilní zdroj,‘ říká ministr Červený na klimatické konferenci",
+      "lead_raw": "Ministr životního prostředí Igor Červený (Motoristé sobě) se vypravil na svou první klimatickou konferenci OSN v Turecku. V národním projevu označil za českou prioritu adaptaci na změnu klimatu a mluvil o rizicích dekarbonizace.",
+      "fingerprint": "71982b57f372cf9cefbe296046582495a1204d5d84b08e54bbd975fda9e50d94",
+      "id": "71982b57f372cf9cefbe296046582495a1204d5d84b08e54bbd975fda9e50d94",
+      "title_en": "'Man has a profound impact on the climate.",
+      "lead_en": "Environment Minister Igor Červený (Motorists themselves) spoke at his first UN climate conference in Turkey, calling climate change adaptation a Czech priority and talking about the risks of decarbonisation.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/prazskym-primatorem-je-hlavacek-nahradil-svobodu-v-koalici-bude-stan-se-spolu-a_2611191155_med",
+      "published_utc": "2026-11-19T10:55:00Z",
+      "title_raw": "Pražským primátorem je Hlaváček, nahradil Svobodu. V koalici bude STAN se Spolu a Prahou sobě",
+      "lead_raw": "Pražským primátorem se stal dosavadní náměstek Petr Hlaváček (STAN), v radě bude mít na starosti územní a strategický rozvoj, bydlení a zahraniční vztahy. Zvolili ho pražští zastupitelé.",
+      "fingerprint": "f0de7c4bc7be665bda72b8550ff74253aa571139de6e1b84566b3dd9a71b9c83",
+      "id": "f0de7c4bc7be665bda72b8550ff74253aa571139de6e1b84566b3dd9a71b9c83",
+      "title_en": "Prague's mayor is the Head, he replaced Freedom.",
+      "lead_en": "The current Deputy Mayor of Prague is Petr Hlaváček (STAN), who will be in charge of territorial and strategic development, housing and foreign relations.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-vystrcil-byl-popate-zvolen-predsedou-senatu-opet-nemel-protikandidata-321017",
+      "published_utc": "2026-11-19T10:21:05Z",
+      "title_raw": "Vystrčil byl popáté zvolen předsedou Senátu, opět neměl protikandidáta",
+      "lead_raw": "Již popáté se stal předsedou Senátu Miloš Vystrčil (ODS), který stejně jako při poslední volbě neměl protikandidáta. Ze 77 odevzdaných hlasů jich získal 69, což vzhledem k současnému složení znamená hlasy i od senátorů z ANO.",
+      "fingerprint": "f5ced9edc155831701b258f10ed981f5b59b46ce55d1c9941acfa634cb5e36b3",
+      "id": "f5ced9edc155831701b258f10ed981f5b59b46ce55d1c9941acfa634cb5e36b3",
+      "title_en": "He was elected president of the Senate for the fifth time, again without a candidate.",
+      "lead_en": "Already fifth, Miloš Vystrčil (ODS) became the president of the Senate, who, like in the last election, had no opposition candidate.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/horacek-a-topolanek-oproti-ostatnim-panakum-je-babis-akcni-hrdina-od-letne_2611191032_kvr",
+      "published_utc": "2026-11-19T09:32:00Z",
+      "title_raw": "Horáček a Topolánek: Oproti ostatním ‚panákům‘ je Babiš akční hrdina. Od Letné nečekejme změnu vlády",
+      "lead_raw": "Česko si připomnělo výročí sametové revoluce. Pouhé dva dny předtím se na Letné uskutečnila největší demonstrace v dějinách samostatného Česka a lidé vyjádřili nesouhlas s některými vládními kroky.",
+      "fingerprint": "5b6e87609250ae5f2ef2caab89fa08a420fc119577d3026171e4c21b754c48cf",
+      "id": "5b6e87609250ae5f2ef2caab89fa08a420fc119577d3026171e4c21b754c48cf",
+      "title_en": "In contrast to the rest of the Panaks, Babiš is an action hero.",
+      "lead_en": "Just two days earlier, the biggest demonstration in the history of an independent Czech Republic took place and people expressed disagreement with some of the government's steps.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
+      "published_utc": "2026-11-19T09:00:05Z",
+      "title_raw": "Senátoři zvolili nové vedení, předsedou zůstává Vystrčil",
+      "lead_raw": "Senátoři na první schůzi v povolebním složení popáté zvolili předsedou horní komory Miloše Vystrčila (ODS), který neměl protikandidáta. Získal 69 ze 77 odevzdaných hlasů.",
+      "fingerprint": "b5e6188081740027c1ba86086c1dbaa4acb74699691e78eabd3e1c0bf9251476",
+      "id": "b5e6188081740027c1ba86086c1dbaa4acb74699691e78eabd3e1c0bf9251476",
+      "title_en": "The senators have elected a new board, the chairman remains",
+      "lead_en": "At the first meeting of the upper house, the senators elected Miloš Vystrčil (ODS), who was unopposed, with 69 of the 77 votes cast.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://video.aktualne.cz/spotlight-video/tohle-se-jeste-nestalo-urbanova-o-hulvatstvi-a-o-chvili-ktera-zmenila-vztahy-ve-snemovne/r~aaa29dac0f586ba0945a80631f5f95ad",

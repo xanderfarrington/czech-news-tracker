@@ -1,8 +1,34 @@
 {
-  "updated_at_utc": "2026-11-19T07:33:44Z",
+  "updated_at_utc": "2026-11-19T17:28:00Z",
   "topic": "foreign_affairs",
   "count": 4,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-koalice-ochotnych-ma-jina-temata-nez-financovani-ct-a-cro-uvedl-berlin-321051",
+      "published_utc": "2026-11-19T12:49:33Z",
+      "title_raw": "Koalice ochotných má jiná témata než financování ČT a ČRo, uvedl Berlín",
+      "lead_raw": "Koalice ochotných sdružující země podporující Ukrajinu nebude mít v programu čtvrtečního jednání financování českých veřejnoprávních médií.",
+      "fingerprint": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
+      "id": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
+      "title_en": "The Coalition of Volunteers has other topics than funding the Czech Republic and the Czech Republic, Berlin said.",
+      "lead_en": "The Coalition of Volunteer Associating Countries in Support of Ukraine will not have the funding of Czech public-law media on Thursday's agenda.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs",
+        "politics"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",
@@ -73,32 +99,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/municni-iniciativa-zajistuje-ukrajine-pres-60-procent-munice-uvedl-landovsky-379693",
-      "published_utc": "2026-11-17T15:19:49Z",
-      "title_raw": "Muniční iniciativa zajišťuje Ukrajině přes 60 procent munice, uvedl Landovský",
-      "lead_raw": "Muniční iniciativa zajišťuje více než 60 procent dělostřelecké munice pro Ukrajinu, uvedl po jednání ministrů obrany zemí Evropské unie (EU) v Bruselu Jakub Landovský z českého ministerstva obrany. V úterý odpoledne budou podle něj v NATO oznámeny nové příspěvky některých zemí.",
-      "fingerprint": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
-      "id": "8e1e59a8adc104b8653860bbe019a831ebed0a7cad5a2529662a1d41e0d42faf",
-      "title_en": "The Munitions Initiative provides Ukraine with more than 60 percent of its ammunition, Landovsky said.",
-      "lead_en": "The ammunition initiative provides more than 60 percent of Ukraine's artillery ammunition, Jakub Landovsky of the Czech Ministry of Defence said after a meeting of European Union (EU) defence ministers in Brussels.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 5,
-        "foreign_affairs": 3
-      },
-      "topics": [
-        "security",
-        "foreign_affairs"
-      ],
-      "primary_topic": "security",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
