@@ -1,7 +1,107 @@
 {
-  "updated_at_utc": "2026-11-18T22:59:31Z",
-  "count": 23,
+  "updated_at_utc": "2026-11-19T07:33:44Z",
+  "count": 27,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://video.aktualne.cz/spotlight-video/tohle-se-jeste-nestalo-urbanova-o-hulvatstvi-a-o-chvili-ktera-zmenila-vztahy-ve-snemovne/r~aaa29dac0f586ba0945a80631f5f95ad",
+      "published_utc": "2026-11-19T07:00:00Z",
+      "title_raw": "„Tohle se ještě nestalo.“ Urbanová o hulvátství a o chvíli, která změnila vztahy ve sněmovně",
+      "lead_raw": "O narušené důvěře mezi vládou a opozicí, výhrůžkách na sociálních sítích i o hrubnutí politické debaty mluví místopředsedkyně Poslanecké sněmovny Barbora Urbanová v pořadu Spotlight. Starostové podle ní musejí nabídnout pozitivní program a přesvědčit také voliče, kteří byli zklamaní z předchozí vlády.",
+      "fingerprint": "23ecf34348502707a63f13ec4a27a183fddd3c0d3f8a8066374d771827b8cdf9",
+      "id": "23ecf34348502707a63f13ec4a27a183fddd3c0d3f8a8066374d771827b8cdf9",
+      "title_en": "This hasn't happened yet. Urban about bullying and the moment that changed relations in the House.",
+      "lead_en": "Speaking on Spotlight, Barbora Urban, Deputy Speaker of the House of Representatives, said the government and the opposition were distrusted, threatened on social media, and that voters who were disappointed in the previous government should also be convinced.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-americky-soud-uznal-haitskeho-pastora-vinnym-z-pripravy-vrazdy-prezidenta-320955",
+      "published_utc": "2026-11-19T05:51:50Z",
+      "title_raw": "Americký soud uznal haitského pastora vinným z přípravy vraždy prezidenta",
+      "lead_raw": "Za zločinecké spiknutí před atentátem na haitského prezidenta Jovenela Moïseho byl obžalován americko-haitský pastor Christian Emmanuel Sanon. Právě Sanon měl po odstranění Moïseho usednout do jeho křesla.",
+      "fingerprint": "586b2af64680a09dea0302d4926ae9ab68484630bcedaf12a21e6671e69878a2",
+      "id": "586b2af64680a09dea0302d4926ae9ab68484630bcedaf12a21e6671e69878a2",
+      "title_en": "A U.S. court found a Haitian pastor guilty of plotting to assassinate the president",
+      "lead_en": "For the criminal conspiracy prior to the assassination of Haitian President Jovenel Moïse, American-Haitian pastor Christian Emmanuel Sanon was charged, and it was Sanon who was to sit in his chair after Moïse was removed.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/tohle-se-jeste-nestalo-urbanova-o-hulvatstvi-a-o-chvili-ktera-zmenila-vztahy-ve-snemovne-de35d149-c537-4679-ba8c-ca4fb69fb452/r~aaa29682166f7bb3d43267e54ecaf70c",
+      "published_utc": "2026-11-19T04:30:00Z",
+      "title_raw": "Tohle se ještě nestalo. Urbanová o hulvátství a o chvíli, která změnila vztahy ve sněmovně",
+      "lead_raw": "O narušené důvěře mezi vládou a opozicí, výhrůžkách na sociálních sítích i o hrubnutí politické debaty mluví místopředsedkyně Poslanecké sněmovny Barbora Urbanová v pořadu Spotlight. Starostové podle ní musejí nabídnout pozitivní program a přesvědčit také voliče, kteří byli zklamaní z předchozí vlády.",
+      "fingerprint": "1758845064ef4709c50b442baef4bafc56fe5af835fd83ccf9f6d9d73950c6bb",
+      "id": "1758845064ef4709c50b442baef4bafc56fe5af835fd83ccf9f6d9d73950c6bb",
+      "title_en": "Urban's story about being rude and the moment that changed relations in the House of Commons.",
+      "lead_en": "Speaking on Spotlight, Barbora Urban, Deputy Speaker of the House of Representatives, said the government and the opposition were distrusted, threatened on social media, and that voters who were disappointed in the previous government should also be convinced.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/konecne-je-secteno-demokrate-ziskaji-v-senatu-56-kresel-ve-snemovne-hledaji-na_2611190500_vdv",
+      "published_utc": "2026-11-19T04:00:00Z",
+      "title_raw": "Konečně je sečteno, demokraté získají v Senátu 56 křesel. Ve sněmovně hledají na Trumpa ‚ostříleného právníka‘",
+      "lead_raw": "Dva týdny po amerických volbách jsou známy výsledky z Aljašky, kde Demokratická strana získala 56. křeslo v Senátu a v horní komoře Kongresu má nejsilnější mandát od roku 1958.",
+      "fingerprint": "13540c3b3bd544b307d961c8f928c62f6f29b7120385ed383ac16629980cba6c",
+      "id": "13540c3b3bd544b307d961c8f928c62f6f29b7120385ed383ac16629980cba6c",
+      "title_en": "Finally, the Democrats are winning 56 seats in the Senate, and in the House they're looking for a shot lawyer for Trump.",
+      "lead_en": "Two weeks after the U.S. election, the results are known from Alaska, where the Democratic Party won 56 seats in the Senate and has the strongest mandate in the upper house of Congress since 1958.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "CT24",
       "url": "https://ct24.ceskatelevize.cz/clanek/svet/demokrate-nominovali-jeffriese-na-post-sefa-snemovny-reprezentantu-379738",
