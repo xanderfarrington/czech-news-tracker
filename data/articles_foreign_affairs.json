@@ -1,8 +1,83 @@
 {
-  "updated_at_utc": "2026-11-20T10:07:49Z",
+  "updated_at_utc": "2026-11-20T18:40:07Z",
   "topic": "foreign_affairs",
   "count": 5,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",
+      "published_utc": "2026-11-20T16:46:00Z",
+      "title_raw": "Česko je připraveno Polsku pomoci, řekl Babiš. K podobnému incidentu může dojít i u nás, míní Pavel",
+      "lead_raw": "Premiér Andrej Babiš (ANO) odsoudil narušení polského vzdušného prostoru, považuje ho za nepřijatelné. Na síti X napsal, že Česká republika pevně stojí za svými polskými přáteli a je připravena poskytnout sousední zemi pomoc a součinnost, pokud to bude třeba.",
+      "fingerprint": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
+      "id": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
+      "title_en": "The Czech Republic is ready to help Poland, Babiš said.",
+      "lead_en": "Prime Minister Andrej Babiš (ANO) condemned the disruption of Polish airspace and considered it unacceptable, writing on Network X that the Czech Republic stands firmly behind its Polish friends and is ready to provide assistance and cooperation to the neighbouring country if necessary.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-je-otazka-casu-kdy-se-to-stane-i-u-nas-rekl-pavel-k-incidentu-v-polsku-321176",
+      "published_utc": "2026-11-20T14:50:20Z",
+      "title_raw": "Je otázka času, kdy se to stane i u nás, řekl Pavel k incidentu v Polsku",
+      "lead_raw": "Rusko podle prezidenta Petra Pavla považuje za legitimní cíl všechny země podporující Ukrajinu. Po dopadu ruských střel a dronu v Polsku varoval, že se něco podobného může stát i v Česku.",
+      "fingerprint": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
+      "id": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
+      "title_en": "It's only a matter of time before it happens in our country, Paul said of the incident in Poland.",
+      "lead_en": "According to President Peter Paul, Russia considers all countries supporting Ukraine a legitimate target, and after the impact of Russian missiles and drones in Poland, he warned that something similar could happen in the Czech Republic.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/je-to-otazka-casu-podobny-incident-jako-v-polsku-muze-nastat-v-cesku-varoval-pavel/r~aaa290b22ad14b7528e444865092407f",
+      "published_utc": "2026-11-20T14:50:00Z",
+      "title_raw": "Je to otázka času. Podobný incident jako v Polsku může nastat v Česku, varoval Pavel",
+      "lead_raw": "Je spíše otázkou času, kdy se incident podobný tomu v Polsku stane také v České republice, uvedl v pátek prezident Petr Pavel. Na jihovýchodě Polska se ráno zřítily dvě střely a proudový dron, podle tamního premiéra Donalda Tuska byly ruské a šlo o cílenou provokaci.",
+      "fingerprint": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
+      "id": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
+      "title_en": "A similar incident in Poland could happen in the Czech Republic, warned Pavel.",
+      "lead_en": "It's more a matter of time before an incident like this in Poland also happens in the Czech Republic, President Petr Pavel said on Friday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/zahranici/nemecky-prezident-steinmeier-navstivi-cesko-setka-se-s-pavlem-i-babisem/r~aaa29d19c77e388f9a66c7f28a0230f6",
@@ -48,81 +123,6 @@
       "topics": [
         "foreign_affairs",
         "politics"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ruskym-sportovcum-nebude-umoznen-vstup-do-ceska-uvedl-metnar-320903",
-      "published_utc": "2026-11-18T14:24:55Z",
-      "title_raw": "Ruským sportovcům nebude umožněn vstup do Česka, uvedl Metnar",
-      "lead_raw": "Ministr vnitra Lubomír Metnar prohlásil, že i nadále platí vládní nařízení, které v podstatě zakazuje vydávat ruským reprezentantkám víza k účasti na mistrovství světa juniorek.",
-      "fingerprint": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
-      "id": "fcd24096d33c9be11ccf862e06cafb61e2a73ea2579c910724cd236a6f1c814a",
-      "title_en": "Russian athletes will not be allowed into the Czech Republic, Metnar said",
-      "lead_en": "Interior Minister Lubomir Metnar stated that the government's regulations, which essentially prohibit Russian representatives from issuing visas to participate in the Junior World Championships, remain in force.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/nemecky-svaz-novinaru-zada-aby-se-merz-pri-setkani-s-babisem-vyjadril-k-situaci-kolem-ct-a-cro-379719",
-      "published_utc": "2026-11-18T13:27:56Z",
-      "title_raw": "Německý svaz novinářů žádá, aby se Merz při setkání s Babišem vyjádřil k situaci kolem ČT a ČRo",
-      "lead_raw": "Německý svaz novinářů (DJV) vyzval ve středu kancléře Friedricha Merze, aby se vyjádřil k protestům proti změně financování České televize (ČT) a Českého rozhlasu (ČRo). Učinit by tak měl podle výzvy ve čtvrtek, kdy se v Berlíně při jednání takzvané koalice ochotných, tedy zemí podporujících Ukrajinu, setká s českým premiérem Andrejem Babišem (ANO).",
-      "fingerprint": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
-      "id": "cd8adac1344948005408faa52c06bb615ef1a084d340e9acb51f755afdf1ded2",
-      "title_en": "The German Union of Journalists asks Merz to comment on the situation surrounding the Czech Republic and the Czech Republic",
-      "lead_en": "The German Union of Journalists (DJV) called on Chancellor Friedrich Merz on Wednesday to speak out against the change in funding for Czech Television (ČT) and Czech Radio (ČRO).",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-nemecky-svaz-novinaru-zada-aby-se-merz-vyjadril-k-financovani-ct-a-cro-320888",
-      "published_utc": "2026-11-18T12:56:46Z",
-      "title_raw": "Německý svaz novinářů žádá, aby se Merz vyjádřil k financování ČT a ČRo",
-      "lead_raw": "Největší novinářská organizace v Evropě, Německý svaz novinářů, vyzvala kancléře Friedricha Merze, aby při čtvrtečním setkání s Andrejem Babišem vyjádřil podporu protestům proti změně financování ČT a ČRo.",
-      "fingerprint": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
-      "id": "3e7715bd0c6029ca5dd730deaafe73d163faf66fce2ce9803b07d211375e58a8",
-      "title_en": "The German Union of Journalists asks Merz to comment on the financing of the Czech Republic and the Czech Republic",
-      "lead_en": "The largest news organization in Europe, the German Union of Journalists, called on Chancellor Friedrich Merz to express support for the protests against the change in funding of the Czech Republic and the Czech Republic at a meeting with Andrej Babiš on Thursday.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
       ],
       "primary_topic": "foreign_affairs",
       "czech_related": true,

@@ -1,7 +1,157 @@
 {
-  "updated_at_utc": "2026-11-20T10:07:49Z",
-  "count": 44,
+  "updated_at_utc": "2026-11-20T18:40:07Z",
+  "count": 50,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",
+      "published_utc": "2026-11-20T16:46:00Z",
+      "title_raw": "Česko je připraveno Polsku pomoci, řekl Babiš. K podobnému incidentu může dojít i u nás, míní Pavel",
+      "lead_raw": "Premiér Andrej Babiš (ANO) odsoudil narušení polského vzdušného prostoru, považuje ho za nepřijatelné. Na síti X napsal, že Česká republika pevně stojí za svými polskými přáteli a je připravena poskytnout sousední zemi pomoc a součinnost, pokud to bude třeba.",
+      "fingerprint": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
+      "id": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
+      "title_en": "The Czech Republic is ready to help Poland, Babiš said.",
+      "lead_en": "Prime Minister Andrej Babiš (ANO) condemned the disruption of Polish airspace and considered it unacceptable, writing on Network X that the Czech Republic stands firmly behind its Polish friends and is ready to provide assistance and cooperation to the neighbouring country if necessary.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-je-otazka-casu-kdy-se-to-stane-i-u-nas-rekl-pavel-k-incidentu-v-polsku-321176",
+      "published_utc": "2026-11-20T14:50:20Z",
+      "title_raw": "Je otázka času, kdy se to stane i u nás, řekl Pavel k incidentu v Polsku",
+      "lead_raw": "Rusko podle prezidenta Petra Pavla považuje za legitimní cíl všechny země podporující Ukrajinu. Po dopadu ruských střel a dronu v Polsku varoval, že se něco podobného může stát i v Česku.",
+      "fingerprint": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
+      "id": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
+      "title_en": "It's only a matter of time before it happens in our country, Paul said of the incident in Poland.",
+      "lead_en": "According to President Peter Paul, Russia considers all countries supporting Ukraine a legitimate target, and after the impact of Russian missiles and drones in Poland, he warned that something similar could happen in the Czech Republic.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/je-to-otazka-casu-podobny-incident-jako-v-polsku-muze-nastat-v-cesku-varoval-pavel/r~aaa290b22ad14b7528e444865092407f",
+      "published_utc": "2026-11-20T14:50:00Z",
+      "title_raw": "Je to otázka času. Podobný incident jako v Polsku může nastat v Česku, varoval Pavel",
+      "lead_raw": "Je spíše otázkou času, kdy se incident podobný tomu v Polsku stane také v České republice, uvedl v pátek prezident Petr Pavel. Na jihovýchodě Polska se ráno zřítily dvě střely a proudový dron, podle tamního premiéra Donalda Tuska byly ruské a šlo o cílenou provokaci.",
+      "fingerprint": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
+      "id": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
+      "title_en": "A similar incident in Poland could happen in the Czech Republic, warned Pavel.",
+      "lead_en": "It's more a matter of time before an incident like this in Poland also happens in the Czech Republic, President Petr Pavel said on Friday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-chudarek-prinesl-babisovi-pripominky-k-zakonu-o-financovani-ct-a-rozhlasu-321173",
+      "published_utc": "2026-11-20T14:30:35Z",
+      "title_raw": "Chudárek přinesl Babišovi připomínky k zákonu o financování ČT a rozhlasu",
+      "lead_raw": "Šéf České televize Hynek Chudárek jednal s premiérem o financování veřejnoprávních médií. Ředitel ČT za nejlepší řešení nadále považuje zachování poplatků.",
+      "fingerprint": "8a129200861d756eb8f4e1b2cc95a0e175d9064f9d0cfcc7b7b3a955412381de",
+      "id": "8a129200861d756eb8f4e1b2cc95a0e175d9064f9d0cfcc7b7b3a955412381de",
+      "title_en": "Poor guy brought Babiš comments on the TV and radio funding bill",
+      "lead_en": "The head of Czech TV, Hynek Chudárek, discussed with the Prime Minister the financing of public-law media.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vyjadreni-po-jednani-bezpecnostni-komise-ke-srazce-vlaku-v-praze-379783",
+      "published_utc": "2026-11-20T11:33:44Z",
+      "title_raw": "Zavádíme kontrolu čtyř očí, řekl Bednárik po jednání bezpečnostní komise o srážce vlaků",
+      "lead_raw": "Na železnici se začne od prosince zavádět takzvaný systém čtyř očí, sdělil ministr dopravy Ivan Bednárik (za SPD). V pilotním projektu na pražském hlavním nádraží budou muset dva lidé kontrolovat odjezdová návěstidla, zda ukazují volnou dopravní cestu.",
+      "fingerprint": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
+      "id": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
+      "title_en": "We're introducing a four-eyed check, Bednárik said after a security committee meeting on the train crash.",
+      "lead_en": "The so-called four-eyed system will be introduced on the railway from December, Transport Minister Ivan Bednárik (for the SPD) said.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/clovek-musi-zatinat-pesti-sef-ods-stravil-noc-v-krytu-behem-utoku-rusu/r~aaa2938417a83aa31546344911d50be5",
+      "published_utc": "2026-11-20T09:17:00Z",
+      "title_raw": "Dramatická noc šéfa ODS v Kyjevě. Ruské rakety ho zastihly, když se vracel z večeře",
+      "lead_raw": "Noc v krytu strávil během návštěvy Kyjeva šéf ODS Martin Kupka. Hlavní město Ukrajiny čelilo v noci na pátek dalšímu masivnímu ruskému útoku, při němž zemřeli podle úřadů nejméně tři lidé.",
+      "fingerprint": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
+      "id": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
+      "title_en": "Dramatic night of the head of the ODS in Kiev, Russian missiles caught him returning from dinner",
+      "lead_en": "During a visit to Kiev, ODS chief Martin Kupka spent the night in hiding, as the Ukrainian capital faced another massive Russian attack on Friday night, killing at least three people, officials said.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/starostkou-prahy-1-zustava-terezie-radomerska-z-top-09-nova-koalice-ma-17_2611200925_med",

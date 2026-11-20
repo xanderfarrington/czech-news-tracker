@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-20T10:07:49Z",
+  "updated_at_utc": "2026-11-20T18:40:07Z",
   "topic": "security",
   "count": 4,
   "articles": [
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vyjadreni-po-jednani-bezpecnostni-komise-ke-srazce-vlaku-v-praze-379783",
+      "published_utc": "2026-11-20T11:33:44Z",
+      "title_raw": "Zavádíme kontrolu čtyř očí, řekl Bednárik po jednání bezpečnostní komise o srážce vlaků",
+      "lead_raw": "Na železnici se začne od prosince zavádět takzvaný systém čtyř očí, sdělil ministr dopravy Ivan Bednárik (za SPD). V pilotním projektu na pražském hlavním nádraží budou muset dva lidé kontrolovat odjezdová návěstidla, zda ukazují volnou dopravní cestu.",
+      "fingerprint": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
+      "id": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
+      "title_en": "We're introducing a four-eyed check, Bednárik said after a security committee meeting on the train crash.",
+      "lead_en": "The so-called four-eyed system will be introduced on the railway from December, Transport Minister Ivan Bednárik (for the SPD) said.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/clovek-musi-zatinat-pesti-sef-ods-stravil-noc-v-krytu-behem-utoku-rusu/r~aaa2938417a83aa31546344911d50be5",
+      "published_utc": "2026-11-20T09:17:00Z",
+      "title_raw": "Dramatická noc šéfa ODS v Kyjevě. Ruské rakety ho zastihly, když se vracel z večeře",
+      "lead_raw": "Noc v krytu strávil během návštěvy Kyjeva šéf ODS Martin Kupka. Hlavní město Ukrajiny čelilo v noci na pátek dalšímu masivnímu ruskému útoku, při němž zemřeli podle úřadů nejméně tři lidé.",
+      "fingerprint": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
+      "id": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
+      "title_en": "Dramatic night of the head of the ODS in Kiev, Russian missiles caught him returning from dinner",
+      "lead_en": "During a visit to Kiev, ODS chief Martin Kupka spent the night in hiding, as the Ukrainian capital faced another massive Russian attack on Friday night, killing at least three people, officials said.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/vlada-na-nakupech-zuna-a-spol-hasi-problem-s-protivzdusnou-obranou-navrat-z_2611200600_cen",
@@ -50,56 +100,6 @@
         "security"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-ceskym-skolam-320897",
-      "published_utc": "2026-11-18T13:55:45Z",
-      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek českým školám",
-      "lead_raw": "Ukrajinští kriminalisté v září zadrželi osobu podezřelou ze zasílání bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku. Podle Bezpečnostní informační služby měl být zadržený Ukrajinec placen z Ruska.",
-      "fingerprint": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
-      "id": "303d34f43a0430b18811ef4f0a3b7edda2a8d563a26bae5ebe8c538fda3d9605",
-      "title_en": "Ukraine detained a suspect in bomb threats to Czech schools",
-      "lead_en": "In September, Ukrainian criminals detained a person suspected of sending bomb threats to schools in the Czech Republic, Slovakia and Latvia.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 6,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/ukrajina-zadrzela-podezreleho-z-bombovych-vyhruzek-skolam-informoval-eurojust-379720",
-      "published_utc": "2026-11-18T13:53:47Z",
-      "title_raw": "Ukrajina zadržela podezřelého z bombových výhrůžek školám, informoval Eurojust",
-      "lead_raw": "Člověka podezřelého z bombových výhrůžek školám v Česku, na Slovensku a v Lotyšsku zadrželi v září ukrajinští kriminalisté. V tiskové zprávě o tom informoval Úřad evropské justiční spolupráce Eurojust.",
-      "fingerprint": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
-      "id": "f13bc4b2b7465dc86ba2ac12a2ed916b3810d981dd5351a0b8043ab40201fcb0",
-      "title_en": "Ukraine detained a suspect in bomb threats to schools, Eurojust reported",
-      "lead_en": "A man suspected of bombing schools in the Czech Republic, Slovakia and Latvia was detained by Ukrainian criminals in September, Eurojust's European Judicial Cooperation Office said in a press release.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 4,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
