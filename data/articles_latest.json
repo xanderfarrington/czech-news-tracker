@@ -1,8 +1,134 @@
 {
-  "updated_at_utc": "2026-11-19T17:28:00Z",
+  "updated_at_utc": "2026-11-20T00:42:17Z",
   "keep_hours": 48,
-  "count": 34,
+  "count": 39,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/je-dobra-prilezitost-pro-me-ale-i-pro-senat-rika-nove-zvoleny-mistopredseda_2611200010_eml",
+      "published_utc": "2026-11-19T23:10:00Z",
+      "title_raw": "Je to dobrá příležitost pro mě, ale i pro Senát, říká nově zvolený místopředseda horní komory Grolich",
+      "lead_raw": "Proč usiloval předseda lidovců Jan Grolich o post místopředsedy Senátu? Jak dlouho chce být zároveň místopředsedou Senátu i jihomoravským hejtmanem?",
+      "fingerprint": "0f2cc32a408e6213742f19a9fd658e70305f3971827685fe5d7189b8d404bc01",
+      "id": "0f2cc32a408e6213742f19a9fd658e70305f3971827685fe5d7189b8d404bc01",
+      "title_en": "It's a good opportunity for me, but also for the Senate, says the newly elected Vice President of the Upper House, Grolich.",
+      "lead_en": "Why did the People's President Jan Grolich run for Vice President of the Senate, and how long does he want to be Vice President of the Senate and South Moravian Heitman?",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/vedeni-prahy-sobe-odmita-koalici-s-ano-na-praze-12-scheinherr-uvedl-ze-ji_2611192246_eml",
+      "published_utc": "2026-11-19T21:46:00Z",
+      "title_raw": "Vedení Prahy sobě odmítá koalici s ANO na Praze 12. Scheinherr uvedl, že ji politici uzavřeli bez souhlasu",
+      "lead_raw": "Vedení Prahy sobě nesouhlasí s koalicí, kterou zástupci tohoto uskupení uzavřeli v Praze 12 a jejíž součástí je i hnutí ANO. Chce, aby ji vypověděli, nebo stranu opustili.",
+      "fingerprint": "187b2d60fbea84153f6f37b69c64fcdd0e1935a438f9e8d2be5d7c76de833d00",
+      "id": "187b2d60fbea84153f6f37b69c64fcdd0e1935a438f9e8d2be5d7c76de833d00",
+      "title_en": "Prague's leadership refuses to form a coalition with the ANO in Prague 12.",
+      "lead_en": "The Prague leadership disagrees with the coalition that the representatives of this group formed in Prague 12 and which includes the ANO movement.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministr-tejc-pocita-se-zrusenim-27-okresnich-soudu-pri-justicni-reforme_2611192006_cen",
+      "published_utc": "2026-11-19T19:06:00Z",
+      "title_raw": "Ministr Tejc počítá se zrušením 27 okresních soudů. ‚Úspory budou 100 milionů ročně,‘ uvedl",
+      "lead_raw": "Ministr spravedlnosti Jeroným Tejc (za ANO) počítá se zrušením 27 okresních soudů a jejich sloučením do větších celků. Po dnešním jednání ministra s předsedy krajských soudů to uvedl mluvčí ministerstva Vladimír Řepka.",
+      "fingerprint": "6c0b2abc2c2576e6014039e0df16d2e65fd8b9da6a4af2e21a391104412bbf7c",
+      "id": "6c0b2abc2c2576e6014039e0df16d2e65fd8b9da6a4af2e21a391104412bbf7c",
+      "title_en": "Minister Tejc expects to abolish 27 district courts.",
+      "lead_en": "Minister of Justice Jeroným Tejc (for ANO) expects to abolish 27 district courts and merge them into larger units.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/nemecky-prezident-steinmeier-navstivi-cesko-setka-se-s-pavlem-i-babisem/r~aaa29d19c77e388f9a66c7f28a0230f6",
+      "published_utc": "2026-11-19T18:37:00Z",
+      "title_raw": "Německý prezident Steinmeier navštíví Česko, setká se s Pavlem i Babišem",
+      "lead_raw": "Německý prezident Frank-Walter Steinmeier se při prosincové návštěvě Česka setká s prezidentem Petrem Pavlem i premiérem Andrejem Babišem. Vyplývá z kalendáře plánovaných akcí na webu německé hlavy státu.",
+      "fingerprint": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
+      "id": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
+      "title_en": "German President Steinmeier visits the Czech Republic, meets with Paul and Grandma",
+      "lead_en": "German President Frank-Walter Steinmeier will meet with President Peter Paul and Prime Minister Andrej Babiš during his December visit to the Czech Republic, according to the schedule of planned events on the website of the German head of state.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/treba-si-i-ti-co-nemaji-vystrcila-radi-rekli-ze-aspon-meri-vsem-stejne-rika_2611191830_dci",
+      "published_utc": "2026-11-19T17:30:00Z",
+      "title_raw": "Třeba si i ti, co nemají Vystrčila rádi, řekli, že aspoň měří všem stejně, říká předseda Senátu ke zvolení",
+      "lead_raw": "Senát si zvolil staronové vedení. Předsedou horní komory zůstává Miloš Vystrčil z ODS, už popáté uspěl v tajné volbě.",
+      "fingerprint": "f112c7d3e7bae6c6795cdda3afdca3ce66c27bb5e2b84a52314d4b139d5b8e53",
+      "id": "f112c7d3e7bae6c6795cdda3afdca3ce66c27bb5e2b84a52314d4b139d5b8e53",
+      "title_en": "Maybe even those who don't like \"Stick\" thought they'd at least measure everyone equally, says the Senate president-elect",
+      "lead_en": "The Senate has elected an elderly leadership, and the Speaker of the Upper House remains Miloš Ekstrčil of the ODS, having won the fifth secret ballot.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-obrany-vypada-jako-ze-ho-ridi-pata-kolona-ruska-babis-je-nejslabsi_2611191739_eml",

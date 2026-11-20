@@ -1,8 +1,34 @@
 {
-  "updated_at_utc": "2026-11-19T17:28:00Z",
+  "updated_at_utc": "2026-11-20T00:42:17Z",
   "topic": "foreign_affairs",
-  "count": 4,
+  "count": 5,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/nemecky-prezident-steinmeier-navstivi-cesko-setka-se-s-pavlem-i-babisem/r~aaa29d19c77e388f9a66c7f28a0230f6",
+      "published_utc": "2026-11-19T18:37:00Z",
+      "title_raw": "Německý prezident Steinmeier navštíví Česko, setká se s Pavlem i Babišem",
+      "lead_raw": "Německý prezident Frank-Walter Steinmeier se při prosincové návštěvě Česka setká s prezidentem Petrem Pavlem i premiérem Andrejem Babišem. Vyplývá z kalendáře plánovaných akcí na webu německé hlavy státu.",
+      "fingerprint": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
+      "id": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
+      "title_en": "German President Steinmeier visits the Czech Republic, meets with Paul and Grandma",
+      "lead_en": "German President Frank-Walter Steinmeier will meet with President Peter Paul and Prime Minister Andrej Babiš during his December visit to the Czech Republic, according to the schedule of planned events on the website of the German head of state.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-koalice-ochotnych-ma-jina-temata-nez-financovani-ct-a-cro-uvedl-berlin-321051",
