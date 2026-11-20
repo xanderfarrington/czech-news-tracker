@@ -1,8 +1,34 @@
 {
-  "updated_at_utc": "2026-11-20T00:42:17Z",
+  "updated_at_utc": "2026-11-20T10:07:49Z",
   "topic": "security",
-  "count": 5,
+  "count": 4,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/vlada-na-nakupech-zuna-a-spol-hasi-problem-s-protivzdusnou-obranou-navrat-z_2611200600_cen",
+      "published_utc": "2026-11-20T05:00:00Z",
+      "title_raw": "Vláda na nákupech? Zůna a spol. hasí problém s protivzdušnou obranou, návrat z Izraele budí otázky",
+      "lead_raw": "Česko řeší protivzdušnou obranu. A inspiraci vláda hledala v Izraeli.",
+      "fingerprint": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
+      "id": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
+      "title_en": "Zones and alliances are erasing the air defense problem, returning from Israel raises questions.",
+      "lead_en": "The Czech Republic is dealing with air defense, and the government has been looking to Israel for inspiration.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 8,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "politics"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-obrany-vypada-jako-ze-ho-ridi-pata-kolona-ruska-babis-je-nejslabsi_2611191739_eml",
@@ -68,56 +94,6 @@
       "topic_scores": {
         "politics": 0,
         "security": 4,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
-      "published_utc": "2026-11-18T07:28:18Z",
-      "title_raw": "Česko by mohlo vypsat zakázku na protivzdušnou obranu příští rok, uvedl Zůna",
-      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat taktické balistické střely, řekl českým novinářům ve středu při návštěvě Izraele ministr obrany Jaromír Zůna (za SPD). Česká delegace získala nabídky, které by mohly umožnit rychlejší pořízení systémů protivzdušné obrany, než se původně předpokládalo, zmínil ministr zahraničí Petr Macinka (Motoristé).",
-      "fingerprint": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
-      "id": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
-      "title_en": "The Czech Republic could sign an air defense contract next year, Zuna said.",
-      "lead_en": "The Czech Republic could issue a public contract next year for the purchase of new air defense systems that should be able to interfere with tactical ballistic missiles, Czech Minister of Defense Jaromír Zóna (for the SPD) told reporters on Wednesday during a visit to Israel.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 10,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/ceska-republika-ministerstvo-obrany-systemy-protivzdusne-obrany-jaromir-zuna_2611180759_elev",
-      "published_utc": "2026-11-18T06:59:00Z",
-      "title_raw": "Česko se poohlíží po systémech protivzdušné obrany. Ve hře jsou izraelské, ale také evropské systémy",
-      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat také balistické střely. Českým novinářům to 18.",
-      "fingerprint": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
-      "id": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
-      "title_en": "The Czech Republic is looking at air defense systems.",
-      "lead_en": "The Czech Republic could issue a public contract next year for new air defense systems capable of intercepting ballistic missiles.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 10,
         "foreign_affairs": 0
       },
       "topics": [

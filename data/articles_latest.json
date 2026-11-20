@@ -1,8 +1,84 @@
 {
-  "updated_at_utc": "2026-11-20T00:42:17Z",
+  "updated_at_utc": "2026-11-20T10:07:49Z",
   "keep_hours": 48,
-  "count": 39,
+  "count": 36,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/starostkou-prahy-1-zustava-terezie-radomerska-z-top-09-nova-koalice-ma-17_2611200925_med",
+      "published_utc": "2026-11-20T08:25:00Z",
+      "title_raw": "Starostkou Prahy 1 zůstává Terezie Radoměřská z TOP 09. Nová koalice má 17 mandátů",
+      "lead_raw": "Nové vedení Prahy 1 zvolili zastupitelé na ustavujícím jednání v prostorách Národního muzea. Starostkou se znovu stala Terezie Radoměřská z TOP 09.",
+      "fingerprint": "bf1f4d844ce6bf120ad45b509a59284fb9577680cecfe49008da8bb925d05f7c",
+      "id": "bf1f4d844ce6bf120ad45b509a59284fb9577680cecfe49008da8bb925d05f7c",
+      "title_en": "The mayor of Prague 1 remains Theresa Radoměřská of TOP 09.",
+      "lead_en": "The new management of Prague 1 elected representatives at the inaugural meeting in the premises of the National Museum.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/sice-se-prsi-my-ale-vime-ze-dost-panikari-minar-vi-jak-dal-v-boji-proti-vlade/r~aaa296bc587a4dd6a70df17d089a16f0",
+      "published_utc": "2026-11-20T07:59:00Z",
+      "title_raw": "„Sice se prsí, my ale víme, že dost panikaří.“ Minář ví, jak dál v boji proti vládě",
+      "lead_raw": "Mikuláš Minář ze spolku Milion chvilek pro demokracii i nadále trvá na požadavku, aby vláda zákon, který ruší poplatky za Český rozhlas a Českou televizi, stáhla. Což premiér Andrej Babiš (ANO) odmítá.",
+      "fingerprint": "736ca7f89468ed4fc4303c83c97088720ea5585a3955c591c85f6bb916a156dc",
+      "id": "736ca7f89468ed4fc4303c83c97088720ea5585a3955c591c85f6bb916a156dc",
+      "title_en": "\"The breasts are breastfeeding, but we know they're panicking enough\". \"The miner knows how to keep fighting the government\".",
+      "lead_en": "Mikuláš Minář of the association Million Moments for Democracy continues to insist that the government withdraw the law that abolishes charges for Czech Radio and Czech Television, which Prime Minister Andrej Babiš (ANO) rejects.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/vlada-na-nakupech-zuna-a-spol-hasi-problem-s-protivzdusnou-obranou-navrat-z_2611200600_cen",
+      "published_utc": "2026-11-20T05:00:00Z",
+      "title_raw": "Vláda na nákupech? Zůna a spol. hasí problém s protivzdušnou obranou, návrat z Izraele budí otázky",
+      "lead_raw": "Česko řeší protivzdušnou obranu. A inspiraci vláda hledala v Izraeli.",
+      "fingerprint": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
+      "id": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
+      "title_en": "Zones and alliances are erasing the air defense problem, returning from Israel raises questions.",
+      "lead_en": "The Czech Republic is dealing with air defense, and the government has been looking to Israel for inspiration.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 8,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "politics"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/je-dobra-prilezitost-pro-me-ale-i-pro-senat-rika-nove-zvoleny-mistopredseda_2611200010_eml",
@@ -816,156 +892,6 @@
       "id": "49c587e5ce82363448f1034232dcf425bcbafc56098e435c84d4fc36ded99364",
       "title_en": "We're going to raise the MHD and parking, the new Prague government says.",
       "lead_en": "The Prague Coalition plans to raise the price of public transport and park or relax transport in the city centre, said the nominee for deputy transport minister Adam Scheinherr (Prague itself) after the presentation of the members of the future council on Wednesday.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/regiony/hlavni-mesto-praha/stan-spolu-a-praha-sobe-podepsaly-koalicni-smlouvu-v-praze-379711",
-      "published_utc": "2026-11-18T09:58:14Z",
-      "title_raw": "STAN, SPOLU a Praha sobě podepsaly koaliční smlouvu v Praze",
-      "lead_raw": "Koalice STAN, SPOLU (ODS, TOP 09) a Praha sobě ve středu podepsala koaliční smlouvu a představila novou radu. Novým primátorem Prahy bude lídr vítězného hnutí STAN Petr Hlaváček.",
-      "fingerprint": "f37eca662a517cf374b6c7aba330bf30480d7022a0999175ec13b58bce96765d",
-      "id": "f37eca662a517cf374b6c7aba330bf30480d7022a0999175ec13b58bce96765d",
-      "title_en": "STAN, SPOLU and Prague signed a coalition agreement in Prague",
-      "lead_en": "The Coalition of STAN, SPOLU (ODS, TOP 09) and Prague signed a coalition agreement on Wednesday and introduced a new council.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-oznami-rozhodnuti-o-stiznosti-na-senatni-volby-na-zdarsku-rozdil-tam-byl-jeden-hlas-379710",
-      "published_utc": "2026-11-18T09:38:23Z",
-      "title_raw": "Senátní volby na Žďársku jsou neplatné, rozhodl soud",
-      "lead_raw": "Nejvyšší správní soud označil výsledky senátních voleb na Žďársku za neplatné. Rozhodl na základě stížnosti, kterou podal Radek Černý (ODS), jenž tam o jediný hlas nepostoupil do druhého kola.",
-      "fingerprint": "13468fe60da2aa0a2e05570b7b947fbc68a367c4f6260c99581b5c5db04a5bd9",
-      "id": "13468fe60da2aa0a2e05570b7b947fbc68a367c4f6260c99581b5c5db04a5bd9",
-      "title_en": "Senate elections in Zadarsk are void, the court ruled",
-      "lead_en": "The Supreme Administrative Court declared the results of the Senate elections in Žďársko invalid, ruling on the basis of a complaint filed by Radek Černý (ODS), who did not advance to the second round by one vote.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/koalice-slozena-viteznym-hnutim-ano-povede-chomutov-primatorem-se-mel-stat-radek_2611180851_tez",
-      "published_utc": "2026-11-18T07:51:00Z",
-      "title_raw": "Koalice složená vítězným hnutím ANO povede Chomutov. Primátorem se stal Radek Vyšín",
-      "lead_raw": "Chomutov povede koalice složená vítězným hnutím ANO, která bude mít v zastupitelstvu těsnou většinu jednoho hlasu. V zastupitelstvu, které má 35 členů, bude mít 18 zastupitelů.",
-      "fingerprint": "47c384d9af22255cd6a751299ced7fede9c6cc2b5753e419f9c239d2fec4358e",
-      "id": "47c384d9af22255cd6a751299ced7fede9c6cc2b5753e419f9c239d2fec4358e",
-      "title_en": "The coalition formed by the victorious ANO movement will be led by Chomutov.",
-      "lead_en": "Chomutov will lead a coalition made up of the victorious ANO movement, which will have a narrow majority of one vote in the House of Representatives.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
-      "published_utc": "2026-11-18T07:28:18Z",
-      "title_raw": "Česko by mohlo vypsat zakázku na protivzdušnou obranu příští rok, uvedl Zůna",
-      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat taktické balistické střely, řekl českým novinářům ve středu při návštěvě Izraele ministr obrany Jaromír Zůna (za SPD). Česká delegace získala nabídky, které by mohly umožnit rychlejší pořízení systémů protivzdušné obrany, než se původně předpokládalo, zmínil ministr zahraničí Petr Macinka (Motoristé).",
-      "fingerprint": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
-      "id": "b65206e9282a6d6071bd1407bd6b4a1b620d32302ea0d5ba627d0c7f7ed75c7e",
-      "title_en": "The Czech Republic could sign an air defense contract next year, Zuna said.",
-      "lead_en": "The Czech Republic could issue a public contract next year for the purchase of new air defense systems that should be able to interfere with tactical ballistic missiles, Czech Minister of Defense Jaromír Zóna (for the SPD) told reporters on Wednesday during a visit to Israel.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 10,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/ceska-republika-ministerstvo-obrany-systemy-protivzdusne-obrany-jaromir-zuna_2611180759_elev",
-      "published_utc": "2026-11-18T06:59:00Z",
-      "title_raw": "Česko se poohlíží po systémech protivzdušné obrany. Ve hře jsou izraelské, ale také evropské systémy",
-      "lead_raw": "Česká republika by mohla příští rok vypsat veřejnou zakázku na pořízení nových systémů protivzdušné obrany, které by měly být schopné zasahovat také balistické střely. Českým novinářům to 18.",
-      "fingerprint": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
-      "id": "cbf2c5a283d9f035d5aa9bf4a22704fba0b4079aa01bfe4bce29cdc62036a30c",
-      "title_en": "The Czech Republic is looking at air defense systems.",
-      "lead_en": "The Czech Republic could issue a public contract next year for new air defense systems capable of intercepting ballistic missiles.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 10,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/mame-prezidenta-ktery-popira-co-vidime-na-vlastni-oci-rikaji-demokrate-na_2611180700_cen",
-      "published_utc": "2026-11-18T06:00:00Z",
-      "title_raw": "Máme prezidenta, který popírá to, co vidíme na vlastní oči, říkají demokraté na klimatické konferenci",
-      "lead_raw": "USA s návratem republikána Donalda Trumpa do Bílého domu znovu odstoupily od Pařížské dohody. A teď už podruhé v řadě nevyslaly vládní delegaci na globální vyjednávání o ochraně klimatu.",
-      "fingerprint": "b3633ed9c56863a780958e858e0b921e6985f4bbdee6686b766ab5b3c7c769a7",
-      "id": "b3633ed9c56863a780958e858e0b921e6985f4bbdee6686b766ab5b3c7c769a7",
-      "title_en": "We have a president who denies what we see with his own eyes, say Democrats at the climate conference",
-      "lead_en": "The U.S. with the return of Republican Donald Trump to the White House has again withdrawn from the Paris Agreement, and for the second time in a row, has not sent a government delegation to global climate negotiations.",
       "translation_status": "translated",
       "topic_scores": {
         "politics": 4,
