@@ -1,8 +1,108 @@
 {
-  "updated_at_utc": "2026-11-21T01:35:39Z",
+  "updated_at_utc": "2026-11-21T09:56:04Z",
   "topic": "politics",
-  "count": 23,
+  "count": 21,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/zpoplatneny-vjezd-do-centra-stan-chce-prosadit-zakon-o-mytu-popsal-novy-prazsky-primator/r~aaa29447a9d59790447ecafacf2cd4aa",
+      "published_utc": "2026-11-21T07:33:00Z",
+      "title_raw": "Zpoplatněný vjezd do centra? STAN chce prosadit zákon o mýtu, popsal nový pražský primátor",
+      "lead_raw": "Vedení Prahy chce prostřednictvím poslanců STAN prosadit v Poslanecké sněmovně zákon, který by samosprávám umožnil zavádět mýto pro vjezd do částí měst. V sobotu to uvedl nový pražský primátor Petr Hlaváček (STAN).",
+      "fingerprint": "d9a271f6d8c285528d56f5013de6e5e99738eef0dcacb12bfb476bfc39664e22",
+      "id": "d9a271f6d8c285528d56f5013de6e5e99738eef0dcacb12bfb476bfc39664e22",
+      "title_en": "STAN wants to pass a law on the myth, described the new Prague mayor",
+      "lead_en": "The Prague government wants to pass a law in the Chamber of Deputies, through the members of the STAN, which would allow the local authorities to impose a customs duty on entering parts of the cities.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/pruzkum-pozadavek-milionu-chvilek-odvolat-tomia-okamuru-z-cela-snemovny_2611210700_tez",
+      "published_utc": "2026-11-21T06:00:00Z",
+      "title_raw": "PRŮZKUM: Požadavek Milionu chvilek odvolat Tomia Okamuru z čela Sněmovny by podpořilo 43 procent lidí",
+      "lead_raw": "Přes 40 procent lidí by podpořilo odvolání Tomia Okamury (SPD) z čela Poslanecké sněmovny a to, aby hnutí už neřídilo ministerstvo obrany. Ukázal to bleskový průzkum společnosti Median pro Radiožurnál z tohoto týdne, ve kterém odpovídalo přes tisíc dospělých.",
+      "fingerprint": "a59d86a13875b82a00aec8c4cb0d8fa8f21d73045ef9aa91e55a2699e31b93f3",
+      "id": "a59d86a13875b82a00aec8c4cb0d8fa8f21d73045ef9aa91e55a2699e31b93f3",
+      "title_en": "PRESENT: The demand for a million seconds to remove Tom Okamura from the House of Representatives would be supported by 43 percent of voters",
+      "lead_en": "More than 40 percent of people would support the impeachment of Speaker of the House of Representatives Tom Okamura (SPD) and that the movement should no longer be run by the Department of Defense, according to this week's Median for Radio Journal poll of more than 1,000 adults.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-zivotniho-prostredi-zrusilo-souhlasne-stanovisko-pro-vetrnou_2611210629_eml",
+      "published_utc": "2026-11-21T05:29:00Z",
+      "title_raw": "Ministerstvo životního prostředí zrušilo souhlasné stanovisko pro větrnou elektrárnu v Hořanech",
+      "lead_raw": "Ministerstvo životního prostředí (MŽP) zrušilo souhlasné jednotné environmentální stanovisko (JES), které letos v lednu vydal Středočeský krajský úřad pro plánovanou větrnou elektrárnu v Hořanech na Nymbursku. Zjistilo závažné nedostatky v posouzení stavby, zejména rozpory mezi projektovou dokumentací a odbornými podklady a chybějící posouzení některých zásahů do přírody.",
+      "fingerprint": "8680a89d705eb2e3a18e3f65a059a4aad18cb53d1e90075c1fd8db3662c9313f",
+      "id": "8680a89d705eb2e3a18e3f65a059a4aad18cb53d1e90075c1fd8db3662c9313f",
+      "title_en": "The Ministry of the Environment has revoked the unanimous opinion on the Hurricanes wind farm.",
+      "lead_en": "The Ministry of the Environment (MoE) has revoked the consensual single environmental opinion (JES) issued in January this year by the Central Czech Regional Office for a planned wind farm in the Horn of Nymbursk. It has identified serious shortcomings in the assessment of the construction, in particular the discrepancies between the project documentation and expert evidence and the lack of an assessment of certain impacts on nature.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/recidivistka-byla-ve-vezeni-kvuli-kradezi-za-necelych-1600-korun-tejc-odmita_2611210500_hrk",
+      "published_utc": "2026-11-21T04:00:00Z",
+      "title_raw": "Recidivistka byla ve vězení kvůli krádeži za necelých 1600 korun. Tejc odmítá návrh, aby se zákon zmírnil",
+      "lead_raw": "Ústavní soud má na stole návrh na zrušení části paragrafu, v jehož důsledku byla žena ve vězení za bagatelní krádež. Žalobce pro ni žádá další rok za mřížemi kvůli obdobné krádeži.",
+      "fingerprint": "70278554f9f3f3d50630475644d1a8ae3f86157c964099bcf66d3fc378028428",
+      "id": "70278554f9f3f3d50630475644d1a8ae3f86157c964099bcf66d3fc378028428",
+      "title_en": "A recidivist was jailed for stealing less than 1,600 crowns.",
+      "lead_en": "The Constitutional Court has tabled a motion to dismiss the part of the clause that resulted in a woman being jailed for petty theft.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/ministr-cerveny-do-personalii-krkonosskeho-narodniho-parku-nezasahuji-ani-mi_2611210010_adn",
@@ -420,156 +520,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/horacek-a-topolanek-oproti-ostatnim-panakum-je-babis-akcni-hrdina-od-letne_2611191032_kvr",
-      "published_utc": "2026-11-19T09:32:00Z",
-      "title_raw": "Horáček a Topolánek: Oproti ostatním ‚panákům‘ je Babiš akční hrdina. Od Letné nečekejme změnu vlády",
-      "lead_raw": "Česko si připomnělo výročí sametové revoluce. Pouhé dva dny předtím se na Letné uskutečnila největší demonstrace v dějinách samostatného Česka a lidé vyjádřili nesouhlas s některými vládními kroky.",
-      "fingerprint": "5b6e87609250ae5f2ef2caab89fa08a420fc119577d3026171e4c21b754c48cf",
-      "id": "5b6e87609250ae5f2ef2caab89fa08a420fc119577d3026171e4c21b754c48cf",
-      "title_en": "In contrast to the rest of the Panaks, Babiš is an action hero.",
-      "lead_en": "Just two days earlier, the biggest demonstration in the history of an independent Czech Republic took place and people expressed disagreement with some of the government's steps.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
-      "published_utc": "2026-11-19T09:00:05Z",
-      "title_raw": "Senátoři zvolili nové vedení, předsedou zůstává Vystrčil",
-      "lead_raw": "Senátoři na první schůzi v povolebním složení popáté zvolili předsedou horní komory Miloše Vystrčila (ODS), který neměl protikandidáta. Získal 69 ze 77 odevzdaných hlasů.",
-      "fingerprint": "b5e6188081740027c1ba86086c1dbaa4acb74699691e78eabd3e1c0bf9251476",
-      "id": "b5e6188081740027c1ba86086c1dbaa4acb74699691e78eabd3e1c0bf9251476",
-      "title_en": "The senators have elected a new board, the chairman remains",
-      "lead_en": "At the first meeting of the upper house, the senators elected Miloš Vystrčil (ODS), who was unopposed, with 69 of the 77 votes cast.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://video.aktualne.cz/spotlight-video/tohle-se-jeste-nestalo-urbanova-o-hulvatstvi-a-o-chvili-ktera-zmenila-vztahy-ve-snemovne/r~aaa29dac0f586ba0945a80631f5f95ad",
-      "published_utc": "2026-11-19T07:00:00Z",
-      "title_raw": "„Tohle se ještě nestalo.“ Urbanová o hulvátství a o chvíli, která změnila vztahy ve sněmovně",
-      "lead_raw": "O narušené důvěře mezi vládou a opozicí, výhrůžkách na sociálních sítích i o hrubnutí politické debaty mluví místopředsedkyně Poslanecké sněmovny Barbora Urbanová v pořadu Spotlight. Starostové podle ní musejí nabídnout pozitivní program a přesvědčit také voliče, kteří byli zklamaní z předchozí vlády.",
-      "fingerprint": "23ecf34348502707a63f13ec4a27a183fddd3c0d3f8a8066374d771827b8cdf9",
-      "id": "23ecf34348502707a63f13ec4a27a183fddd3c0d3f8a8066374d771827b8cdf9",
-      "title_en": "This hasn't happened yet. Urban about bullying and the moment that changed relations in the House.",
-      "lead_en": "Speaking on Spotlight, Barbora Urban, Deputy Speaker of the House of Representatives, said the government and the opposition were distrusted, threatened on social media, and that voters who were disappointed in the previous government should also be convinced.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-americky-soud-uznal-haitskeho-pastora-vinnym-z-pripravy-vrazdy-prezidenta-320955",
-      "published_utc": "2026-11-19T05:51:50Z",
-      "title_raw": "Americký soud uznal haitského pastora vinným z přípravy vraždy prezidenta",
-      "lead_raw": "Za zločinecké spiknutí před atentátem na haitského prezidenta Jovenela Moïseho byl obžalován americko-haitský pastor Christian Emmanuel Sanon. Právě Sanon měl po odstranění Moïseho usednout do jeho křesla.",
-      "fingerprint": "586b2af64680a09dea0302d4926ae9ab68484630bcedaf12a21e6671e69878a2",
-      "id": "586b2af64680a09dea0302d4926ae9ab68484630bcedaf12a21e6671e69878a2",
-      "title_en": "A U.S. court found a Haitian pastor guilty of plotting to assassinate the president",
-      "lead_en": "For the criminal conspiracy prior to the assassination of Haitian President Jovenel Moïse, American-Haitian pastor Christian Emmanuel Sanon was charged, and it was Sanon who was to sit in his chair after Moïse was removed.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/tohle-se-jeste-nestalo-urbanova-o-hulvatstvi-a-o-chvili-ktera-zmenila-vztahy-ve-snemovne-de35d149-c537-4679-ba8c-ca4fb69fb452/r~aaa29682166f7bb3d43267e54ecaf70c",
-      "published_utc": "2026-11-19T04:30:00Z",
-      "title_raw": "Tohle se ještě nestalo. Urbanová o hulvátství a o chvíli, která změnila vztahy ve sněmovně",
-      "lead_raw": "O narušené důvěře mezi vládou a opozicí, výhrůžkách na sociálních sítích i o hrubnutí politické debaty mluví místopředsedkyně Poslanecké sněmovny Barbora Urbanová v pořadu Spotlight. Starostové podle ní musejí nabídnout pozitivní program a přesvědčit také voliče, kteří byli zklamaní z předchozí vlády.",
-      "fingerprint": "1758845064ef4709c50b442baef4bafc56fe5af835fd83ccf9f6d9d73950c6bb",
-      "id": "1758845064ef4709c50b442baef4bafc56fe5af835fd83ccf9f6d9d73950c6bb",
-      "title_en": "Urban's story about being rude and the moment that changed relations in the House of Commons.",
-      "lead_en": "Speaking on Spotlight, Barbora Urban, Deputy Speaker of the House of Representatives, said the government and the opposition were distrusted, threatened on social media, and that voters who were disappointed in the previous government should also be convinced.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/konecne-je-secteno-demokrate-ziskaji-v-senatu-56-kresel-ve-snemovne-hledaji-na_2611190500_vdv",
-      "published_utc": "2026-11-19T04:00:00Z",
-      "title_raw": "Konečně je sečteno, demokraté získají v Senátu 56 křesel. Ve sněmovně hledají na Trumpa ‚ostříleného právníka‘",
-      "lead_raw": "Dva týdny po amerických volbách jsou známy výsledky z Aljašky, kde Demokratická strana získala 56. křeslo v Senátu a v horní komoře Kongresu má nejsilnější mandát od roku 1958.",
-      "fingerprint": "13540c3b3bd544b307d961c8f928c62f6f29b7120385ed383ac16629980cba6c",
-      "id": "13540c3b3bd544b307d961c8f928c62f6f29b7120385ed383ac16629980cba6c",
-      "title_en": "Finally, the Democrats are winning 56 seats in the Senate, and in the House they're looking for a shot lawyer for Trump.",
-      "lead_en": "Two weeks after the U.S. election, the results are known from Alaska, where the Democratic Party won 56 seats in the Senate and has the strongest mandate in the upper house of Congress since 1958.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
         "security": 0,
         "foreign_affairs": 0
       },
