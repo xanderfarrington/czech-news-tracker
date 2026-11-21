@@ -1,7 +1,57 @@
 {
-  "updated_at_utc": "2026-11-21T17:38:34Z",
-  "count": 57,
+  "updated_at_utc": "2026-11-21T23:25:39Z",
+  "count": 59,
   "articles": [
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-prichazi-s-novym-programem-na-podporu-bydleni-stary-zastavila-379817",
+      "published_utc": "2026-11-21T19:38:47Z",
+      "title_raw": "Vláda přichází s novým programem na podporu bydlení, starý zastavila",
+      "lead_raw": "Dostupnost bydlení v Česku je nejhorší v EU. Vláda slibuje dát víc peněz na stavby domů s byty, ve kterých by lidé platili únosné nájmy, čemuž má pomoct nový program.",
+      "fingerprint": "d497fb21e9d895c5a51bf1988f36bedc5a885daf9480d0c589376a04ea077b2d",
+      "id": "d497fb21e9d895c5a51bf1988f36bedc5a885daf9480d0c589376a04ea077b2d",
+      "title_en": "The government is coming up with a new housing promotion program, the old one stopped.",
+      "lead_en": "Housing availability in the Czech Republic is the worst in the EU, and the government is promising to give more money to build houses with apartments where people can pay their rent, which the new programme aims to help.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/karlovy-vary-antalya-nejcastejsi-volba-z-lazenskeho-letiste-do-turecka-letos_2611211942_tez",
+      "published_utc": "2026-11-21T18:42:00Z",
+      "title_raw": "Karlovy Vary – Antalya, nejčastější volba. Z lázeňského letiště do Turecka letos cestovalo přes 11 tisíc lidí",
+      "lead_raw": "Mezinárodní letiště Karlovy Vary letos zatím odbavilo téměř 21 tisíc cestujících. Oproti loňskému roku je to nárůst o 16 procent.",
+      "fingerprint": "47ef8a57da68ef13a972f9b3b036c43400632e3b4c4234960507659adfc34add",
+      "id": "47ef8a57da68ef13a972f9b3b036c43400632e3b4c4234960507659adfc34add",
+      "title_en": "Karlovy Vary Antalya, the most popular choice.",
+      "lead_en": "This year, Karlovy Vary International Airport has handled nearly 21,000 passengers, an increase of 16 percent over last year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/politolog-babisova-koalice-je-se-socialnim-citenim-na-stiru-temat-se-muze-chytit_2611211605_bva",

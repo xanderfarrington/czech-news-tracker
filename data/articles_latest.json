@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-21T17:38:34Z",
+  "updated_at_utc": "2026-11-21T23:25:39Z",
   "keep_hours": 48,
-  "count": 20,
+  "count": 18,
   "articles": [
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-prichazi-s-novym-programem-na-podporu-bydleni-stary-zastavila-379817",
+      "published_utc": "2026-11-21T19:38:47Z",
+      "title_raw": "Vláda přichází s novým programem na podporu bydlení, starý zastavila",
+      "lead_raw": "Dostupnost bydlení v Česku je nejhorší v EU. Vláda slibuje dát víc peněz na stavby domů s byty, ve kterých by lidé platili únosné nájmy, čemuž má pomoct nový program.",
+      "fingerprint": "d497fb21e9d895c5a51bf1988f36bedc5a885daf9480d0c589376a04ea077b2d",
+      "id": "d497fb21e9d895c5a51bf1988f36bedc5a885daf9480d0c589376a04ea077b2d",
+      "title_en": "The government is coming up with a new housing promotion program, the old one stopped.",
+      "lead_en": "Housing availability in the Czech Republic is the worst in the EU, and the government is promising to give more money to build houses with apartments where people can pay their rent, which the new programme aims to help.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/karlovy-vary-antalya-nejcastejsi-volba-z-lazenskeho-letiste-do-turecka-letos_2611211942_tez",
+      "published_utc": "2026-11-21T18:42:00Z",
+      "title_raw": "Karlovy Vary – Antalya, nejčastější volba. Z lázeňského letiště do Turecka letos cestovalo přes 11 tisíc lidí",
+      "lead_raw": "Mezinárodní letiště Karlovy Vary letos zatím odbavilo téměř 21 tisíc cestujících. Oproti loňskému roku je to nárůst o 16 procent.",
+      "fingerprint": "47ef8a57da68ef13a972f9b3b036c43400632e3b4c4234960507659adfc34add",
+      "id": "47ef8a57da68ef13a972f9b3b036c43400632e3b4c4234960507659adfc34add",
+      "title_en": "Karlovy Vary Antalya, the most popular choice.",
+      "lead_en": "This year, Karlovy Vary International Airport has handled nearly 21,000 passengers, an increase of 16 percent over last year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/politolog-babisova-koalice-je-se-socialnim-citenim-na-stiru-temat-se-muze-chytit_2611211605_bva",
@@ -399,107 +449,6 @@
         "politics"
       ],
       "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/je-dobra-prilezitost-pro-me-ale-i-pro-senat-rika-nove-zvoleny-mistopredseda_2611200010_eml",
-      "published_utc": "2026-11-19T23:10:00Z",
-      "title_raw": "Je to dobrá příležitost pro mě, ale i pro Senát, říká nově zvolený místopředseda horní komory Grolich",
-      "lead_raw": "Proč usiloval předseda lidovců Jan Grolich o post místopředsedy Senátu? Jak dlouho chce být zároveň místopředsedou Senátu i jihomoravským hejtmanem?",
-      "fingerprint": "0f2cc32a408e6213742f19a9fd658e70305f3971827685fe5d7189b8d404bc01",
-      "id": "0f2cc32a408e6213742f19a9fd658e70305f3971827685fe5d7189b8d404bc01",
-      "title_en": "It's a good opportunity for me, but also for the Senate, says the newly elected Vice President of the Upper House, Grolich.",
-      "lead_en": "Why did the People's President Jan Grolich run for Vice President of the Senate, and how long does he want to be Vice President of the Senate and South Moravian Heitman?",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/vedeni-prahy-sobe-odmita-koalici-s-ano-na-praze-12-scheinherr-uvedl-ze-ji_2611192246_eml",
-      "published_utc": "2026-11-19T21:46:00Z",
-      "title_raw": "Vedení Prahy sobě odmítá koalici s ANO na Praze 12. Scheinherr uvedl, že ji politici uzavřeli bez souhlasu",
-      "lead_raw": "Vedení Prahy sobě nesouhlasí s koalicí, kterou zástupci tohoto uskupení uzavřeli v Praze 12 a jejíž součástí je i hnutí ANO. Chce, aby ji vypověděli, nebo stranu opustili.",
-      "fingerprint": "187b2d60fbea84153f6f37b69c64fcdd0e1935a438f9e8d2be5d7c76de833d00",
-      "id": "187b2d60fbea84153f6f37b69c64fcdd0e1935a438f9e8d2be5d7c76de833d00",
-      "title_en": "Prague's leadership refuses to form a coalition with the ANO in Prague 12.",
-      "lead_en": "The Prague leadership disagrees with the coalition that the representatives of this group formed in Prague 12 and which includes the ANO movement.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ministr-tejc-pocita-se-zrusenim-27-okresnich-soudu-pri-justicni-reforme_2611192006_cen",
-      "published_utc": "2026-11-19T19:06:00Z",
-      "title_raw": "Ministr Tejc počítá se zrušením 27 okresních soudů. ‚Úspory budou 100 milionů ročně,‘ uvedl",
-      "lead_raw": "Ministr spravedlnosti Jeroným Tejc (za ANO) počítá se zrušením 27 okresních soudů a jejich sloučením do větších celků. Po dnešním jednání ministra s předsedy krajských soudů to uvedl mluvčí ministerstva Vladimír Řepka.",
-      "fingerprint": "6c0b2abc2c2576e6014039e0df16d2e65fd8b9da6a4af2e21a391104412bbf7c",
-      "id": "6c0b2abc2c2576e6014039e0df16d2e65fd8b9da6a4af2e21a391104412bbf7c",
-      "title_en": "Minister Tejc expects to abolish 27 district courts.",
-      "lead_en": "Minister of Justice Jeroným Tejc (for ANO) expects to abolish 27 district courts and merge them into larger units.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/zahranici/nemecky-prezident-steinmeier-navstivi-cesko-setka-se-s-pavlem-i-babisem/r~aaa29d19c77e388f9a66c7f28a0230f6",
-      "published_utc": "2026-11-19T18:37:00Z",
-      "title_raw": "Německý prezident Steinmeier navštíví Česko, setká se s Pavlem i Babišem",
-      "lead_raw": "Německý prezident Frank-Walter Steinmeier se při prosincové návštěvě Česka setká s prezidentem Petrem Pavlem i premiérem Andrejem Babišem. Vyplývá z kalendáře plánovaných akcí na webu německé hlavy státu.",
-      "fingerprint": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
-      "id": "20eb227d1ae521f9eaf740222cacdcb8059124cd94cbcd2e95860c43be7ae9f8",
-      "title_en": "German President Steinmeier visits the Czech Republic, meets with Paul and Grandma",
-      "lead_en": "German President Frank-Walter Steinmeier will meet with President Peter Paul and Prime Minister Andrej Babiš during his December visit to the Czech Republic, according to the schedule of planned events on the website of the German head of state.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics",
-        "foreign_affairs"
-      ],
-      "primary_topic": "politics",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
