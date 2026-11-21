@@ -1,7 +1,32 @@
 {
-  "updated_at_utc": "2026-11-20T18:40:07Z",
-  "count": 50,
+  "updated_at_utc": "2026-11-21T01:35:39Z",
+  "count": 51,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministr-cerveny-do-personalii-krkonosskeho-narodniho-parku-nezasahuji-ani-mi_2611210010_adn",
+      "published_utc": "2026-11-20T23:10:00Z",
+      "title_raw": "Ministr Červený: Do personálií Krkonošského národního parku nezasahuji, ani mi to nepřináleží",
+      "lead_raw": "Jak se staví Česko k agendě mezinárodní klimatické konference COP31, kterou hostí Turecko? Co ve svém projevu na konferenci český ministr životního prostředí zdůraznil?",
+      "fingerprint": "b7da4034a8ad7be08641f12e145b1d33802427e987fd8459d57ac6a74e93febf",
+      "id": "b7da4034a8ad7be08641f12e145b1d33802427e987fd8459d57ac6a74e93febf",
+      "title_en": "Minister Red: I'm not interfering with the staff of Krkonoše National Park, and it doesn't matter to me",
+      "lead_en": "How does the Czech Republic respond to the agenda of the international climate conference COP31, hosted by Turkey? What did the Czech environment minister stress in his speech at the conference?",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",

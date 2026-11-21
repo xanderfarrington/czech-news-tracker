@@ -1,8 +1,33 @@
 {
-  "updated_at_utc": "2026-11-20T18:40:07Z",
+  "updated_at_utc": "2026-11-21T01:35:39Z",
   "keep_hours": 48,
-  "count": 29,
+  "count": 28,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ministr-cerveny-do-personalii-krkonosskeho-narodniho-parku-nezasahuji-ani-mi_2611210010_adn",
+      "published_utc": "2026-11-20T23:10:00Z",
+      "title_raw": "Ministr Červený: Do personálií Krkonošského národního parku nezasahuji, ani mi to nepřináleží",
+      "lead_raw": "Jak se staví Česko k agendě mezinárodní klimatické konference COP31, kterou hostí Turecko? Co ve svém projevu na konferenci český ministr životního prostředí zdůraznil?",
+      "fingerprint": "b7da4034a8ad7be08641f12e145b1d33802427e987fd8459d57ac6a74e93febf",
+      "id": "b7da4034a8ad7be08641f12e145b1d33802427e987fd8459d57ac6a74e93febf",
+      "title_en": "Minister Red: I'm not interfering with the staff of Krkonoše National Park, and it doesn't matter to me",
+      "lead_en": "How does the Czech Republic respond to the agenda of the international climate conference COP31, hosted by Turkey? What did the Czech environment minister stress in his speech at the conference?",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",
@@ -670,56 +695,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/demokrate-nominovali-jeffriese-na-post-sefa-snemovny-reprezentantu-379738",
-      "published_utc": "2026-11-18T20:20:05Z",
-      "title_raw": "Demokraté nominovali Jeffriese na post šéfa Sněmovny reprezentantů",
-      "lead_raw": "Demokraté ve středu nominovali kongresmana Hakeema Jeffriese na post předsedy Sněmovny reprezentantů. Tím otevřeli cestu k tomu, aby se v lednu, až se sejde Kongres v novém složení, stal prvním černochem v čele dolní komory, informují tiskové agentury.",
-      "fingerprint": "e9daa1cd30041f234797d9be62770badc77566fe4f112738923857972e6766d4",
-      "id": "e9daa1cd30041f234797d9be62770badc77566fe4f112738923857972e6766d4",
-      "title_en": "The Democrats nominated Jeffries to head the House of Representatives.",
-      "lead_en": "Democrats nominated Congressman Hakeem Jeffries for Speaker of the House of Representatives on Wednesday, paving the way for him to become the first black president of the lower house when the newly formed Congress meets in January, news agencies report.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/museli-bychom-vestit-z-kristalove-koule-opakovat-volby-ve-zdaru-je-nejlepsi_2611182058_jar",
-      "published_utc": "2026-11-18T19:58:00Z",
-      "title_raw": "‚Museli bychom věštit z křišťálové koule.‘ Opakovat volby ve Žďáru je nejlepší řešení, vysvětluje Šimíček",
-      "lead_raw": "Senátní volby v obvodu Žďár nad Sázavou se budou opakovat, a to od prvního kola a se stejnými pěti kandidáty. Rozhodl tak Nejvyšší správní soud po stížnosti Radka Černého z ODS, kterému chyběl jeden hlas pro postup.",
-      "fingerprint": "3e90e483d74b91986856bdbb9a347553ab0fb04fffe2bd7dfc7a4978d9328cf8",
-      "id": "3e90e483d74b91986856bdbb9a347553ab0fb04fffe2bd7dfc7a4978d9328cf8",
-      "title_en": "We need to predict from a crystal ball. Repeat the election in Žďár is the best solution, explains the Monkey",
-      "lead_en": "The Senate elections in the district of Žďár nad Sázavou will be repeated, starting from the first round and with the same five candidates.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
         "security": 0,
         "foreign_affairs": 0
       },
