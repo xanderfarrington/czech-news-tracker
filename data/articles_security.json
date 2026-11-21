@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-21T09:56:04Z",
+  "updated_at_utc": "2026-11-21T17:38:34Z",
   "topic": "security",
-  "count": 4,
+  "count": 3,
   "articles": [
     {
       "source": "CT24",
@@ -74,32 +74,6 @@
         "politics"
       ],
       "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-obrany-vypada-jako-ze-ho-ridi-pata-kolona-ruska-babis-je-nejslabsi_2611191739_eml",
-      "published_utc": "2026-11-19T16:39:00Z",
-      "title_raw": "Ministerstvo obrany vypadá, jako že ho řídí pátá kolona Ruska. Babiš je nejslabší premiér, říká Minář",
-      "lead_raw": "Statisíce protestujících zaplnily v neděli pražskou Letnou. Premiér Andrej Babiš (ANO) už ale dal jasně najevo, že požadavkům organizátorů největší polistopadové demonstrace nevyhoví.",
-      "fingerprint": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
-      "id": "57b2777a1b6cff273d069aca0767f77e212b557aaaa84d9517e210b1efe26954",
-      "title_en": "The Ministry of Defense looks like it's run by Russia's Fifth Column.",
-      "lead_en": "Hundreds of protesters flooded the Prague Summer on Sunday, but Prime Minister Andrej Babiš (ANO) has already made it clear that he will not meet the demands of the organizers of the largest demonstration in the Midwest.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 7,
-        "security": 6,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics",
-        "security"
-      ],
-      "primary_topic": "politics",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

@@ -1,7 +1,57 @@
 {
-  "updated_at_utc": "2026-11-21T09:56:04Z",
-  "count": 55,
+  "updated_at_utc": "2026-11-21T17:38:34Z",
+  "count": 57,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/politolog-babisova-koalice-je-se-socialnim-citenim-na-stiru-temat-se-muze-chytit_2611211605_bva",
+      "published_utc": "2026-11-21T15:04:00Z",
+      "title_raw": "Politolog: Babišova koalice je se sociálním cítěním na štíru. Témat se může chytit jakákoliv levicová strana",
+      "lead_raw": "Na sjezdu v Jihlavě v sobotu ustavují Novou sociální demokracii, která se chce zasazovat za sociálně spravedlivou společnost a klást důraz na ekologii i prosperitu. Hlásí se k evropské integraci i ke kolektivní obraně, kterou nyní prezentuje NATO.",
+      "fingerprint": "59e1c387bc690355722f185e772e96a07ab46acf44265cd5d94a30c933ecbc1f",
+      "id": "59e1c387bc690355722f185e772e96a07ab46acf44265cd5d94a30c933ecbc1f",
+      "title_en": "Political scientist: Babiš's coalition is on the edge of a social network.",
+      "lead_en": "At a meeting in Jihlava on Saturday, they are establishing a New Social Democracy, which wants to advocate for a socially just society and emphasize ecology and prosperity, calling for European integration and the collective defence that NATO is now presenting.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 1,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/proc-babis-ignoruje-senat-lvice-vildumetzova-promluvila-o-jeho-nechuti/r~aaa29122d73815f6381b7e8537895d38",
+      "published_utc": "2026-11-21T10:43:00Z",
+      "title_raw": "Proč Babiš ignoruje Senát. „Lvice“ Vildumetzová promluvila o jeho nechuti",
+      "lead_raw": "Dostat premiéra a předsedu ANO Andreje Babiše do Senátu se zdá jako nadlidský úkol. Za dobu, co vládne koalice ANO, SPD a Motoristů, ještě v Senátu vůbec nebyl a také v době minulého vládnutí s ČSSD chodil do této komory naprosto minimálně.",
+      "fingerprint": "98fb88e6ee50c091f733cf1e27a177a899cb4132b70b8a6ac3d292d894cb884d",
+      "id": "98fb88e6ee50c091f733cf1e27a177a899cb4132b70b8a6ac3d292d894cb884d",
+      "title_en": "Why Grandma ignores the Senate.",
+      "lead_en": "To get the Prime Minister and ANO President Andrey Babiš to the Senate seems like a superhuman task. during the time of the coalition of ANO, SPD and Motorists, he was not even in the Senate at all and also during the past rule with the CZSSD he went to this chamber absolutely minimally.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/domaci/zpoplatneny-vjezd-do-centra-stan-chce-prosadit-zakon-o-mytu-popsal-novy-prazsky-primator/r~aaa29447a9d59790447ecafacf2cd4aa",

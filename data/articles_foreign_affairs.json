@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-21T09:56:04Z",
+  "updated_at_utc": "2026-11-21T17:38:34Z",
   "topic": "foreign_affairs",
-  "count": 5,
+  "count": 4,
   "articles": [
     {
       "source": "iROZHLAS (Domestic)",
@@ -99,32 +99,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-koalice-ochotnych-ma-jina-temata-nez-financovani-ct-a-cro-uvedl-berlin-321051",
-      "published_utc": "2026-11-19T12:49:33Z",
-      "title_raw": "Koalice ochotných má jiná témata než financování ČT a ČRo, uvedl Berlín",
-      "lead_raw": "Koalice ochotných sdružující země podporující Ukrajinu nebude mít v programu čtvrtečního jednání financování českých veřejnoprávních médií.",
-      "fingerprint": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
-      "id": "173cebebb476e32ce113680c67a502a7c5e99e4f127843cebd58b51436aea361",
-      "title_en": "The Coalition of Volunteers has other topics than funding the Czech Republic and the Czech Republic, Berlin said.",
-      "lead_en": "The Coalition of Volunteer Associating Countries in Support of Ukraine will not have the funding of Czech public-law media on Thursday's agenda.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 4
-      },
-      "topics": [
-        "foreign_affairs",
-        "politics"
-      ],
-      "primary_topic": "foreign_affairs",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
