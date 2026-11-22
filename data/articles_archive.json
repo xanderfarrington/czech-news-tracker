@@ -1,7 +1,32 @@
 {
-  "updated_at_utc": "2026-11-21T23:25:39Z",
-  "count": 59,
+  "updated_at_utc": "2026-11-22T06:58:50Z",
+  "count": 60,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-superkoalice-proti-babisovi-spojte-se-vzkazuji-opozici-jeji-volici-320869",
+      "published_utc": "2026-11-22T05:30:00Z",
+      "title_raw": "Superkoalice proti Babišovi. Spojte se, vzkazují opozici její voliči",
+      "lead_raw": "Voliči si přejí spojení všech pěti opozičních stran do společné kandidátky do sněmovních voleb, ukázal průzkum Medianu. Politici spolupráci nevylučují, možnou podobu však nechtějí komentovat.",
+      "fingerprint": "229950616e556def09f8d1331fb2028839075cb9bba7d5cd6e6e5b975ab7422a",
+      "id": "229950616e556def09f8d1331fb2028839075cb9bba7d5cd6e6e5b975ab7422a",
+      "title_en": "The Super Coalition against Granny.",
+      "lead_en": "Voters want all five opposition parties to join together as a joint candidate for the House of Representatives, a poll by Median showed.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "CT24",
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-prichazi-s-novym-programem-na-podporu-bydleni-stary-zastavila-379817",

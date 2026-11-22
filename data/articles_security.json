@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-21T23:25:39Z",
+  "updated_at_utc": "2026-11-22T06:58:50Z",
   "topic": "security",
-  "count": 3,
+  "count": 2,
   "articles": [
     {
       "source": "CT24",
@@ -46,32 +46,6 @@
       },
       "topics": [
         "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/vlada-na-nakupech-zuna-a-spol-hasi-problem-s-protivzdusnou-obranou-navrat-z_2611200600_cen",
-      "published_utc": "2026-11-20T05:00:00Z",
-      "title_raw": "Vláda na nákupech? Zůna a spol. hasí problém s protivzdušnou obranou, návrat z Izraele budí otázky",
-      "lead_raw": "Česko řeší protivzdušnou obranu. A inspiraci vláda hledala v Izraeli.",
-      "fingerprint": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
-      "id": "e02a2061e62df2161baeb0b055ed79bd3d14ac0858d7d8ce5a6896d7e7c67b20",
-      "title_en": "Zones and alliances are erasing the air defense problem, returning from Israel raises questions.",
-      "lead_en": "The Czech Republic is dealing with air defense, and the government has been looking to Israel for inspiration.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 8,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security",
-        "politics"
       ],
       "primary_topic": "security",
       "czech_related": true,
