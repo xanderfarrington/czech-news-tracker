@@ -1,8 +1,59 @@
 {
-  "updated_at_utc": "2026-11-22T06:58:50Z",
+  "updated_at_utc": "2026-11-22T16:22:39Z",
   "topic": "foreign_affairs",
   "count": 3,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/absolutne-neprijatelne-babis-odmita-navrh-rozpoctu-eu-vadi-mu-vydaje-na-ukrajinu/r~aaa292d2387f1d7d475e595ffa995ffe",
+      "published_utc": "2026-11-22T09:30:00Z",
+      "title_raw": "Absolutně nepřijatelné. Babiš odmítá rozpočet EU. Vadí mu škrty Česku a výdaje na Ukrajinu",
+      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
+      "fingerprint": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
+      "id": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
+      "title_en": "It's totally unacceptable, Grandma's rejecting the EU budget, bothering with cuts to the Czech Republic and spending on Ukraine",
+      "lead_en": "The current draft budget of the European Union is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X. He criticized the reduction in money for the Czech Republic and spending on the operation of the European Parliament and other European structures and also on Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/pro-cesko-neprijatelny-kritizuje-babis-navrh-rozpoctu-eu-nelibi-se-mu-vydaje-na_2611221021_mst",
+      "published_utc": "2026-11-22T09:21:00Z",
+      "title_raw": "‚Pro Česko nepřijatelný,‘ kritizuje Babiš návrh rozpočtu EU. Nelíbí se mu výdaje na pomoc Ukrajině",
+      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl v neděli premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
+      "fingerprint": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
+      "id": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
+      "title_en": "Unacceptable to the Czech Republic,Babiš criticizes the EU budget proposal.",
+      "lead_en": "The current EU budget proposal is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X on Sunday. He criticized the cuts in money for the Czech Republic and spending on running the European Parliament and other European structures as well as on Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",
@@ -17,56 +68,6 @@
       "topic_scores": {
         "politics": 1,
         "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-je-otazka-casu-kdy-se-to-stane-i-u-nas-rekl-pavel-k-incidentu-v-polsku-321176",
-      "published_utc": "2026-11-20T14:50:20Z",
-      "title_raw": "Je otázka času, kdy se to stane i u nás, řekl Pavel k incidentu v Polsku",
-      "lead_raw": "Rusko podle prezidenta Petra Pavla považuje za legitimní cíl všechny země podporující Ukrajinu. Po dopadu ruských střel a dronu v Polsku varoval, že se něco podobného může stát i v Česku.",
-      "fingerprint": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
-      "id": "3e67e581f6dcdd95cc28611386c3f58e6ec1910a102aa0315e265a00b19e4bd3",
-      "title_en": "It's only a matter of time before it happens in our country, Paul said of the incident in Poland.",
-      "lead_en": "According to President Peter Paul, Russia considers all countries supporting Ukraine a legitimate target, and after the impact of Russian missiles and drones in Poland, he warned that something similar could happen in the Czech Republic.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 2,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/je-to-otazka-casu-podobny-incident-jako-v-polsku-muze-nastat-v-cesku-varoval-pavel/r~aaa290b22ad14b7528e444865092407f",
-      "published_utc": "2026-11-20T14:50:00Z",
-      "title_raw": "Je to otázka času. Podobný incident jako v Polsku může nastat v Česku, varoval Pavel",
-      "lead_raw": "Je spíše otázkou času, kdy se incident podobný tomu v Polsku stane také v České republice, uvedl v pátek prezident Petr Pavel. Na jihovýchodě Polska se ráno zřítily dvě střely a proudový dron, podle tamního premiéra Donalda Tuska byly ruské a šlo o cílenou provokaci.",
-      "fingerprint": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
-      "id": "425cad867d3e359c8fccfde64ba66193992dadda0d9669b28eee2a2462141f9b",
-      "title_en": "A similar incident in Poland could happen in the Czech Republic, warned Pavel.",
-      "lead_en": "It's more a matter of time before an incident like this in Poland also happens in the Czech Republic, President Petr Pavel said on Friday.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 2,
         "foreign_affairs": 0
       },
       "topics": [

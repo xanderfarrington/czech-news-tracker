@@ -1,7 +1,283 @@
 {
-  "updated_at_utc": "2026-11-22T06:58:50Z",
-  "count": 60,
+  "updated_at_utc": "2026-11-22T16:22:39Z",
+  "count": 71,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/s-ceskem-je-poji-dlouhodobe-pratelstvi-prezident-pavel-vyznamenal-politology_2611221706_mst",
+      "published_utc": "2026-11-22T16:06:00Z",
+      "title_raw": "‚S Českem je pojí dlouhodobé přátelství.‘ Prezident Pavel vyznamenal politology Krasteva a Snydera",
+      "lead_raw": "Dvě významné zahraniční osobnosti v neděli z rukou prezidenta Petra Pavla převzaly státní vyznamenání. Hlava státu předala ocenění americkému historikovi a publicistovi Timothymu Snyderovi a také bulharskému politologovi Ivanu Krastevovi.",
+      "fingerprint": "d3aa814bb575d93bf1fde3c1d84ed5638ba92b9bd933c8600200c054e8d188b7",
+      "id": "d3aa814bb575d93bf1fde3c1d84ed5638ba92b9bd933c8600200c054e8d188b7",
+      "title_en": "With the Czech Republic is a long-standing friendship. President Pavel awarded politicians Krastev and Snyder",
+      "lead_en": "On Sunday, two prominent foreign figures received the state award from President Peter Paul. The head of state presented the award to the American historian and publicist Timothy Snyder and also to the Bulgarian political scientist Ivan Krastev.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-poustni-operace-armadni-elity-jak-cesti-valecnici-pomahaji-vytlacovat-rusy-320904",
+      "published_utc": "2026-11-22T14:21:37Z",
+      "title_raw": "Pouštní operace armádní elity. Čeští válečníci pomáhají vytlačovat Rusy",
+      "lead_raw": "Speciální síly české armády druhým rokem trénují své kolegy v Mauritánii. Cílem je zmírnit migraci, potírat terorismus a udržet ruské polovojenské skupiny mimo hranice této africké země.",
+      "fingerprint": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
+      "id": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
+      "title_en": "Desert operations of the army elite.",
+      "lead_en": "For the second year in a row, Czech special forces are training their colleagues in Mauritania to mitigate migration, combat terrorism and keep Russian paramilitary groups out of the African country's borders.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-slovenska-vlada-jednala-17-11-o-spolupraci-s-rusy-ministr-vnitra-ji-kritizuje-321228",
+      "published_utc": "2026-11-22T14:11:34Z",
+      "title_raw": "Slovenská vláda jednala 17. 11. o spolupráci s Rusy. Ministr vnitra ji kritizuje",
+      "lead_raw": "Slovenský ministr vnitra Matúš Šutaj Eštok (Hlas) odsoudil jednání vlády o spolupráci s Ruskem v den oslav sametové revoluce. Podle něj měla vláda s tímto tématem počkat příští schůzi a nedávat prostor pro vznik spekulací.",
+      "fingerprint": "6a8fc3260981ddd549835bb8e2c2389cc21bffbde4875a1d4b6f0714d9111024",
+      "id": "6a8fc3260981ddd549835bb8e2c2389cc21bffbde4875a1d4b6f0714d9111024",
+      "title_en": "The Slovak government has been negotiating cooperation with the Russians.",
+      "lead_en": "Slovak Interior Minister Matúš Šutaj Eštok (Voice) condemned the government's talks on cooperation with Russia on the day of the celebration of the Velvet Revolution.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/ekonomika/poplatky-zrusime-do-leta-rika-okamura-ustavni-pojistku-mediim-odmita/r~aaa296732f95a41115b7eeff4ac75ab7",
+      "published_utc": "2026-11-22T13:31:00Z",
+      "title_raw": "Poplatky zrušíme do léta, říká Okamura. Ústavní pojistku médiím odmítá",
+      "lead_raw": "Televizní a rozhlasový poplatek by měl skončit nejpozději do léta, řekl v nedělní Partii na CNN Prima News předseda sněmovny a SPD Tomio Okamura. Česká televize a Český rozhlas mají být podle vládního návrhu financovány ze státního rozpočtu.",
+      "fingerprint": "2edcac40d2e10b5ddd22b1fb7f39381e7e2b571e2c718da5ba4d8576759b6d9e",
+      "id": "2edcac40d2e10b5ddd22b1fb7f39381e7e2b571e2c718da5ba4d8576759b6d9e",
+      "title_en": "Okamura says the charges will be lifted by summer.",
+      "lead_en": "Television and radio charges should end by the end of the summer, Speaker of the House and SPD Tomio Okamura told CNN Prima News on Sunday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/koncesionarske-poplatky-zrusime-nejpozdeji-do-leta-mini-sef-snemovny-okamura_2611221416_bod",
+      "published_utc": "2026-11-22T13:16:00Z",
+      "title_raw": "Koncesionářské poplatky zrušíme nejpozději do léta, míní šéf sněmovny Okamura",
+      "lead_raw": "Televizní a rozhlasové poplatky by měly být zrušeny nejpozději do léta. V Partii Terezie Tománkové na CNN Prima News to řekl předseda Sněmovny a SPD Tomio Okamura.",
+      "fingerprint": "b23f4754796cfacdbd3aedd53b41204c12d90606510bc3a508b3f9b63d3669e0",
+      "id": "b23f4754796cfacdbd3aedd53b41204c12d90606510bc3a508b3f9b63d3669e0",
+      "title_en": "We'll cancel the concessionaire fees by the end of the summer, Speaker of the House Okamura says.",
+      "lead_en": "Television and radio charges should be abolished by the end of the summer.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-motoriste-podpori-dan-na-rafinerie-321234",
+      "published_utc": "2026-11-22T12:47:02Z",
+      "title_raw": "Motoristé podpoří daň na rafinerie",
+      "lead_raw": "Poslanci vládních Motoristů podpoří při nadcházejícím hlasování ve Sněmovně návrh na zavedení sektorové daně pro rafinerie. V nedělní debatě u Václava Moravce to potvrdil předseda strany Petr Macinka.",
+      "fingerprint": "ee5352c27270d761c84dae311b1b87a016c8e2cae223e1e97905fa6a8b0683c5",
+      "id": "ee5352c27270d761c84dae311b1b87a016c8e2cae223e1e97905fa6a8b0683c5",
+      "title_en": "Motorists will support a tax on refineries",
+      "lead_en": "Members of the Government Motorists will support the proposal to introduce a sectoral tax on refineries in the upcoming parliamentary vote.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/nedelni-debata-o-bezpecnostnich-hrozbach-v-cesku-a-v-evrope-379830",
+      "published_utc": "2026-11-22T10:31:48Z",
+      "title_raw": "Na dronové útoky nejsme připravení, vadí Hřibovi. Řešíme protivzdušnou obranu, říká Šťastný",
+      "lead_raw": "Dopad dvou ruských střel a proudového dronu v Polsku je podle předsedy Přísahy Róberta Šlachty dalším testováním Moskvy, kam až může zajít. Šéf hnutí Naše Česko Martin Kuba v Nedělní debatě navrhnul, aby se premiér setkal s hlavami parlamentních stran a probral strategii jednotného vystupování.",
+      "fingerprint": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
+      "id": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
+      "title_en": "We're not ready for drone strikes, the fungus is bothering us.",
+      "lead_en": "The impact of two Russian missiles and a jet drone in Poland is a further test of Moscow's ability to go as far as possible, according to President Robert Schlachty's Oath.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 11,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/absolutne-neprijatelne-babis-odmita-navrh-rozpoctu-eu-vadi-mu-vydaje-na-ukrajinu/r~aaa292d2387f1d7d475e595ffa995ffe",
+      "published_utc": "2026-11-22T09:30:00Z",
+      "title_raw": "Absolutně nepřijatelné. Babiš odmítá rozpočet EU. Vadí mu škrty Česku a výdaje na Ukrajinu",
+      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
+      "fingerprint": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
+      "id": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
+      "title_en": "It's totally unacceptable, Grandma's rejecting the EU budget, bothering with cuts to the Czech Republic and spending on Ukraine",
+      "lead_en": "The current draft budget of the European Union is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X. He criticized the reduction in money for the Czech Republic and spending on the operation of the European Parliament and other European structures and also on Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-absolutne-neprijatelny-pro-cesko-rika-babis-o-navrhu-rozpoctu-eu-321230",
+      "published_utc": "2026-11-22T09:28:21Z",
+      "title_raw": "Absolutně nepřijatelný pro Česko, říká Babiš o návrhu rozpočtu EU",
+      "lead_raw": "Premiér Andrej Babiš ve videu zkritizoval návrh rozpočtu Evropské unie. Nelíbí se mu snížení peněz pro Česko a výdaje na europarlament či Ukrajinu.",
+      "fingerprint": "40569220a1cc5a15ecfac440fd802070c859dcee9da04932b459fc25ea333cff",
+      "id": "40569220a1cc5a15ecfac440fd802070c859dcee9da04932b459fc25ea333cff",
+      "title_en": "Absolutely unacceptable for the Czech Republic, says Babiš on the draft EU budget",
+      "lead_en": "Prime Minister Andrej Babiš has criticized the European Union's draft budget in a video, saying he doesn't like the cuts in money for the Czech Republic and spending on the European Parliament or Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/aktualni-navrh-rozpoctu-eu-je-podle-babise-pro-cesko-absolutne-neprijatelny-379831",
+      "published_utc": "2026-11-22T09:27:51Z",
+      "title_raw": "Aktuální návrh rozpočtu EU je podle Babiše pro Česko absolutně nepřijatelný",
+      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl v neděli premiér Andrej Babiš (ANO). Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu, která se pátým rokem brání ruské vojenské agresi.",
+      "fingerprint": "73995ba691ae41293915dfe483f3a3b0e9d9db3a17237022e6b174d1818d7917",
+      "id": "73995ba691ae41293915dfe483f3a3b0e9d9db3a17237022e6b174d1818d7917",
+      "title_en": "The current EU budget proposal is absolutely unacceptable for the Czech Republic",
+      "lead_en": "The European Union's current budget proposal is absolutely unacceptable to the Czech Republic, Prime Minister Andrej Babiš (ANO) said on Sunday, criticizing the reduction in money for the Czech Republic and spending on the European Parliament and other European structures, as well as on Ukraine, which is defending itself against Russian military aggression for the fifth year running.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 1,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/pro-cesko-neprijatelny-kritizuje-babis-navrh-rozpoctu-eu-nelibi-se-mu-vydaje-na_2611221021_mst",
+      "published_utc": "2026-11-22T09:21:00Z",
+      "title_raw": "‚Pro Česko nepřijatelný,‘ kritizuje Babiš návrh rozpočtu EU. Nelíbí se mu výdaje na pomoc Ukrajině",
+      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl v neděli premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
+      "fingerprint": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
+      "id": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
+      "title_en": "Unacceptable to the Czech Republic,Babiš criticizes the EU budget proposal.",
+      "lead_en": "The current EU budget proposal is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X on Sunday. He criticized the cuts in money for the Czech Republic and spending on running the European Parliament and other European structures as well as on Ukraine.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-superkoalice-proti-babisovi-spojte-se-vzkazuji-opozici-jeji-volici-320869",

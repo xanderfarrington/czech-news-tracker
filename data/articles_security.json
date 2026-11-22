@@ -1,22 +1,22 @@
 {
-  "updated_at_utc": "2026-11-22T06:58:50Z",
+  "updated_at_utc": "2026-11-22T16:22:39Z",
   "topic": "security",
   "count": 2,
   "articles": [
     {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vyjadreni-po-jednani-bezpecnostni-komise-ke-srazce-vlaku-v-praze-379783",
-      "published_utc": "2026-11-20T11:33:44Z",
-      "title_raw": "Zavádíme kontrolu čtyř očí, řekl Bednárik po jednání bezpečnostní komise o srážce vlaků",
-      "lead_raw": "Na železnici se začne od prosince zavádět takzvaný systém čtyř očí, sdělil ministr dopravy Ivan Bednárik (za SPD). V pilotním projektu na pražském hlavním nádraží budou muset dva lidé kontrolovat odjezdová návěstidla, zda ukazují volnou dopravní cestu.",
-      "fingerprint": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
-      "id": "a9bd44f794492a93989b4093afdfcddc2f6286e58da4a60c76ce6d327f9ea49e",
-      "title_en": "We're introducing a four-eyed check, Bednárik said after a security committee meeting on the train crash.",
-      "lead_en": "The so-called four-eyed system will be introduced on the railway from December, Transport Minister Ivan Bednárik (for the SPD) said.",
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-poustni-operace-armadni-elity-jak-cesti-valecnici-pomahaji-vytlacovat-rusy-320904",
+      "published_utc": "2026-11-22T14:21:37Z",
+      "title_raw": "Pouštní operace armádní elity. Čeští válečníci pomáhají vytlačovat Rusy",
+      "lead_raw": "Speciální síly české armády druhým rokem trénují své kolegy v Mauritánii. Cílem je zmírnit migraci, potírat terorismus a udržet ruské polovojenské skupiny mimo hranice této africké země.",
+      "fingerprint": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
+      "id": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
+      "title_en": "Desert operations of the army elite.",
+      "lead_en": "For the second year in a row, Czech special forces are training their colleagues in Mauritania to mitigate migration, combat terrorism and keep Russian paramilitary groups out of the African country's borders.",
       "translation_status": "translated",
       "topic_scores": {
-        "politics": 1,
-        "security": 6,
+        "politics": 0,
+        "security": 5,
         "foreign_affairs": 0
       },
       "topics": [
@@ -29,19 +29,19 @@
       "translation_version": "nllb200-v1"
     },
     {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/clovek-musi-zatinat-pesti-sef-ods-stravil-noc-v-krytu-behem-utoku-rusu/r~aaa2938417a83aa31546344911d50be5",
-      "published_utc": "2026-11-20T09:17:00Z",
-      "title_raw": "Dramatická noc šéfa ODS v Kyjevě. Ruské rakety ho zastihly, když se vracel z večeře",
-      "lead_raw": "Noc v krytu strávil během návštěvy Kyjeva šéf ODS Martin Kupka. Hlavní město Ukrajiny čelilo v noci na pátek dalšímu masivnímu ruskému útoku, při němž zemřeli podle úřadů nejméně tři lidé.",
-      "fingerprint": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
-      "id": "a5420ebad51a40501f502e3b630eceb42cc248c2f7375a6cfeeb49507f5e1744",
-      "title_en": "Dramatic night of the head of the ODS in Kiev, Russian missiles caught him returning from dinner",
-      "lead_en": "During a visit to Kiev, ODS chief Martin Kupka spent the night in hiding, as the Ukrainian capital faced another massive Russian attack on Friday night, killing at least three people, officials said.",
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/nedelni-debata-o-bezpecnostnich-hrozbach-v-cesku-a-v-evrope-379830",
+      "published_utc": "2026-11-22T10:31:48Z",
+      "title_raw": "Na dronové útoky nejsme připravení, vadí Hřibovi. Řešíme protivzdušnou obranu, říká Šťastný",
+      "lead_raw": "Dopad dvou ruských střel a proudového dronu v Polsku je podle předsedy Přísahy Róberta Šlachty dalším testováním Moskvy, kam až může zajít. Šéf hnutí Naše Česko Martin Kuba v Nedělní debatě navrhnul, aby se premiér setkal s hlavami parlamentních stran a probral strategii jednotného vystupování.",
+      "fingerprint": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
+      "id": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
+      "title_en": "We're not ready for drone strikes, the fungus is bothering us.",
+      "lead_en": "The impact of two Russian missiles and a jet drone in Poland is a further test of Moscow's ability to go as far as possible, according to President Robert Schlachty's Oath.",
       "translation_status": "translated",
       "topic_scores": {
-        "politics": 0,
-        "security": 3,
+        "politics": 2,
+        "security": 11,
         "foreign_affairs": 0
       },
       "topics": [
