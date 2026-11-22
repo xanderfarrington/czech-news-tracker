@@ -1,7 +1,182 @@
 {
-  "updated_at_utc": "2026-11-22T16:22:39Z",
-  "count": 71,
+  "updated_at_utc": "2026-11-22T23:40:21Z",
+  "count": 78,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/obrana-a-bezpecnost-polska-je-cesky-narodni-zajem-reagoval-zuna-na-naruseni_2611222214_dns",
+      "published_utc": "2026-11-22T21:14:00Z",
+      "title_raw": "Obrana a bezpečnost Polska je český národní zájem, reagoval Zůna na narušení vzdušného prostoru země",
+      "lead_raw": "Obrana a bezpečnost Polska je český národní zájem. V reakci na páteční narušení polského vzdušného prostoru ze strany Ruska to pro Radiožurnál uvedl ministr obrany Jaromír Zůna (za SPD).",
+      "fingerprint": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
+      "id": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
+      "title_en": "Defence and security of Poland is the Czech national interest, the Zone has responded to the disruption of the country's airspace",
+      "lead_en": "Defence and security of Poland is a Czech national interest, Minister of Defence Jaromír Zóna (for the SPD) told Radiožurnál in response to Friday's Russian interference in Polish airspace.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 8,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/nejvic-za-poslednich-tricet-let-demokrate-drtive-ovladnou-americkou-snemovnu/r~aaa29e28985ae24cf5b98446b500ad98",
+      "published_utc": "2026-11-22T19:46:17Z",
+      "title_raw": "Nejvíc za posledních třicet let. Demokraté drtivě ovládnou americkou sněmovnu",
+      "lead_raw": "Demokraté budou mít v americké Sněmovně reprezentantů nejméně 258 křesel, což je nejvíce od roku 1992, píše agentura AP. Čtyři mandáty jsou navíc ještě ve hře.",
+      "fingerprint": "e4b3819439ac6cd0d6ca31ae79e98b7aa3b579a30b21003cbeeb9f9f5dae02b1",
+      "id": "e4b3819439ac6cd0d6ca31ae79e98b7aa3b579a30b21003cbeeb9f9f5dae02b1",
+      "title_en": "The most in 30 years, the Democrats dominating the U.S. House of Representatives.",
+      "lead_en": "Democrats will have at least 258 seats in the U.S. House of Representatives, the most since 1992, according to the AP.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/inflace-prichazi-zbrzdi-rust-ekonomiky-i-prijmu-rozpoctu-379835",
+      "published_utc": "2026-11-22T19:27:36Z",
+      "title_raw": "Inflace přichází. Zbrzdí růst ekonomiky i příjmů rozpočtu",
+      "lead_raw": "Česká ekonomika letos roste méně, než se očekávalo. Výhled zhoršily všechny velké tuzemské instituce i třeba Evropská komise.",
+      "fingerprint": "4c8abb422bd1360bf3e3c7c64f8a8f5dfb06d8db7e5b579048e750172982d3ac",
+      "id": "4c8abb422bd1360bf3e3c7c64f8a8f5dfb06d8db7e5b579048e750172982d3ac",
+      "title_en": "Inflation is coming, it's slowing down the economy and budget revenues.",
+      "lead_en": "The Czech economy is growing less than expected this year, and the outlook has deteriorated for all the major domestic institutions, including the European Commission.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/demokrate-budou-mit-v-americke-snemovne-reprezentantu-nejmene-258-kresel-379846",
+      "published_utc": "2026-11-22T19:25:53Z",
+      "title_raw": "Demokraté budou mít v americké Sněmovně reprezentantů nejméně 258 křesel",
+      "lead_raw": "Demokraté budou mít v americké Sněmovně reprezentantů nejméně 258 křesel, což je nejvíce od roku 1992, píše agentura AP. Čtyři mandáty jsou navíc ještě ve hře.",
+      "fingerprint": "eab824caa9341b19cc5bc9c89dc0561d8b6a60977d75c16a06c5a8df9b594623",
+      "id": "eab824caa9341b19cc5bc9c89dc0561d8b6a60977d75c16a06c5a8df9b594623",
+      "title_en": "Democrats will have at least 258 seats in the U.S. House of Representatives",
+      "lead_en": "Democrats will have at least 258 seats in the U.S. House of Representatives, the most since 1992, according to the AP.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/aktualne-promeny-ceska/taji-jak-ale-uz-vi-kdy-do-pul-roku-poplatky-skonci-ujistuji-babis-s-okamurou/r~aaa2919cd54a292b458a90a279e7e4b0",
+      "published_utc": "2026-11-22T19:02:00Z",
+      "title_raw": "Jedna podstatná věc se pořád neví: jak vláda zruší poplatky. Okamura přidal nový slib",
+      "lead_raw": "Vláda Andreje Babiše poplatky za Českou televizi a rozhlas navzdory protestům obrovského množství lidí a stávkujícím zaměstnancům zruší. O víkendu to řekli zástupci koalice včetně Andreje Babiše, Tomia Okamury nebo Filipa Turka.",
+      "fingerprint": "bbab4cc8b8e746b66379683dbf3b557701d7002ddd481754af4cbb16f3407005",
+      "id": "bbab4cc8b8e746b66379683dbf3b557701d7002ddd481754af4cbb16f3407005",
+      "title_en": "One important thing is still unknown: how the government will remove the fees.",
+      "lead_en": "The government of Andrej Babiš will cancel the fees for Czech television and radio despite the protests of a huge number of people and striking employees, representatives of the coalition including Andrej Babiš, Tomia Okamura or Filip Turk said this weekend.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-demokrate-budou-mit-v-americke-snemovne-reprezentantu-nejmene-258-kresel-321250",
+      "published_utc": "2026-11-22T18:48:05Z",
+      "title_raw": "Demokraté budou mít v americké Sněmovně reprezentantů nejméně 258 křesel",
+      "lead_raw": "Demokraté budou mít v americké Sněmovně reprezentantů nejméně 258 křesel, což je nejvíce od roku 1992, píše dnes agentura AP.",
+      "fingerprint": "869fbad1b50b2620d1ad7228b65bbe600d2551ff47c21b50c7ecff74a6b47b7c",
+      "id": "869fbad1b50b2620d1ad7228b65bbe600d2551ff47c21b50c7ecff74a6b47b7c",
+      "title_en": "Democrats will have at least 258 seats in the U.S. House of Representatives",
+      "lead_en": "Democrats will have at least 258 seats in the U.S. House of Representatives, the most since 1992, the AP reports today.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/prezident-pavel-vyznamenal-politologa-krasteva-a-historika-snydera/r~aaa2985059633ed276446d6affdd831b",
+      "published_utc": "2026-11-22T16:21:00Z",
+      "title_raw": "Prezident Pavel vyznamenal politologa Krasteva a historika Snydera",
+      "lead_raw": "Prezident Petr Pavel v neděli na Pražském hradě udělil medaili Za zásluhy bulharskému politologovi Ivanu Krastevovi a americkému historikovi Timothymu Snyderovi. Oba dostali vyznamenání za zásluhy o stát v oblasti rozvoje demokracie a mezinárodní spolupráce.",
+      "fingerprint": "b019d9e50e0d0b528f57ab2ae98df5020bdcdcadcf6c0423541c1765a9f9cfa7",
+      "id": "b019d9e50e0d0b528f57ab2ae98df5020bdcdcadcf6c0423541c1765a9f9cfa7",
+      "title_en": "President Paul awarded political scientist Krastev and historian Snyder",
+      "lead_en": "President Petr Pavel on Sunday at the Prague Castle awarded the Medal for Merit to the Bulgarian political scientist Ivan Krastev and the American historian Timothy Snyder.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/s-ceskem-je-poji-dlouhodobe-pratelstvi-prezident-pavel-vyznamenal-politology_2611221706_mst",
@@ -57,7 +232,7 @@
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-slovenska-vlada-jednala-17-11-o-spolupraci-s-rusy-ministr-vnitra-ji-kritizuje-321228",
       "published_utc": "2026-11-22T14:11:34Z",
       "title_raw": "Slovenská vláda jednala 17. 11. o spolupráci s Rusy. Ministr vnitra ji kritizuje",
-      "lead_raw": "Slovenský ministr vnitra Matúš Šutaj Eštok (Hlas) odsoudil jednání vlády o spolupráci s Ruskem v den oslav sametové revoluce. Podle něj měla vláda s tímto tématem počkat příští schůzi a nedávat prostor pro vznik spekulací.",
+      "lead_raw": "Slovenský ministr vnitra Matúš Šutaj Eštok (Hlas) odsoudil jednání vlády o spolupráci s Ruskem v den oslav sametové revoluce. Podle něj měla vláda s tímto tématem počkat na příští schůzi a nedávat prostor pro vznik spekulací.",
       "fingerprint": "6a8fc3260981ddd549835bb8e2c2389cc21bffbde4875a1d4b6f0714d9111024",
       "id": "6a8fc3260981ddd549835bb8e2c2389cc21bffbde4875a1d4b6f0714d9111024",
       "title_en": "The Slovak government has been negotiating cooperation with the Russians.",

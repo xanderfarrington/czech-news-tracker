@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-22T16:22:39Z",
+  "updated_at_utc": "2026-11-22T23:40:21Z",
   "topic": "foreign_affairs",
-  "count": 3,
+  "count": 2,
   "articles": [
     {
       "source": "Aktualne.cz",
@@ -49,31 +49,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/cesko-je-pripraveno-polsku-pomoci-rekl-babis-k-podobnemu-incidentu-muze-dojit-i_2611201746_adn",
-      "published_utc": "2026-11-20T16:46:00Z",
-      "title_raw": "Česko je připraveno Polsku pomoci, řekl Babiš. K podobnému incidentu může dojít i u nás, míní Pavel",
-      "lead_raw": "Premiér Andrej Babiš (ANO) odsoudil narušení polského vzdušného prostoru, považuje ho za nepřijatelné. Na síti X napsal, že Česká republika pevně stojí za svými polskými přáteli a je připravena poskytnout sousední zemi pomoc a součinnost, pokud to bude třeba.",
-      "fingerprint": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
-      "id": "704f91d7a8dd322fe27c2260969f42a9d7a1716eee429aa9c87b51e8fa751d8a",
-      "title_en": "The Czech Republic is ready to help Poland, Babiš said.",
-      "lead_en": "Prime Minister Andrej Babiš (ANO) condemned the disruption of Polish airspace and considered it unacceptable, writing on Network X that the Czech Republic stands firmly behind its Polish friends and is ready to provide assistance and cooperation to the neighbouring country if necessary.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

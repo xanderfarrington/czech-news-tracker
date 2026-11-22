@@ -1,8 +1,33 @@
 {
-  "updated_at_utc": "2026-11-22T16:22:39Z",
+  "updated_at_utc": "2026-11-22T23:40:21Z",
   "topic": "security",
-  "count": 2,
+  "count": 3,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/obrana-a-bezpecnost-polska-je-cesky-narodni-zajem-reagoval-zuna-na-naruseni_2611222214_dns",
+      "published_utc": "2026-11-22T21:14:00Z",
+      "title_raw": "Obrana a bezpečnost Polska je český národní zájem, reagoval Zůna na narušení vzdušného prostoru země",
+      "lead_raw": "Obrana a bezpečnost Polska je český národní zájem. V reakci na páteční narušení polského vzdušného prostoru ze strany Ruska to pro Radiožurnál uvedl ministr obrany Jaromír Zůna (za SPD).",
+      "fingerprint": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
+      "id": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
+      "title_en": "Defence and security of Poland is the Czech national interest, the Zone has responded to the disruption of the country's airspace",
+      "lead_en": "Defence and security of Poland is a Czech national interest, Minister of Defence Jaromír Zóna (for the SPD) told Radiožurnál in response to Friday's Russian interference in Polish airspace.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 8,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-poustni-operace-armadni-elity-jak-cesti-valecnici-pomahaji-vytlacovat-rusy-320904",
