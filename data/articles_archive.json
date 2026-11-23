@@ -1,7 +1,357 @@
 {
-  "updated_at_utc": "2026-11-23T07:53:49Z",
-  "count": 80,
+  "updated_at_utc": "2026-11-23T20:20:44Z",
+  "count": 94,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-premieri-zemi-v4-odmitli-novy-navrh-viceleteho-rozpoctu-eu-321340",
+      "published_utc": "2026-11-23T19:53:07Z",
+      "title_raw": "Premiéři zemí V4 odmítli nový návrh víceletého rozpočtu EU",
+      "lead_raw": "Proti návrhu příštího rozpočtu EU a brzkému zavedení emisních povolenek ETS2 se vyslovili premiéři zemí visegrádské čtyřky. Andrej Babiš považuje plán o evropských penězích za totálně nepřijatelný.",
+      "fingerprint": "831b3ad13f55f0c6e00a965fc98c208f131eab4f2de6b47a1945f39781ba9074",
+      "id": "831b3ad13f55f0c6e00a965fc98c208f131eab4f2de6b47a1945f39781ba9074",
+      "title_en": "Prime Ministers of the V4 countries reject a new proposal for the EU's multiannual budget",
+      "lead_en": "The Prime Ministers of the Visegrad Four opposed the proposal for the next EU budget and the early introduction of ETS2 emission allowances.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/neprijatelny-premieri-zemi-visegradske-ctyrky-odmitli-navrh-rozpoctu-eu/r~aaa29134cb8d701b61240b71651a57f9",
+      "published_utc": "2026-11-23T19:47:00Z",
+      "title_raw": "Nepřijatelný. Premiéři zemí Visegrádské čtyřky odmítli návrh rozpočtu EU",
+      "lead_raw": "Česko, Maďarsko, Polsko a Slovensko odmítají návrh příštího sedmiletého rozpočtu Evropské unie, jak ho o uplynulém víkendu předložil šéf Evropské rady António Costa. Slovenský premiér Robert Fico to novinářům řekl v pondělí po schůzce s kolegy z uvedených zemí visegrádské čtyřky (V4) a Rakouska.",
+      "fingerprint": "30f020ce429322b848ecf854ec7a00e0136b64d50ee4602bb36d79d1dfb43a48",
+      "id": "30f020ce429322b848ecf854ec7a00e0136b64d50ee4602bb36d79d1dfb43a48",
+      "title_en": "The Prime Ministers of the Visegrad Four rejected the EU budget proposal.",
+      "lead_en": "The Czech Republic, Hungary, Poland and Slovakia are rejecting the proposal for the next seven-year budget of the European Union, as presented last weekend by European Council President António Costa.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/zastupitele-ve-vyskri-na-semilsku-rezignovali-misto-starosty-obec-povede-spravce_2611232041_vaa",
+      "published_utc": "2026-11-23T19:41:00Z",
+      "title_raw": "Zastupitelé ve Vyskeři na Semilsku rezignovali. Místo starosty obec povede správce pověřený ministerstvem",
+      "lead_raw": "Obec Vyskeř v Českém ráji povede několik měsíců místo starosty správce pověřený ministerstvem vnitra. Lidé ve Vyskeři si letos sice zvolili nové vedení, krátce nato ale všichni zastupitelé rezignovali.",
+      "fingerprint": "49833a1796a083e41702de78c88b60f79b2e69babf198adb2affb8e5be511a2e",
+      "id": "49833a1796a083e41702de78c88b60f79b2e69babf198adb2affb8e5be511a2e",
+      "title_en": "The representatives of Vyskera in Semilsko resigned, and the mayor will be replaced by a trustee appointed by the ministry.",
+      "lead_en": "The municipality of Vyskeř in Český raj will lead for several months in place of the mayor of the administrator appointed by the Ministry of the Interior.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/prulomova-zakazka-ceska-zbrojovka-dodala-nemecke-armade-prvni-tisice-pistoli-379879",
+      "published_utc": "2026-11-23T19:03:02Z",
+      "title_raw": "Průlomová zakázka. Česká zbrojovka dodala německé armádě první tisíce pistolí",
+      "lead_raw": "Česká zbrojovka dodala německé armádě – bundeswehru – první tisíce kusů pistolí P13. Firma to sdělila České televizi.",
+      "fingerprint": "cbb13a3ce105beef73bf6209a3d30ae1ca6e58813b1ed7a91defa5818f0be8b3",
+      "id": "cbb13a3ce105beef73bf6209a3d30ae1ca6e58813b1ed7a91defa5818f0be8b3",
+      "title_en": "The Czech Armed Forces delivered the first thousand pistols to the German army.",
+      "lead_en": "The Czech Armed Forces supplied the German army with the first thousands of P13 pistols.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/primatorem-usti-nad-labem-je-vohryzka-z-koalice-jedno-usti-ma-dva-uvolnene_2611231833_vaa",
+      "published_utc": "2026-11-23T17:33:00Z",
+      "title_raw": "Primátorem Ústí nad Labem je Vohryzka z koalice Jedno Ústí. Má dva uvolněné náměstky",
+      "lead_raw": "Novým primátorem Ústí nad Labem je Tomáš Vohryzka z koalice Jedno Ústí. Rada města je devítičlenná a má celkem pět uvolněných, tedy plně placených, funkcionářů.",
+      "fingerprint": "19db987cb7f8fd88f2c0139d70eeefebb2869cbe6935155e29456d7132413c22",
+      "id": "19db987cb7f8fd88f2c0139d70eeefebb2869cbe6935155e29456d7132413c22",
+      "title_en": "The Mayor of Lab Strait is Vohrzka from the One Strait Coalition.",
+      "lead_en": "The new mayor of Ústí nad Labem is Tomáš Vohryzka of the One Ústí coalition.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/armade-chybi-70-procent-schopnosti-muzeme-mit-odhodlani-ale-s-cim-budeme-bojovat_2611231757_aln",
+      "published_utc": "2026-11-23T16:57:00Z",
+      "title_raw": "Armádě chybí 70 procent schopností. Můžeme mít odhodlání, ale s čím budeme bojovat? ptá se Šedivý",
+      "lead_raw": "Vláda Andreje Babiše (ANO) se snaží posílit protivzdušnou obranu země, sklízí ale kritiku za to, že slibuje pořízení systémů, které se pro naši zemi nehodí. „Základní podmínkou je, že navýšení těchto schopností a naplnění ambic by předpokládalo razantní navýšení rozpočtu na obranu.",
+      "fingerprint": "9d7e19349851acef4133853395bf8c04b78f4fbb3bf604be165fe6227c8db66d",
+      "id": "9d7e19349851acef4133853395bf8c04b78f4fbb3bf604be165fe6227c8db66d",
+      "title_en": "The army lacks 70 percent capability. We can have determination, but what will we fight?",
+      "lead_en": "The government of Andrei Babiš (ANO) is seeking to strengthen the country's air defence, but it has been criticized for promising to acquire systems that are unsuitable for our country. The basic condition is that increasing these capabilities and meeting ambitions would entail a massive increase in the defence budget.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ek-navrhla-novy-balik-sankci-proti-rusku-tyka-se-bank-lodi-i-ruskych-sportovcu-321334",
+      "published_utc": "2026-11-23T16:49:10Z",
+      "title_raw": "EK navrhla nový balík sankcí proti Rusku. Týká se bank, lodí i ruských sportovců",
+      "lead_raw": "Kromě desítek plavidel a bank má nový evropský balík sankcí proti Rusku zacílit také na sportovce a energetický sektor. Evropská komise se snaží, aby byla omezující opatření odsouhlasena do konce roku.",
+      "fingerprint": "b30c4c4a94173cc1b6c802122a8ed6b5d21cbbcf121d9f815cb0679bc37bb767",
+      "id": "b30c4c4a94173cc1b6c802122a8ed6b5d21cbbcf121d9f815cb0679bc37bb767",
+      "title_en": "The European Commission has proposed a new package of sanctions against Russia, covering banks, ships and Russian athletes.",
+      "lead_en": "In addition to dozens of vessels and banks, a new European package of sanctions against Russia also targets the sports and energy sectors.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-petka-sz-kdo-je-u-moci-babisova-skutecna-nebo-stinova-vlada-321305",
+      "published_utc": "2026-11-23T16:00:00Z",
+      "title_raw": "Kdo je u moci? Babišova skutečná, nebo stínová vláda?",
+      "lead_raw": "Denní přehled Seznam Zpráv.",
+      "fingerprint": "c46bd4350dcf2fb9bd511459e0dd6d57bcda2bdc5c127e86ce0f1a21ecb5079b",
+      "id": "c46bd4350dcf2fb9bd511459e0dd6d57bcda2bdc5c127e86ce0f1a21ecb5079b",
+      "title_en": "Who's in power, Grandma's real government or Shadow government?",
+      "lead_en": "A daily overview of the News List.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/podcasty/politicka-sikana/politicka-sikana-povstane-cesko-proti-babisovi-a-pritvrdi-minar-nebo-spis-babis/r~aaa29c5f2fc2231a1352733674777292",
+      "published_utc": "2026-11-23T15:57:00Z",
+      "title_raw": "Politická šikana: Povstane Česko proti Babišovi? A přitvrdí Minář, nebo spíš Babiš?",
+      "lead_raw": "Nová epizoda podcastu Politická šikana se věnuje dozvukům protestní akce na pražské Letné a především možným scénářům blízké i vzdálenější budoucnosti. Otázka totiž je, kdo ve sporu o financování veřejnoprávních médií ustoupí, zda budou protesty pokračovat a jak na ně bude – pokud vůbec – reagovat vláda Andreje Babiše.",
+      "fingerprint": "423a911cf552b286ba64dc91705679d6fb554e2d33c58231569b0958c83869e4",
+      "id": "423a911cf552b286ba64dc91705679d6fb554e2d33c58231569b0958c83869e4",
+      "title_en": "Political bully: will the Czech Republic rise up against Granny and reinforce the Minar or rather Granny?",
+      "lead_en": "The new episode of the Podcast Political Bully deals with the news of the Prague Summer protests and, above all, the possible scenarios of the near and distant future.The question is who will back down in the dispute over the funding of the public media, whether the protests will continue and how the government of Andrzej Babiš will react to them.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/pecuje-o-odkaz-ceskoslovenskych-letcu-ministr-macinka-mu-udelil-cenu-gratis-agit/r~aaa293e1eb10ab4c97294a188a4877eb",
+      "published_utc": "2026-11-23T15:45:00Z",
+      "title_raw": "Pečuje o odkaz československých letců, ministr Macinka mu udělil cenu Gratis Agit",
+      "lead_raw": "Český ministr zahraničí Petr Macinka v pondělí předal cenu Gratias Agit, udělovanou šéfem české diplomacie za šíření dobrého jména České republiky v zahraničí, Tomu Doležalovi, který se dlouhodobě věnuje připomínání odkazu československých letců sloužících za druhé světové války v britském Královském letectvu (RAF).",
+      "fingerprint": "8d4602a73f6ac290facc0df729a304366c5114bd085033f3b1faad41a95d992b",
+      "id": "8d4602a73f6ac290facc0df729a304366c5114bd085033f3b1faad41a95d992b",
+      "title_en": "He cares about the legacy of Czechoslovak pilots, Minister Macinka awarded him Gratis Agit",
+      "lead_en": "Czech Foreign Minister Petr Macinka on Monday presented the Gratias Agit Award, awarded by the head of Czech diplomacy for spreading the good name of the Czech Republic abroad, to Tom Doležal, who has long been dedicated to commemorating the legacy of Czechoslovak pilots serving in World War II in the British Royal Air Force (RAF).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/kimova-odstoupila-z-vedeni-ruskeho-amazonu-evropska-unie-na-ni-uvalila-sankce_2611231540_jos",
+      "published_utc": "2026-11-23T14:40:00Z",
+      "title_raw": "Kimová odstoupila z vedení ‚ruského Amazonu‘. Evropská unie na ni uvalila sankce",
+      "lead_raw": "Taťána Kimová už není šéfkou ruského internetového prodejce Wildberries, přezdívaného ruský Amazon. Z vedení společnosti odstoupila jenom pár dní potom, co na ni Evropská unie uvalila sankce.",
+      "fingerprint": "74d7ef0b9c9b19baa1b6183ab04d0f15ee8dd459a9c09fcdcf1385a0f0ffeb7e",
+      "id": "74d7ef0b9c9b19baa1b6183ab04d0f15ee8dd459a9c09fcdcf1385a0f0ffeb7e",
+      "title_en": "Kim has resigned as head of the Russian Amazon.",
+      "lead_en": "Tatyana Kim is no longer the head of Russian online retailer Wildberries, nicknamed Russian Amazon. She resigned from the company just days after the European Union imposed sanctions on her.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 8
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/necas-ods-byla-ekonomickym-guru-musi-se-k-tomu-vratit-jinak-se-ztrati-v-houfu_2611231443_aln",
+      "published_utc": "2026-11-23T13:43:00Z",
+      "title_raw": "Nečas: ODS byla ekonomickým guru, musí se k tomu vrátit. Jinak se ztratí v houfu opozičních stran",
+      "lead_raw": "„ODS se nesmí nechat zahnat do houfu dalších opozičních stran. Když se mezi nimi ztratí, největší výhodu pak logicky získává strana, které ani tak nejde o program, ale spíše o formu a politický marketing,“ varuje bývalý premiér Petr Nečas (ODS).",
+      "fingerprint": "c7941eca3a33136a7f3a5a02236275526437c8f2aabe4d0993538c399c1bd666",
+      "id": "c7941eca3a33136a7f3a5a02236275526437c8f2aabe4d0993538c399c1bd666",
+      "title_en": "Untimely: ODS was an economic guru, he has to get back to it or he'll get lost in a handful of opposition parties",
+      "lead_en": "The ODS must not be thrown into the hands of other opposition parties.When it loses among them, the biggest advantage is logically gained by a party that is not even a programme but rather a form and political marketing, warns former Prime Minister Petr Nečas (ODS).",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-ods-hleda-cestu-z-krize-slouci-se-s-top-09-321275",
+      "published_utc": "2026-11-23T13:05:02Z",
+      "title_raw": "Potřebujeme rafana, který bude trhat. Nevím, jestli to je Benda, říká poslanec ODS",
+      "lead_raw": "Opoziční ODS hledá cesty, jak prolomit pokračující propad volebních preferencí. Dnes se proto schází republikový sněm strany.",
+      "fingerprint": "6a342fd220090eb02ada856379378227130997244c2a3f6774ac6df0ea442768",
+      "id": "6a342fd220090eb02ada856379378227130997244c2a3f6774ac6df0ea442768",
+      "title_en": "I don't know if it's Benda, says the ODS MP",
+      "lead_en": "The opposition ODS is looking for ways to break through the continuing decline in electoral preferences, which is why the Republican Party is meeting today.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-naprosta-nekompetence-vedci-si-stezuji-babisovi-na-ministra-cerveneho-321263",
+      "published_utc": "2026-11-23T13:01:04Z",
+      "title_raw": "„Naprostá nekompetence.“ Vědci si stěžují Babišovi na ministra Červeného",
+      "lead_raw": "Ministerstvo životního prostředí rezignuje na ochranu přírody, píše devět odborných společností ve společném stanovisku premiérovi Andreji Babišovi. Konání ministra označují za nekompetentní a vadí jim i plánované škrty.",
+      "fingerprint": "6b91596c36189b89967fa3b154614f9691f06e436bf34c9ec3665447075a4417",
+      "id": "6b91596c36189b89967fa3b154614f9691f06e436bf34c9ec3665447075a4417",
+      "title_en": "Simply incompetent. Scientists complain to Grandma about Minister Red",
+      "lead_en": "The Environment Ministry resigns to protect nature, nine companies write in a joint statement to Prime Minister Andrei Babis, calling the minister's actions incompetent and disturbing even the planned cuts.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-babisova-skutecna-vlada-tohle-jsou-lide-na-nez-da-premier-vic-nez-na-ministry-321038",

@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-23T07:53:54Z",
+  "updated_at_utc": "2026-11-23T20:20:44Z",
   "topic": "foreign_affairs",
-  "count": 2,
+  "count": 4,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ek-navrhla-novy-balik-sankci-proti-rusku-tyka-se-bank-lodi-i-ruskych-sportovcu-321334",
+      "published_utc": "2026-11-23T16:49:10Z",
+      "title_raw": "EK navrhla nový balík sankcí proti Rusku. Týká se bank, lodí i ruských sportovců",
+      "lead_raw": "Kromě desítek plavidel a bank má nový evropský balík sankcí proti Rusku zacílit také na sportovce a energetický sektor. Evropská komise se snaží, aby byla omezující opatření odsouhlasena do konce roku.",
+      "fingerprint": "b30c4c4a94173cc1b6c802122a8ed6b5d21cbbcf121d9f815cb0679bc37bb767",
+      "id": "b30c4c4a94173cc1b6c802122a8ed6b5d21cbbcf121d9f815cb0679bc37bb767",
+      "title_en": "The European Commission has proposed a new package of sanctions against Russia, covering banks, ships and Russian athletes.",
+      "lead_en": "In addition to dozens of vessels and banks, a new European package of sanctions against Russia also targets the sports and energy sectors.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/kimova-odstoupila-z-vedeni-ruskeho-amazonu-evropska-unie-na-ni-uvalila-sankce_2611231540_jos",
+      "published_utc": "2026-11-23T14:40:00Z",
+      "title_raw": "Kimová odstoupila z vedení ‚ruského Amazonu‘. Evropská unie na ni uvalila sankce",
+      "lead_raw": "Taťána Kimová už není šéfkou ruského internetového prodejce Wildberries, přezdívaného ruský Amazon. Z vedení společnosti odstoupila jenom pár dní potom, co na ni Evropská unie uvalila sankce.",
+      "fingerprint": "74d7ef0b9c9b19baa1b6183ab04d0f15ee8dd459a9c09fcdcf1385a0f0ffeb7e",
+      "id": "74d7ef0b9c9b19baa1b6183ab04d0f15ee8dd459a9c09fcdcf1385a0f0ffeb7e",
+      "title_en": "Kim has resigned as head of the Russian Amazon.",
+      "lead_en": "Tatyana Kim is no longer the head of Russian online retailer Wildberries, nicknamed Russian Amazon. She resigned from the company just days after the European Union imposed sanctions on her.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 8
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/domaci/absolutne-neprijatelne-babis-odmita-navrh-rozpoctu-eu-vadi-mu-vydaje-na-ukrajinu/r~aaa292d2387f1d7d475e595ffa995ffe",

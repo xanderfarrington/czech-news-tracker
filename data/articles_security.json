@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-23T07:53:54Z",
+  "updated_at_utc": "2026-11-23T20:20:44Z",
   "topic": "security",
-  "count": 3,
+  "count": 5,
   "articles": [
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/prulomova-zakazka-ceska-zbrojovka-dodala-nemecke-armade-prvni-tisice-pistoli-379879",
+      "published_utc": "2026-11-23T19:03:02Z",
+      "title_raw": "Průlomová zakázka. Česká zbrojovka dodala německé armádě první tisíce pistolí",
+      "lead_raw": "Česká zbrojovka dodala německé armádě – bundeswehru – první tisíce kusů pistolí P13. Firma to sdělila České televizi.",
+      "fingerprint": "cbb13a3ce105beef73bf6209a3d30ae1ca6e58813b1ed7a91defa5818f0be8b3",
+      "id": "cbb13a3ce105beef73bf6209a3d30ae1ca6e58813b1ed7a91defa5818f0be8b3",
+      "title_en": "The Czech Armed Forces delivered the first thousand pistols to the German army.",
+      "lead_en": "The Czech Armed Forces supplied the German army with the first thousands of P13 pistols.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/armade-chybi-70-procent-schopnosti-muzeme-mit-odhodlani-ale-s-cim-budeme-bojovat_2611231757_aln",
+      "published_utc": "2026-11-23T16:57:00Z",
+      "title_raw": "Armádě chybí 70 procent schopností. Můžeme mít odhodlání, ale s čím budeme bojovat? ptá se Šedivý",
+      "lead_raw": "Vláda Andreje Babiše (ANO) se snaží posílit protivzdušnou obranu země, sklízí ale kritiku za to, že slibuje pořízení systémů, které se pro naši zemi nehodí. „Základní podmínkou je, že navýšení těchto schopností a naplnění ambic by předpokládalo razantní navýšení rozpočtu na obranu.",
+      "fingerprint": "9d7e19349851acef4133853395bf8c04b78f4fbb3bf604be165fe6227c8db66d",
+      "id": "9d7e19349851acef4133853395bf8c04b78f4fbb3bf604be165fe6227c8db66d",
+      "title_en": "The army lacks 70 percent capability. We can have determination, but what will we fight?",
+      "lead_en": "The government of Andrei Babiš (ANO) is seeking to strengthen the country's air defence, but it has been criticized for promising to acquire systems that are unsuitable for our country. The basic condition is that increasing these capabilities and meeting ambitions would entail a massive increase in the defence budget.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/obrana-a-bezpecnost-polska-je-cesky-narodni-zajem-reagoval-zuna-na-naruseni_2611222214_dns",
