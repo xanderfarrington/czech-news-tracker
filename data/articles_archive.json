@@ -1,7 +1,57 @@
 {
-  "updated_at_utc": "2026-11-22T23:40:21Z",
-  "count": 78,
+  "updated_at_utc": "2026-11-23T07:53:49Z",
+  "count": 80,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-babisova-skutecna-vlada-tohle-jsou-lide-na-nez-da-premier-vic-nez-na-ministry-321038",
+      "published_utc": "2026-11-23T05:40:00Z",
+      "title_raw": "Babišova skutečná vláda. Tohle jsou lidé, na něž dá premiér víc než na ministry",
+      "lead_raw": "Skoro to vypadá, jako kdyby měl český premiér dvě vlády. Jednu oficiální a pak ještě druhou, méně formální.",
+      "fingerprint": "7f987072fc8c198eaa685c6ccca14c8590eb774107e906c4c273301aa83a7039",
+      "id": "7f987072fc8c198eaa685c6ccca14c8590eb774107e906c4c273301aa83a7039",
+      "title_en": "These are the people the Prime Minister gives more to than ministers.",
+      "lead_en": "It's almost as if a Czech prime minister has two governments, one official and then another, less formal.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 11,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/median-temer-polovina-cechu-souhlasi-s-tim-ze-vlada-bude-skolam-jen-doporucovat_2611230620_mst",
+      "published_utc": "2026-11-23T05:20:00Z",
+      "title_raw": "Median: Téměř polovina Čechů souhlasí s tím, že vláda bude školám jen doporučovat, co dětem vařit",
+      "lead_raw": "Měl by stát rozhodovat o tom, co děti dostávají ve školních jídelnách? Podle 47 procent Čechů by měl stravovací standardy jen doporučovat.",
+      "fingerprint": "935fc1199456409b90927818712dbcc5cb1de290735229fb4b643f80e5b7a980",
+      "id": "935fc1199456409b90927818712dbcc5cb1de290735229fb4b643f80e5b7a980",
+      "title_en": "Median: Almost half of Czechs agree that the government will only recommend cooking to schools",
+      "lead_en": "According to 47 percent of Czechs, dietary standards should only be recommended.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/obrana-a-bezpecnost-polska-je-cesky-narodni-zajem-reagoval-zuna-na-naruseni_2611222214_dns",

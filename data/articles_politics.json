@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-22T23:40:21Z",
+  "updated_at_utc": "2026-11-23T07:53:51Z",
   "topic": "politics",
-  "count": 23,
+  "count": 21,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-babisova-skutecna-vlada-tohle-jsou-lide-na-nez-da-premier-vic-nez-na-ministry-321038",
+      "published_utc": "2026-11-23T05:40:00Z",
+      "title_raw": "Babišova skutečná vláda. Tohle jsou lidé, na něž dá premiér víc než na ministry",
+      "lead_raw": "Skoro to vypadá, jako kdyby měl český premiér dvě vlády. Jednu oficiální a pak ještě druhou, méně formální.",
+      "fingerprint": "7f987072fc8c198eaa685c6ccca14c8590eb774107e906c4c273301aa83a7039",
+      "id": "7f987072fc8c198eaa685c6ccca14c8590eb774107e906c4c273301aa83a7039",
+      "title_en": "These are the people the Prime Minister gives more to than ministers.",
+      "lead_en": "It's almost as if a Czech prime minister has two governments, one official and then another, less formal.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 11,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/median-temer-polovina-cechu-souhlasi-s-tim-ze-vlada-bude-skolam-jen-doporucovat_2611230620_mst",
+      "published_utc": "2026-11-23T05:20:00Z",
+      "title_raw": "Median: Téměř polovina Čechů souhlasí s tím, že vláda bude školám jen doporučovat, co dětem vařit",
+      "lead_raw": "Měl by stát rozhodovat o tom, co děti dostávají ve školních jídelnách? Podle 47 procent Čechů by měl stravovací standardy jen doporučovat.",
+      "fingerprint": "935fc1199456409b90927818712dbcc5cb1de290735229fb4b643f80e5b7a980",
+      "id": "935fc1199456409b90927818712dbcc5cb1de290735229fb4b643f80e5b7a980",
+      "title_en": "Median: Almost half of Czechs agree that the government will only recommend cooking to schools",
+      "lead_en": "According to 47 percent of Czechs, dietary standards should only be recommended.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/zahranici/nejvic-za-poslednich-tricet-let-demokrate-drtive-ovladnou-americkou-snemovnu/r~aaa29e28985ae24cf5b98446b500ad98",
@@ -467,106 +517,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 7,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/zpoplatneny-vjezd-do-centra-stan-chce-prosadit-zakon-o-mytu-popsal-novy-prazsky-primator/r~aaa29447a9d59790447ecafacf2cd4aa",
-      "published_utc": "2026-11-21T07:33:00Z",
-      "title_raw": "Zpoplatněný vjezd do centra? STAN chce prosadit zákon o mýtu, popsal nový pražský primátor",
-      "lead_raw": "Vedení Prahy chce prostřednictvím poslanců STAN prosadit v Poslanecké sněmovně zákon, který by samosprávám umožnil zavádět mýto pro vjezd do částí měst. V sobotu to uvedl nový pražský primátor Petr Hlaváček (STAN).",
-      "fingerprint": "d9a271f6d8c285528d56f5013de6e5e99738eef0dcacb12bfb476bfc39664e22",
-      "id": "d9a271f6d8c285528d56f5013de6e5e99738eef0dcacb12bfb476bfc39664e22",
-      "title_en": "STAN wants to pass a law on the myth, described the new Prague mayor",
-      "lead_en": "The Prague government wants to pass a law in the Chamber of Deputies, through the members of the STAN, which would allow the local authorities to impose a customs duty on entering parts of the cities.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/pruzkum-pozadavek-milionu-chvilek-odvolat-tomia-okamuru-z-cela-snemovny_2611210700_tez",
-      "published_utc": "2026-11-21T06:00:00Z",
-      "title_raw": "PRŮZKUM: Požadavek Milionu chvilek odvolat Tomia Okamuru z čela Sněmovny by podpořilo 43 procent lidí",
-      "lead_raw": "Přes 40 procent lidí by podpořilo odvolání Tomia Okamury (SPD) z čela Poslanecké sněmovny a to, aby hnutí už neřídilo ministerstvo obrany. Ukázal to bleskový průzkum společnosti Median pro Radiožurnál z tohoto týdne, ve kterém odpovídalo přes tisíc dospělých.",
-      "fingerprint": "a59d86a13875b82a00aec8c4cb0d8fa8f21d73045ef9aa91e55a2699e31b93f3",
-      "id": "a59d86a13875b82a00aec8c4cb0d8fa8f21d73045ef9aa91e55a2699e31b93f3",
-      "title_en": "PRESENT: The demand for a million seconds to remove Tom Okamura from the House of Representatives would be supported by 43 percent of voters",
-      "lead_en": "More than 40 percent of people would support the impeachment of Speaker of the House of Representatives Tom Okamura (SPD) and that the movement should no longer be run by the Department of Defense, according to this week's Median for Radio Journal poll of more than 1,000 adults.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 2,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ministerstvo-zivotniho-prostredi-zrusilo-souhlasne-stanovisko-pro-vetrnou_2611210629_eml",
-      "published_utc": "2026-11-21T05:29:00Z",
-      "title_raw": "Ministerstvo životního prostředí zrušilo souhlasné stanovisko pro větrnou elektrárnu v Hořanech",
-      "lead_raw": "Ministerstvo životního prostředí (MŽP) zrušilo souhlasné jednotné environmentální stanovisko (JES), které letos v lednu vydal Středočeský krajský úřad pro plánovanou větrnou elektrárnu v Hořanech na Nymbursku. Zjistilo závažné nedostatky v posouzení stavby, zejména rozpory mezi projektovou dokumentací a odbornými podklady a chybějící posouzení některých zásahů do přírody.",
-      "fingerprint": "8680a89d705eb2e3a18e3f65a059a4aad18cb53d1e90075c1fd8db3662c9313f",
-      "id": "8680a89d705eb2e3a18e3f65a059a4aad18cb53d1e90075c1fd8db3662c9313f",
-      "title_en": "The Ministry of the Environment has revoked the unanimous opinion on the Hurricanes wind farm.",
-      "lead_en": "The Ministry of the Environment (MoE) has revoked the consensual single environmental opinion (JES) issued in January this year by the Central Czech Regional Office for a planned wind farm in the Horn of Nymbursk. It has identified serious shortcomings in the assessment of the construction, in particular the discrepancies between the project documentation and expert evidence and the lack of an assessment of certain impacts on nature.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/recidivistka-byla-ve-vezeni-kvuli-kradezi-za-necelych-1600-korun-tejc-odmita_2611210500_hrk",
-      "published_utc": "2026-11-21T04:00:00Z",
-      "title_raw": "Recidivistka byla ve vězení kvůli krádeži za necelých 1600 korun. Tejc odmítá návrh, aby se zákon zmírnil",
-      "lead_raw": "Ústavní soud má na stole návrh na zrušení části paragrafu, v jehož důsledku byla žena ve vězení za bagatelní krádež. Žalobce pro ni žádá další rok za mřížemi kvůli obdobné krádeži.",
-      "fingerprint": "70278554f9f3f3d50630475644d1a8ae3f86157c964099bcf66d3fc378028428",
-      "id": "70278554f9f3f3d50630475644d1a8ae3f86157c964099bcf66d3fc378028428",
-      "title_en": "A recidivist was jailed for stealing less than 1,600 crowns.",
-      "lead_en": "The Constitutional Court has tabled a motion to dismiss the part of the clause that resulted in a woman being jailed for petty theft.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
         "security": 0,
         "foreign_affairs": 0
       },
