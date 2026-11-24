@@ -1,8 +1,133 @@
 {
-  "updated_at_utc": "2026-11-23T20:20:44Z",
+  "updated_at_utc": "2026-11-24T06:07:52Z",
   "topic": "politics",
-  "count": 27,
+  "count": 32,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/velka-analyza-koalic-ano-bali-kufry-bude-uz-jen-na-tretine-radnic-okresnich-mest_2611240620_jgr",
+      "published_utc": "2026-11-24T05:20:00Z",
+      "title_raw": "Velká analýza koalic. ANO balí kufry, bude už jen na třetině radnic okresních měst",
+      "lead_raw": "Před čtyřmi lety se v mnohých krajských i okresních městech spojovaly tehdy opoziční ANO s hlavní vládní silou ODS. Z tehdejších 29 společných koalic je po letošních volbách jen třetina.",
+      "fingerprint": "53f2234e6d4e9977da9db7f28733946b5b64ed3634e717150522b90f67c2d0f0",
+      "id": "53f2234e6d4e9977da9db7f28733946b5b64ed3634e717150522b90f67c2d0f0",
+      "title_en": "A big coalition analysis, yes, packing suitcases, will only be in a third of county town halls",
+      "lead_en": "Four years ago, in many regional and regional cities, the opposition ANO merged with the main ODS government force.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/uherske-hradiste-zna-sve-vedeni-ustavujici-zastupitelstvo-zpozdila-stiznost-na_2611232218_vaa",
+      "published_utc": "2026-11-23T21:18:00Z",
+      "title_raw": "Uherské Hradiště zná své vedení. Ustavující zastupitelstvo zpozdila stížnost na výsledky voleb",
+      "lead_raw": "Ve většině měst Zlínského kraje už lidé vědí, kdo povede jejich radnici v následujících čtyřech letech. V Uherském Hradišti se ale ustavující zastupitelstvo uskutečnilo až toto pondělí.",
+      "fingerprint": "27d51a29b7f676d37ac17cfed6693821f8434b35398b7b7b3236b88ca6e87b9c",
+      "id": "27d51a29b7f676d37ac17cfed6693821f8434b35398b7b7b3236b88ca6e87b9c",
+      "title_en": "The Hungarian castle knows its leadership, the Constituent Assembly has delayed a complaint about the election results",
+      "lead_en": "In most towns in the Zlín region, people already know who will lead their city council in the next four years, but in Uhersk Hradišt, the constituent assembly did not take place until this Monday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/politolog-just-grolich-kandidoval-do-vedeni-kvuli-medialni-viditelnosti-senat-si_2611232200_jos",
+      "published_utc": "2026-11-23T21:00:00Z",
+      "title_raw": "Politolog Just: Grolich kandidoval do vedení kvůli mediální viditelnosti. Senát si zvolil kontinuitu",
+      "lead_raw": "V jaké formě jsou po komunálních a senátních volbách občanští demokraté? A postrádá jejich předseda Martin Kupka tah na branku?",
+      "fingerprint": "5813036e0a603a79dfbf94ceedb7b3bb6bfb496be7834fa53be3de8cbae3506c",
+      "id": "5813036e0a603a79dfbf94ceedb7b3bb6bfb496be7834fa53be3de8cbae3506c",
+      "title_en": "Grolich ran for president because of media exposure, and the Senate chose continuity.",
+      "lead_en": "In what form are the citizen democrats after the municipal and senate elections, and does their president, Martin Kupka, miss the door?",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/co-zmeni-letna-vlada-komunikuje-permanentne-rika-vondracek-milion-chvilek-dialog_2611232145_aln",
+      "published_utc": "2026-11-23T20:45:00Z",
+      "title_raw": "Co změní Letná? Vláda komunikuje permanentně, říká Vondráček. Milion chvilek: Dialog je jednostranný",
+      "lead_raw": "Téměř 60 procent Čechů si myslí, že by vláda měla vyslyšet výzvu spolku Milion chvilek pro demokracii a zahájit skutečný dialog s veřejností. Vyplývá to z bleskového průzkumu agentury Median pro Český rozhlas.",
+      "fingerprint": "ef51ec27dec164d1cf81541dbd8511bf767ba90e58c72b159352afa6d98fcf79",
+      "id": "ef51ec27dec164d1cf81541dbd8511bf767ba90e58c72b159352afa6d98fcf79",
+      "title_en": "What will Summer change? The government communicates permanently, says Vondráček.",
+      "lead_en": "Almost 60 percent of Czechs believe that the government should heed the appeal of Millions of Moments for Democracy and start a real dialogue with the public, according to a lightning survey by Median for Czech Radio.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/premieri-zemi-v4-odmitli-novy-navrh-viceleteho-unijniho-rozpoctu-379881",
+      "published_utc": "2026-11-23T20:26:04Z",
+      "title_raw": "Premiéři zemí V4 odmítli nový návrh víceletého unijního rozpočtu",
+      "lead_raw": "Česko, Maďarsko, Polsko a Slovensko odmítají návrh příštího sedmiletého rozpočtu Evropské unie, jak ho o uplynulém víkendu předložil šéf Evropské rady António Costa, sdělil po schůzce s kolegy z uvedených zemí visegrádské čtyřky (V4) a Rakouska slovenský premiér Robert Fico (Smer). Rakouský kancléř Christian Stocker však poznamenal, že jeho země má k příštímu rozpočtu odlišný postoj než země V4.",
+      "fingerprint": "b9ba5bbf5f4f44ecc74a4f4bf35a394305bda6894c5f592a2702fde94a346266",
+      "id": "b9ba5bbf5f4f44ecc74a4f4bf35a394305bda6894c5f592a2702fde94a346266",
+      "title_en": "The Prime Ministers of the V4 countries rejected a new multiannual EU budget proposal",
+      "lead_en": "The Czech Republic, Hungary, Poland and Slovakia are rejecting the proposal for the next seven-year budget of the European Union, as presented last weekend by the President of the European Council, António Costa, after a meeting with colleagues from the Visegrad Four (V4) and Austria.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 8,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-premieri-zemi-v4-odmitli-novy-navrh-viceleteho-rozpoctu-eu-321340",
@@ -18,6 +143,31 @@
         "politics": 8,
         "security": 0,
         "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/zeme-v4-odmitaji-navrh-unijniho-rozpoctu-dle-babise-je-plan-absolutne_2611232050_aln",
+      "published_utc": "2026-11-23T19:50:00Z",
+      "title_raw": "Země V4 odmítají návrh unijního rozpočtu. Dle Babiše je plán ‚absolutně nepřijatelný‘",
+      "lead_raw": "Česko, Maďarsko, Polsko a Slovensko odmítají návrh příštího sedmiletého rozpočtu Evropské unie, jak ho o uplynulém víkendu předložil šéf Evropské rady António Costa. Slovenský premiér Robert Fico to novinářům řekl po schůzce s kolegy z uvedených zemí visegrádské čtyřky a Rakouska.",
+      "fingerprint": "86082b54d8b6db7264ef1359cb007b44d047b03dd6a8232a150786da8e96e780",
+      "id": "86082b54d8b6db7264ef1359cb007b44d047b03dd6a8232a150786da8e96e780",
+      "title_en": "The V4 countries are rejecting the EU budget proposal.",
+      "lead_en": "The Czech Republic, Hungary, Poland and Slovakia are rejecting the proposal for the next seven-year budget of the European Union, as presented last weekend by the head of the European Council, António Costa.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
       },
       "topics": [
         "politics"
@@ -647,31 +797,6 @@
       "topics": [
         "politics",
         "foreign_affairs"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-superkoalice-proti-babisovi-spojte-se-vzkazuji-opozici-jeji-volici-320869",
-      "published_utc": "2026-11-22T05:30:00Z",
-      "title_raw": "Superkoalice proti Babišovi. Spojte se, vzkazují opozici její voliči",
-      "lead_raw": "Voliči si přejí spojení všech pěti opozičních stran do společné kandidátky do sněmovních voleb, ukázal průzkum Medianu. Politici spolupráci nevylučují, možnou podobu však nechtějí komentovat.",
-      "fingerprint": "229950616e556def09f8d1331fb2028839075cb9bba7d5cd6e6e5b975ab7422a",
-      "id": "229950616e556def09f8d1331fb2028839075cb9bba7d5cd6e6e5b975ab7422a",
-      "title_en": "The Super Coalition against Granny.",
-      "lead_en": "Voters want all five opposition parties to join together as a joint candidate for the House of Representatives, a poll by Median showed.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
       ],
       "primary_topic": "politics",
       "czech_related": true,
