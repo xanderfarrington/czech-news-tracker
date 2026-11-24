@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-24T06:07:52Z",
+  "updated_at_utc": "2026-11-24T17:54:41Z",
   "topic": "foreign_affairs",
   "count": 4,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-evropska-komise-cesku-hrozi-ze-pristi-rok-nedodrzi-unijni-fiskalni-pravidla-321439",
+      "published_utc": "2026-11-24T17:38:58Z",
+      "title_raw": "Evropská komise: Česku hrozí, že příští rok nedodrží unijní fiskální pravidla",
+      "lead_raw": "Podle eurokomisaře pro hospodářství Valdise Dombrovskise České republice hrozí, že příští rok nedodrží fiskální pravidla Evropské unie. Stejné riziko se týká i Německa.",
+      "fingerprint": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
+      "id": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
+      "title_en": "European Commission: Czech Republic faces a risk of failing to comply with EU fiscal rules next year",
+      "lead_en": "According to Economic Commissioner Valdis Dombrovskis, the Czech Republic is in danger of failing to comply with the EU's fiscal rules next year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/evropa-se-pretahuje-o-ets2-visegrad-zada-odklad-nemecko-a-sever-trvaji-na-roce-2028/r~aaa2943b3b9c0b0ba52ae2d7c474b542",
+      "published_utc": "2026-11-24T17:17:00Z",
+      "title_raw": "Evropa se přetahuje o ETS2. Visegrád žádá odklad, Německo a sever trvají na roce 2028",
+      "lead_raw": "Premiéři Česka, Maďarska, Polska a Slovenska vyzvali Evropskou komisi k vypracování analýzy dopadů zavedení systému emisních povolenek ETS2. V dopise adresovaném předsedkyni unijní exekutivy Ursule von der Leyenové požádali o odklad zavedení systému do roku 2030 a uvedli, že je třeba s ohledem na vysoké ceny energií znovu posoudit jeho dopad na kupní sílu obyvatel.",
+      "fingerprint": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
+      "id": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
+      "title_en": "Europe pulls back on ETS2. Visegrad calls for a delay, Germany and the North continue until 2028",
+      "lead_en": "The Prime Ministers of the Czech Republic, Hungary, Poland and Slovakia invited the European Commission to draw up an impact analysis of the introduction of the ETS2 emission allowance system.In a letter to the President, the EU executives Ursule von der Leyen requested a delay in the introduction of the system until 2030 and stated that, in view of high energy prices, its impact on the purchasing power of the population should be reassessed.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-ek-navrhla-novy-balik-sankci-proti-rusku-tyka-se-bank-lodi-i-ruskych-sportovcu-321334",
@@ -48,57 +98,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/absolutne-neprijatelne-babis-odmita-navrh-rozpoctu-eu-vadi-mu-vydaje-na-ukrajinu/r~aaa292d2387f1d7d475e595ffa995ffe",
-      "published_utc": "2026-11-22T09:30:00Z",
-      "title_raw": "Absolutně nepřijatelné. Babiš odmítá rozpočet EU. Vadí mu škrty Česku a výdaje na Ukrajinu",
-      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
-      "fingerprint": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
-      "id": "aa336b4b8b011c0820a4b9bfd895a17e4705ac2d25ea45ab9f2d317d865f7c25",
-      "title_en": "It's totally unacceptable, Grandma's rejecting the EU budget, bothering with cuts to the Czech Republic and spending on Ukraine",
-      "lead_en": "The current draft budget of the European Union is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X. He criticized the reduction in money for the Czech Republic and spending on the operation of the European Parliament and other European structures and also on Ukraine.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/pro-cesko-neprijatelny-kritizuje-babis-navrh-rozpoctu-eu-nelibi-se-mu-vydaje-na_2611221021_mst",
-      "published_utc": "2026-11-22T09:21:00Z",
-      "title_raw": "‚Pro Česko nepřijatelný,‘ kritizuje Babiš návrh rozpočtu EU. Nelíbí se mu výdaje na pomoc Ukrajině",
-      "lead_raw": "Aktuální návrh rozpočtu Evropské unie je pro Českou republiku absolutně nepřijatelný, řekl v neděli premiér Andrej Babiš (ANO) ve videu zveřejněném na síti X. Kritizoval snížení peněz pro Česko a výdaje na provoz europarlamentu a dalších evropských struktur a také na Ukrajinu.",
-      "fingerprint": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
-      "id": "c7e4342a33b9bf0e9b58d30c42d87c8c71e247ff6817096d9c36e335946c334e",
-      "title_en": "Unacceptable to the Czech Republic,Babiš criticizes the EU budget proposal.",
-      "lead_en": "The current EU budget proposal is absolutely unacceptable for the Czech Republic, Prime Minister Andrej Babiš (ANO) said in a video posted on Network X on Sunday. He criticized the cuts in money for the Czech Republic and spending on running the European Parliament and other European structures as well as on Ukraine.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "politics",
-        "foreign_affairs"
-      ],
-      "primary_topic": "politics",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

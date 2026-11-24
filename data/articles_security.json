@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-24T06:07:52Z",
+  "updated_at_utc": "2026-11-24T17:54:41Z",
   "topic": "security",
-  "count": 5,
+  "count": 3,
   "articles": [
     {
       "source": "CT24",
@@ -67,56 +67,6 @@
       "topic_scores": {
         "politics": 1,
         "security": 8,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-poustni-operace-armadni-elity-jak-cesti-valecnici-pomahaji-vytlacovat-rusy-320904",
-      "published_utc": "2026-11-22T14:21:37Z",
-      "title_raw": "Pouštní operace armádní elity. Čeští válečníci pomáhají vytlačovat Rusy",
-      "lead_raw": "Speciální síly české armády druhým rokem trénují své kolegy v Mauritánii. Cílem je zmírnit migraci, potírat terorismus a udržet ruské polovojenské skupiny mimo hranice této africké země.",
-      "fingerprint": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
-      "id": "a97c82b89c56ac4ac5ff69ab1236586b69c3b9c6f189bb9d853e020d7c6fbe48",
-      "title_en": "Desert operations of the army elite.",
-      "lead_en": "For the second year in a row, Czech special forces are training their colleagues in Mauritania to mitigate migration, combat terrorism and keep Russian paramilitary groups out of the African country's borders.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 5,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/nedelni-debata-o-bezpecnostnich-hrozbach-v-cesku-a-v-evrope-379830",
-      "published_utc": "2026-11-22T10:31:48Z",
-      "title_raw": "Na dronové útoky nejsme připravení, vadí Hřibovi. Řešíme protivzdušnou obranu, říká Šťastný",
-      "lead_raw": "Dopad dvou ruských střel a proudového dronu v Polsku je podle předsedy Přísahy Róberta Šlachty dalším testováním Moskvy, kam až může zajít. Šéf hnutí Naše Česko Martin Kuba v Nedělní debatě navrhnul, aby se premiér setkal s hlavami parlamentních stran a probral strategii jednotného vystupování.",
-      "fingerprint": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
-      "id": "dd6a9af1003acf47b8fffbdb35f07ded147154b1af56f980a10922199bcaba5a",
-      "title_en": "We're not ready for drone strikes, the fungus is bothering us.",
-      "lead_en": "The impact of two Russian missiles and a jet drone in Poland is a further test of Moscow's ability to go as far as possible, according to President Robert Schlachty's Oath.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 2,
-        "security": 11,
         "foreign_affairs": 0
       },
       "topics": [

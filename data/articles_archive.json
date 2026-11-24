@@ -1,7 +1,282 @@
 {
-  "updated_at_utc": "2026-11-24T06:07:52Z",
-  "count": 100,
+  "updated_at_utc": "2026-11-24T17:54:41Z",
+  "count": 111,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/protest-proti-babisovi-a-juchelkovi-lide-na-voziccich-prosili-o-pomoc-primo-pred-snemovnou/r~aaa29d41b2ccc917646d88fa0081e8e9",
+      "published_utc": "2026-11-24T17:42:00Z",
+      "title_raw": "Protest proti Babišovi a Juchelkovi. Lidé na vozíčcích prosili o pomoc přímo před sněmovnou",
+      "lead_raw": "„Původně vypadalo jednání s premiérem Andrejem Babišem nadějně,“ říká Erik Čipera, který léta bojuje za lidi s tělesným a kombinovaným postižením. Podle jeho slov jednání s Babišem a ministrem práce a sociálních věcí Alešem Juchelkou ale dopadla špatně, a proto se rozhodl pro dnešní demonstraci před sněmovnou.",
+      "fingerprint": "65cb4ccb29546085cd0741aa18e7a7feb9267818e590253faacf6d7fdb823b52",
+      "id": "65cb4ccb29546085cd0741aa18e7a7feb9267818e590253faacf6d7fdb823b52",
+      "title_en": "Protests against Babiš and Juchel, people in wheelchairs begging for help in front of the House",
+      "lead_en": "\"The meeting with Prime Minister Andrei Babiš initially looked hopeful\", says Erik Cipera, who has been fighting for people with physical and combined disabilities for years.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-evropska-komise-cesku-hrozi-ze-pristi-rok-nedodrzi-unijni-fiskalni-pravidla-321439",
+      "published_utc": "2026-11-24T17:38:58Z",
+      "title_raw": "Evropská komise: Česku hrozí, že příští rok nedodrží unijní fiskální pravidla",
+      "lead_raw": "Podle eurokomisaře pro hospodářství Valdise Dombrovskise České republice hrozí, že příští rok nedodrží fiskální pravidla Evropské unie. Stejné riziko se týká i Německa.",
+      "fingerprint": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
+      "id": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
+      "title_en": "European Commission: Czech Republic faces a risk of failing to comply with EU fiscal rules next year",
+      "lead_en": "According to Economic Commissioner Valdis Dombrovskis, the Czech Republic is in danger of failing to comply with the EU's fiscal rules next year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/evropa-se-pretahuje-o-ets2-visegrad-zada-odklad-nemecko-a-sever-trvaji-na-roce-2028/r~aaa2943b3b9c0b0ba52ae2d7c474b542",
+      "published_utc": "2026-11-24T17:17:00Z",
+      "title_raw": "Evropa se přetahuje o ETS2. Visegrád žádá odklad, Německo a sever trvají na roce 2028",
+      "lead_raw": "Premiéři Česka, Maďarska, Polska a Slovenska vyzvali Evropskou komisi k vypracování analýzy dopadů zavedení systému emisních povolenek ETS2. V dopise adresovaném předsedkyni unijní exekutivy Ursule von der Leyenové požádali o odklad zavedení systému do roku 2030 a uvedli, že je třeba s ohledem na vysoké ceny energií znovu posoudit jeho dopad na kupní sílu obyvatel.",
+      "fingerprint": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
+      "id": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
+      "title_en": "Europe pulls back on ETS2. Visegrad calls for a delay, Germany and the North continue until 2028",
+      "lead_en": "The Prime Ministers of the Czech Republic, Hungary, Poland and Slovakia invited the European Commission to draw up an impact analysis of the introduction of the ETS2 emission allowance system.In a letter to the President, the EU executives Ursule von der Leyen requested a delay in the introduction of the system until 2030 and stated that, in view of high energy prices, its impact on the purchasing power of the population should be reassessed.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/politolog-kopecek-zijeme-v-dobe-andreje-babise-jeho-vlada-dnes-priskrcuje_2611241807_dci",
+      "published_utc": "2026-11-24T17:07:00Z",
+      "title_raw": "Politolog Kopeček: Žijeme v době Andreje Babiše. Jeho vláda dnes přiškrcuje liberální demokracii",
+      "lead_raw": "Česká politická scéna si prošla několika odlišnými fázemi, od „nevinných“ 90. let přes „barbarizaci“ až do chvíle, kdy ji výrazně charakterizuje premiér a předseda hnutí ANO Andrej Babiš.",
+      "fingerprint": "dc4b178815f7ec96fbca9c5919237995a25ed75f9723bbb5ce35de5800ff6290",
+      "id": "dc4b178815f7ec96fbca9c5919237995a25ed75f9723bbb5ce35de5800ff6290",
+      "title_en": "Political scientist Kopeček: We live in the time of Andrey Babiš.",
+      "lead_en": "The Czech political scene has gone through several different phases, from the '90s through the 'barbarization' to the time when it is marked by the prime minister and president of the ANO movement, Andrej Babiš.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/po-krnovu-i-jesenik-a-valasske-mezirici-ministerstvo-spravedlnosti-planuje_2611241551_ntu",
+      "published_utc": "2026-11-24T14:51:00Z",
+      "title_raw": "Po Krnovu i Jeseník a Valašské Meziříčí. Ministerstvo spravedlnosti plánuje rušení poboček soudů",
+      "lead_raw": "Ministerstvo spravedlnosti chce překreslit soudní mapu Česka. Dopad to bude mít i na justici pod správou Krajského soudu v Ostravě.",
+      "fingerprint": "9a55173f90e914bd0fe287dd72938ed0d6f2a27b2326a54c4f5fa30eba8f5deb",
+      "id": "9a55173f90e914bd0fe287dd72938ed0d6f2a27b2326a54c4f5fa30eba8f5deb",
+      "title_en": "The Ministry of Justice is planning to dismantle the branches of the courts",
+      "lead_en": "The Ministry of Justice wants to redraw the judicial map of the Czech Republic, which will also affect the judiciary under the jurisdiction of the district court in Ostrava.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/vlada-uz-postoj-k-incidentu-v-polsku-vyjadrila-rekl-macinka-snemovna-ho-opakovat-nemusi/r~aaa292e8f27db592161d5db59c4c79e8",
+      "published_utc": "2026-11-24T14:38:00Z",
+      "title_raw": "Vláda už postoj k incidentu v Polsku vyjádřila, řekl Macinka. Sněmovna ho opakovat nemusí",
+      "lead_raw": "Česká vláda už stanovisko ke střelám v Polsku vyjádřila a není nezbytné, aby postoj zopakovala v usnesení Sněmovna. V úvodu úterní schůze dolní komory to v úterý řekl ministr zahraničí Petr Macinka (Motoristé).",
+      "fingerprint": "fd04233fcecae79b62650558e9db6b48e92a112604aca323ddc7843621fbd6b2",
+      "id": "fd04233fcecae79b62650558e9db6b48e92a112604aca323ddc7843621fbd6b2",
+      "title_en": "The government has already expressed its position on the incident in Poland, Macinka said.",
+      "lead_en": "The Czech government has already expressed its position on the shootings in Poland and it is not necessary to repeat the position in the parliamentary resolution.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 9,
+        "security": 1,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/cesko-korespondencni-volbu-zavedlo-slovensko-ji-rusi-ficova-vlada-znasilnuje_2611241536_jar",
+      "published_utc": "2026-11-24T14:36:00Z",
+      "title_raw": "Česko korespondenční volbu zavedlo, Slovensko ji ruší. Ficova vláda znásilňuje demokracii, zní z opozice",
+      "lead_raw": "Dvacet let mohli Slováci žijící v zahraničí hlasovat v parlamentních volbách poštou. Od příštích voleb už budou muset osobně na ambasádu nebo konzulát.",
+      "fingerprint": "1b6396658478d2e22498095b8fa8cb273ce6c9b5edc6e40d46d0551b7a3264e5",
+      "id": "1b6396658478d2e22498095b8fa8cb273ce6c9b5edc6e40d46d0551b7a3264e5",
+      "title_en": "The Czech Republic introduced a correspondence vote, Slovakia abolishes it.",
+      "lead_en": "For 20 years Slovaks living abroad could vote in parliamentary elections by post.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 12,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/volby/chebskou-radnici-povede-starosta-ladislav-hruby-opozice-kritizuje-zrizeni-postu_2611241526_ntu",
+      "published_utc": "2026-11-24T14:26:00Z",
+      "title_raw": "Chebskou radnici povede starosta Ladislav Hrubý. Opozice kritizuje zřízení postu třetího místostarosty",
+      "lead_raw": "Cheb má nové vedení města. Starostou je Ladislav Hrubý z Volby pro město s podporou Starostů.",
+      "fingerprint": "4108e8972ff67dbcbd0952a2c48c444471f53566b1c6cc2a87ae14ec65b4732a",
+      "id": "4108e8972ff67dbcbd0952a2c48c444471f53566b1c6cc2a87ae14ec65b4732a",
+      "title_en": "Mayor Ladislav Hrubý will lead the city council.",
+      "lead_en": "Cheb has a new city manager, the mayor is Ladislav Rough of the City's Election with the support of the City Council.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/slovensky-parlament-schvalil-zruseni-korespondencni-volby-379900",
+      "published_utc": "2026-11-24T11:53:24Z",
+      "title_raw": "Slovenský parlament schválil zrušení korespondenční volby",
+      "lead_raw": "Slovenská sněmovna schválila zrušení možnosti hlasovat v parlamentních volbách poštou ze zahraničí. Deset měsíců před plánovaným termínem příštích voleb parlament přijal novelu volebního zákona, kterou vládní koalice po ztrátě většiny v Národní radě prosadila s podporou části nezařazených poslanců.",
+      "fingerprint": "c8057a7356a8f652569841fb26f71cb7e03b1d7dc44d1c8c5b4b6c3263795693",
+      "id": "c8057a7356a8f652569841fb26f71cb7e03b1d7dc44d1c8c5b4b6c3263795693",
+      "title_en": "Slovak Parliament approved the cancellation of the correspondence elections",
+      "lead_en": "The Slovak parliament approved the abolition of the possibility of voting in parliamentary elections by mail from abroad. Ten months before the scheduled deadline for the next election, the parliament adopted a new electoral law, which the government coalition passed with the support of a part of the non-voting deputies after losing a majority in the National Council.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 14,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-vedci-si-babisovi-stezuji-na-cerveneho-co-se-na-resortu-deje-321369",
+      "published_utc": "2026-11-24T11:05:04Z",
+      "title_raw": "Nejhorší v historii, ministr Červený netuší, čeho se jeho práce týká, říká vědec",
+      "lead_raw": "Čeští vědci varují premiéra Babiše před rozkladem Motoristy vedeného ministerstva životního prostředí. Pod společnou výzvu se podepsalo devět odborných společností.",
+      "fingerprint": "982eba89bb8c355100f5460af354b9b6c3e605086c6c99773ecb32788728dd1c",
+      "id": "982eba89bb8c355100f5460af354b9b6c3e605086c6c99773ecb32788728dd1c",
+      "title_en": "Worst in history, Minister Red doesn't know what his job is about, says a scientist",
+      "lead_en": "Czech scientists warn Prime Minister Babiš of the collapse of the Ministry of the Environment's Motorists.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-schvalila-zapojeni-ceska-do-druhe-faze-programu-safe-oznamil-zuna-379896",
+      "published_utc": "2026-11-24T09:44:37Z",
+      "title_raw": "Vláda schválila zapojení Česka do druhé fáze programu SAFE, oznámil Zůna",
+      "lead_raw": "Vláda schválila zapojení Česka do druhé fáze evropského programu Security Action for Europe (SAFE), který umožňuje čerpat půjčky na pořízení vojenského vybavení, řekl na úterním velitelském shromáždění ministr obrany Jaromír Zůna (za SPD). Později dodal, že tuzemsko chce z druhého kola získat mírně více peněz než z prvního, v němž se rozhodlo využít půjčku ve výši přibližně padesát miliard korun.",
+      "fingerprint": "e70898c364a6aff16bff3efa426eb2c2424f5cd8a59ea6a03cb9c6a7539aa4bc",
+      "id": "e70898c364a6aff16bff3efa426eb2c2424f5cd8a59ea6a03cb9c6a7539aa4bc",
+      "title_en": "The Government has approved the participation of the Czech Republic in the second phase of the SAFE programme, the Zone has announced",
+      "lead_en": "The government has approved the Czech Republic's participation in the second phase of the European Security Action for Europe (SAFE) programme, which allows loans to buy military equipment, Defense Minister Jaromír Zóna (for the SPD) said at a meeting on Tuesday, later adding that the Czech Republic wants to get slightly more money from the second round than from the first, in which it decided to use a loan of about 50 billion kroner.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 2,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/velka-analyza-koalic-ano-bali-kufry-bude-uz-jen-na-tretine-radnic-okresnich-mest_2611240620_jgr",
