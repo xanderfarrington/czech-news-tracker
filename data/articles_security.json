@@ -1,8 +1,33 @@
 {
-  "updated_at_utc": "2026-11-24T17:54:41Z",
+  "updated_at_utc": "2026-11-25T02:35:12Z",
   "topic": "security",
   "count": 3,
   "articles": [
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/blackout-nebo-kyberneticky-utok-cesko-melo-spolecne-nacvicovat-krizove-scenare_2611250010_jar",
+      "published_utc": "2026-11-24T23:10:00Z",
+      "title_raw": "Blackout nebo kybernetický útok. Česko by mělo nacvičovat společné krizové scénáře, míní odborník",
+      "lead_raw": "Poslední události v Polsku ukazují, že hybridní útoky v Evropě se stupňují. Shodli se na tom v úterý odborníci na krizové situace na pražské konferenci Defence Forum.",
+      "fingerprint": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
+      "id": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
+      "title_en": "The Czech Republic should practice common crisis scenarios, says an expert",
+      "lead_en": "Recent events in Poland show that hybrid attacks in Europe are escalating, crisis experts agreed on Tuesday at the Prague Defence Forum conference.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "CT24",
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/prulomova-zakazka-ceska-zbrojovka-dodala-nemecke-armade-prvni-tisice-pistoli-379879",
@@ -42,31 +67,6 @@
       "topic_scores": {
         "politics": 2,
         "security": 5,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/obrana-a-bezpecnost-polska-je-cesky-narodni-zajem-reagoval-zuna-na-naruseni_2611222214_dns",
-      "published_utc": "2026-11-22T21:14:00Z",
-      "title_raw": "Obrana a bezpečnost Polska je český národní zájem, reagoval Zůna na narušení vzdušného prostoru země",
-      "lead_raw": "Obrana a bezpečnost Polska je český národní zájem. V reakci na páteční narušení polského vzdušného prostoru ze strany Ruska to pro Radiožurnál uvedl ministr obrany Jaromír Zůna (za SPD).",
-      "fingerprint": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
-      "id": "f3adb0fb52d009e64c8a7b1cbc076082e15dd0cf466c341f7e8c347b18f4b04f",
-      "title_en": "Defence and security of Poland is the Czech national interest, the Zone has responded to the disruption of the country's airspace",
-      "lead_en": "Defence and security of Poland is a Czech national interest, Minister of Defence Jaromír Zóna (for the SPD) told Radiožurnál in response to Friday's Russian interference in Polish airspace.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 8,
         "foreign_affairs": 0
       },
       "topics": [
