@@ -1,8 +1,59 @@
 {
-  "updated_at_utc": "2026-11-25T02:35:12Z",
+  "updated_at_utc": "2026-11-25T14:33:07Z",
   "topic": "foreign_affairs",
-  "count": 4,
+  "count": 6,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ve-dne-natocit-v-noci-priprava-na-dalsi-dil-praci-na-vinohradske-12-ale-mame_2611251059_mst",
+      "published_utc": "2026-11-25T09:59:00Z",
+      "title_raw": "Ve dne natočit, v noci příprava na další díl. Práci na Vinohradské 12 ale máme rádi, říká po výhře Skalický",
+      "lead_raw": "Zpravodajský podcast Českého rozhlasu Vinohradská 12 zvítězil v anketě Křišťálová lupa v kategorii podcast roku. Tým Matěje Skalického získal od posluchačů nejvíc hlasů.",
+      "fingerprint": "e8f8ac3024149e5678bad72a3e5c2849ea2eb08e51e4bcbb3c75b3d606ecfa73",
+      "id": "e8f8ac3024149e5678bad72a3e5c2849ea2eb08e51e4bcbb3c75b3d606ecfa73",
+      "title_en": "Work on the Vineyard 12 but we love it, says Skalický after the win",
+      "lead_en": "The news podcast of the Czech Radio Vinohradská 12 won the Kristálová lupa poll in the podcast category of the year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 1,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/sili-napeti-kvuli-neshodam-o-podobe-budouciho-rozpoctu-eu-vytky-ma-i-cesko-379926",
+      "published_utc": "2026-11-25T07:54:51Z",
+      "title_raw": "Sílí napětí kvůli neshodám o podobě budoucího rozpočtu EU, výtky má i Česko",
+      "lead_raw": "Mimořádný summit Evropské unie v Bruselu by měl na konci pracovního týdne schválit klíčové kontury víceletého rozpočtu. Podle předsedy Evropské rady Antónia Costy „nastal čas na dohodu“, jak uvedl v dopise adresovaném lídrům členských zemí.",
+      "fingerprint": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
+      "id": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
+      "title_en": "Tensions are rising over disagreements over the shape of the EU's future budget, and the Czech Republic is also on the rise.",
+      "lead_en": "The key outlines of the multiannual budget should be approved by the European Union's extraordinary summit in Brussels at the end of the working week.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 3
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-evropska-komise-cesku-hrozi-ze-pristi-rok-nedodrzi-unijni-fiskalni-pravidla-321439",
