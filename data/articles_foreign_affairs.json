@@ -1,8 +1,85 @@
 {
-  "updated_at_utc": "2026-11-26T11:00:29Z",
+  "updated_at_utc": "2026-11-26T21:41:55Z",
   "topic": "foreign_affairs",
-  "count": 6,
+  "count": 7,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/z-platneho-hrace-se-stavame-cernymi-pasazery-spor-o-verejnopravni-media-dorazil-do-bruselu/r~aaa290a91c39ed563749ad13ccec993b",
+      "published_utc": "2026-11-26T18:00:00Z",
+      "title_raw": "„Z platného hráče se stáváme černými pasažéry.“ Spor o veřejnoprávní média dorazil do Bruselu",
+      "lead_raw": "Evropský parlament schválil rezoluci, ve které kritizuje změnu financování veřejnoprávních médií v České republice. Zatímco europoslanci z českých opozičních stran ji podpořili, zástupci hnutí ANO mluví o účelovosti.",
+      "fingerprint": "832a5c084e63ec95e1eef34d05d33b1f64024e7413d7da811783fc0283d3e92b",
+      "id": "832a5c084e63ec95e1eef34d05d33b1f64024e7413d7da811783fc0283d3e92b",
+      "title_en": "From a valid player, we become black passengers. The dispute over public media has reached Brussels.",
+      "lead_en": "The European Parliament has approved a resolution criticizing the change in funding for public media in the Czech Republic, while MEPs from the Czech opposition parties supported it, representatives of the ANO movement speak of expediency.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "published_utc": "2026-11-26T12:31:28Z",
+      "title_raw": "V Senátu se řešila obrana země. Dle Pavla chybí pružnost, zněla varování před Ruskem",
+      "lead_raw": "Veřejného slyšení v Senátu na téma připravenosti Česka na obranu státu a zajištění podpory spojeneckým jednotkám na českém území se zúčastnili mimo jiné prezident Petr Pavel, ministr obrany Jaromír Zůna (za SPD) a náčelník Generálního štábu Armády ČR Miroslav Hlaváč. Pavel upozornil na chybějící revizi krizové legislativy a varoval před hrozbou ze strany Ruska, Hlaváč označil pokračování podpory napadené Ukrajině za strategickou nezbytnost a Zůna představil projekty za 148 miliard korun, které jeho resort připravil a pro něž chce zajistit evropské financování.",
+      "fingerprint": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "id": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "title_en": "In the Senate, the defense of the country was discussed.",
+      "lead_en": "A public hearing in the Senate on the Czech Republic's readiness to defend the state and provide support to allied forces in the Czech territory was attended by President Petr Pavel, Minister of Defence Jaromír Zóna (for the SPD) and Chief of the General Staff of the Czech Army Miroslav Hlaváč.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/zacina-mimoradny-summit-eu-staty-se-prou-o-dlouhodoby-rozpocet-379966",
+      "published_utc": "2026-11-26T09:14:12Z",
+      "title_raw": "„Co to je za strategii?“ Babiš na summitu odmítá spojit rozpočet EU s financováním Ukrajiny",
+      "lead_raw": "V Bruselu probíhá mimořádný summit Evropské unie, kde se jedná o klíčových konturách jejího rozpočtu na roky 2028 až 2034. Možnou dohodu zatím komplikuje i spor o finanční podporu Ukrajiny.",
+      "fingerprint": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
+      "id": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
+      "title_en": "What's the strategy? Grandma at the summit refuses to link the EU budget to Ukraine's financing",
+      "lead_en": "The European Union is holding an extraordinary summit in Brussels on the key outlines of its 2028-2034 budget.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 6
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-babis-potrebujeme-penize-na-dalnice-pomoc-ukrajine-do-rozpoctu-eu-nepatri-321566",
@@ -100,56 +177,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-evropska-komise-cesku-hrozi-ze-pristi-rok-nedodrzi-unijni-fiskalni-pravidla-321439",
-      "published_utc": "2026-11-24T17:38:58Z",
-      "title_raw": "Evropská komise: Česku hrozí, že příští rok nedodrží unijní fiskální pravidla",
-      "lead_raw": "Podle eurokomisaře pro hospodářství Valdise Dombrovskise České republice hrozí, že příští rok nedodrží fiskální pravidla Evropské unie. Stejné riziko se týká i Německa.",
-      "fingerprint": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
-      "id": "2645330f209179dd98f846ab20af8e8a3020b1f1223697c8c4a766a9a5e88ab8",
-      "title_en": "European Commission: Czech Republic faces a risk of failing to comply with EU fiscal rules next year",
-      "lead_en": "According to Economic Commissioner Valdis Dombrovskis, the Czech Republic is in danger of failing to comply with the EU's fiscal rules next year.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 0,
-        "foreign_affairs": 4
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/zahranici/evropa-se-pretahuje-o-ets2-visegrad-zada-odklad-nemecko-a-sever-trvaji-na-roce-2028/r~aaa2943b3b9c0b0ba52ae2d7c474b542",
-      "published_utc": "2026-11-24T17:17:00Z",
-      "title_raw": "Evropa se přetahuje o ETS2. Visegrád žádá odklad, Německo a sever trvají na roce 2028",
-      "lead_raw": "Premiéři Česka, Maďarska, Polska a Slovenska vyzvali Evropskou komisi k vypracování analýzy dopadů zavedení systému emisních povolenek ETS2. V dopise adresovaném předsedkyni unijní exekutivy Ursule von der Leyenové požádali o odklad zavedení systému do roku 2030 a uvedli, že je třeba s ohledem na vysoké ceny energií znovu posoudit jeho dopad na kupní sílu obyvatel.",
-      "fingerprint": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
-      "id": "82caa94087e520f8b2776eced77fd516852e1da0517f4edb14e2b7054cd39c90",
-      "title_en": "Europe pulls back on ETS2. Visegrad calls for a delay, Germany and the North continue until 2028",
-      "lead_en": "The Prime Ministers of the Czech Republic, Hungary, Poland and Slovakia invited the European Commission to draw up an impact analysis of the introduction of the ETS2 emission allowance system.In a letter to the President, the EU executives Ursule von der Leyen requested a delay in the introduction of the system until 2030 and stated that, in view of high energy prices, its impact on the purchasing power of the population should be reassessed.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

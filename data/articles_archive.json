@@ -1,7 +1,184 @@
 {
-  "updated_at_utc": "2026-11-26T11:00:29Z",
-  "count": 149,
+  "updated_at_utc": "2026-11-26T21:41:55Z",
+  "count": 157,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/premier-avizoval-zmeny-navrhu-na-slyseni-o-financovani-ct-a-rozhlasu-o-nich-ale_2611262233_zfr",
+      "published_utc": "2026-11-26T21:33:00Z",
+      "title_raw": "Premiér avizoval změny návrhu. Na slyšení o financování ČT a rozhlasu o nich ale podle Rožánka nebyla řeč",
+      "lead_raw": "Sněmovna ve čtvrtek hostila veřejné slyšení k vládnímu návrhu na zrušení televizních a rozhlasových poplatků. Koalice změnu hájí jako spravedlivější, kritici se obávají o nezávislost České televize a Českého rozhlasu.",
+      "fingerprint": "86ab132722bc4da7b52c47b10e39418ce1ac5ea9bcd6152088f7b6dd8de707c4",
+      "id": "86ab132722bc4da7b52c47b10e39418ce1ac5ea9bcd6152088f7b6dd8de707c4",
+      "title_en": "The Prime Minister announced the amendments to the proposal.",
+      "lead_en": "The Chamber of Deputies on Thursday hosted a public hearing on the government's proposal to abolish television and radio charges.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/zahranici/z-platneho-hrace-se-stavame-cernymi-pasazery-spor-o-verejnopravni-media-dorazil-do-bruselu/r~aaa290a91c39ed563749ad13ccec993b",
+      "published_utc": "2026-11-26T18:00:00Z",
+      "title_raw": "„Z platného hráče se stáváme černými pasažéry.“ Spor o veřejnoprávní média dorazil do Bruselu",
+      "lead_raw": "Evropský parlament schválil rezoluci, ve které kritizuje změnu financování veřejnoprávních médií v České republice. Zatímco europoslanci z českých opozičních stran ji podpořili, zástupci hnutí ANO mluví o účelovosti.",
+      "fingerprint": "832a5c084e63ec95e1eef34d05d33b1f64024e7413d7da811783fc0283d3e92b",
+      "id": "832a5c084e63ec95e1eef34d05d33b1f64024e7413d7da811783fc0283d3e92b",
+      "title_en": "From a valid player, we become black passengers. The dispute over public media has reached Brussels.",
+      "lead_en": "The European Parliament has approved a resolution criticizing the change in funding for public media in the Czech Republic, while MEPs from the Czech opposition parties supported it, representatives of the ANO movement speak of expediency.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/stahnete-navrh-na-zmenu-financovani-ct-a-cro-vzkazuje-v-dopise-poslancum-sef_2611261700_mst",
+      "published_utc": "2026-11-26T16:00:00Z",
+      "title_raw": "Stáhněte návrh na změnu financování ČT a ČRo, vzkazuje v dopise poslancům šéf rozhlasu Zavoral",
+      "lead_raw": "Generální ředitel Českého rozhlasu zaslal poslancům dopis se svým stanoviskem k návrhu zákona, který nahrazuje dosavadní financování České televize a Českého rozhlasu z koncesionářských poplatků platbou ze státního rozpočtu. „Český rozhlas žádá vládu o stažení předloženého návrhu zákona a zahájení seriózní odborné diskuse o řešení, které zajistí dlouhodobě stabilní, předvídatelné a nezávislé financování médií,“ píše Zavoral.",
+      "fingerprint": "cf3f3ab6af05b515ce765da084f359a6574a3d2e1ded49289c877970a6f0d5b5",
+      "id": "cf3f3ab6af05b515ce765da084f359a6574a3d2e1ded49289c877970a6f0d5b5",
+      "title_en": "Withdraw the proposal to change the financing of the Czech Republic and the Czech Republic, says the head of radio Zavoral in a letter to MPs",
+      "lead_en": "The Director-General of Czech Radio sent a letter to MEPs with his opinion on the draft law replacing the current funding of Czech Television and Czech Radio from concession fees with a payment from the state budget. Czech Radio asks the government to withdraw the proposed bill and start a serious expert discussion on a solution that will ensure stable, predictable and independent media financing in the long term, Zavoral writes.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/mestsky-soud-projednava-macinkovy-vyroky-hnuti-duha-pozaduje-omluvu-kvuli_2611261622_zfr",
+      "published_utc": "2026-11-26T15:22:00Z",
+      "title_raw": "Městský soud projednává Macinkovy výroky. Hnutí Duha požaduje omluvu kvůli spojování s terorismem",
+      "lead_raw": "Městský soud v Praze začal ve čtvrtek projednávat žalobu, kterou podalo Hnutí Duha na ministra zahraničí Petra Macinku. Hnutí po Macinkovi požaduje omluvu kvůli jeho výrokům spojujícím ekologické hnutí s terorismem.",
+      "fingerprint": "e42363d846dff98f4c009dae50fa863a6e69a4365c504fa643e810cc03901be8",
+      "id": "e42363d846dff98f4c009dae50fa863a6e69a4365c504fa643e810cc03901be8",
+      "title_en": "The city court is hearing Macink's testimony, and the Spirit Movement is seeking an apology for its links to terrorism.",
+      "lead_en": "The city court in Prague on Thursday began hearing a lawsuit filed by the Spirit Movement against Foreign Minister Peter Macink, who has apologized for his allegations linking the environmental movement to terrorism.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/tady-nehrozi-nic-klempir-nevidi-duvod-k-debate-o-ustavnich-pojistkach_2611261603_cen",
+      "published_utc": "2026-11-26T15:03:00Z",
+      "title_raw": "‚Tady nehrozí nic.‘ Klempíř nevidí důvod k debatě o ústavních pojistkách financování ČT a ČRo",
+      "lead_raw": "Ministr kultury Oto Klempíř (za Motoristy) nevidí žádný důvod k debatě o ústavních pojistkách pro média veřejné služby při změně jejich financování. Uvedl to ve čtvrtek na veřejném slyšení na téma změna financování veřejnoprávních médií v Poslanecké sněmovně.",
+      "fingerprint": "d2cec1db957725ac805ad1a9e8c20922ce30aceac925ac634b5750bb4eea87d6",
+      "id": "d2cec1db957725ac805ad1a9e8c20922ce30aceac925ac634b5750bb4eea87d6",
+      "title_en": "Nothing is at stake here. Klempřer sees no reason to debate the constitutional guarantees of financing of the Czech Republic and the Czech Republic",
+      "lead_en": "Minister of Culture Oto Klempíř (for Motorists) sees no reason to debate constitutional guarantees for public service media when changing their funding.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "published_utc": "2026-11-26T12:31:28Z",
+      "title_raw": "V Senátu se řešila obrana země. Dle Pavla chybí pružnost, zněla varování před Ruskem",
+      "lead_raw": "Veřejného slyšení v Senátu na téma připravenosti Česka na obranu státu a zajištění podpory spojeneckým jednotkám na českém území se zúčastnili mimo jiné prezident Petr Pavel, ministr obrany Jaromír Zůna (za SPD) a náčelník Generálního štábu Armády ČR Miroslav Hlaváč. Pavel upozornil na chybějící revizi krizové legislativy a varoval před hrozbou ze strany Ruska, Hlaváč označil pokračování podpory napadené Ukrajině za strategickou nezbytnost a Zůna představil projekty za 148 miliard korun, které jeho resort připravil a pro něž chce zajistit evropské financování.",
+      "fingerprint": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "id": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "title_en": "In the Senate, the defense of the country was discussed.",
+      "lead_en": "A public hearing in the Senate on the Czech Republic's readiness to defend the state and provide support to allied forces in the Czech territory was attended by President Petr Pavel, Minister of Defence Jaromír Zóna (for the SPD) and Chief of the General Staff of the Czech Army Miroslav Hlaváč.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-klempir-bude-verejne-hajit-zruseni-poplatku-promluvi-i-zavoral-321579",
+      "published_utc": "2026-11-26T12:30:00Z",
+      "title_raw": "Pojistky nejsou třeba, tvrdí Klempíř. ČT je chce dát do Listiny základních práv",
+      "lead_raw": "Zákon rušící koncesionářské poplatky se znovu řešil ve Sněmovně. Experti, opozice i koaliční poslanci tentokrát změnu financování veřejnoprávních médií probírali na veřejném slyšení.",
+      "fingerprint": "d45d3d565e9a5bcaa78390a60cac4621ad883fb4ba7719582a2dcd7d75963d66",
+      "id": "d45d3d565e9a5bcaa78390a60cac4621ad883fb4ba7719582a2dcd7d75963d66",
+      "title_en": "The insurances are not necessary, says Klempyr, and the Court wants to include them in the Charter of Fundamental Rights.",
+      "lead_en": "The law suspending concession fees was again discussed in the House, with experts, opposition and coalition lawmakers discussing the change in funding for the public media at a public hearing.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/domaci/udelaji-mu-odbery-zeman-je-ve-spitale-kvuli-lonske-operaci-kdy-to-bylo-vazne/r~aaa292d7615e0637e37f226a17245c2d",
@@ -22,6 +199,31 @@
         "politics"
       ],
       "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/zacina-mimoradny-summit-eu-staty-se-prou-o-dlouhodoby-rozpocet-379966",
+      "published_utc": "2026-11-26T09:14:12Z",
+      "title_raw": "„Co to je za strategii?“ Babiš na summitu odmítá spojit rozpočet EU s financováním Ukrajiny",
+      "lead_raw": "V Bruselu probíhá mimořádný summit Evropské unie, kde se jedná o klíčových konturách jejího rozpočtu na roky 2028 až 2034. Možnou dohodu zatím komplikuje i spor o finanční podporu Ukrajiny.",
+      "fingerprint": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
+      "id": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
+      "title_en": "What's the strategy? Grandma at the summit refuses to link the EU budget to Ukraine's financing",
+      "lead_en": "The European Union is holding an extraordinary summit in Brussels on the key outlines of its 2028-2034 budget.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 0,
+        "foreign_affairs": 6
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
@@ -108,14 +310,14 @@
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-se-meli-zabyvat-platformovou-praci-a-podporami-v-nezamestnanosti-379965",
       "published_utc": "2026-11-26T08:00:54Z",
       "title_raw": "Opozice pošesté neprosadila projednání Okamurova odvolání z čela sněmovny",
-      "lead_raw": "Sněmovní opozice ve čtvrtek neprosadila ani pošesté doplnění programu nynější schůze o návrh na odvolání předsedy SPD Tomia Okamury z čela dolní komory. Opoziční poslanci mu vyčítají postup při úvodním jednání o zrušení poplatků za Českou televizi a Český rozhlas koncem října.",
+      "lead_raw": "Poslanci posunuli ve čtvrtek večer do závěrečného kola schvalování návrh zákona o platformové práci, s nímž souvisí i novela zákoníku práce o snížení podpor v nezaměstnanosti. Odpoledne schválili finanční závazky státu za dostavbu D35 v objemu 123 miliard, tedy v podobě, jak jsou obsaženy v koncesionářské smlouvě na dostavbu dálnice.",
       "fingerprint": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
       "id": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
       "title_en": "Opposition Six failed to hear Okamur's appeal from the House.",
       "lead_en": "The parliamentary opposition did not introduce even the sixth amendment to the programme of the current meeting on Thursday on the proposal to remove SPD chairman Tomia Okamura from the lower house.",
       "translation_status": "translated",
       "topic_scores": {
-        "politics": 9,
+        "politics": 8,
         "security": 0,
         "foreign_affairs": 0
       },

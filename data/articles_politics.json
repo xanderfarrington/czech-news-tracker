@@ -1,8 +1,135 @@
 {
-  "updated_at_utc": "2026-11-26T11:00:29Z",
+  "updated_at_utc": "2026-11-26T21:41:55Z",
   "topic": "politics",
-  "count": 41,
+  "count": 31,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/premier-avizoval-zmeny-navrhu-na-slyseni-o-financovani-ct-a-rozhlasu-o-nich-ale_2611262233_zfr",
+      "published_utc": "2026-11-26T21:33:00Z",
+      "title_raw": "Premiér avizoval změny návrhu. Na slyšení o financování ČT a rozhlasu o nich ale podle Rožánka nebyla řeč",
+      "lead_raw": "Sněmovna ve čtvrtek hostila veřejné slyšení k vládnímu návrhu na zrušení televizních a rozhlasových poplatků. Koalice změnu hájí jako spravedlivější, kritici se obávají o nezávislost České televize a Českého rozhlasu.",
+      "fingerprint": "86ab132722bc4da7b52c47b10e39418ce1ac5ea9bcd6152088f7b6dd8de707c4",
+      "id": "86ab132722bc4da7b52c47b10e39418ce1ac5ea9bcd6152088f7b6dd8de707c4",
+      "title_en": "The Prime Minister announced the amendments to the proposal.",
+      "lead_en": "The Chamber of Deputies on Thursday hosted a public hearing on the government's proposal to abolish television and radio charges.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/stahnete-navrh-na-zmenu-financovani-ct-a-cro-vzkazuje-v-dopise-poslancum-sef_2611261700_mst",
+      "published_utc": "2026-11-26T16:00:00Z",
+      "title_raw": "Stáhněte návrh na změnu financování ČT a ČRo, vzkazuje v dopise poslancům šéf rozhlasu Zavoral",
+      "lead_raw": "Generální ředitel Českého rozhlasu zaslal poslancům dopis se svým stanoviskem k návrhu zákona, který nahrazuje dosavadní financování České televize a Českého rozhlasu z koncesionářských poplatků platbou ze státního rozpočtu. „Český rozhlas žádá vládu o stažení předloženého návrhu zákona a zahájení seriózní odborné diskuse o řešení, které zajistí dlouhodobě stabilní, předvídatelné a nezávislé financování médií,“ píše Zavoral.",
+      "fingerprint": "cf3f3ab6af05b515ce765da084f359a6574a3d2e1ded49289c877970a6f0d5b5",
+      "id": "cf3f3ab6af05b515ce765da084f359a6574a3d2e1ded49289c877970a6f0d5b5",
+      "title_en": "Withdraw the proposal to change the financing of the Czech Republic and the Czech Republic, says the head of radio Zavoral in a letter to MPs",
+      "lead_en": "The Director-General of Czech Radio sent a letter to MEPs with his opinion on the draft law replacing the current funding of Czech Television and Czech Radio from concession fees with a payment from the state budget. Czech Radio asks the government to withdraw the proposed bill and start a serious expert discussion on a solution that will ensure stable, predictable and independent media financing in the long term, Zavoral writes.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/tady-nehrozi-nic-klempir-nevidi-duvod-k-debate-o-ustavnich-pojistkach_2611261603_cen",
+      "published_utc": "2026-11-26T15:03:00Z",
+      "title_raw": "‚Tady nehrozí nic.‘ Klempíř nevidí důvod k debatě o ústavních pojistkách financování ČT a ČRo",
+      "lead_raw": "Ministr kultury Oto Klempíř (za Motoristy) nevidí žádný důvod k debatě o ústavních pojistkách pro média veřejné služby při změně jejich financování. Uvedl to ve čtvrtek na veřejném slyšení na téma změna financování veřejnoprávních médií v Poslanecké sněmovně.",
+      "fingerprint": "d2cec1db957725ac805ad1a9e8c20922ce30aceac925ac634b5750bb4eea87d6",
+      "id": "d2cec1db957725ac805ad1a9e8c20922ce30aceac925ac634b5750bb4eea87d6",
+      "title_en": "Nothing is at stake here. Klempřer sees no reason to debate the constitutional guarantees of financing of the Czech Republic and the Czech Republic",
+      "lead_en": "Minister of Culture Oto Klempíř (for Motorists) sees no reason to debate constitutional guarantees for public service media when changing their funding.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "published_utc": "2026-11-26T12:31:28Z",
+      "title_raw": "V Senátu se řešila obrana země. Dle Pavla chybí pružnost, zněla varování před Ruskem",
+      "lead_raw": "Veřejného slyšení v Senátu na téma připravenosti Česka na obranu státu a zajištění podpory spojeneckým jednotkám na českém území se zúčastnili mimo jiné prezident Petr Pavel, ministr obrany Jaromír Zůna (za SPD) a náčelník Generálního štábu Armády ČR Miroslav Hlaváč. Pavel upozornil na chybějící revizi krizové legislativy a varoval před hrozbou ze strany Ruska, Hlaváč označil pokračování podpory napadené Ukrajině za strategickou nezbytnost a Zůna představil projekty za 148 miliard korun, které jeho resort připravil a pro něž chce zajistit evropské financování.",
+      "fingerprint": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "id": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "title_en": "In the Senate, the defense of the country was discussed.",
+      "lead_en": "A public hearing in the Senate on the Czech Republic's readiness to defend the state and provide support to allied forces in the Czech territory was attended by President Petr Pavel, Minister of Defence Jaromír Zóna (for the SPD) and Chief of the General Staff of the Czech Army Miroslav Hlaváč.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-klempir-bude-verejne-hajit-zruseni-poplatku-promluvi-i-zavoral-321579",
+      "published_utc": "2026-11-26T12:30:00Z",
+      "title_raw": "Pojistky nejsou třeba, tvrdí Klempíř. ČT je chce dát do Listiny základních práv",
+      "lead_raw": "Zákon rušící koncesionářské poplatky se znovu řešil ve Sněmovně. Experti, opozice i koaliční poslanci tentokrát změnu financování veřejnoprávních médií probírali na veřejném slyšení.",
+      "fingerprint": "d45d3d565e9a5bcaa78390a60cac4621ad883fb4ba7719582a2dcd7d75963d66",
+      "id": "d45d3d565e9a5bcaa78390a60cac4621ad883fb4ba7719582a2dcd7d75963d66",
+      "title_en": "The insurances are not necessary, says Klempyr, and the Court wants to include them in the Charter of Fundamental Rights.",
+      "lead_en": "The law suspending concession fees was again discussed in the House, with experts, opposition and coalition lawmakers discussing the change in funding for the public media at a public hearing.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/domaci/udelaji-mu-odbery-zeman-je-ve-spitale-kvuli-lonske-operaci-kdy-to-bylo-vazne/r~aaa292d7615e0637e37f226a17245c2d",
@@ -84,14 +211,14 @@
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-se-meli-zabyvat-platformovou-praci-a-podporami-v-nezamestnanosti-379965",
       "published_utc": "2026-11-26T08:00:54Z",
       "title_raw": "Opozice pošesté neprosadila projednání Okamurova odvolání z čela sněmovny",
-      "lead_raw": "Sněmovní opozice ve čtvrtek neprosadila ani pošesté doplnění programu nynější schůze o návrh na odvolání předsedy SPD Tomia Okamury z čela dolní komory. Opoziční poslanci mu vyčítají postup při úvodním jednání o zrušení poplatků za Českou televizi a Český rozhlas koncem října.",
+      "lead_raw": "Poslanci posunuli ve čtvrtek večer do závěrečného kola schvalování návrh zákona o platformové práci, s nímž souvisí i novela zákoníku práce o snížení podpor v nezaměstnanosti. Odpoledne schválili finanční závazky státu za dostavbu D35 v objemu 123 miliard, tedy v podobě, jak jsou obsaženy v koncesionářské smlouvě na dostavbu dálnice.",
       "fingerprint": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
       "id": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
       "title_en": "Opposition Six failed to hear Okamur's appeal from the House.",
       "lead_en": "The parliamentary opposition did not introduce even the sixth amendment to the programme of the current meeting on Thursday on the proposal to remove SPD chairman Tomia Okamura from the lower house.",
       "translation_status": "translated",
       "topic_scores": {
-        "politics": 9,
+        "politics": 8,
         "security": 0,
         "foreign_affairs": 0
       },
@@ -643,381 +770,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/okamura-zustava-v-cele-snemovny-opozice-neprosadila-ani-paty-pokus-o-jeho-odvolani/r~aaa2994920e2b8168ab326ebb3b797be",
-      "published_utc": "2026-11-24T19:13:00Z",
-      "title_raw": "Okamura zůstává v čele Sněmovny. Opozice neprosadila ani pátý pokus o jeho odvolání",
-      "lead_raw": "Sněmovní opozice v úterý neprosadila ani na pátý pokus doplnění programu nynější schůze o návrh na odvolání předsedy SPD Tomia Okamury z čela dolní komory. Opoziční poslanci mu vyčítají postup při úvodním jednání o sporném zrušení poplatků za Českou televizi a Český rozhlas koncem října.",
-      "fingerprint": "87b60e12800e3316a77058e749f6d18f7d8d09db66704ac612bcaadc7401ddb1",
-      "id": "87b60e12800e3316a77058e749f6d18f7d8d09db66704ac612bcaadc7401ddb1",
-      "title_en": "Okamura remains the leader of the House.",
-      "lead_en": "The parliamentary opposition did not submit a proposal for the dismissal of SPD chairman Tomia Okamura from the lower house on Tuesday for the fifth attempt to complete the programme of the current meeting.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 9,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/volby-komunalni-praha-sobe-vyloucila-dva-zastupitele-z-prahy-12-kteri-jsou-v-koalici-s-ano-321443",
-      "published_utc": "2026-11-24T18:36:56Z",
-      "title_raw": "Praha sobě vyloučila dva zastupitele z Prahy 12, kteří jsou v koalici s ANO",
-      "lead_raw": "Předseda strany Praha sobě Adam Scheinherr oznámil vyloučení Verony Ballay a Jakuba Macka, kteří navzdory nesouhlasu vedení strany uzavřeli koalici s ANO. Oba se minulý týden stali členy vedení v městské části Praze 12.",
-      "fingerprint": "47e02f337df2b3c7407e05614ab0c3d4a9b4668fc1d7df80a3b4d33f436860d2",
-      "id": "47e02f337df2b3c7407e05614ab0c3d4a9b4668fc1d7df80a3b4d33f436860d2",
-      "title_en": "Prague has excluded two representatives from Prague 12, who are in coalition with ANO",
-      "lead_en": "The chairman of the Prague Party, Adam Scheinherr, announced the exclusion of Verona Ballay and Jacob Mack, who, despite the disagreement of the party leadership, formed a coalition with the ANO.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/volby/vikendovy-zvrat-v-hermanove-mestci-souperici-strany-vyjednali-kdo-povede-po_2611241927_aha",
-      "published_utc": "2026-11-24T18:27:00Z",
-      "title_raw": "Víkendový zvrat v Heřmanově Městci. Soupeřící strany vyjednaly, kdo povede po volbách město",
-      "lead_raw": "V Heřmanově Městci trvala povolební vyjednávání nejdéle ze všech měst na Chrudimsku. Ustavující jednání zastupitelstva tam dokonce museli přerušit, protože žádný z táborů neměl potřebnou většinu.",
-      "fingerprint": "8e24c64486d8a341c7a244a9988908285334d6f60a6470afdd4a07d1ddc09367",
-      "id": "8e24c64486d8a341c7a244a9988908285334d6f60a6470afdd4a07d1ddc09367",
-      "title_en": "The rival parties have negotiated who will lead the city after the election.",
-      "lead_en": "In the town of Heřmanovo, the longest of all the towns in Chrudimsk, the pro-election negotiations were held, and the establishment of the Chamber of Deputies there had to be interrupted because none of the camps had the necessary majority.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/koalice-s-ano-je-pro-nas-neprijatelna-rika-scheinherr-praha-sobe-vyloucila-dva-cleny/r~aaa29ce24461703691526b9e9aa25fa3",
-      "published_utc": "2026-11-24T18:16:00Z",
-      "title_raw": "Koalice s ANO je pro nás nepřijatelná, říká Scheinherr. Praha sobě vyloučila dva členy",
-      "lead_raw": "Praha sobě v úterý vyloučila ze strany zastupitele Prahy 12 Veronu Ballay a Jakuba Macka. Na síti X to oznámil předseda strany a náměstek pražského primátora Adam Scheinherr.",
-      "fingerprint": "3c2a404bf032be2d6fa8d5521d80ed8803cbb402c2e18b2f2104c76cffc20f71",
-      "id": "3c2a404bf032be2d6fa8d5521d80ed8803cbb402c2e18b2f2104c76cffc20f71",
-      "title_en": "A coalition with the ANO is unacceptable to us, says Scheinherr.",
-      "lead_en": "Prague on Tuesday excluded its 12th congressman Veron Ballay and Jacob Mack, announced on Network X by party chairman and deputy mayor of Prague Adam Scheinherr.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/babis-oznamil-navrat-75procentnich-slev-na-jizdnem-pro-studenty-a-seniory/r~aaa2921b18c683a7da71c43982565973",
-      "published_utc": "2026-11-24T18:11:00Z",
-      "title_raw": "Babiš oznámil návrat 75procentních slev na jízdném pro studenty a seniory",
-      "lead_raw": "Slevy pro seniory a studenty na jízdném ve veřejné dopravě se od července zvýší na 75 procent ze současných 50 procent. Dohodla se na tom vládní koalice při jednáních o úpravě státního rozpočtu.",
-      "fingerprint": "682f27a56476658caf9a41dc40b061a4536061d7dba7b557cfa8a67dffd4607c",
-      "id": "682f27a56476658caf9a41dc40b061a4536061d7dba7b557cfa8a67dffd4607c",
-      "title_en": "Grandma announced the return of 75% off student and senior tickets.",
-      "lead_en": "Discounts for seniors and students on public transportation will increase to 75 percent from the current 50 percent in July, as agreed by the government coalition in budgetary adjustment negotiations.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/poskodili-dobre-jmeno-strany-praha-sobe-vyloucila-dva-zastupitele-za-uzavreni_2611241904_dci",
-      "published_utc": "2026-11-24T18:04:00Z",
-      "title_raw": "‚Poškodili dobré jméno strany.‘ Praha sobě vyloučila dva zastupitele za uzavření koalice s ANO",
-      "lead_raw": "Praha sobě v úterý vyloučila ze strany zastupitele Prahy 12 Veronu Ballay a Jakuba Macka. Oznámil to předseda strany Adam Scheinherr.",
-      "fingerprint": "0fa9bcdfcfa1a73114498357b9c59fe78d5d73366bec67707a7af21080372b9d",
-      "id": "0fa9bcdfcfa1a73114498357b9c59fe78d5d73366bec67707a7af21080372b9d",
-      "title_en": "They have damaged the party's reputation. Prague has disqualified two deputies for forming a coalition with ANO",
-      "lead_en": "On Tuesday, Prague voted to exclude Veron Ballay and Jacob Mack from the 12th Prague Congress, as announced by the party's chairman, Adam Scheinherr.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/protest-proti-babisovi-a-juchelkovi-lide-na-voziccich-prosili-o-pomoc-primo-pred-snemovnou/r~aaa29d41b2ccc917646d88fa0081e8e9",
-      "published_utc": "2026-11-24T17:42:00Z",
-      "title_raw": "Protest proti Babišovi a Juchelkovi. Lidé na vozíčcích prosili o pomoc přímo před sněmovnou",
-      "lead_raw": "„Původně vypadalo jednání s premiérem Andrejem Babišem nadějně,“ říká Erik Čipera, který léta bojuje za lidi s tělesným a kombinovaným postižením. Podle jeho slov jednání s Babišem a ministrem práce a sociálních věcí Alešem Juchelkou ale dopadla špatně, a proto se rozhodl pro dnešní demonstraci před sněmovnou.",
-      "fingerprint": "65cb4ccb29546085cd0741aa18e7a7feb9267818e590253faacf6d7fdb823b52",
-      "id": "65cb4ccb29546085cd0741aa18e7a7feb9267818e590253faacf6d7fdb823b52",
-      "title_en": "Protests against Babiš and Juchel, people in wheelchairs begging for help in front of the House",
-      "lead_en": "\"The meeting with Prime Minister Andrei Babiš initially looked hopeful\", says Erik Cipera, who has been fighting for people with physical and combined disabilities for years.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/politolog-kopecek-zijeme-v-dobe-andreje-babise-jeho-vlada-dnes-priskrcuje_2611241807_dci",
-      "published_utc": "2026-11-24T17:07:00Z",
-      "title_raw": "Politolog Kopeček: Žijeme v době Andreje Babiše. Jeho vláda dnes přiškrcuje liberální demokracii",
-      "lead_raw": "Česká politická scéna si prošla několika odlišnými fázemi, od „nevinných“ 90. let přes „barbarizaci“ až do chvíle, kdy ji výrazně charakterizuje premiér a předseda hnutí ANO Andrej Babiš.",
-      "fingerprint": "dc4b178815f7ec96fbca9c5919237995a25ed75f9723bbb5ce35de5800ff6290",
-      "id": "dc4b178815f7ec96fbca9c5919237995a25ed75f9723bbb5ce35de5800ff6290",
-      "title_en": "Political scientist Kopeček: We live in the time of Andrey Babiš.",
-      "lead_en": "The Czech political scene has gone through several different phases, from the '90s through the 'barbarization' to the time when it is marked by the prime minister and president of the ANO movement, Andrej Babiš.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/po-krnovu-i-jesenik-a-valasske-mezirici-ministerstvo-spravedlnosti-planuje_2611241551_ntu",
-      "published_utc": "2026-11-24T14:51:00Z",
-      "title_raw": "Po Krnovu i Jeseník a Valašské Meziříčí. Ministerstvo spravedlnosti plánuje rušení poboček soudů",
-      "lead_raw": "Ministerstvo spravedlnosti chce překreslit soudní mapu Česka. Dopad to bude mít i na justici pod správou Krajského soudu v Ostravě.",
-      "fingerprint": "9a55173f90e914bd0fe287dd72938ed0d6f2a27b2326a54c4f5fa30eba8f5deb",
-      "id": "9a55173f90e914bd0fe287dd72938ed0d6f2a27b2326a54c4f5fa30eba8f5deb",
-      "title_en": "The Ministry of Justice is planning to dismantle the branches of the courts",
-      "lead_en": "The Ministry of Justice wants to redraw the judicial map of the Czech Republic, which will also affect the judiciary under the jurisdiction of the district court in Ostrava.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/vlada-uz-postoj-k-incidentu-v-polsku-vyjadrila-rekl-macinka-snemovna-ho-opakovat-nemusi/r~aaa292e8f27db592161d5db59c4c79e8",
-      "published_utc": "2026-11-24T14:38:00Z",
-      "title_raw": "Vláda už postoj k incidentu v Polsku vyjádřila, řekl Macinka. Sněmovna ho opakovat nemusí",
-      "lead_raw": "Česká vláda už stanovisko ke střelám v Polsku vyjádřila a není nezbytné, aby postoj zopakovala v usnesení Sněmovna. V úvodu úterní schůze dolní komory to v úterý řekl ministr zahraničí Petr Macinka (Motoristé).",
-      "fingerprint": "fd04233fcecae79b62650558e9db6b48e92a112604aca323ddc7843621fbd6b2",
-      "id": "fd04233fcecae79b62650558e9db6b48e92a112604aca323ddc7843621fbd6b2",
-      "title_en": "The government has already expressed its position on the incident in Poland, Macinka said.",
-      "lead_en": "The Czech government has already expressed its position on the shootings in Poland and it is not necessary to repeat the position in the parliamentary resolution.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 9,
-        "security": 1,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/cesko-korespondencni-volbu-zavedlo-slovensko-ji-rusi-ficova-vlada-znasilnuje_2611241536_jar",
-      "published_utc": "2026-11-24T14:36:00Z",
-      "title_raw": "Česko korespondenční volbu zavedlo, Slovensko ji ruší. Ficova vláda znásilňuje demokracii, zní z opozice",
-      "lead_raw": "Dvacet let mohli Slováci žijící v zahraničí hlasovat v parlamentních volbách poštou. Od příštích voleb už budou muset osobně na ambasádu nebo konzulát.",
-      "fingerprint": "1b6396658478d2e22498095b8fa8cb273ce6c9b5edc6e40d46d0551b7a3264e5",
-      "id": "1b6396658478d2e22498095b8fa8cb273ce6c9b5edc6e40d46d0551b7a3264e5",
-      "title_en": "The Czech Republic introduced a correspondence vote, Slovakia abolishes it.",
-      "lead_en": "For 20 years Slovaks living abroad could vote in parliamentary elections by post.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 12,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/volby/chebskou-radnici-povede-starosta-ladislav-hruby-opozice-kritizuje-zrizeni-postu_2611241526_ntu",
-      "published_utc": "2026-11-24T14:26:00Z",
-      "title_raw": "Chebskou radnici povede starosta Ladislav Hrubý. Opozice kritizuje zřízení postu třetího místostarosty",
-      "lead_raw": "Cheb má nové vedení města. Starostou je Ladislav Hrubý z Volby pro město s podporou Starostů.",
-      "fingerprint": "4108e8972ff67dbcbd0952a2c48c444471f53566b1c6cc2a87ae14ec65b4732a",
-      "id": "4108e8972ff67dbcbd0952a2c48c444471f53566b1c6cc2a87ae14ec65b4732a",
-      "title_en": "Mayor Ladislav Hrubý will lead the city council.",
-      "lead_en": "Cheb has a new city manager, the mayor is Ladislav Rough of the City's Election with the support of the City Council.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888",
-      "published_utc": "2026-11-24T13:02:10Z",
-      "title_raw": "Vláda by mohla regulovat ceny elektřiny i příjmy výrobců, podpořila to sněmovna",
-      "lead_raw": "Vláda by mohla při mimořádné tržní situaci regulovat ceny elektřiny a zastropovat nadměrné příjmy výrobců. Návrh podpořili poslanci.",
-      "fingerprint": "93269188f421fac957560166fd9f9ee5ae5a7c2e921436842bc23ff699eda1e8",
-      "id": "93269188f421fac957560166fd9f9ee5ae5a7c2e921436842bc23ff699eda1e8",
-      "title_en": "The government could regulate electricity prices and producers' incomes, the House supported.",
-      "lead_en": "In an emergency market situation, the government could regulate electricity prices and trap over-income producers.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/slovensky-parlament-schvalil-zruseni-korespondencni-volby-379900",
-      "published_utc": "2026-11-24T11:53:24Z",
-      "title_raw": "Slovenský parlament schválil zrušení korespondenční volby",
-      "lead_raw": "Slovenská sněmovna schválila zrušení možnosti hlasovat v parlamentních volbách poštou ze zahraničí. Deset měsíců před plánovaným termínem příštích voleb parlament přijal novelu volebního zákona, kterou vládní koalice po ztrátě většiny v Národní radě prosadila s podporou části nezařazených poslanců.",
-      "fingerprint": "c8057a7356a8f652569841fb26f71cb7e03b1d7dc44d1c8c5b4b6c3263795693",
-      "id": "c8057a7356a8f652569841fb26f71cb7e03b1d7dc44d1c8c5b4b6c3263795693",
-      "title_en": "Slovak Parliament approved the cancellation of the correspondence elections",
-      "lead_en": "The Slovak parliament approved the abolition of the possibility of voting in parliamentary elections by mail from abroad. Ten months before the scheduled deadline for the next election, the parliament adopted a new electoral law, which the government coalition passed with the support of a part of the non-voting deputies after losing a majority in the National Council.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 14,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-vedci-si-babisovi-stezuji-na-cerveneho-co-se-na-resortu-deje-321369",
-      "published_utc": "2026-11-24T11:05:04Z",
-      "title_raw": "Nejhorší v historii, ministr Červený netuší, čeho se jeho práce týká, říká vědec",
-      "lead_raw": "Čeští vědci varují premiéra Babiše před rozkladem Motoristy vedeného ministerstva životního prostředí. Pod společnou výzvu se podepsalo devět odborných společností.",
-      "fingerprint": "982eba89bb8c355100f5460af354b9b6c3e605086c6c99773ecb32788728dd1c",
-      "id": "982eba89bb8c355100f5460af354b9b6c3e605086c6c99773ecb32788728dd1c",
-      "title_en": "Worst in history, Minister Red doesn't know what his job is about, says a scientist",
-      "lead_en": "Czech scientists warn Prime Minister Babiš of the collapse of the Ministry of the Environment's Motorists.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
         "security": 0,
         "foreign_affairs": 0
       },

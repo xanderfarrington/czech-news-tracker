@@ -1,8 +1,60 @@
 {
-  "updated_at_utc": "2026-11-26T11:00:29Z",
+  "updated_at_utc": "2026-11-26T21:41:55Z",
   "topic": "security",
-  "count": 3,
+  "count": 5,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/mestsky-soud-projednava-macinkovy-vyroky-hnuti-duha-pozaduje-omluvu-kvuli_2611261622_zfr",
+      "published_utc": "2026-11-26T15:22:00Z",
+      "title_raw": "Městský soud projednává Macinkovy výroky. Hnutí Duha požaduje omluvu kvůli spojování s terorismem",
+      "lead_raw": "Městský soud v Praze začal ve čtvrtek projednávat žalobu, kterou podalo Hnutí Duha na ministra zahraničí Petra Macinku. Hnutí po Macinkovi požaduje omluvu kvůli jeho výrokům spojujícím ekologické hnutí s terorismem.",
+      "fingerprint": "e42363d846dff98f4c009dae50fa863a6e69a4365c504fa643e810cc03901be8",
+      "id": "e42363d846dff98f4c009dae50fa863a6e69a4365c504fa643e810cc03901be8",
+      "title_en": "The city court is hearing Macink's testimony, and the Spirit Movement is seeking an apology for its links to terrorism.",
+      "lead_en": "The city court in Prague on Thursday began hearing a lawsuit filed by the Spirit Movement against Foreign Minister Peter Macink, who has apologized for his allegations linking the environmental movement to terrorism.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 1,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "published_utc": "2026-11-26T12:31:28Z",
+      "title_raw": "V Senátu se řešila obrana země. Dle Pavla chybí pružnost, zněla varování před Ruskem",
+      "lead_raw": "Veřejného slyšení v Senátu na téma připravenosti Česka na obranu státu a zajištění podpory spojeneckým jednotkám na českém území se zúčastnili mimo jiné prezident Petr Pavel, ministr obrany Jaromír Zůna (za SPD) a náčelník Generálního štábu Armády ČR Miroslav Hlaváč. Pavel upozornil na chybějící revizi krizové legislativy a varoval před hrozbou ze strany Ruska, Hlaváč označil pokračování podpory napadené Ukrajině za strategickou nezbytnost a Zůna představil projekty za 148 miliard korun, které jeho resort připravil a pro něž chce zajistit evropské financování.",
+      "fingerprint": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "id": "6e6f6dc3527d4bdf11c38c4b6db7cccc73f11c5ca5478c8c59a365814ee85e1f",
+      "title_en": "In the Senate, the defense of the country was discussed.",
+      "lead_en": "A public hearing in the Senate on the Czech Republic's readiness to defend the state and provide support to allied forces in the Czech territory was attended by President Petr Pavel, Minister of Defence Jaromír Zóna (for the SPD) and Chief of the General Staff of the Czech Army Miroslav Hlaváč.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics",
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/ovcak-briketa-raketa-je-na-horach-nenahraditelna-v-lete-najde-ztracene-houbare-v_2611260817_tez",
