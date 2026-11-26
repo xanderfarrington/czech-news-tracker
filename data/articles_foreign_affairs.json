@@ -1,8 +1,59 @@
 {
-  "updated_at_utc": "2026-11-26T00:29:14Z",
+  "updated_at_utc": "2026-11-26T11:00:29Z",
   "topic": "foreign_affairs",
-  "count": 4,
+  "count": 6,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-babis-potrebujeme-penize-na-dalnice-pomoc-ukrajine-do-rozpoctu-eu-nepatri-321566",
+      "published_utc": "2026-11-26T08:52:32Z",
+      "title_raw": "Babiš: Potřebujeme peníze na dálnice, pomoc Ukrajině do rozpočtu EU nepatří",
+      "lead_raw": "Český premiér Andrej Babiš dnes při příchodu na summit EU zopakoval názor, že nelze spojovat financování Ukrajiny s dlouhodobým rozpočtem Unie.",
+      "fingerprint": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
+      "id": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
+      "title_en": "Granny: We need money for highways, Ukraine's aid is not in the EU budget",
+      "lead_en": "Czech Prime Minister Andrej Babiš, arriving at the EU summit today, reiterated his view that Ukraine's financing cannot be linked to the long-term budget of the Union.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-diplomaticke-mise-v-cr-ve-ctvrtek-oficialne-zahaji-velvyslanci-laosu-a-malediv-321554",
+      "published_utc": "2026-11-26T08:17:36Z",
+      "title_raw": "Diplomatické mise v ČR ve čtvrtek oficiálně zahájí velvyslanci Laosu a Malediv",
+      "lead_raw": "Své mise dnes zahájí velvyslanci z Malediv a Laosu. Ani jeden z nich nebude sídlit v Praze.",
+      "fingerprint": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
+      "id": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
+      "title_en": "The diplomatic mission in the Czech Republic will be officially opened by the ambassadors of Laos and the Maldives on Thursday",
+      "lead_en": "The ambassadors from the Maldives and Laos will begin their missions today, and none of them will be based in Prague.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 7
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/ve-dne-natocit-v-noci-priprava-na-dalsi-dil-praci-na-vinohradske-12-ale-mame_2611251059_mst",

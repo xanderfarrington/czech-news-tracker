@@ -1,8 +1,58 @@
 {
-  "updated_at_utc": "2026-11-26T00:29:14Z",
+  "updated_at_utc": "2026-11-26T11:00:29Z",
   "topic": "security",
-  "count": 1,
+  "count": 3,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ovcak-briketa-raketa-je-na-horach-nenahraditelna-v-lete-najde-ztracene-houbare-v_2611260817_tez",
+      "published_utc": "2026-11-26T07:17:00Z",
+      "title_raw": "Ovčák ‚Briketa Raketa‘ je na horách nenahraditelný. V létě najde ztracené houbaře, v zimě i lidi pod lavinou",
+      "lead_raw": "V České republice slouží u horské služby dohromady 21 psů. Na Šumavě mají tři a podle kynologa Václava Cipra pomáhají zejména ve specifických situacích.",
+      "fingerprint": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
+      "id": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
+      "title_en": "The Sheep of the Rockets is irreplaceable in the mountains, finding lost mushrooms in summer, and people under the avalanche in winter.",
+      "lead_en": "In the Czech Republic, there are a total of 21 dogs in the mountain service.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ceske-gripeny-budou-v-nove-vyzbroji-strely-za-miliardu-doda-nemecky-zbrojar-bere_2611260700_hrk",
+      "published_utc": "2026-11-26T06:00:00Z",
+      "title_raw": "České gripeny budou v nové výzbroji. Střely za miliardu dodá německý zbrojař, bere od něj i Ukrajina",
+      "lead_raw": "Hlavní složka tuzemských vzdušných sil, stíhací letouny JAS-39 Gripen, bude mít novou výzbroj. Čtyři desítky střel jim dodá německá zbrojovka Diehl Defence, angažující se v obraně Ukrajiny.",
+      "fingerprint": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
+      "id": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
+      "title_en": "The Czech flu will be in the new weaponry, a billion rounds will be supplied by a German armourer and taken from him by Ukraine.",
+      "lead_en": "The main component of the domestic air force, the JAS-39 Gripen fighter jets, will be equipped with new weapons.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (World)",
       "url": "https://www.irozhlas.cz/zpravy-svet/blackout-nebo-kyberneticky-utok-cesko-melo-spolecne-nacvicovat-krizove-scenare_2611250010_jar",

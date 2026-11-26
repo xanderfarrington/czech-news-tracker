@@ -1,8 +1,184 @@
 {
-  "updated_at_utc": "2026-11-26T00:29:14Z",
+  "updated_at_utc": "2026-11-26T11:00:29Z",
   "keep_hours": 48,
-  "count": 43,
+  "count": 48,
   "articles": [
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/udelaji-mu-odbery-zeman-je-ve-spitale-kvuli-lonske-operaci-kdy-to-bylo-vazne/r~aaa292d7615e0637e37f226a17245c2d",
+      "published_utc": "2026-11-26T09:37:00Z",
+      "title_raw": "Zeman je v nemocnici kvůli loňské operaci. Kdy to bylo s českými prezidenty vážné?",
+      "lead_raw": "Důvodem hospitalizace bývalého prezidenta Miloše Zemana je primárně kontrola po loňské operaci nezhoubného polypu na tlustém střevě. Dvaaosmdesátiletý politik by měl z motolské nemocnice odejít podle plánu nejpozději v pátek ráno.",
+      "fingerprint": "c2b09edbe19c744d8ff2d9beb4dfb403d3b9d22322a841bcc3aee3971869ea56",
+      "id": "c2b09edbe19c744d8ff2d9beb4dfb403d3b9d22322a841bcc3aee3971869ea56",
+      "title_en": "Zeman is in the hospital for last year's surgery.",
+      "lead_en": "The reason for the hospitalization of former President Miloš Zeman is primarily a check-up after last year's non-fatal colon polyps surgery.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/scitani-a-zapisovani-hlasu-potrebuje-reformu-mini-odbornici-nogol-o-tom-chce_2611261002_tez",
+      "published_utc": "2026-11-26T09:02:00Z",
+      "title_raw": "Sčítání a zapisování hlasů potřebuje reformu, míní odborníci. Nogol o tom chce jednat na ministerstvu",
+      "lead_raw": "Tajemník karvinského magistrátu Roman Nogol chce na ministerstvu vnitra jednat o změně způsobu sčítání hlasů zejména v komunálních volbách. Za celostátní sdružení tajemníků bude prosazovat využití digitálních nástrojů, které by práci volebních komisí zjednodušily a omezily chyby.",
+      "fingerprint": "6bd2658fcae2480068e741877b1138ce37efe0f7991bdc218d574c5e4126119a",
+      "id": "6bd2658fcae2480068e741877b1138ce37efe0f7991bdc218d574c5e4126119a",
+      "title_en": "The counting and recording of votes needs reform, experts say.",
+      "lead_en": "The secretary of the Karvin Municipal Court, Roman Nogol, wants to talk to the Interior Ministry about changing the way votes are counted, especially in municipal elections.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-babis-potrebujeme-penize-na-dalnice-pomoc-ukrajine-do-rozpoctu-eu-nepatri-321566",
+      "published_utc": "2026-11-26T08:52:32Z",
+      "title_raw": "Babiš: Potřebujeme peníze na dálnice, pomoc Ukrajině do rozpočtu EU nepatří",
+      "lead_raw": "Český premiér Andrej Babiš dnes při příchodu na summit EU zopakoval názor, že nelze spojovat financování Ukrajiny s dlouhodobým rozpočtem Unie.",
+      "fingerprint": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
+      "id": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
+      "title_en": "Granny: We need money for highways, Ukraine's aid is not in the EU budget",
+      "lead_en": "Czech Prime Minister Andrej Babiš, arriving at the EU summit today, reiterated his view that Ukraine's financing cannot be linked to the long-term budget of the Union.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics",
+        "foreign_affairs"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-diplomaticke-mise-v-cr-ve-ctvrtek-oficialne-zahaji-velvyslanci-laosu-a-malediv-321554",
+      "published_utc": "2026-11-26T08:17:36Z",
+      "title_raw": "Diplomatické mise v ČR ve čtvrtek oficiálně zahájí velvyslanci Laosu a Malediv",
+      "lead_raw": "Své mise dnes zahájí velvyslanci z Malediv a Laosu. Ani jeden z nich nebude sídlit v Praze.",
+      "fingerprint": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
+      "id": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
+      "title_en": "The diplomatic mission in the Czech Republic will be officially opened by the ambassadors of Laos and the Maldives on Thursday",
+      "lead_en": "The ambassadors from the Maldives and Laos will begin their missions today, and none of them will be based in Prague.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 0,
+        "foreign_affairs": 7
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "CT24",
+      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-se-meli-zabyvat-platformovou-praci-a-podporami-v-nezamestnanosti-379965",
+      "published_utc": "2026-11-26T08:00:54Z",
+      "title_raw": "Opozice pošesté neprosadila projednání Okamurova odvolání z čela sněmovny",
+      "lead_raw": "Sněmovní opozice ve čtvrtek neprosadila ani pošesté doplnění programu nynější schůze o návrh na odvolání předsedy SPD Tomia Okamury z čela dolní komory. Opoziční poslanci mu vyčítají postup při úvodním jednání o zrušení poplatků za Českou televizi a Český rozhlas koncem října.",
+      "fingerprint": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
+      "id": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
+      "title_en": "Opposition Six failed to hear Okamur's appeal from the House.",
+      "lead_en": "The parliamentary opposition did not introduce even the sixth amendment to the programme of the current meeting on Thursday on the proposal to remove SPD chairman Tomia Okamura from the lower house.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 9,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ovcak-briketa-raketa-je-na-horach-nenahraditelna-v-lete-najde-ztracene-houbare-v_2611260817_tez",
+      "published_utc": "2026-11-26T07:17:00Z",
+      "title_raw": "Ovčák ‚Briketa Raketa‘ je na horách nenahraditelný. V létě najde ztracené houbaře, v zimě i lidi pod lavinou",
+      "lead_raw": "V České republice slouží u horské služby dohromady 21 psů. Na Šumavě mají tři a podle kynologa Václava Cipra pomáhají zejména ve specifických situacích.",
+      "fingerprint": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
+      "id": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
+      "title_en": "The Sheep of the Rockets is irreplaceable in the mountains, finding lost mushrooms in summer, and people under the avalanche in winter.",
+      "lead_en": "In the Czech Republic, there are a total of 21 dogs in the mountain service.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 3,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ceske-gripeny-budou-v-nove-vyzbroji-strely-za-miliardu-doda-nemecky-zbrojar-bere_2611260700_hrk",
+      "published_utc": "2026-11-26T06:00:00Z",
+      "title_raw": "České gripeny budou v nové výzbroji. Střely za miliardu dodá německý zbrojař, bere od něj i Ukrajina",
+      "lead_raw": "Hlavní složka tuzemských vzdušných sil, stíhací letouny JAS-39 Gripen, bude mít novou výzbroj. Čtyři desítky střel jim dodá německá zbrojovka Diehl Defence, angažující se v obraně Ukrajiny.",
+      "fingerprint": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
+      "id": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
+      "title_en": "The Czech flu will be in the new weaponry, a billion rounds will be supplied by a German armourer and taken from him by Ukraine.",
+      "lead_en": "The main component of the domestic air force, the JAS-39 Gripen fighter jets, will be equipped with new weapons.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/kauza-krnap-jako-ministr-jsem-se-nezabyval-tim-jakym-zpusobem-je-dan-odvadena_2611260010_kvr",
@@ -559,7 +735,7 @@
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslance-ceka-dalsi-debata-o-navrhu-rozpoctu-budou-navrhovat-presuny-penez-379923",
       "published_utc": "2026-11-25T02:25:00Z",
       "title_raw": "Sněmovna jedná o státním rozpočtu",
-      "lead_raw": "Poslanci ve druhém čtení návrhu státního rozpočtu na příští rok přednesli téměř 150 pozměňovacích návrhů na přesuny peněz uvnitř rozpočtu. Jejich celkový objem přesahuje 380 miliard korun, což je téměř 15 procent navrhovaných výdajů rozpočtu.",
+      "lead_raw": "Poslanci ve druhém čtení návrhu státního rozpočtu na příští rok přednesli téměř 150 pozměňovacích návrhů na přesuny peněz uvnitř rozpočtu. Jejich celkový objem přesahuje 380 miliard korun, což je téměř patnáct procent navrhovaných výdajů rozpočtu.",
       "fingerprint": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
       "id": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
       "title_en": "The House is dealing with the state budget",
@@ -1017,56 +1193,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-schvalila-zapojeni-ceska-do-druhe-faze-programu-safe-oznamil-zuna-379896",
-      "published_utc": "2026-11-24T09:44:37Z",
-      "title_raw": "Vláda schválila zapojení Česka do druhé fáze programu SAFE, oznámil Zůna",
-      "lead_raw": "Vláda schválila zapojení Česka do druhé fáze evropského programu Security Action for Europe (SAFE), který umožňuje čerpat půjčky na pořízení vojenského vybavení, řekl na úterním velitelském shromáždění ministr obrany Jaromír Zůna (za SPD). Později dodal, že tuzemsko chce z druhého kola získat mírně více peněz než z prvního, v němž se rozhodlo využít půjčku ve výši přibližně padesát miliard korun.",
-      "fingerprint": "e70898c364a6aff16bff3efa426eb2c2424f5cd8a59ea6a03cb9c6a7539aa4bc",
-      "id": "e70898c364a6aff16bff3efa426eb2c2424f5cd8a59ea6a03cb9c6a7539aa4bc",
-      "title_en": "The Government has approved the participation of the Czech Republic in the second phase of the SAFE programme, the Zone has announced",
-      "lead_en": "The government has approved the Czech Republic's participation in the second phase of the European Security Action for Europe (SAFE) programme, which allows loans to buy military equipment, Defense Minister Jaromír Zóna (for the SPD) said at a meeting on Tuesday, later adding that the Czech Republic wants to get slightly more money from the second round than from the first, in which it decided to use a loan of about 50 billion kroner.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 2,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/velka-analyza-koalic-ano-bali-kufry-bude-uz-jen-na-tretine-radnic-okresnich-mest_2611240620_jgr",
-      "published_utc": "2026-11-24T05:20:00Z",
-      "title_raw": "Velká analýza koalic. ANO balí kufry, bude už jen na třetině radnic okresních měst",
-      "lead_raw": "Před čtyřmi lety se v mnohých krajských i okresních městech spojovaly tehdy opoziční ANO s hlavní vládní silou ODS. Z tehdejších 29 společných koalic je po letošních volbách jen třetina.",
-      "fingerprint": "53f2234e6d4e9977da9db7f28733946b5b64ed3634e717150522b90f67c2d0f0",
-      "id": "53f2234e6d4e9977da9db7f28733946b5b64ed3634e717150522b90f67c2d0f0",
-      "title_en": "A big coalition analysis, yes, packing suitcases, will only be in a third of county town halls",
-      "lead_en": "Four years ago, in many regional and regional cities, the opposition ANO merged with the main ODS government force.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 7,
         "security": 0,
         "foreign_affairs": 0
       },
