@@ -1,7 +1,157 @@
 {
-  "updated_at_utc": "2026-11-25T14:33:07Z",
-  "count": 137,
+  "updated_at_utc": "2026-11-26T00:29:14Z",
+  "count": 142,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/kauza-krnap-jako-ministr-jsem-se-nezabyval-tim-jakym-zpusobem-je-dan-odvadena_2611260010_kvr",
+      "published_utc": "2026-11-25T23:10:00Z",
+      "title_raw": "Kauza KRNAP? Jako ministr jsem se nezabýval tím, jakým způsobem je daň odváděna, popisuje Hladík",
+      "lead_raw": "Kdo a co je v pozadí sporů kolem krkonošského parku? A nese bývalé vedení ministerstva životního prostředí spoluzodpovědnost za to, že má park doplácet státu desítky milionů na daních?",
+      "fingerprint": "87e96aec4b20fca6220c0527318bb1442dbd14f2df9918fc6c2e5f222a908f47",
+      "id": "87e96aec4b20fca6220c0527318bb1442dbd14f2df9918fc6c2e5f222a908f47",
+      "title_en": "As minister, I have not been concerned with how the tax is levied.",
+      "lead_en": "And is the former head of the Department of the Environment co-responsible for making the park pay tens of millions in taxes to the state?",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/juchelka-stahneme-navrh-na-zpresneni-zavisle-prace-zatim-utvorime-pracovni_2611252028_kvr",
+      "published_utc": "2026-11-25T19:28:00Z",
+      "title_raw": "Juchelka: Stáhneme návrh na zpřesnění závislé práce. Zatím utvoříme pracovní skupinu na základě Kobry 26",
+      "lead_raw": "Premiér Andrej Babiš (ANO) přiznal chyby v návrzích na změny podpor v nezaměstnanosti a zákonu o platformové práci. Jak ve středu řekl serveru Deník.cz, s ministrem práce a sociálních věcí Alešem Juchelkou (ANO) to probral v pondělí.",
+      "fingerprint": "8d087d0704df8464fc1e6cd5e107a744d9b0a6e149344c78bfe595189cbbc29f",
+      "id": "8d087d0704df8464fc1e6cd5e107a744d9b0a6e149344c78bfe595189cbbc29f",
+      "title_en": "Juchelka: We'll withdraw a proposal to clarify dependent labor.",
+      "lead_en": "Prime Minister Andrej Babiš (ANO) admitted errors in proposals for changes to the unemployment support and the platform work law.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/babisova-slevova-otocka-premier-slibil-to-na-co-nebyly-penize-rekl-odkud-je-vezme/r~aaa29a2bbcc3f5c27d50f0ff9f386a92",
+      "published_utc": "2026-11-25T19:00:00Z",
+      "title_raw": "Babišova slevová otočka. Premiér slíbil to, na co nebyly peníze. Řekl, odkud je vezme",
+      "lead_raw": "Slevy na jízdném jsou definitivně zpátky ve hře. Poté co šéf resortu dopravy Ivan Bednárik (za SPD) v září oznámil, že na ně v rozpočtu nejsou peníze, vypadala situace jasně.",
+      "fingerprint": "d8e9d258c39c41920060d2b39407fda63ecda2f7b503f13e8494a26710caee09",
+      "id": "d8e9d258c39c41920060d2b39407fda63ecda2f7b503f13e8494a26710caee09",
+      "title_en": "Grandma's discount turn, the Prime Minister promised what the money wasn't, where he'd get it.",
+      "lead_en": "After the head of the transport resort, Ivan Bednárik (for the SPD), announced in September that there was no money in the budget for them, the situation was clear.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-byvaly-guverner-cnb-singer-se-stal-poradcem-premiera-babise-321540",
+      "published_utc": "2026-11-25T17:33:08Z",
+      "title_raw": "Bývalý guvernér ČNB Singer se stal poradcem premiéra Babiše",
+      "lead_raw": "Miroslav Singer, bývalý guvernér České národní banky, se stal poradcem premiéra. Andrej Babiš ho oslovil, aby mu radil v oblastech makroekonomie či hospodářské politiky.",
+      "fingerprint": "d741e8ae30e224c070ff0a63307223cd601b091738c0b30a0af69c7375519a17",
+      "id": "d741e8ae30e224c070ff0a63307223cd601b091738c0b30a0af69c7375519a17",
+      "title_en": "Former Governor of CNB Singer has become an adviser to the Prime Minister",
+      "lead_en": "Miroslav Singer, former governor of the Czech National Bank, became an adviser to the prime minister and Andrej Babiš approached him for advice on macroeconomics and economic policy.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-cerne-domovy-pro-seniory-funguji-roky-ministerstvo-ted-slibuje-zprisneni-317004",
+      "published_utc": "2026-11-25T16:15:00Z",
+      "title_raw": "„Černé“ domovy pro seniory fungují roky. Ministerstvo teď slibuje zpřísnění",
+      "lead_raw": "„Využívají mezery v zákonech,“ říká náměstek ministra práce o nelegálních domovech pro seniory. V Česku jich fungují desítky, kontroly jsou ale často minimální.",
+      "fingerprint": "e147a7d43dda66f3a68063385540f1117351afb7bdf97d56b15b1b1c15955bc1",
+      "id": "e147a7d43dda66f3a68063385540f1117351afb7bdf97d56b15b1b1c15955bc1",
+      "title_en": "Black homes for the elderly have been in operation for years.",
+      "lead_en": "\"They exploit gaps in the law\", says the Deputy Minister of Labour on illegal homes for the elderly.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/klempir-jenom-pr-nerudove-a-zdechovskeho-vlada-se-usnesenim-europoslancu-o-ct-a_2611251616_jar",
+      "published_utc": "2026-11-25T15:16:00Z",
+      "title_raw": "Klempíř: Jenom PR Nerudové a Zdechovského. Vláda se usnesením europoslanců o ČT a ČRo řídit nemusí",
+      "lead_raw": "Usnesení Evropského parlamentu ke změnám ve financování českých veřejnoprávních médií nevytváří podle ministra kultury Oty Klempíře (za Motoristy) pro vládu žádnou povinnost. Jde pouze o skandální PR aktivitu europoslanců Danuše Nerudové (STAN) a Tomáše Zdechovského (KDU-ČSL), řekl ve středu Klempíř novinářům ve Sněmovně.",
+      "fingerprint": "8477e17d6ecad73277e0d484ab521beb9c0da0dfb07e36cf2f69fdd2b969ef4d",
+      "id": "8477e17d6ecad73277e0d484ab521beb9c0da0dfb07e36cf2f69fdd2b969ef4d",
+      "title_en": "Klempyr: Only PR Nerudové and Zdechovsky.",
+      "lead_en": "The European Parliament's resolution on changes to the funding of Czech public media does not create any obligation for the government, according to Culture Minister Ota Klempíř (for Motoristi), only the scandalous PR activity of MEPs Danuš Nerudová (STAN) and Tomáš Zdechovský (KDU-ČSL), Klempíř told reporters in Parliament on Wednesday.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/kampus-parky-jednou-mesicne-k-piti-voda-co-vlada-necha-v-obedove-vyhlasce-321524",
@@ -354,31 +504,6 @@
     },
     {
       "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senat-bude-schvalovat-novelu-proti-lakovani-zbozi-nazeleno-379929",
-      "published_utc": "2026-11-25T09:12:02Z",
-      "title_raw": "Senát schválil novelu, která má zamezit lakování zboží nazeleno",
-      "lead_raw": "Senát schválil bez úprav novelu, která má zabránit klamavému informování o dopadech výrobků na životní prostředí, takzvanému lakování nazeleno. Výrobci do budoucna nebudou moci odmítnout opravu svého produktu pouze kvůli tomu, že jej dříve opravoval někdo jiný, odsouhlasili dále senátoři.",
-      "fingerprint": "9faa774ee3c76b327f87d170730aaebb00eaa97d0c87eba9ac6b5de9704e5e54",
-      "id": "9faa774ee3c76b327f87d170730aaebb00eaa97d0c87eba9ac6b5de9704e5e54",
-      "title_en": "The Senate has approved a bill to prevent the painting of green goods.",
-      "lead_en": "The Senate approved without amendment a novelty designed to prevent misleading information about the environmental impact of products, the so-called green painting. Manufacturers will not be able to refuse to repair their product in the future simply because someone else has repaired it before, the senators agreed.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
       "url": "https://ct24.ceskatelevize.cz/clanek/svet/sili-napeti-kvuli-neshodam-o-podobe-budouciho-rozpoctu-eu-vytky-ma-i-cesko-379926",
       "published_utc": "2026-11-25T07:54:51Z",
       "title_raw": "Sílí napětí kvůli neshodám o podobě budoucího rozpočtu EU, výtky má i Česko",
@@ -433,7 +558,7 @@
       "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslance-ceka-dalsi-debata-o-navrhu-rozpoctu-budou-navrhovat-presuny-penez-379923",
       "published_utc": "2026-11-25T02:25:00Z",
       "title_raw": "Sněmovna jedná o státním rozpočtu",
-      "lead_raw": "Poslanci ve středu projednávají ve druhém čtení návrh státního rozpočtu na příští rok, pro nějž mohou přednášet návrhy na přesuny peněz uvnitř rozpočtu. Schválený schodek 386 miliard korun už měnit nemohou.",
+      "lead_raw": "Poslanci ve druhém čtení návrhu státního rozpočtu na příští rok přednesli téměř 150 pozměňovacích návrhů na přesuny peněz uvnitř rozpočtu. Jejich celkový objem přesahuje 380 miliard korun, což je téměř 15 procent navrhovaných výdajů rozpočtu.",
       "fingerprint": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
       "id": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
       "title_en": "The House is dealing with the state budget",
