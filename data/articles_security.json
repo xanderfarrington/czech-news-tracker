@@ -1,7 +1,7 @@
 {
-  "updated_at_utc": "2026-11-26T21:41:55Z",
+  "updated_at_utc": "2026-11-27T04:20:12Z",
   "topic": "security",
-  "count": 5,
+  "count": 4,
   "articles": [
     {
       "source": "iROZHLAS (Domestic)",
@@ -94,31 +94,6 @@
       "topic_scores": {
         "politics": 0,
         "security": 5,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/blackout-nebo-kyberneticky-utok-cesko-melo-spolecne-nacvicovat-krizove-scenare_2611250010_jar",
-      "published_utc": "2026-11-24T23:10:00Z",
-      "title_raw": "Blackout nebo kybernetický útok. Česko by mělo nacvičovat společné krizové scénáře, míní odborník",
-      "lead_raw": "Poslední události v Polsku ukazují, že hybridní útoky v Evropě se stupňují. Shodli se na tom v úterý odborníci na krizové situace na pražské konferenci Defence Forum.",
-      "fingerprint": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
-      "id": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
-      "title_en": "The Czech Republic should practice common crisis scenarios, says an expert",
-      "lead_en": "Recent events in Poland show that hybrid attacks in Europe are escalating, crisis experts agreed on Tuesday at the Prague Defence Forum conference.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 3,
         "foreign_affairs": 0
       },
       "topics": [

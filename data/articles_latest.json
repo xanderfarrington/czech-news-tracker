@@ -1,8 +1,83 @@
 {
-  "updated_at_utc": "2026-11-26T21:41:55Z",
+  "updated_at_utc": "2026-11-27T04:20:12Z",
   "keep_hours": 48,
-  "count": 39,
+  "count": 40,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-varovali-ho-pred-korupci-presto-tejc-sam-posvetil-zmenu-vyhodnou-pro-babise-321127",
+      "published_utc": "2026-11-27T04:00:00Z",
+      "title_raw": "Varovali ho před korupcí. Přesto Tejc sám posvětil změnu výhodnou pro Babiše",
+      "lead_raw": "Experti Legislativní rady vlády varovali ministra spravedlnosti před změnou trestního řádu, která může pomoci Andreji Babišovi v kauze Čapí hnízdo. Jeroným Tejc je nevyslyšel a souhlas s úpravou vypracoval za legislativce sám.",
+      "fingerprint": "da1345d9e25c6d3ad8f865b87cbd3e860312af433f7b269019e1da21402b9a1a",
+      "id": "da1345d9e25c6d3ad8f865b87cbd3e860312af433f7b269019e1da21402b9a1a",
+      "title_en": "He was warned against corruption, yet Tejc himself consecrated a change that would be beneficial to Grandma.",
+      "lead_en": "Experts of the Legislative Council of the Government warned the Minister of Justice of a change in the criminal code that could help Andrey Babis in the case of Chapi Hnízdo.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/balik-o-funkcnim-obdobi-tajemniku-se-muzeme-bavit-ale-nemuzeme-ho-zavadet_2611270010_vsn",
+      "published_utc": "2026-11-26T23:10:00Z",
+      "title_raw": "Balík: O funkčním období tajemníků se můžeme bavit, ale nemůžeme ho zavádět retroaktivně",
+      "lead_raw": "Skupina senátorů chce, aby Ústavní soud zrušil nedávno zavedené pětileté funkční období pro tajemníky městských a obecních úřadů a ředitele krajských úřadů. „Nechápeme Ústavní soud jako třetí parlamentní komoru, která má dovádět do konce nějaké politické bitvy, ale jako strážce ústavnosti, správných principů řízení státu a právní jistoty,“ říká pro Radiožurnál předseda Stálé komise Senátu pro Ústavu ČR a parlamentní procedury Stanislav Balík.",
+      "fingerprint": "dd67ac22a1b28feaa2cd53ed50677e2dd4900a4f2e7d56c65d492fcafd8baeb3",
+      "id": "dd67ac22a1b28feaa2cd53ed50677e2dd4900a4f2e7d56c65d492fcafd8baeb3",
+      "title_en": "Package: We can talk about the term of office of the secretary, but we can't introduce it retroactively",
+      "lead_en": "A group of senators wants the Constitutional Court to abolish the recently introduced five-year term of office for city and municipal secretaries and regional directors. We do not understand the Constitutional Court as the third parliamentary chamber to end a political battle, but as the guardian of the constitution, the correct principles of state governance and legal certainty, says for Radiojournal the Chairman of the Senate Standing Committee on the Constitution of the Czech Republic and parliamentary procedure Stanislav Balík.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/ekonomka-jana-matesova-rezoluce-europarlamentu-vaznost-ceska-v-evropske-unii-je_2611262328_zfr",
+      "published_utc": "2026-11-26T22:28:00Z",
+      "title_raw": "Ekonomka Jana Matesová: Rezoluce europarlamentu? Vážnost Česka v Evropské unii je naprosto v troskách",
+      "lead_raw": "Evropský parlament vyzval českou vládu, aby zajistila předvídatelné financování veřejnoprávních médií a jejich ochranu před politickými zásahy. Premiéra Andreje Babiše pak europoslanci vyzvali k vyřešení střetu zájmů.",
+      "fingerprint": "f6dfe8f22c4901f98aa18918acc7240522c0dc1a797adffb99b6cfbec14832de",
+      "id": "f6dfe8f22c4901f98aa18918acc7240522c0dc1a797adffb99b6cfbec14832de",
+      "title_en": "Economist Jan Mates: Resolution of the European Parliament?",
+      "lead_en": "The European Parliament called on the Czech government to ensure predictable funding for public media and to protect them from political interference, and MEPs urged Prime Minister Andrej Babiš to resolve the conflict of interest.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/premier-avizoval-zmeny-navrhu-na-slyseni-o-financovani-ct-a-rozhlasu-o-nich-ale_2611262233_zfr",
@@ -927,56 +1002,6 @@
         "politics"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslance-ceka-dalsi-debata-o-navrhu-rozpoctu-budou-navrhovat-presuny-penez-379923",
-      "published_utc": "2026-11-25T02:25:00Z",
-      "title_raw": "Sněmovna jedná o státním rozpočtu",
-      "lead_raw": "Poslanci ve druhém čtení návrhu státního rozpočtu na příští rok přednesli téměř 150 pozměňovacích návrhů na přesuny peněz uvnitř rozpočtu. Jejich celkový objem přesahuje 380 miliard korun, což je téměř patnáct procent navrhovaných výdajů rozpočtu.",
-      "fingerprint": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
-      "id": "02cba3bbd116d11bae29c2a55bad5b44855416d5b4bef3515fdb827f0cc4061b",
-      "title_en": "The House is dealing with the state budget",
-      "lead_en": "On Wednesday, MEPs are discussing the draft budget for next year in second reading, for which they can present proposals for money transfers within the budget.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/blackout-nebo-kyberneticky-utok-cesko-melo-spolecne-nacvicovat-krizove-scenare_2611250010_jar",
-      "published_utc": "2026-11-24T23:10:00Z",
-      "title_raw": "Blackout nebo kybernetický útok. Česko by mělo nacvičovat společné krizové scénáře, míní odborník",
-      "lead_raw": "Poslední události v Polsku ukazují, že hybridní útoky v Evropě se stupňují. Shodli se na tom v úterý odborníci na krizové situace na pražské konferenci Defence Forum.",
-      "fingerprint": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
-      "id": "dd6f0815ebfe89df377b000b1ae080329a5c0fc72afd29f064c1ca0316f3253e",
-      "title_en": "The Czech Republic should practice common crisis scenarios, says an expert",
-      "lead_en": "Recent events in Poland show that hybrid attacks in Europe are escalating, crisis experts agreed on Tuesday at the Prague Defence Forum conference.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 3,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
