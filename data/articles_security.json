@@ -1,8 +1,34 @@
 {
-  "updated_at_utc": "2026-11-27T04:20:12Z",
+  "updated_at_utc": "2026-11-27T16:47:40Z",
   "topic": "security",
-  "count": 4,
+  "count": 5,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-dalsi-zakaz-pro-sefa-armady-zuna-znovu-zatrhl-hlavacovi-cestu-na-ukrajinu-321606",
+      "published_utc": "2026-11-27T13:20:00Z",
+      "title_raw": "Další zákaz pro šéfa armády. Zůna znovu zatrhl Hlaváčovi cestu na Ukrajinu",
+      "lead_raw": "Plány náčelníka generálního štábu Miroslava Hlaváče vyjet na Ukrajinu znovu zarazil ministr obrany za SPD Jaromír Zůna. Podle zdrojů redakce měl přitom šéf armády podporu od premiéra Andreje Babiše.",
+      "fingerprint": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "id": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "title_en": "Another ban on the chief of the army.",
+      "lead_en": "The plans of the Chief of the General Staff Miroslav Glavadze to go to Ukraine were again blocked by the SPD defense minister Jaromir Zón, while the head of the army had the support of Prime Minister Andrey Babiš.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/mestsky-soud-projednava-macinkovy-vyroky-hnuti-duha-pozaduje-omluvu-kvuli_2611261622_zfr",

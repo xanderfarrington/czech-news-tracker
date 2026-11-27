@@ -1,8 +1,84 @@
 {
-  "updated_at_utc": "2026-11-27T04:20:12Z",
+  "updated_at_utc": "2026-11-27T16:47:40Z",
   "topic": "foreign_affairs",
-  "count": 7,
+  "count": 8,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-dalsi-zakaz-pro-sefa-armady-zuna-znovu-zatrhl-hlavacovi-cestu-na-ukrajinu-321606",
+      "published_utc": "2026-11-27T13:20:00Z",
+      "title_raw": "Další zákaz pro šéfa armády. Zůna znovu zatrhl Hlaváčovi cestu na Ukrajinu",
+      "lead_raw": "Plány náčelníka generálního štábu Miroslava Hlaváče vyjet na Ukrajinu znovu zarazil ministr obrany za SPD Jaromír Zůna. Podle zdrojů redakce měl přitom šéf armády podporu od premiéra Andreje Babiše.",
+      "fingerprint": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "id": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "title_en": "Another ban on the chief of the army.",
+      "lead_en": "The plans of the Chief of the General Staff Miroslav Glavadze to go to Ukraine were again blocked by the SPD defense minister Jaromir Zón, while the head of the army had the support of Prime Minister Andrey Babiš.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/briza-nato-musi-fungovat-jako-nastroj-odstraseni-rusko-bude-mit-hranice-tam-kde_2611271348_zfr",
+      "published_utc": "2026-11-27T12:48:00Z",
+      "title_raw": "Bříza: NATO musí fungovat jako nástroj odstrašení. Rusko bude mít hranice tam, kde mu je nastavíme",
+      "lead_raw": "„Evropa musí spoléhat na NATO jako nástroj odstrašení, a ne čekat, zdali se evropští politici, kteří mají rozdílné priority, dohodnou, jestli na obranu něco vyčlení. To bychom se neubránili ničemu,“ glosuje aktuální dění expert na mezinárodní vztahy a bezpečnost Vlastislav Bříza.",
+      "fingerprint": "5ed675a49d86f2702fccd89f8b62dbadc7f311aa56c40bc6d083214b49012bd4",
+      "id": "5ed675a49d86f2702fccd89f8b62dbadc7f311aa56c40bc6d083214b49012bd4",
+      "title_en": "NATO must act as a deterrent. Russia will have borders where we set them",
+      "lead_en": "\"Europe must rely on NATO as a deterrent, not wait for European politicians with different priorities to agree on whether to devote something to defence.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 2,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-kauzu-kolem-dotace-pro-pekarnu-z-agrofertu-vymysleli-v-bruselu-rekl-babis-321662",
+      "published_utc": "2026-11-27T10:48:29Z",
+      "title_raw": "Kauzu kolem dotace pro pekárnu z Agrofertu vymysleli v Bruselu, řekl Babiš",
+      "lead_raw": "To, že ministerstvo zastavilo vymáhání stomilionové dotace od pekárny z holdingu Agrofert, premiér Andre Babiš nekomentoval. Kauzu kolem dotace si podle Babiše vymysleli v Bruselu.",
+      "fingerprint": "0c45b2d5f92af2370ff321c93bd634a412ebeca593c400c8d95da992bb9de5e2",
+      "id": "0c45b2d5f92af2370ff321c93bd634a412ebeca593c400c8d95da992bb9de5e2",
+      "title_en": "The case for the subsidy for the Agroferte bakery was made up in Brussels, said Babiš.",
+      "lead_en": "Prime Minister Andre Babis has not commented on the fact that the Ministry has stopped the collection of a million dollars in grants from the bakery of Agrofert Holding.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Aktualne.cz",
       "url": "https://zpravy.aktualne.cz/zahranici/z-platneho-hrace-se-stavame-cernymi-pasazery-spor-o-verejnopravni-media-dorazil-do-bruselu/r~aaa290a91c39ed563749ad13ccec993b",
@@ -126,57 +202,6 @@
         "foreign_affairs"
       ],
       "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ve-dne-natocit-v-noci-priprava-na-dalsi-dil-praci-na-vinohradske-12-ale-mame_2611251059_mst",
-      "published_utc": "2026-11-25T09:59:00Z",
-      "title_raw": "Ve dne natočit, v noci příprava na další díl. Práci na Vinohradské 12 ale máme rádi, říká po výhře Skalický",
-      "lead_raw": "Zpravodajský podcast Českého rozhlasu Vinohradská 12 zvítězil v anketě Křišťálová lupa v kategorii podcast roku. Tým Matěje Skalického získal od posluchačů nejvíc hlasů.",
-      "fingerprint": "e8f8ac3024149e5678bad72a3e5c2849ea2eb08e51e4bcbb3c75b3d606ecfa73",
-      "id": "e8f8ac3024149e5678bad72a3e5c2849ea2eb08e51e4bcbb3c75b3d606ecfa73",
-      "title_en": "Work on the Vineyard 12 but we love it, says Skalický after the win",
-      "lead_en": "The news podcast of the Czech Radio Vinohradská 12 won the Kristálová lupa poll in the podcast category of the year.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 1,
-        "foreign_affairs": 3
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/sili-napeti-kvuli-neshodam-o-podobe-budouciho-rozpoctu-eu-vytky-ma-i-cesko-379926",
-      "published_utc": "2026-11-25T07:54:51Z",
-      "title_raw": "Sílí napětí kvůli neshodám o podobě budoucího rozpočtu EU, výtky má i Česko",
-      "lead_raw": "Mimořádný summit Evropské unie v Bruselu by měl na konci pracovního týdne schválit klíčové kontury víceletého rozpočtu. Podle předsedy Evropské rady Antónia Costy „nastal čas na dohodu“, jak uvedl v dopise adresovaném lídrům členských zemí.",
-      "fingerprint": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
-      "id": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
-      "title_en": "Tensions are rising over disagreements over the shape of the EU's future budget, and the Czech Republic is also on the rise.",
-      "lead_en": "The key outlines of the multiannual budget should be approved by the European Union's extraordinary summit in Brussels at the end of the working week.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 3
-      },
-      "topics": [
-        "politics",
-        "foreign_affairs"
-      ],
-      "primary_topic": "politics",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",

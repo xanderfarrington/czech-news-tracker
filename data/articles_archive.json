@@ -1,7 +1,283 @@
 {
-  "updated_at_utc": "2026-11-27T04:20:12Z",
-  "count": 160,
+  "updated_at_utc": "2026-11-27T16:47:40Z",
+  "count": 171,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-petka-sz-skutecna-vlada-ceska-a-pozoruhodny-veletoc-v-nvidii-321653",
+      "published_utc": "2026-11-27T16:00:00Z",
+      "title_raw": "Pětka SZ: „Skutečná vláda“ Česka a pozoruhodný veletoč v Nvidii",
+      "lead_raw": "Vážení čtenáři, Seznam Zprávy v uplynulém týdnu pokračovaly v rozkrývání české neonacistické buňky – a narazily na kontakty extremistů na politické scéně. V USA zase svých kontaktů na politiky využil šéf Nvidie ke comebacku.",
+      "fingerprint": "8eb61420da340daabfd78ee4bafba30fc477ca86e7e7eeda2bc2dc3008a0a34b",
+      "id": "8eb61420da340daabfd78ee4bafba30fc477ca86e7e7eeda2bc2dc3008a0a34b",
+      "title_en": "Five SZs: The real government of the Czech Republic and a remarkable high commissioner in Nvidia",
+      "lead_en": "Dear readers, the News List last week continued to uncover the Czech neo-Nazi cell and encountered extremist contacts on the political scene.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-odvolal-sefa-vyzkumneho-ustavu-pro-krajinu-libora-horta-321702",
+      "published_utc": "2026-11-27T15:15:04Z",
+      "title_raw": "Ministr Červený odvolal šéfa Výzkumného ústavu pro krajinu Libora Horta",
+      "lead_raw": "Ministr životního prostředí Igor Červený (Motoristé) v pátek odvolal ředitele Výzkumného ústavu pro krajinu Libora Horta. Důvodem je podezření z porušení zákona o veřejných zakázkách, kvůli němuž resort podal trestní oznámení.",
+      "fingerprint": "e2d996bc7e14404b40102d664d62c148b6c28b7fa55c44330f6ba960a1a0e157",
+      "id": "e2d996bc7e14404b40102d664d62c148b6c28b7fa55c44330f6ba960a1a0e157",
+      "title_en": "Minister Red has dismissed the head of the Libor Horte Research Institute for the countryside",
+      "lead_en": "Environment Minister Igor Červený (Motorists) on Friday dismissed the director of the Libor Horta Research Institute for the countryside on suspicion of violating the public procurement law, for which the resort filed a criminal complaint.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/minimalne-osm-vrtulniku-ministerstvo-vypsalo-tendr-na-provoz-sesti-zakladen_2611271615_aru",
+      "published_utc": "2026-11-27T15:15:00Z",
+      "title_raw": "Minimálně osm vrtulníků. Ministerstvo vypsalo tendr na provoz šesti základen leteckých záchranářů",
+      "lead_raw": "Ministerstvo zdravotnictví v pátek vypsalo veřejnou zakázku na provoz šesti základen letecké záchranné služby na období let 2029 až 2043. Chce zajistit plynulou návaznost na stávající smlouvy, postupně modernizovat vrtulníky a udržet vysokou úroveň bezpečnosti provozu i dostupnost kvalitní péče.",
+      "fingerprint": "936995e1eac5f6112d72709b6dce3e90c7b10046f6fc363a66b6e0fa461a17b4",
+      "id": "936995e1eac5f6112d72709b6dce3e90c7b10046f6fc363a66b6e0fa461a17b4",
+      "title_en": "At least eight helicopters.",
+      "lead_en": "The Ministry of Health on Friday issued a public contract for the operation of six air rescue service bases for the period 2029 to 2043. It wants to ensure smooth compliance with existing contracts, gradually modernize helicopters and maintain a high level of operational safety and availability of quality care.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 1,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/klempir-ztratil-vliv-a-debatu-jen-predstira-o-budoucnosti-ct-a-cro-se-rozhodne-jinde/r~aaa29be4a9b3089ef379423db0a3f1de",
+      "published_utc": "2026-11-27T14:23:00Z",
+      "title_raw": "„Čekáme na Babišovy právníky.“ Klempíř ztratil v zásadním tématu úplně vliv",
+      "lead_raw": "Přestože měl ministr kultury Oto Klempíř – aspoň podle avizovaného programu semináře k financování médií veřejné služby – ve čtvrtek konečně přijít s návrhem vlády, opět se tak nestalo. Potvrdil tak zákulisní informace, že na vznik zákona o ČT a ČRo ztratil vliv a že debatu o budoucnosti médií veřejné služby fakticky jen předstírá.",
+      "fingerprint": "56640df2514c771182322811d3f60387a152020420516f27afa53adb7f706ac0",
+      "id": "56640df2514c771182322811d3f60387a152020420516f27afa53adb7f706ac0",
+      "title_en": "We're waiting for Grandma's lawyers.",
+      "lead_en": "Although the Minister of Culture Oto Klempíř at least according to the advised program of the seminar on the financing of the public service media on Thursday finally came up with the government's proposal, this did not happen again.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/snemovna-schvalila-mimoradnou-dan-pro-rafinerie-dopadne-na-orlen-unipetrol_2611271500_jor",
+      "published_utc": "2026-11-27T14:00:00Z",
+      "title_raw": "Sněmovna schválila mimořádnou daň pro rafinerie, dopadne na Orlen Unipetrol",
+      "lead_raw": "Sněmovna schválila vládní návrh na zavedení mimořádné daně pro rafinerie. Důvodem je podle vlády nárůst marží rafinerií v důsledku situace na trhu s ropou.",
+      "fingerprint": "40074acf3f3d40b902c1b622d8089c6e82f117621759294a1f996d7a123f391a",
+      "id": "40074acf3f3d40b902c1b622d8089c6e82f117621759294a1f996d7a123f391a",
+      "title_en": "The House has approved an extraordinary tax on refineries, falling to Orlen Unipetrol.",
+      "lead_en": "The Parliament has approved the government's proposal to introduce an extraordinary tax on refineries, which the government says is due to the rise in refinery margins due to the situation on the oil market.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/ekonomika/mimoradna-dan-pro-rafinerie-prosla-snemovnou-nejvic-zasahne-orlen-unipetrol/r~aaa291a1251f4f71955a5633df577cd2",
+      "published_utc": "2026-11-27T13:42:00Z",
+      "title_raw": "Mimořádná daň pro rafinerie prošla Sněmovnou, nejvíc zasáhne Orlen Unipetrol",
+      "lead_raw": "Sněmovna schválila vládní návrh na zavedení mimořádné daně pro rafinerie. Důvodem je podle vlády nárůst marží rafinerií v důsledku situace na trhu s ropou.",
+      "fingerprint": "a93deadf0cbf38a9885f287cc4764193c1c77dca32aaffc1ab310c6323488f8c",
+      "id": "a93deadf0cbf38a9885f287cc4764193c1c77dca32aaffc1ab310c6323488f8c",
+      "title_en": "A special tax on refineries has passed the House, most affected by Orlen Unipetrol",
+      "lead_en": "The Parliament has approved the government's proposal to introduce an extraordinary tax on refineries, which the government says is due to the rise in refinery margins due to the situation on the oil market.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-dalsi-zakaz-pro-sefa-armady-zuna-znovu-zatrhl-hlavacovi-cestu-na-ukrajinu-321606",
+      "published_utc": "2026-11-27T13:20:00Z",
+      "title_raw": "Další zákaz pro šéfa armády. Zůna znovu zatrhl Hlaváčovi cestu na Ukrajinu",
+      "lead_raw": "Plány náčelníka generálního štábu Miroslava Hlaváče vyjet na Ukrajinu znovu zarazil ministr obrany za SPD Jaromír Zůna. Podle zdrojů redakce měl přitom šéf armády podporu od premiéra Andreje Babiše.",
+      "fingerprint": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "id": "bf6e9c57125db2745f8891444fdea73ddc35db4ad260a7bd7801755039aee651",
+      "title_en": "Another ban on the chief of the army.",
+      "lead_en": "The plans of the Chief of the General Staff Miroslav Glavadze to go to Ukraine were again blocked by the SPD defense minister Jaromir Zón, while the head of the army had the support of Prime Minister Andrey Babiš.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 5,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "foreign_affairs"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-snemovna-schvalila-mimoradnou-dan-pro-rafinerie-321692",
+      "published_utc": "2026-11-27T13:19:06Z",
+      "title_raw": "Sněmovna schválila mimořádnou daň pro rafinerie",
+      "lead_raw": "Poslanci schválili vládní návrh na zavedení mimořádné daně pro rafinerie, která má rozpočtu letos přinést asi 5,5 miliardy korun. Dopadne zřejmě jen na podniky skupiny Orlen Unipetrol v Kralupech a Litvínově.",
+      "fingerprint": "bb59f6a39b1d98d808eaef60eeca8f3e9a4fff467f0d7ccbc122c74eeb8b7212",
+      "id": "bb59f6a39b1d98d808eaef60eeca8f3e9a4fff467f0d7ccbc122c74eeb8b7212",
+      "title_en": "Parliament approved a special tax on refineries",
+      "lead_en": "MEPs approved the government's proposal to introduce an emergency tax on refineries, which is expected to bring about a budget of around CZK 5.5 billion this year, apparently only affecting Orlen Unipetrol's Kralupe and Litvinov companies.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (World)",
+      "url": "https://www.irozhlas.cz/zpravy-svet/briza-nato-musi-fungovat-jako-nastroj-odstraseni-rusko-bude-mit-hranice-tam-kde_2611271348_zfr",
+      "published_utc": "2026-11-27T12:48:00Z",
+      "title_raw": "Bříza: NATO musí fungovat jako nástroj odstrašení. Rusko bude mít hranice tam, kde mu je nastavíme",
+      "lead_raw": "„Evropa musí spoléhat na NATO jako nástroj odstrašení, a ne čekat, zdali se evropští politici, kteří mají rozdílné priority, dohodnou, jestli na obranu něco vyčlení. To bychom se neubránili ničemu,“ glosuje aktuální dění expert na mezinárodní vztahy a bezpečnost Vlastislav Bříza.",
+      "fingerprint": "5ed675a49d86f2702fccd89f8b62dbadc7f311aa56c40bc6d083214b49012bd4",
+      "id": "5ed675a49d86f2702fccd89f8b62dbadc7f311aa56c40bc6d083214b49012bd4",
+      "title_en": "NATO must act as a deterrent. Russia will have borders where we set them",
+      "lead_en": "\"Europe must rely on NATO as a deterrent, not wait for European politicians with different priorities to agree on whether to devote something to defence.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 2,
+        "foreign_affairs": 5
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/opakovane-komunalni-volby-budou-9-ledna-tykaji-se-moldavy-slavetina-vysoke-u_2611271334_mst",
+      "published_utc": "2026-11-27T12:34:00Z",
+      "title_raw": "Opakované komunální volby budou 9. ledna. Týkají se Moldavy, Slavětína, Vysoké u Příbramě a Želechovic",
+      "lead_raw": "Hlasování v komunálních volbách ve čtyřech obcích, kde říjnové výsledky zneplatnily krajské správní soudy, se bude opakovat 9. ledna.",
+      "fingerprint": "d9813cbfdadd485f59e57585db8005a0fc75cc7a9cca6397c33914f2961d4620",
+      "id": "d9813cbfdadd485f59e57585db8005a0fc75cc7a9cca6397c33914f2961d4620",
+      "title_en": "Repeated municipal elections will be held on 9 January.",
+      "lead_en": "Voting in the municipal elections in the four municipalities where the October results invalidated the district courts will be repeated on January 9.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-kauzu-kolem-dotace-pro-pekarnu-z-agrofertu-vymysleli-v-bruselu-rekl-babis-321662",
+      "published_utc": "2026-11-27T10:48:29Z",
+      "title_raw": "Kauzu kolem dotace pro pekárnu z Agrofertu vymysleli v Bruselu, řekl Babiš",
+      "lead_raw": "To, že ministerstvo zastavilo vymáhání stomilionové dotace od pekárny z holdingu Agrofert, premiér Andre Babiš nekomentoval. Kauzu kolem dotace si podle Babiše vymysleli v Bruselu.",
+      "fingerprint": "0c45b2d5f92af2370ff321c93bd634a412ebeca593c400c8d95da992bb9de5e2",
+      "id": "0c45b2d5f92af2370ff321c93bd634a412ebeca593c400c8d95da992bb9de5e2",
+      "title_en": "The case for the subsidy for the Agroferte bakery was made up in Brussels, said Babiš.",
+      "lead_en": "Prime Minister Andre Babis has not commented on the fact that the Ministry has stopped the collection of a million dollars in grants from the bakery of Agrofert Holding.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 2,
+        "security": 0,
+        "foreign_affairs": 4
+      },
+      "topics": [
+        "foreign_affairs"
+      ],
+      "primary_topic": "foreign_affairs",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-varovali-ho-pred-korupci-presto-tejc-sam-posvetil-zmenu-vyhodnou-pro-babise-321127",

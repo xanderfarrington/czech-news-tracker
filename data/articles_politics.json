@@ -1,8 +1,208 @@
 {
-  "updated_at_utc": "2026-11-27T04:20:12Z",
+  "updated_at_utc": "2026-11-27T16:47:40Z",
   "topic": "politics",
-  "count": 33,
+  "count": 24,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-petka-sz-skutecna-vlada-ceska-a-pozoruhodny-veletoc-v-nvidii-321653",
+      "published_utc": "2026-11-27T16:00:00Z",
+      "title_raw": "Pětka SZ: „Skutečná vláda“ Česka a pozoruhodný veletoč v Nvidii",
+      "lead_raw": "Vážení čtenáři, Seznam Zprávy v uplynulém týdnu pokračovaly v rozkrývání české neonacistické buňky – a narazily na kontakty extremistů na politické scéně. V USA zase svých kontaktů na politiky využil šéf Nvidie ke comebacku.",
+      "fingerprint": "8eb61420da340daabfd78ee4bafba30fc477ca86e7e7eeda2bc2dc3008a0a34b",
+      "id": "8eb61420da340daabfd78ee4bafba30fc477ca86e7e7eeda2bc2dc3008a0a34b",
+      "title_en": "Five SZs: The real government of the Czech Republic and a remarkable high commissioner in Nvidia",
+      "lead_en": "Dear readers, the News List last week continued to uncover the Czech neo-Nazi cell and encountered extremist contacts on the political scene.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-ministr-cerveny-odvolal-sefa-vyzkumneho-ustavu-pro-krajinu-libora-horta-321702",
+      "published_utc": "2026-11-27T15:15:04Z",
+      "title_raw": "Ministr Červený odvolal šéfa Výzkumného ústavu pro krajinu Libora Horta",
+      "lead_raw": "Ministr životního prostředí Igor Červený (Motoristé) v pátek odvolal ředitele Výzkumného ústavu pro krajinu Libora Horta. Důvodem je podezření z porušení zákona o veřejných zakázkách, kvůli němuž resort podal trestní oznámení.",
+      "fingerprint": "e2d996bc7e14404b40102d664d62c148b6c28b7fa55c44330f6ba960a1a0e157",
+      "id": "e2d996bc7e14404b40102d664d62c148b6c28b7fa55c44330f6ba960a1a0e157",
+      "title_en": "Minister Red has dismissed the head of the Libor Horte Research Institute for the countryside",
+      "lead_en": "Environment Minister Igor Červený (Motorists) on Friday dismissed the director of the Libor Horta Research Institute for the countryside on suspicion of violating the public procurement law, for which the resort filed a criminal complaint.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/minimalne-osm-vrtulniku-ministerstvo-vypsalo-tendr-na-provoz-sesti-zakladen_2611271615_aru",
+      "published_utc": "2026-11-27T15:15:00Z",
+      "title_raw": "Minimálně osm vrtulníků. Ministerstvo vypsalo tendr na provoz šesti základen leteckých záchranářů",
+      "lead_raw": "Ministerstvo zdravotnictví v pátek vypsalo veřejnou zakázku na provoz šesti základen letecké záchranné služby na období let 2029 až 2043. Chce zajistit plynulou návaznost na stávající smlouvy, postupně modernizovat vrtulníky a udržet vysokou úroveň bezpečnosti provozu i dostupnost kvalitní péče.",
+      "fingerprint": "936995e1eac5f6112d72709b6dce3e90c7b10046f6fc363a66b6e0fa461a17b4",
+      "id": "936995e1eac5f6112d72709b6dce3e90c7b10046f6fc363a66b6e0fa461a17b4",
+      "title_en": "At least eight helicopters.",
+      "lead_en": "The Ministry of Health on Friday issued a public contract for the operation of six air rescue service bases for the period 2029 to 2043. It wants to ensure smooth compliance with existing contracts, gradually modernize helicopters and maintain a high level of operational safety and availability of quality care.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 1,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/klempir-ztratil-vliv-a-debatu-jen-predstira-o-budoucnosti-ct-a-cro-se-rozhodne-jinde/r~aaa29be4a9b3089ef379423db0a3f1de",
+      "published_utc": "2026-11-27T14:23:00Z",
+      "title_raw": "„Čekáme na Babišovy právníky.“ Klempíř ztratil v zásadním tématu úplně vliv",
+      "lead_raw": "Přestože měl ministr kultury Oto Klempíř – aspoň podle avizovaného programu semináře k financování médií veřejné služby – ve čtvrtek konečně přijít s návrhem vlády, opět se tak nestalo. Potvrdil tak zákulisní informace, že na vznik zákona o ČT a ČRo ztratil vliv a že debatu o budoucnosti médií veřejné služby fakticky jen předstírá.",
+      "fingerprint": "56640df2514c771182322811d3f60387a152020420516f27afa53adb7f706ac0",
+      "id": "56640df2514c771182322811d3f60387a152020420516f27afa53adb7f706ac0",
+      "title_en": "We're waiting for Grandma's lawyers.",
+      "lead_en": "Although the Minister of Culture Oto Klempíř at least according to the advised program of the seminar on the financing of the public service media on Thursday finally came up with the government's proposal, this did not happen again.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/snemovna-schvalila-mimoradnou-dan-pro-rafinerie-dopadne-na-orlen-unipetrol_2611271500_jor",
+      "published_utc": "2026-11-27T14:00:00Z",
+      "title_raw": "Sněmovna schválila mimořádnou daň pro rafinerie, dopadne na Orlen Unipetrol",
+      "lead_raw": "Sněmovna schválila vládní návrh na zavedení mimořádné daně pro rafinerie. Důvodem je podle vlády nárůst marží rafinerií v důsledku situace na trhu s ropou.",
+      "fingerprint": "40074acf3f3d40b902c1b622d8089c6e82f117621759294a1f996d7a123f391a",
+      "id": "40074acf3f3d40b902c1b622d8089c6e82f117621759294a1f996d7a123f391a",
+      "title_en": "The House has approved an extraordinary tax on refineries, falling to Orlen Unipetrol.",
+      "lead_en": "The Parliament has approved the government's proposal to introduce an extraordinary tax on refineries, which the government says is due to the rise in refinery margins due to the situation on the oil market.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/ekonomika/mimoradna-dan-pro-rafinerie-prosla-snemovnou-nejvic-zasahne-orlen-unipetrol/r~aaa291a1251f4f71955a5633df577cd2",
+      "published_utc": "2026-11-27T13:42:00Z",
+      "title_raw": "Mimořádná daň pro rafinerie prošla Sněmovnou, nejvíc zasáhne Orlen Unipetrol",
+      "lead_raw": "Sněmovna schválila vládní návrh na zavedení mimořádné daně pro rafinerie. Důvodem je podle vlády nárůst marží rafinerií v důsledku situace na trhu s ropou.",
+      "fingerprint": "a93deadf0cbf38a9885f287cc4764193c1c77dca32aaffc1ab310c6323488f8c",
+      "id": "a93deadf0cbf38a9885f287cc4764193c1c77dca32aaffc1ab310c6323488f8c",
+      "title_en": "A special tax on refineries has passed the House, most affected by Orlen Unipetrol",
+      "lead_en": "The Parliament has approved the government's proposal to introduce an extraordinary tax on refineries, which the government says is due to the rise in refinery margins due to the situation on the oil market.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 5,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-snemovna-schvalila-mimoradnou-dan-pro-rafinerie-321692",
+      "published_utc": "2026-11-27T13:19:06Z",
+      "title_raw": "Sněmovna schválila mimořádnou daň pro rafinerie",
+      "lead_raw": "Poslanci schválili vládní návrh na zavedení mimořádné daně pro rafinerie, která má rozpočtu letos přinést asi 5,5 miliardy korun. Dopadne zřejmě jen na podniky skupiny Orlen Unipetrol v Kralupech a Litvínově.",
+      "fingerprint": "bb59f6a39b1d98d808eaef60eeca8f3e9a4fff467f0d7ccbc122c74eeb8b7212",
+      "id": "bb59f6a39b1d98d808eaef60eeca8f3e9a4fff467f0d7ccbc122c74eeb8b7212",
+      "title_en": "Parliament approved a special tax on refineries",
+      "lead_en": "MEPs approved the government's proposal to introduce an emergency tax on refineries, which is expected to bring about a budget of around CZK 5.5 billion this year, apparently only affecting Orlen Unipetrol's Kralupe and Litvinov companies.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 6,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/opakovane-komunalni-volby-budou-9-ledna-tykaji-se-moldavy-slavetina-vysoke-u_2611271334_mst",
+      "published_utc": "2026-11-27T12:34:00Z",
+      "title_raw": "Opakované komunální volby budou 9. ledna. Týkají se Moldavy, Slavětína, Vysoké u Příbramě a Želechovic",
+      "lead_raw": "Hlasování v komunálních volbách ve čtyřech obcích, kde říjnové výsledky zneplatnily krajské správní soudy, se bude opakovat 9. ledna.",
+      "fingerprint": "d9813cbfdadd485f59e57585db8005a0fc75cc7a9cca6397c33914f2961d4620",
+      "id": "d9813cbfdadd485f59e57585db8005a0fc75cc7a9cca6397c33914f2961d4620",
+      "title_en": "Repeated municipal elections will be held on 9 January.",
+      "lead_en": "Voting in the municipal elections in the four municipalities where the October results invalidated the district courts will be repeated on January 9.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-varovali-ho-pred-korupci-presto-tejc-sam-posvetil-zmenu-vyhodnou-pro-babise-321127",
@@ -394,432 +594,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-cerne-domovy-pro-seniory-funguji-roky-ministerstvo-ted-slibuje-zprisneni-317004",
-      "published_utc": "2026-11-25T16:15:00Z",
-      "title_raw": "„Černé“ domovy pro seniory fungují roky. Ministerstvo teď slibuje zpřísnění",
-      "lead_raw": "„Využívají mezery v zákonech,“ říká náměstek ministra práce o nelegálních domovech pro seniory. V Česku jich fungují desítky, kontroly jsou ale často minimální.",
-      "fingerprint": "e147a7d43dda66f3a68063385540f1117351afb7bdf97d56b15b1b1c15955bc1",
-      "id": "e147a7d43dda66f3a68063385540f1117351afb7bdf97d56b15b1b1c15955bc1",
-      "title_en": "Black homes for the elderly have been in operation for years.",
-      "lead_en": "\"They exploit gaps in the law\", says the Deputy Minister of Labour on illegal homes for the elderly.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/klempir-jenom-pr-nerudove-a-zdechovskeho-vlada-se-usnesenim-europoslancu-o-ct-a_2611251616_jar",
-      "published_utc": "2026-11-25T15:16:00Z",
-      "title_raw": "Klempíř: Jenom PR Nerudové a Zdechovského. Vláda se usnesením europoslanců o ČT a ČRo řídit nemusí",
-      "lead_raw": "Usnesení Evropského parlamentu ke změnám ve financování českých veřejnoprávních médií nevytváří podle ministra kultury Oty Klempíře (za Motoristy) pro vládu žádnou povinnost. Jde pouze o skandální PR aktivitu europoslanců Danuše Nerudové (STAN) a Tomáše Zdechovského (KDU-ČSL), řekl ve středu Klempíř novinářům ve Sněmovně.",
-      "fingerprint": "8477e17d6ecad73277e0d484ab521beb9c0da0dfb07e36cf2f69fdd2b969ef4d",
-      "id": "8477e17d6ecad73277e0d484ab521beb9c0da0dfb07e36cf2f69fdd2b969ef4d",
-      "title_en": "Klempyr: Only PR Nerudové and Zdechovsky.",
-      "lead_en": "The European Parliament's resolution on changes to the funding of Czech public media does not create any obligation for the government, according to Culture Minister Ota Klempíř (for Motoristi), only the scandalous PR activity of MEPs Danuš Nerudová (STAN) and Tomáš Zdechovský (KDU-ČSL), Klempíř told reporters in Parliament on Wednesday.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 7,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/kampus-parky-jednou-mesicne-k-piti-voda-co-vlada-necha-v-obedove-vyhlasce-321524",
-      "published_utc": "2026-11-25T14:25:01Z",
-      "title_raw": "Párky jednou měsíčně, k pití voda. Co vláda nechá v obědové vyhlášce",
-      "lead_raw": "Ministerstvo zdravotnictví oznámilo, co nakonec ponechá povinně ve stravovací vyhlášce. Spotřební koš, který odmítl premiér Andrej Babiš (ANO), nahradí několik pravidel.",
-      "fingerprint": "74e3949124910f99863a3fdd678b572ac7dfe442ddc0cd00e608b405a0382330",
-      "id": "74e3949124910f99863a3fdd678b572ac7dfe442ddc0cd00e608b405a0382330",
-      "title_en": "Couples once a month, drinking water.",
-      "lead_en": "The Ministry of Health has announced what it will ultimately make mandatory in the Dietary Decree.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-vlada-ustoupila-svarcsystem-legalizovat-nebude-321526",
-      "published_utc": "2026-11-25T14:11:18Z",
-      "title_raw": "Vláda ustoupila, švarcsystém legalizovat nebude",
-      "lead_raw": "Premiér Andrej Babiš zasáhl proti návrhu, který by podle kritiků připravil veřejné rozpočty o miliardy korun. Ministerstvo práce má nyní připravit změnu, která z novely zákoníku práce odstraní nejvíce kritizované ustanovení.",
-      "fingerprint": "8d063344c5c0d55a68b5272763db4b0058251b6063a1b2860531730be932e79b",
-      "id": "8d063344c5c0d55a68b5272763db4b0058251b6063a1b2860531730be932e79b",
-      "title_en": "The government has retreated, it won't legalize the gambling system.",
-      "lead_en": "Prime Minister Andrej Babiš has opposed a proposal that critics say would prepare public budgets for billions of crowns.The Ministry of Labour is now preparing an amendment that will remove the most criticised provisions from the new Labour Code.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 7,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-ocima-byznysu-na-vsechny-sliby-v-rozpoctu-by-do-ceska-muselo-prijit-25-skodovek-320853",
-      "published_utc": "2026-11-25T13:00:00Z",
-      "title_raw": "Očima byznysu: Na všechny sliby v rozpočtu by do Česka muselo přijít 25 Škodovek",
-      "lead_raw": "Pokud nechceme přijít o životní úroveň a přitom investovat i platit závazky a vše, co je ve státním rozpočtu, potřebujeme investice. Ale Česko je láká špatně, píše šéf české a slovenské pobočky společnosti Panattoni Pavel Sovička.",
-      "fingerprint": "8c1d14ed9bc9ac5edc50e1086de159e068b92c329a8dadfafef552e0b23ec325",
-      "id": "8c1d14ed9bc9ac5edc50e1086de159e068b92c329a8dadfafef552e0b23ec325",
-      "title_en": "In the eyes of the business: 25 Škodovci should come to the Czech Republic for all the promises in the budget",
-      "lead_en": "If we don't want to lose our standard of living and at the same time invest and pay our debts and everything in the state budget, we need investments, but the Czech Republic is not attracting them, writes Pavel Soviecka, head of the Czech and Slovak branches of Panattoni.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/nemocnice-na-pokraji-bankrotu-novi-zastupitele-boskovic-vycleni-40-milionu-z_2611251345_lbl",
-      "published_utc": "2026-11-25T12:45:00Z",
-      "title_raw": "Nemocnice na pokraji bankrotu. Noví zastupitelé Boskovic vyčlení 40 milionů z rozpočtu na záchranu",
-      "lead_raw": "Zhruba 40 milionů korun chybí městské nemocnici v Boskovicích. Kdyby peníze nesehnala, hrozil by jí bankrot.",
-      "fingerprint": "25767e1782ecbde23f88496c12e03d19525ad88fcac9c386aa716c87b0ff0f4c",
-      "id": "25767e1782ecbde23f88496c12e03d19525ad88fcac9c386aa716c87b0ff0f4c",
-      "title_en": "The hospital is on the brink of bankruptcy.",
-      "lead_en": "There's about 40 million crowns missing from the city hospital in Boskovic, and if it didn't have the money, it'd be bankrupt.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (World)",
-      "url": "https://www.irozhlas.cz/zpravy-svet/europoslanci-vyzvali-ceskou-vladu-k-debate-o-mediich-babisovi-vzkazali-aby_2611251310_vdv",
-      "published_utc": "2026-11-25T12:10:00Z",
-      "title_raw": "Europoslanci vyzvali českou vládu k debatě o ČRo a ČT. Babišovi vzkázali, aby ‚vyřešil svůj střet zájmů‘",
-      "lead_raw": "Evropský parlament ve středu odsoudil způsob, jakým koaliční poslanci v Česku v prvním čtení schválili návrh zákona o změně financování veřejnoprávních médií. Rezoluce, kterou podpořilo 442 europoslanců, proti bylo 158 a 47 se zdrželo, odsuzuje i slovní útoky vládních představitelů na novináře a neziskový sektor.",
-      "fingerprint": "88713b0dce1a9c4c11aa3fbff01475b2ea90fca98048c298b66738c1c96e2c0c",
-      "id": "88713b0dce1a9c4c11aa3fbff01475b2ea90fca98048c298b66738c1c96e2c0c",
-      "title_en": "MEPs urged the Czech government to debate the Czech Republic and Czech Republic and asked Babiš to resolve their conflict of interest",
-      "lead_en": "On Wednesday, the European Parliament condemned the way in which coalition lawmakers in the Czech Republic approved a bill to change the funding of public media in the first reading.The resolution, which was supported by 442 MEPs, was opposed by 158 and abstained by 47, also condemns the verbal attacks by government officials on journalists and the non-profit sector.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-babis-priznal-chyby-v-navrzich-na-zmeny-podpor-v-nezamestnanosti-321503",
-      "published_utc": "2026-11-25T12:08:52Z",
-      "title_raw": "Babiš přiznal chyby v návrzích na změny podpor v nezaměstnanosti",
-      "lead_raw": "Podle premiéra Andrej Babiše (ANO) vláda zachová výši podpory v nezaměstnanosti pro lidi starší 52 let, u mladších bude podle něj mírná úprava. V rozhovoru pro deník.cz premiér dále zkritizoval návrh zákona o platformové práci.",
-      "fingerprint": "1504ac2c0c4c1f9f1794e62c77bfee1b8e9062c64440711889d3a41b566708c1",
-      "id": "1504ac2c0c4c1f9f1794e62c77bfee1b8e9062c64440711889d3a41b566708c1",
-      "title_en": "Grandma admitted mistakes in proposals for changes to unemployment benefits",
-      "lead_en": "According to Prime Minister Andrej Babiš (ANO), the government will maintain the level of unemployment support for people over the age of 52, while the younger ones will be moderately adjusted.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-schvalila-zdrazeni-odberu-podzemni-vody-a-vetsi-rovnost-ve-firmach-379938",
-      "published_utc": "2026-11-25T11:53:13Z",
-      "title_raw": "Sněmovna schválila zdražení odběru podzemní vody a větší rovnost ve firmách",
-      "lead_raw": "Dolní komora ve třetím čtení schválila novelu zákona o rostlinolékařské péči, kterou předřadila před naplánované body. Předloha mimo jiné skrze pozměňovací návrh poslance ANO Karla Turečka razantně zvýší poplatky za odběr podzemní vody a odebere krajům podíl na takto vybraných financích.",
-      "fingerprint": "6a7e58f18887c33cb6ebabd9e35e156d952b8d5f5a7d1be168730975ccfafd19",
-      "id": "6a7e58f18887c33cb6ebabd9e35e156d952b8d5f5a7d1be168730975ccfafd19",
-      "title_en": "The House approved an increase in the price of groundwater and greater corporate equality.",
-      "lead_en": "The lower chamber approved the amendment to the Plant Health Act at the third reading, which it passed ahead of schedule.The proposal, among other things, by means of an amendment by ANO Member Karl Turček, will significantly increase the fees for the collection of groundwater and remove the regions' share of the financing thus selected.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-priznal-chyby-u-navrhu-zmen-podpor-v-nezamestnanosti-379936",
-      "published_utc": "2026-11-25T11:45:23Z",
-      "title_raw": "Babiš přiznal chyby u návrhů změn podpor v nezaměstnanosti a definice švarcsystému",
-      "lead_raw": "Premiér Andrej Babiš (ANO) přiznal chyby v návrzích na změny podpor v nezaměstnanosti a zákonu o platformové práci. S ministrem práce a sociálních věcí Alešem Juchelkou (ANO) to probral v pondělí, řekl serveru deník.cz.",
-      "fingerprint": "7a908a275c8b98b2b0051a6c6283897b9d77e1816bd1a1b5d837cdce40dc6d6b",
-      "id": "7a908a275c8b98b2b0051a6c6283897b9d77e1816bd1a1b5d837cdce40dc6d6b",
-      "title_en": "The grandmother admitted mistakes in proposals for changes to the unemployment benefits and the definition of the slavery system",
-      "lead_en": "Prime Minister Andrej Babiš (ANO) admitted errors in proposals for changes to the unemployment benefits and the platform work law.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ze-dvou-na-sedm-korun-za-kubik-snemovna-schvalila-zvyseni-poplatku-za-odber_2611251242_jho",
-      "published_utc": "2026-11-25T11:42:00Z",
-      "title_raw": "Ze dvou na sedm korun za kubík. Sněmovna schválila zvýšení poplatků za odběr podzemní vody",
-      "lead_raw": "Poplatek za odběr podzemní vody pro účely pitné vody se zřejmě zvýší ze dvou na sedm korun za metr krychlový. V případě podzemní vody pro ostatní užití se zvýší ze tří korun na sedm.",
-      "fingerprint": "64f372baa87292c2528f646e87cc99bc5a2487ecd083b6ab80f70d7c077d1621",
-      "id": "64f372baa87292c2528f646e87cc99bc5a2487ecd083b6ab80f70d7c077d1621",
-      "title_en": "From two to seven crowns per cubic.",
-      "lead_en": "The fee for the collection of groundwater for drinking water is likely to be increased from 2 to 7 crowns per cubic metre; for groundwater for other uses, from 3 to 7 crowns.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/schvalovani-genocidy-nema-byt-podle-rajchla-trestne-okamura-tvrdi-ze-navrh-ma_2611251220_mst",
-      "published_utc": "2026-11-25T11:20:00Z",
-      "title_raw": "Schvalování genocidy nemá být podle Rajchla trestné. Okamura tvrdí, že návrh má podporu v koalici",
-      "lead_raw": "Poslanec Jindřich Rajchl (PRO, zvolen za SPD) chystá novelizaci paragrafu trestního zákoníku, který zakazuje schvalování či zlehčování genocidy. Za tento trestný čin momentálně hrozí až tři roky vězení.",
-      "fingerprint": "25a1c4dc508466df952517e630391117a10340f33f5e771a4d2fe6f69118f513",
-      "id": "25a1c4dc508466df952517e630391117a10340f33f5e771a4d2fe6f69118f513",
-      "title_en": "According to Rachael, approving genocide should not be a criminal offence.",
-      "lead_en": "Member Jindřich Rajchl (PRO, elected for the SPD) is preparing to amend a section of the Criminal Code which prohibits the approval or mitigation of genocide, a crime currently punishable by up to three years in prison.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-snemovna-schvalila-rust-poplatku-za-podzemni-vodu-ze-dvou-na-sedm-korun-za-m3-321498",
-      "published_utc": "2026-11-25T11:01:47Z",
-      "title_raw": "Sněmovna schválila růst poplatku za podzemní vodu ze dvou na sedm korun za m³",
-      "lead_raw": "Za odběr podzemní vody pro účely pitné vody se má od dubna příštího roku platit nově sedm korun za metr krychlový. Změnit se má také rozdělování výnosů z poplatků, proti čemuž se staví kraje i sněmovní opozice.",
-      "fingerprint": "e5dd7abd4be139c31935e1f6b89884ef7039f1b89eb43bc429eb7b70ad2f77a8",
-      "id": "e5dd7abd4be139c31935e1f6b89884ef7039f1b89eb43bc429eb7b70ad2f77a8",
-      "title_en": "The House approved raising the groundwater levy from two to seven crowns per cubic metre",
-      "lead_en": "From April next year, seven new crowns per cubic metre will be paid for the collection of groundwater for drinking water.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/soudkyne-v-pripadu-zavrazdene-viktorky-nepochybila-rozhodl-karny-senat-tejc-ji_2611251112_jho",
-      "published_utc": "2026-11-25T10:12:00Z",
-      "title_raw": "Soudkyně v případu zavražděné Viktorky nepochybila, rozhodl kárný senát. Tejc proti verdiktu podá odvolání",
-      "lead_raw": "Soudkyně Sandra Kimmelová, která svěřila otci do péče tříletou Viktorku a on ji letos v březnu zabil, nepochybila. Rozhodl tak ve středu kárný senát, podle kterého postupovala Kimmelová správně.",
-      "fingerprint": "bbdaa575124d7bd120f37fe89c4ce10ecc5dadb5e6e9d65df2b235008d9147e0",
-      "id": "bbdaa575124d7bd120f37fe89c4ce10ecc5dadb5e6e9d65df2b235008d9147e0",
-      "title_en": "The judge in the case of Viktorka's murder did not hesitate, the penitential senate decided.",
-      "lead_en": "Judge Sandra Kimmel, who put three-year-old Victoria in her father's custody and killed her in March of this year, made a verdict on Wednesday in the Senate that Kimmel was doing the right thing.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/europarlament-bude-hlasovat-o-rezoluci-ohledne-zmeny-financovani-ct-a-cro-379933",
-      "published_utc": "2026-11-25T09:36:06Z",
-      "title_raw": "Europoslanci schválili rezoluci k ČT a ČRo, chtějí předvídatelné finance",
-      "lead_raw": "Europoslanci ve středu schválili rezoluci, která vyzývá českou vládu, aby přepracovala návrh zákona o změně financování České televize a Českého rozhlasu, kterou prosazuje kabinet Andreje Babiše (ANO). Europarlament žádá vládu, aby zajistila dostatečné a předvídatelné financování obou médií, zajistila transparentní legislativní projednání změny a pojistky proti politickým zásahům do práce ČT a ČRo.",
-      "fingerprint": "377b71eaffb4bba436c8b5d96f6835ca3d6312de8869d62d08645784009e6dd0",
-      "id": "377b71eaffb4bba436c8b5d96f6835ca3d6312de8869d62d08645784009e6dd0",
-      "title_en": "MEPs approved a resolution on the Czech Republic and the Czech Republic, calling for predictable finance",
-      "lead_en": "MEPs on Wednesday approved a resolution calling on the Czech Government to revise the draft law on changing the funding of Czech Television and Czech Radio, which is being pushed by the Cabinet of Andrej Babiš (ANO).",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/sili-napeti-kvuli-neshodam-o-podobe-budouciho-rozpoctu-eu-vytky-ma-i-cesko-379926",
-      "published_utc": "2026-11-25T07:54:51Z",
-      "title_raw": "Sílí napětí kvůli neshodám o podobě budoucího rozpočtu EU, výtky má i Česko",
-      "lead_raw": "Mimořádný summit Evropské unie v Bruselu by měl na konci pracovního týdne schválit klíčové kontury víceletého rozpočtu. Podle předsedy Evropské rady Antónia Costy „nastal čas na dohodu“, jak uvedl v dopise adresovaném lídrům členských zemí.",
-      "fingerprint": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
-      "id": "bab84cc6ac70800f5e829bb1c5aa4259a7b02fcefb6cbf94215d2c72abf44c30",
-      "title_en": "Tensions are rising over disagreements over the shape of the EU's future budget, and the Czech Republic is also on the rise.",
-      "lead_en": "The key outlines of the multiannual budget should be approved by the European Union's extraordinary summit in Brussels at the end of the working week.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 3
-      },
-      "topics": [
-        "politics",
-        "foreign_affairs"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/zahranici/poplatky-za-ct-a-rozhlas-uz-i-na-pude-europarlamentu-poslanci-chteji-zaruky-nezavislosti/r~aaa29c384b87f25021d484a480e17a55",
-      "published_utc": "2026-11-25T06:27:00Z",
-      "title_raw": "Poplatky za ČT a rozhlas už i na půdě europarlamentu. Poslanci chtějí záruky nezávislosti",
-      "lead_raw": "Europoslanci ve středu v rezoluci vyzvali českou vládu, aby nový systém financování České televize a Českého rozhlasu byl v souladu s právem EU, zajistil udržitelné a předvídatelné financování obou veřejnoprávních médií a obsahoval pojistky proti politickým zásahům do jejich práce. Pro rezoluci týkající se změny financování veřejnoprávních médií v Česku hlasovalo 442 z 647 přítomných europoslanců.",
-      "fingerprint": "2d08aacb4e9c504d02361115b4b15e9091fe26d0243741b2f6432055e80cb23e",
-      "id": "2d08aacb4e9c504d02361115b4b15e9091fe26d0243741b2f6432055e80cb23e",
-      "title_en": "MEPs call for guarantees of independence for the European Parliament.",
-      "lead_en": "In a resolution on Wednesday, MEPs called on the Czech Government to ensure that the new funding system for Czech Television and Czech Radio is in line with EU law, ensures sustainable and predictable funding for both public-law media and includes assurances against political interference in their work.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
         "security": 0,
         "foreign_affairs": 0
       },
