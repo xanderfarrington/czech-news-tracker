@@ -1,8 +1,109 @@
 {
-  "updated_at_utc": "2026-11-28T01:30:15Z",
+  "updated_at_utc": "2026-11-28T10:34:03Z",
   "keep_hours": 48,
-  "count": 32,
+  "count": 28,
   "articles": [
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-lekari-pisi-vlade-kvuli-vyhlasce-odvratte-tuhle-katastrofu-rika-obezitolozka-321750",
+      "published_utc": "2026-11-28T09:26:45Z",
+      "title_raw": "Lékaři píší vládě kvůli vyhlášce. „Odvraťte tuhle katastrofu,“ říká obezitoložka",
+      "lead_raw": "Česká lékařská společnost J. E.",
+      "fingerprint": "9a72e224a64ce503a29b6f7a41ffb05afc9686058ea32c405af67d789ce85e44",
+      "id": "9a72e224a64ce503a29b6f7a41ffb05afc9686058ea32c405af67d789ce85e44",
+      "title_en": "Doctors are writing to the government for a decree.",
+      "lead_en": "Czech medical company J. E.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-ministerstvo-obrany-na-ceske-municni-iniciative-se-nyni-podili-devet-zemi-321745",
+      "published_utc": "2026-11-28T07:13:33Z",
+      "title_raw": "Ministerstvo obrany: Na české muniční iniciativě se nyní podílí devět zemí",
+      "lead_raw": "Na muniční iniciativě v současné době spolupracuje devět zemí, o polovinu méně, než loni. I přesto se podle ministerstva obrany podařilo zajistit podobné finance jako v minulých letech.",
+      "fingerprint": "7eb3ca108c390076e5fa5d329f26674f5965907b6a651360a8c683629f5108fd",
+      "id": "7eb3ca108c390076e5fa5d329f26674f5965907b6a651360a8c683629f5108fd",
+      "title_en": "Ministry of Defence: Nine countries are now participating in the Czech Munitions Initiative",
+      "lead_en": "Nine countries are currently cooperating on the ammunition initiative, half less than last year.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 11,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security",
+        "politics"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Aktualne.cz",
+      "url": "https://zpravy.aktualne.cz/domaci/do-ceske-municni-iniciativy-prispiva-devet-zemi-objem-penez-je-podobny-jako-loni/r~aaa29a1fad4481ad4bf81e02d2407e68",
+      "published_utc": "2026-11-28T07:10:00Z",
+      "title_raw": "Do české muniční iniciativy přispívá devět zemí. Objem peněz je podobný jako loni",
+      "lead_raw": "Na české muniční iniciativě, jejímž cílem je zajistit dodávky munice pro Ukrajinu bránící se ruské agresi, se nyní podílí devět zemí. Objem peněz na iniciativu byl letos srovnatelný s předchozími roky.",
+      "fingerprint": "8e280dd1734380770c3f6415be2d63605744ab3a31d1bb63e9c29a00b132646b",
+      "id": "8e280dd1734380770c3f6415be2d63605744ab3a31d1bb63e9c29a00b132646b",
+      "title_en": "Nine countries are contributing to the Czech ammunition initiative.",
+      "lead_en": "The Czech Munitions Initiative, which aims to secure ammunition supplies to Ukraine against Russian aggression, now involves nine countries.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 4,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "Seznam Zpravy",
+      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-byli-na-vojne-armada-je-ale-ted-povolat-nemuze-velitelstvi-to-chce-zmenit-321398",
+      "published_utc": "2026-11-28T06:00:00Z",
+      "title_raw": "Byli na vojně, armáda je ale teď povolat nemůže. Velitelství to chce změnit",
+      "lead_raw": "Na velkou krizi armáda sama nestačí, musela by povolat vojáky v záloze. To ale v míru nemůže udělat, ačkoliv je to podle odborníků na obranu nezbytné pro odstrašení Ruska.",
+      "fingerprint": "6afa3c65289d83f49fc85149627dc12c7392bb06bf5d2608e759ff008928af44",
+      "id": "6afa3c65289d83f49fc85149627dc12c7392bb06bf5d2608e759ff008928af44",
+      "title_en": "They were in the army, but the army can't call them now.",
+      "lead_en": "In a major crisis, the military alone is not enough, it would have to call in troops in the reserves, but it cannot do so in peace, although defense experts say it's necessary to deter Russia.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 0,
+        "security": 6,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "security"
+      ],
+      "primary_topic": "security",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "iROZHLAS (Domestic)",
       "url": "https://www.irozhlas.cz/zpravy-domov/jourova-rezoluce-naznacuje-ze-v-cesku-dochazi-k-orbanizaci-a-vypinaji-se_2611280010_jor",
@@ -601,207 +702,6 @@
         "politics"
       ],
       "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/udelaji-mu-odbery-zeman-je-ve-spitale-kvuli-lonske-operaci-kdy-to-bylo-vazne/r~aaa292d7615e0637e37f226a17245c2d",
-      "published_utc": "2026-11-26T09:37:00Z",
-      "title_raw": "Zeman je v nemocnici kvůli loňské operaci. Kdy to bylo s českými prezidenty vážné?",
-      "lead_raw": "Důvodem hospitalizace bývalého prezidenta Miloše Zemana je primárně kontrola po loňské operaci nezhoubného polypu na tlustém střevě. Dvaaosmdesátiletý politik by měl z motolské nemocnice odejít podle plánu nejpozději v pátek ráno.",
-      "fingerprint": "c2b09edbe19c744d8ff2d9beb4dfb403d3b9d22322a841bcc3aee3971869ea56",
-      "id": "c2b09edbe19c744d8ff2d9beb4dfb403d3b9d22322a841bcc3aee3971869ea56",
-      "title_en": "Zeman is in the hospital for last year's surgery.",
-      "lead_en": "The reason for the hospitalization of former President Miloš Zeman is primarily a check-up after last year's non-fatal colon polyps surgery.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/svet/zacina-mimoradny-summit-eu-staty-se-prou-o-dlouhodoby-rozpocet-379966",
-      "published_utc": "2026-11-26T09:14:12Z",
-      "title_raw": "„Co to je za strategii?“ Babiš na summitu odmítá spojit rozpočet EU s financováním Ukrajiny",
-      "lead_raw": "V Bruselu probíhá mimořádný summit Evropské unie, kde se jedná o klíčových konturách jejího rozpočtu na roky 2028 až 2034. Možnou dohodu zatím komplikuje i spor o finanční podporu Ukrajiny.",
-      "fingerprint": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
-      "id": "cc6f1a9f3c516ba34d316f49c3a57b462d49e04ee9b0067e06cb153888c1b8bc",
-      "title_en": "What's the strategy? Grandma at the summit refuses to link the EU budget to Ukraine's financing",
-      "lead_en": "The European Union is holding an extraordinary summit in Brussels on the key outlines of its 2028-2034 budget.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 1,
-        "security": 0,
-        "foreign_affairs": 6
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/scitani-a-zapisovani-hlasu-potrebuje-reformu-mini-odbornici-nogol-o-tom-chce_2611261002_tez",
-      "published_utc": "2026-11-26T09:02:00Z",
-      "title_raw": "Sčítání a zapisování hlasů potřebuje reformu, míní odborníci. Nogol o tom chce jednat na ministerstvu",
-      "lead_raw": "Tajemník karvinského magistrátu Roman Nogol chce na ministerstvu vnitra jednat o změně způsobu sčítání hlasů zejména v komunálních volbách. Za celostátní sdružení tajemníků bude prosazovat využití digitálních nástrojů, které by práci volebních komisí zjednodušily a omezily chyby.",
-      "fingerprint": "6bd2658fcae2480068e741877b1138ce37efe0f7991bdc218d574c5e4126119a",
-      "id": "6bd2658fcae2480068e741877b1138ce37efe0f7991bdc218d574c5e4126119a",
-      "title_en": "The counting and recording of votes needs reform, experts say.",
-      "lead_en": "The secretary of the Karvin Municipal Court, Roman Nogol, wants to talk to the Interior Ministry about changing the way votes are counted, especially in municipal elections.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 6,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-babis-potrebujeme-penize-na-dalnice-pomoc-ukrajine-do-rozpoctu-eu-nepatri-321566",
-      "published_utc": "2026-11-26T08:52:32Z",
-      "title_raw": "Babiš: Potřebujeme peníze na dálnice, pomoc Ukrajině do rozpočtu EU nepatří",
-      "lead_raw": "Český premiér Andrej Babiš dnes při příchodu na summit EU zopakoval názor, že nelze spojovat financování Ukrajiny s dlouhodobým rozpočtem Unie.",
-      "fingerprint": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
-      "id": "bc0570d2819f58a7bc2afac8f4722e3073d196f8e5b317d132f737bf5455178c",
-      "title_en": "Granny: We need money for highways, Ukraine's aid is not in the EU budget",
-      "lead_en": "Czech Prime Minister Andrej Babiš, arriving at the EU summit today, reiterated his view that Ukraine's financing cannot be linked to the long-term budget of the Union.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 5,
-        "security": 0,
-        "foreign_affairs": 1
-      },
-      "topics": [
-        "politics",
-        "foreign_affairs"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-diplomaticke-mise-v-cr-ve-ctvrtek-oficialne-zahaji-velvyslanci-laosu-a-malediv-321554",
-      "published_utc": "2026-11-26T08:17:36Z",
-      "title_raw": "Diplomatické mise v ČR ve čtvrtek oficiálně zahájí velvyslanci Laosu a Malediv",
-      "lead_raw": "Své mise dnes zahájí velvyslanci z Malediv a Laosu. Ani jeden z nich nebude sídlit v Praze.",
-      "fingerprint": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
-      "id": "89185c4531bd0e4841b051f1f09eb1d5d22f5eab398b317d97ebb75e141aa134",
-      "title_en": "The diplomatic mission in the Czech Republic will be officially opened by the ambassadors of Laos and the Maldives on Thursday",
-      "lead_en": "The ambassadors from the Maldives and Laos will begin their missions today, and none of them will be based in Prague.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 0,
-        "foreign_affairs": 7
-      },
-      "topics": [
-        "foreign_affairs"
-      ],
-      "primary_topic": "foreign_affairs",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "CT24",
-      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-se-meli-zabyvat-platformovou-praci-a-podporami-v-nezamestnanosti-379965",
-      "published_utc": "2026-11-26T08:00:54Z",
-      "title_raw": "Opozice pošesté neprosadila projednání Okamurova odvolání z čela sněmovny",
-      "lead_raw": "Poslanci posunuli ve čtvrtek večer do závěrečného kola schvalování návrh zákona o platformové práci, s nímž souvisí i novela zákoníku práce o snížení podpor v nezaměstnanosti. Odpoledne schválili finanční závazky státu za dostavbu D35 v objemu 123 miliard, tedy v podobě, jak jsou obsaženy v koncesionářské smlouvě na dostavbu dálnice.",
-      "fingerprint": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
-      "id": "9c5edd2d09e68bd2f9f18ed2a9a0f704e99f680941be4c256084fdb97429141b",
-      "title_en": "Opposition Six failed to hear Okamur's appeal from the House.",
-      "lead_en": "The parliamentary opposition did not introduce even the sixth amendment to the programme of the current meeting on Thursday on the proposal to remove SPD chairman Tomia Okamura from the lower house.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ovcak-briketa-raketa-je-na-horach-nenahraditelna-v-lete-najde-ztracene-houbare-v_2611260817_tez",
-      "published_utc": "2026-11-26T07:17:00Z",
-      "title_raw": "Ovčák ‚Briketa Raketa‘ je na horách nenahraditelný. V létě najde ztracené houbaře, v zimě i lidi pod lavinou",
-      "lead_raw": "V České republice slouží u horské služby dohromady 21 psů. Na Šumavě mají tři a podle kynologa Václava Cipra pomáhají zejména ve specifických situacích.",
-      "fingerprint": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
-      "id": "891397d25bb3b1690644a2f731ffbb91e2ae7d639496d245855bd55f5650a48d",
-      "title_en": "The Sheep of the Rockets is irreplaceable in the mountains, finding lost mushrooms in summer, and people under the avalanche in winter.",
-      "lead_en": "In the Czech Republic, there are a total of 21 dogs in the mountain service.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 3,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/ceske-gripeny-budou-v-nove-vyzbroji-strely-za-miliardu-doda-nemecky-zbrojar-bere_2611260700_hrk",
-      "published_utc": "2026-11-26T06:00:00Z",
-      "title_raw": "České gripeny budou v nové výzbroji. Střely za miliardu dodá německý zbrojař, bere od něj i Ukrajina",
-      "lead_raw": "Hlavní složka tuzemských vzdušných sil, stíhací letouny JAS-39 Gripen, bude mít novou výzbroj. Čtyři desítky střel jim dodá německá zbrojovka Diehl Defence, angažující se v obraně Ukrajiny.",
-      "fingerprint": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
-      "id": "073fff71552fce03529f3fb622bd93c6436dd369c555884faf2dce1b22d76b3c",
-      "title_en": "The Czech flu will be in the new weaponry, a billion rounds will be supplied by a German armourer and taken from him by Ukraine.",
-      "lead_en": "The main component of the domestic air force, the JAS-39 Gripen fighter jets, will be equipped with new weapons.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 0,
-        "security": 5,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "security"
-      ],
-      "primary_topic": "security",
       "czech_related": true,
       "classification_version": "v3",
       "translation_provider": "nllb200",
