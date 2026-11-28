@@ -1,8 +1,83 @@
 {
-  "updated_at_utc": "2026-11-27T16:47:40Z",
+  "updated_at_utc": "2026-11-28T01:30:15Z",
   "topic": "politics",
-  "count": 24,
+  "count": 23,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/jourova-rezoluce-naznacuje-ze-v-cesku-dochazi-k-orbanizaci-a-vypinaji-se_2611280010_jor",
+      "published_utc": "2026-11-27T23:10:00Z",
+      "title_raw": "Jourová: Rezoluce naznačuje, že v Česku dochází k orbánizaci a vypínají se demokratické pojistky",
+      "lead_raw": "Evropský parlament v rezoluci odsoudil způsob, jakým koaliční poslanci v Česku v prvním čtení schválili návrh zákona o změně financování veřejnoprávních médií. „Vyznívá podobně jako některé rezoluce proti Maďarsku,“ říká pro Radiožurnál bývalá eurokomisařka Věra Jourová.",
+      "fingerprint": "d4a2bf6fe633359ff1973eb334c7fc43f2681435a76cea063fea62a7e48307c2",
+      "id": "d4a2bf6fe633359ff1973eb334c7fc43f2681435a76cea063fea62a7e48307c2",
+      "title_en": "Jourová: The resolution indicates that the Czech Republic is being orphanised and democratic assurances are being shut down",
+      "lead_en": "In its resolution, the European Parliament condemned the way in which the Czech Coalition MPs approved the draft law amending public media funding at first reading. \"It sounds similar to some resolutions against Hungary\", said Věra Jourová, a former European Commissioner, to RadioJournal.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/umela-inteligence-v-roli-hlidace-zakonu-rychle-odhali-kdyz-se-nedodrzuje-bezny_2611272103_jor",
+      "published_utc": "2026-11-27T20:03:00Z",
+      "title_raw": "Umělá inteligence v roli hlídače zákonů. Rychle odhalí, když se nedodržuje běžný proces, říká vývojář",
+      "lead_raw": "Podezřele nestandardní legislativní proces pomáhá sledovat umělá inteligence. Web s názvem Co se peče – Hlídač zákonů analyzuje otevřená data z Poslanecké sněmovny a vyhledává zásadní nesrovnalosti a změny, které poslanci do zákonů vloží bez širší debaty nebo těsně před hlasováním.",
+      "fingerprint": "23b818a21cc3b4e67fe7d55bf4001f7e0e456fc7097066a5aac1aa16282257bd",
+      "id": "23b818a21cc3b4e67fe7d55bf4001f7e0e456fc7097066a5aac1aa16282257bd",
+      "title_en": "Artificial intelligence as a guardian of laws. It quickly detects when the normal process is not followed, says the developer",
+      "lead_en": "A website called What Happens The Law Enforcement Officer analyzes open data from the House of Representatives and searches for major irregularities and changes that MPs can make to laws without further debate or just before the vote.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/nacher-o-ruseni-poplatku-jsou-zastarale-plnime-predvolebni-slib-a-jsme-biti-za_2611272017_aru",
+      "published_utc": "2026-11-27T19:17:00Z",
+      "title_raw": "Nacher o rušení poplatků: Jsou zastaralé. Plníme předvolební slib a jsme biti za transparentnost",
+      "lead_raw": "Evropský parlament vyzývá českou vládu, aby v případě změny financování veřejnoprávních médií dbala na pojistky bránící politickým zásahům do práce novinářů. „Výsledkem bude ještě negativnější atmosféra vůči Evropské unii a parlamentu.",
+      "fingerprint": "a75f3c66ce029478974492e58b42a710db331996e81867bac27cd283edaef77f",
+      "id": "a75f3c66ce029478974492e58b42a710db331996e81867bac27cd283edaef77f",
+      "title_en": "Nacher on cancellation fees: they're outdated.",
+      "lead_en": "The European Parliament calls on the Czech Government to take care to ensure that there is no political interference in the work of journalists in the event of a change in public media funding. The result will be an even more negative atmosphere towards the European Union and Parliament.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-petka-sz-skutecna-vlada-ceska-a-pozoruhodny-veletoc-v-nvidii-321653",
@@ -494,106 +569,6 @@
       "translation_status": "translated",
       "topic_scores": {
         "politics": 8,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/kauza-krnap-jako-ministr-jsem-se-nezabyval-tim-jakym-zpusobem-je-dan-odvadena_2611260010_kvr",
-      "published_utc": "2026-11-25T23:10:00Z",
-      "title_raw": "Kauza KRNAP? Jako ministr jsem se nezabýval tím, jakým způsobem je daň odváděna, popisuje Hladík",
-      "lead_raw": "Kdo a co je v pozadí sporů kolem krkonošského parku? A nese bývalé vedení ministerstva životního prostředí spoluzodpovědnost za to, že má park doplácet státu desítky milionů na daních?",
-      "fingerprint": "87e96aec4b20fca6220c0527318bb1442dbd14f2df9918fc6c2e5f222a908f47",
-      "id": "87e96aec4b20fca6220c0527318bb1442dbd14f2df9918fc6c2e5f222a908f47",
-      "title_en": "As minister, I have not been concerned with how the tax is levied.",
-      "lead_en": "And is the former head of the Department of the Environment co-responsible for making the park pay tens of millions in taxes to the state?",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "iROZHLAS (Domestic)",
-      "url": "https://www.irozhlas.cz/zpravy-domov/juchelka-stahneme-navrh-na-zpresneni-zavisle-prace-zatim-utvorime-pracovni_2611252028_kvr",
-      "published_utc": "2026-11-25T19:28:00Z",
-      "title_raw": "Juchelka: Stáhneme návrh na zpřesnění závislé práce. Zatím utvoříme pracovní skupinu na základě Kobry 26",
-      "lead_raw": "Premiér Andrej Babiš (ANO) přiznal chyby v návrzích na změny podpor v nezaměstnanosti a zákonu o platformové práci. Jak ve středu řekl serveru Deník.cz, s ministrem práce a sociálních věcí Alešem Juchelkou (ANO) to probral v pondělí.",
-      "fingerprint": "8d087d0704df8464fc1e6cd5e107a744d9b0a6e149344c78bfe595189cbbc29f",
-      "id": "8d087d0704df8464fc1e6cd5e107a744d9b0a6e149344c78bfe595189cbbc29f",
-      "title_en": "Juchelka: We'll withdraw a proposal to clarify dependent labor.",
-      "lead_en": "Prime Minister Andrej Babiš (ANO) admitted errors in proposals for changes to the unemployment support and the platform work law.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 3,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Aktualne.cz",
-      "url": "https://zpravy.aktualne.cz/domaci/babisova-slevova-otocka-premier-slibil-to-na-co-nebyly-penize-rekl-odkud-je-vezme/r~aaa29a2bbcc3f5c27d50f0ff9f386a92",
-      "published_utc": "2026-11-25T19:00:00Z",
-      "title_raw": "Babišova slevová otočka. Premiér slíbil to, na co nebyly peníze. Řekl, odkud je vezme",
-      "lead_raw": "Slevy na jízdném jsou definitivně zpátky ve hře. Poté co šéf resortu dopravy Ivan Bednárik (za SPD) v září oznámil, že na ně v rozpočtu nejsou peníze, vypadala situace jasně.",
-      "fingerprint": "d8e9d258c39c41920060d2b39407fda63ecda2f7b503f13e8494a26710caee09",
-      "id": "d8e9d258c39c41920060d2b39407fda63ecda2f7b503f13e8494a26710caee09",
-      "title_en": "Grandma's discount turn, the Prime Minister promised what the money wasn't, where he'd get it.",
-      "lead_en": "After the head of the transport resort, Ivan Bednárik (for the SPD), announced in September that there was no money in the budget for them, the situation was clear.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
-        "security": 0,
-        "foreign_affairs": 0
-      },
-      "topics": [
-        "politics"
-      ],
-      "primary_topic": "politics",
-      "czech_related": true,
-      "classification_version": "v3",
-      "translation_provider": "nllb200",
-      "translation_version": "nllb200-v1"
-    },
-    {
-      "source": "Seznam Zpravy",
-      "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-byvaly-guverner-cnb-singer-se-stal-poradcem-premiera-babise-321540",
-      "published_utc": "2026-11-25T17:33:08Z",
-      "title_raw": "Bývalý guvernér ČNB Singer se stal poradcem premiéra Babiše",
-      "lead_raw": "Miroslav Singer, bývalý guvernér České národní banky, se stal poradcem premiéra. Andrej Babiš ho oslovil, aby mu radil v oblastech makroekonomie či hospodářské politiky.",
-      "fingerprint": "d741e8ae30e224c070ff0a63307223cd601b091738c0b30a0af69c7375519a17",
-      "id": "d741e8ae30e224c070ff0a63307223cd601b091738c0b30a0af69c7375519a17",
-      "title_en": "Former Governor of CNB Singer has become an adviser to the Prime Minister",
-      "lead_en": "Miroslav Singer, former governor of the Czech National Bank, became an adviser to the prime minister and Andrej Babiš approached him for advice on macroeconomics and economic policy.",
-      "translation_status": "translated",
-      "topic_scores": {
-        "politics": 4,
         "security": 0,
         "foreign_affairs": 0
       },

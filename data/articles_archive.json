@@ -1,7 +1,82 @@
 {
-  "updated_at_utc": "2026-11-27T16:47:40Z",
-  "count": 171,
+  "updated_at_utc": "2026-11-28T01:30:15Z",
+  "count": 174,
   "articles": [
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/jourova-rezoluce-naznacuje-ze-v-cesku-dochazi-k-orbanizaci-a-vypinaji-se_2611280010_jor",
+      "published_utc": "2026-11-27T23:10:00Z",
+      "title_raw": "Jourová: Rezoluce naznačuje, že v Česku dochází k orbánizaci a vypínají se demokratické pojistky",
+      "lead_raw": "Evropský parlament v rezoluci odsoudil způsob, jakým koaliční poslanci v Česku v prvním čtení schválili návrh zákona o změně financování veřejnoprávních médií. „Vyznívá podobně jako některé rezoluce proti Maďarsku,“ říká pro Radiožurnál bývalá eurokomisařka Věra Jourová.",
+      "fingerprint": "d4a2bf6fe633359ff1973eb334c7fc43f2681435a76cea063fea62a7e48307c2",
+      "id": "d4a2bf6fe633359ff1973eb334c7fc43f2681435a76cea063fea62a7e48307c2",
+      "title_en": "Jourová: The resolution indicates that the Czech Republic is being orphanised and democratic assurances are being shut down",
+      "lead_en": "In its resolution, the European Parliament condemned the way in which the Czech Coalition MPs approved the draft law amending public media funding at first reading. \"It sounds similar to some resolutions against Hungary\", said Věra Jourová, a former European Commissioner, to RadioJournal.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 4,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/umela-inteligence-v-roli-hlidace-zakonu-rychle-odhali-kdyz-se-nedodrzuje-bezny_2611272103_jor",
+      "published_utc": "2026-11-27T20:03:00Z",
+      "title_raw": "Umělá inteligence v roli hlídače zákonů. Rychle odhalí, když se nedodržuje běžný proces, říká vývojář",
+      "lead_raw": "Podezřele nestandardní legislativní proces pomáhá sledovat umělá inteligence. Web s názvem Co se peče – Hlídač zákonů analyzuje otevřená data z Poslanecké sněmovny a vyhledává zásadní nesrovnalosti a změny, které poslanci do zákonů vloží bez širší debaty nebo těsně před hlasováním.",
+      "fingerprint": "23b818a21cc3b4e67fe7d55bf4001f7e0e456fc7097066a5aac1aa16282257bd",
+      "id": "23b818a21cc3b4e67fe7d55bf4001f7e0e456fc7097066a5aac1aa16282257bd",
+      "title_en": "Artificial intelligence as a guardian of laws. It quickly detects when the normal process is not followed, says the developer",
+      "lead_en": "A website called What Happens The Law Enforcement Officer analyzes open data from the House of Representatives and searches for major irregularities and changes that MPs can make to laws without further debate or just before the vote.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 7,
+        "security": 0,
+        "foreign_affairs": 0
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
+    {
+      "source": "iROZHLAS (Domestic)",
+      "url": "https://www.irozhlas.cz/zpravy-domov/nacher-o-ruseni-poplatku-jsou-zastarale-plnime-predvolebni-slib-a-jsme-biti-za_2611272017_aru",
+      "published_utc": "2026-11-27T19:17:00Z",
+      "title_raw": "Nacher o rušení poplatků: Jsou zastaralé. Plníme předvolební slib a jsme biti za transparentnost",
+      "lead_raw": "Evropský parlament vyzývá českou vládu, aby v případě změny financování veřejnoprávních médií dbala na pojistky bránící politickým zásahům do práce novinářů. „Výsledkem bude ještě negativnější atmosféra vůči Evropské unii a parlamentu.",
+      "fingerprint": "a75f3c66ce029478974492e58b42a710db331996e81867bac27cd283edaef77f",
+      "id": "a75f3c66ce029478974492e58b42a710db331996e81867bac27cd283edaef77f",
+      "title_en": "Nacher on cancellation fees: they're outdated.",
+      "lead_en": "The European Parliament calls on the Czech Government to take care to ensure that there is no political interference in the work of journalists in the event of a change in public media funding. The result will be an even more negative atmosphere towards the European Union and Parliament.",
+      "translation_status": "translated",
+      "topic_scores": {
+        "politics": 3,
+        "security": 0,
+        "foreign_affairs": 1
+      },
+      "topics": [
+        "politics"
+      ],
+      "primary_topic": "politics",
+      "czech_related": true,
+      "classification_version": "v3",
+      "translation_provider": "nllb200",
+      "translation_version": "nllb200-v1"
+    },
     {
       "source": "Seznam Zpravy",
       "url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-petka-sz-skutecna-vlada-ceska-a-pozoruhodny-veletoc-v-nvidii-321653",
